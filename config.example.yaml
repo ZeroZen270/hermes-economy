@@ -1,0 +1,49 @@
+# Hermes economy config — copy to config.yaml and edit.
+# Secrets come from the environment, never this file.
+
+# --- survival economics ---
+heartbeat_cost_credits: 50        # burned every tick, even if the agent idles
+heartbeat_interval_seconds: 3600  # hourly wake; boost good shortens to 1200
+deep_rest_check_seconds: 21600    # how often to check for refill while in Deep Rest
+agent_commission_pct: 30          # agent's cut of every gig; rest -> Aaron's treasury
+
+# --- paths ---
+data_dir: "./data"                # economy.db, inventory.json, logs live here
+persona_path: "./persona/SOUL.md"
+outbox_dir: "./data/outbox"       # heartbeat prompts land here
+
+# --- agent invocation ---
+# Shell command receiving the heartbeat prompt on stdin.
+# Point at the real Hermes runner when it exists; empty = log prompt only.
+agent_command: ""
+
+# --- real money ---
+stripe_enabled: true              # false = virtual ledger only, no Stripe calls
+# export STRIPE_SECRET_KEY=sk_test_...   (start in TEST mode)
+# export STRIPE_WEBHOOK_SECRET=whsec_... (only needed for the optional webhook)
+
+# --- gig seeking ---
+gig_seeker:
+  min_bounty_usd: 5.0
+  # Bounty boards. 'feed' works today with any public JSON/RSS URL.
+  # '0xwork' needs their CLI installed + the exact list command from their docs.
+  # 'clawtasks' stays disabled until you paste their verified API base — we refuse to guess.
+  boards:
+    - type: feed
+      name: example-board
+      url: https://example.com/bounties.json
+    # - type: 0xwork
+    #   list_command: "0xwork tasks list --json"
+    # - type: clawtasks
+    #   api_base: "https://..."   # from their docs
+  # Seed domains for the prospector to audit (the agent can also add its own
+  # discoveries at runtime via audit_leads()).
+  prospect_domains: []
+  # Sender identity for pitches — REQUIRED before any outreach (CAN-SPAM).
+  sender:
+    agent_name: "Hermes"
+    operator_name: "Aaron"
+    business_name: "Technology Squared LLC"
+    reply_email: ""        # set before outreach
+    postal_address: ""     # set before outreach
+    base_price_usd: 25.0

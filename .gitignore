@@ -1,0 +1,18 @@
+# Runtime / secrets — never commit these
+data/
+config.yaml
+.env
+*.db
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
