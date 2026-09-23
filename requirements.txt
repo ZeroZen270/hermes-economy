@@ -1,0 +1,4 @@
+stripe>=7.0
+pyyaml>=6.0
+requests>=2.31
+flask>=3.0
