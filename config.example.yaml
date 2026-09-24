@@ -51,6 +51,7 @@ llm:
   temperature: 0.7
   max_retries: 3              # extra attempts on 429 / 5xx (Gemini 503 spikes)
   retry_backoff_seconds: 5.0  # base; waits base * 2^attempt + jitter
+  fallback_model: "gemini-flash-lite-latest"  # tried after primary exhausts retries
 # export GEMINI_API_KEY=...
 # Alternatives (same OpenAI-compatible shape):
 #   Groq (free, no card): https://api.groq.com/openai/v1  -> GROQ_API_KEY

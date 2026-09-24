@@ -29,6 +29,9 @@ import requests
 class LLMConfig:
     base_url: str = "https://generativelanguage.googleapis.com/v1beta/openai/"
     model: str = "gemini-3.6-flash"
+    # If the primary model stays throttled after all retries (429/5xx), try
+    # this one before giving up. flash-lite has a generous free quota.
+    fallback_model: str = "gemini-flash-lite-latest"
     api_key_env: str = "GEMINI_API_KEY"
     timeout_seconds: int = 120
     max_tokens: int = 1024
@@ -61,9 +64,10 @@ def chat(cfg: LLMConfig, system: str, user: str, api_key: str = "") -> str:
 
 def chat_messages(cfg: LLMConfig, messages: list[dict],
                   api_key: str = "") -> str:
-    """Multi-turn chat completion with retries. Transient provider failures
-    (429/5xx, network blips) are retried with exponential backoff; anything
-    else raises LLMError immediately."""
+    """Multi-turn chat completion with retries and model fallback. Transient
+    provider failures (429/5xx, network blips) are retried with exponential
+    backoff; if the primary model stays throttled, the fallback model gets
+    its own retry loop; anything else raises LLMError immediately."""
     import os
     key = api_key or os.environ.get(cfg.api_key_env, "")
     if not key:
@@ -72,42 +76,48 @@ def chat_messages(cfg: LLMConfig, messages: list[dict],
             f"https://aistudio.google.com/app/apikey"
         )
     url = cfg.base_url.rstrip("/") + "/chat/completions"
+    models = [cfg.model] + ([cfg.fallback_model]
+                            if cfg.fallback_model and cfg.fallback_model != cfg.model
+                            else [])
     last_err: LLMError | None = None
-    for attempt in range(cfg.max_retries + 1):
-        try:
-            r = requests.post(
-                url,
-                headers={"Authorization": f"Bearer {key}"},
-                json={
-                    "model": cfg.model,
-                    "messages": messages,
-                    "max_tokens": cfg.max_tokens,
-                    "temperature": cfg.temperature,
-                },
-                timeout=cfg.timeout_seconds,
-            )
-        except requests.RequestException as e:
-            last_err = LLMError(f"LLM request failed (attempt {attempt + 1}): {e}")
-        else:
-            if r.status_code in RETRYABLE_STATUS:
-                last_err = LLMError(
-                    f"provider error {r.status_code} (attempt {attempt + 1}, "
-                    f"retrying): {r.text[:200]}"
+    for model in models:
+        for attempt in range(cfg.max_retries + 1):
+            try:
+                r = requests.post(
+                    url,
+                    headers={"Authorization": f"Bearer {key}"},
+                    json={
+                        "model": model,
+                        "messages": messages,
+                        "max_tokens": cfg.max_tokens,
+                        "temperature": cfg.temperature,
+                    },
+                    timeout=cfg.timeout_seconds,
                 )
-            elif r.status_code == 402:
-                raise LLMError("provider returned 402: payment required on this model/key")
-            elif not r.ok:
-                raise LLMError(f"provider error {r.status_code}: {r.text[:200]}")
+            except requests.RequestException as e:
+                last_err = LLMError(
+                    f"LLM request failed ({model}, attempt {attempt + 1}): {e}")
             else:
-                try:
-                    content = r.json()["choices"][0]["message"]["content"]
-                except (KeyError, IndexError, ValueError) as e:
+                if r.status_code in RETRYABLE_STATUS:
+                    last_err = LLMError(
+                        f"provider error {r.status_code} ({model}, attempt "
+                        f"{attempt + 1}, retrying): {r.text[:200]}"
+                    )
+                elif r.status_code == 402:
                     raise LLMError(
-                        f"unexpected provider response: {r.text[:200]}") from e
-                if not content:
-                    raise LLMError("provider returned empty content")
-                return content
-        if attempt < cfg.max_retries:
-            time.sleep(cfg.retry_backoff_seconds * (2 ** attempt)
-                       + random.uniform(0, 2))
+                        "provider returned 402: payment required on this model/key")
+                elif not r.ok:
+                    raise LLMError(f"provider error {r.status_code}: {r.text[:200]}")
+                else:
+                    try:
+                        content = r.json()["choices"][0]["message"]["content"]
+                    except (KeyError, IndexError, ValueError) as e:
+                        raise LLMError(
+                            f"unexpected provider response: {r.text[:200]}") from e
+                    if not content:
+                        raise LLMError("provider returned empty content")
+                    return content
+            if attempt < cfg.max_retries:
+                time.sleep(cfg.retry_backoff_seconds * (2 ** attempt)
+                           + random.uniform(0, 2))
     raise last_err  # type: ignore[misc]

@@ -139,7 +139,9 @@ Replies land in `data/outbox/tick_NNNNNN.reply.md`; API failures are recorded
 as `.llm_error.md` and never break the loop. At the default 25-min heartbeat
 that's 72 ticks/day; each tick makes 1 model call when idle and up to 4 with
 a full tool loop, so worst case ~290 calls/day against a 1,500/day free quota
-— under 20%.
+— under 20%. If the primary model stays throttled after all retries, the
+brain falls back to `gemini-flash-lite-latest` (generous free quota) before
+giving up, so a capacity crunch on one model doesn't silence the agent.
 
 Notes: free-tier prompts may be used by Google to improve its models, so the
 prompt carries no secrets. Nous Research's portal was evaluated and rejected:
