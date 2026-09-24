@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790288364.7228298,
+  "generated_ts": 1790290165.1307032,
   "leads": [
     {
       "domain": "swiftroofing.net",
@@ -9,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 5.8,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790288313.8839409351348876953125",
+        "latency_s": 6.67,
+        "final_url": "https://swiftroofing.net/",
         "cert_days_left": 181
       },
       "score": 3,
-      "checked_ts": 1790288311.6610734,
+      "checked_ts": 1790290116.3757858,
       "emails": []
     },
     {
@@ -25,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.95,
+        "latency_s": 0.74,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790288269.886492,
+      "checked_ts": 1790290073.622469,
       "emails": []
     },
     {
@@ -41,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.27,
+        "latency_s": 0.52,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790288279.1834924,
+      "checked_ts": 1790290082.8877447,
       "emails": []
     },
     {
@@ -57,12 +57,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.56,
+        "latency_s": 0.62,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790288285.0883107,
+      "checked_ts": 1790290089.8699431,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -75,12 +75,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.65,
+        "latency_s": 0.46,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790288286.8840275,
+      "checked_ts": 1790290091.6603906,
       "emails": []
     }
   ]
