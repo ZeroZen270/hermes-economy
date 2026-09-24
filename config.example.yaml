@@ -123,5 +123,5 @@ gig_seeker:
     operator_name: "Aaron"
     business_name: "Technology Squared LLC"
     reply_email: "techsquaredllc42071@gmail.com"  # set 2026-09-24
-    postal_address: ""        # set before outreach — needs Aaron's confirmed mailing address
+    postal_address: "1706 Brooklyn Dr A, Murray, KY 42071"  # confirmed by Aaron 2026-09-24
     base_price_usd: 25.0

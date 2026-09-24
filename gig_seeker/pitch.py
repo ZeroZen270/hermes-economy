@@ -68,7 +68,7 @@ fixable problems. I'm writing because I measured something specific on {domain}:
 
   {finding}.
 
-I can handle the {scope} for a flat ${sender.base_price_usd:.0f}, done
+I can take care of this — {scope} — for a flat ${sender.base_price_usd:.0f}, done
 properly and verified afterward. If that's useful, reply and I'll send a
 payment link plus a checklist of exactly what I'll do.
 
