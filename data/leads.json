@@ -1,6 +1,25 @@
 {
-  "generated_ts": 1790257462.304584,
+  "generated_ts": 1790258708.7316608,
   "leads": [
+    {
+      "domain": "dtcontractingky.com",
+      "url": "https://dtcontractingky.com",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 4.33,
+        "final_url": "https://www.dtcontractingky.com/",
+        "cert_days_left": 44
+      },
+      "score": 3,
+      "checked_ts": 1790258698.137936,
+      "emails": [
+        "davet7711@gmail.com",
+        "user@domain.com"
+      ]
+    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -9,12 +28,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.3,
+        "latency_s": 0.97,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790257376.3775547,
+      "checked_ts": 1790258594.5746448,
       "emails": []
     },
     {
@@ -25,12 +44,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.33,
+        "latency_s": 0.67,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790257382.9890068,
+      "checked_ts": 1790258605.375005,
       "emails": []
     },
     {
@@ -41,12 +60,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.58,
+        "latency_s": 0.69,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790257389.0966127,
+      "checked_ts": 1790258624.0561898,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -59,12 +78,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.69,
+        "latency_s": 0.63,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790257390.8774884,
+      "checked_ts": 1790258626.0038714,
       "emails": []
     }
   ]
