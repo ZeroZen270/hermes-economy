@@ -12,9 +12,9 @@ agent_commission_pct: 30          # agent's cut of every gig; rest -> Aaron's tr
 # cadence changes and the old grant no longer buys the intended runway.
 # 15,000 credits = $15.00 ≈ 6 days of runway at 30-min ticks (48 x 50/day).
 grant_adjustment:
-  id: "cadence-25min-2026-09-24"
-  target_credits: 15000
-  memo: "owner grant adjustment for 25-min cadence"
+  id: "owner-grant-10usd-2026-09-24"
+  target_credits: 24850
+  memo: "owner grant: +$10.00 for 24h 5-min grind (2026-09-24)"
 
 # --- paths ---
 data_dir: "./data"                # economy.db, inventory.json, logs live here
