@@ -20,7 +20,7 @@ name: hermes-heartbeat
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # true 30-min cadence (GitHub may still delay it)
+    - cron: "*/5 * * * *"    # 5-MIN GRIND 2026-09-24: revert to */30 after 24h (owner scheduled)
   workflow_dispatch:
 
 concurrency:
