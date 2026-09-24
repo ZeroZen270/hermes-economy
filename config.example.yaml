@@ -17,6 +17,20 @@ outbox_dir: "./data/outbox"       # heartbeat prompts land here
 # Point at the real Hermes runner when it exists; empty = log prompt only.
 agent_command: ""
 
+# --- free brain: StepFun Step 3.7 Flash via the Nous Research portal ---
+# $0 free plan, OpenAI-compatible API. Sign up at https://portal.nousresearch.com
+# and export your key; every affordable tick calls the model with the persona
+# as system prompt and the survival state as the user message. Replies land in
+# data/outbox/tick_NNNNNN.reply.md.
+llm:
+  enabled: true
+  base_url: "https://inference-api.nousresearch.com/v1"
+  model: "stepfun/step-3.7-flash:free"
+  timeout_seconds: 120
+  max_tokens: 1024
+  temperature: 0.7
+# export NOUS_PORTAL_API_KEY=nk-...   (free plan, no card)
+
 # --- real money ---
 stripe_enabled: true              # false = virtual ledger only, no Stripe calls
 # export STRIPE_SECRET_KEY=sk_test_...   (start in TEST mode)

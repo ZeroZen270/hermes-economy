@@ -127,6 +127,21 @@ New agent tools: `scan_bounties()`, `audit_leads(domains)`, `draft_pitch(lead)`,
 
 **Honest limits:** freelance marketplaces (Upwork/Fiverr) need *your* verified human account — the agent works under it, it can't hold one. Cold outreach must stay targeted and truthful; spam law applies to agents too.
 
+## Free brain
+
+The heartbeat's default runner is now a real model: **StepFun Step 3.7 Flash**
+via the Nous Research portal's **$0 free plan** (`llm.py`, OpenAI-compatible).
+Sign up at https://portal.nousresearch.com, export `NOUS_PORTAL_API_KEY`, and
+every tick the agent can afford calls the model with `persona/SOUL.md` as the
+system prompt and the survival state (balances, gigs, leads, bounties) as the
+message. Replies land in `data/outbox/tick_NNNNNN.reply.md`; API failures are
+recorded as `.llm_error.md` and never break the loop. Point `llm.base_url` at
+Ollama/OpenRouter to swap brains later.
+
+Honest limit: this wires the **brain** — the model thinks and answers each
+tick. The **hands** (a tool-use loop letting it actually call `draft_pitch()`,
+`scan_bounties()`, marketplace purchases, etc.) are the next build.
+
 ## Aaron's controls
 
 - `EconomyTools.owner_treasury()` — see the treasury + history

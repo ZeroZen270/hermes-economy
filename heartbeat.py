@@ -90,14 +90,29 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
 
 
 def run_agent(cfg: dict, prompt: str, tick: int) -> None:
-    """Invoke the agent. Default runner logs the prompt to the outbox;
-    point agent_command at the real Hermes runner when it exists."""
+    """Invoke the agent. Precedence:
+    1. agent_command — shell command receiving the prompt on stdin (the real
+       Hermes runner, when it exists).
+    2. llm (enabled) — the free Step 3.7 Flash brain via the Nous portal.
+    3. Otherwise the prompt is just logged to the outbox."""
     outbox = Path(cfg["outbox_dir"])
     outbox.mkdir(parents=True, exist_ok=True)
     (outbox / f"tick_{tick:06d}.md").write_text(prompt)
     cmd = cfg.get("agent_command")
     if cmd:
         subprocess.run(cmd, input=prompt.encode(), shell=True, check=False)
+        return
+    llm_cfg = cfg.get("llm") or {}
+    if llm_cfg.get("enabled"):
+        from llm import LLMConfig, LLMError, chat as llm_chat
+        persona = Path(cfg["persona_path"]).read_text()
+        try:
+            reply = llm_chat(LLMConfig.from_dict(llm_cfg), persona, prompt)
+        except LLMError as e:
+            # A dead brain must never kill the body: record it, heartbeat logs it.
+            (outbox / f"tick_{tick:06d}.llm_error.md").write_text(str(e))
+            raise
+        (outbox / f"tick_{tick:06d}.reply.md").write_text(reply)
 
 
 def main() -> None:
