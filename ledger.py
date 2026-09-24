@@ -185,9 +185,17 @@ class Ledger:
     def summary(self) -> dict:
         tb = self.balance(TREASURY)
         ab = self.balance(AGENT)
+        with self._conn() as c:
+            row = c.execute(
+                "SELECT COALESCE(SUM(delta), 0) FROM transactions "
+                "WHERE kind = 'payment'"
+            ).fetchone()
+        real_earned = int(row[0] or 0)
         return {
             "treasury_credits": tb,
             "treasury_usd": tb / CREDITS_PER_USD,
             "agent_credits": ab,
             "agent_usd": ab / CREDITS_PER_USD,
+            "real_earned_credits": real_earned,
+            "real_earned_usd": real_earned / CREDITS_PER_USD,
         }
