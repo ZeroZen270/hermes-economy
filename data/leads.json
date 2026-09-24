@@ -1,22 +1,6 @@
 {
-  "generated_ts": 1790273865.8689976,
+  "generated_ts": 1790274136.0862532,
   "leads": [
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 5.44,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790273816.0260579586029052734375",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790273813.860025,
-      "emails": []
-    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -25,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 1.2,
+        "latency_s": 0.27,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790273770.1367927,
+      "checked_ts": 1790274045.6034496,
       "emails": []
     },
     {
@@ -41,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.59,
+        "latency_s": 0.4,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790273780.7716215,
+      "checked_ts": 1790274052.1581268,
       "emails": []
     },
     {
@@ -57,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.65,
+        "latency_s": 0.78,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790273787.85274,
+      "checked_ts": 1790274059.1916015,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -75,12 +59,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.49,
+        "latency_s": 0.54,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790273789.7340896,
+      "checked_ts": 1790274061.2126606,
       "emails": []
     }
   ]
