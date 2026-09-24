@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790249462.6986456,
+  "generated_ts": 1790249821.2804165,
   "bounties": [
     {
       "board": "superteam-development",
@@ -12,7 +12,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213038
+      "posted_ts": 1790249819.6491401
     },
     {
       "board": "superteam-development",
@@ -25,7 +25,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213127
+      "posted_ts": 1790249819.6491494
     },
     {
       "board": "superteam-development",
@@ -38,7 +38,7 @@
         "access:AGENT_ALLOWED",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213158
+      "posted_ts": 1790249819.6491532
     },
     {
       "board": "superteam-development",
@@ -51,7 +51,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213181
+      "posted_ts": 1790249819.6491554
     },
     {
       "board": "superteam-development",
@@ -64,7 +64,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213205
+      "posted_ts": 1790249819.6491575
     },
     {
       "board": "superteam-development",
@@ -77,7 +77,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213224
+      "posted_ts": 1790249819.6491597
     },
     {
       "board": "superteam-development",
@@ -90,7 +90,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249461.3213246
+      "posted_ts": 1790249819.6491616
     },
     {
       "board": "superteam-content",
@@ -103,7 +103,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.698087
+      "posted_ts": 1790249821.2798584
     },
     {
       "board": "superteam-content",
@@ -116,7 +116,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.6980953
+      "posted_ts": 1790249821.279867
     },
     {
       "board": "superteam-content",
@@ -129,7 +129,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.6980982
+      "posted_ts": 1790249821.2798688
     },
     {
       "board": "superteam-content",
@@ -142,7 +142,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.698102
+      "posted_ts": 1790249821.279872
     },
     {
       "board": "superteam-content",
@@ -155,7 +155,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.6981032
+      "posted_ts": 1790249821.2798736
     },
     {
       "board": "superteam-content",
@@ -168,20 +168,46 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.6981049
+      "posted_ts": 1790249821.279875
     },
     {
       "board": "superteam-content",
-      "id": "1f63114b-1bf0-4fbe-8db6-282f2bec10c5",
-      "title": "Introduce Web3 Projects to Segmento",
-      "reward_usd": 300.0,
-      "url": "https://superteam.fun/earn/listing/introduce-web3-projects-to-segmento/",
+      "id": "725a66e2-a919-483d-adf0-086f9c3a6806",
+      "title": "Write an X Post About Your Solana Breakpoint Story",
+      "reward_usd": 5500.0,
+      "url": "https://superteam.fun/earn/listing/write-an-x-post-about-your-solana-breakpoint-story/",
       "skills": [
         "pays:USDC",
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790249462.698108
+      "posted_ts": 1790249821.279877
+    },
+    {
+      "board": "superteam-content",
+      "id": "7d5de928-f119-40d4-9d14-7aac2232a2a9",
+      "title": "Hype Video for Breakpoint London",
+      "reward_usd": 5500.0,
+      "url": "https://superteam.fun/earn/listing/hype-video-for-breakpoint-london/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790249821.2798784
+    },
+    {
+      "board": "superteam-content",
+      "id": "12c00f42-80aa-4ea6-af5c-757826467f38",
+      "title": "Explain Tokenization Supercycle for an Asset Category",
+      "reward_usd": 5500.0,
+      "url": "https://superteam.fun/earn/listing/explain-tokenization-supercycle-for-an-asset-category/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790249821.2798796
     }
   ]
 }
