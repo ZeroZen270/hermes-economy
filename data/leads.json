@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790249258.5572808,
+  "generated_ts": 1790249564.7673829,
   "leads": [
     {
       "domain": "kentpriceplumbing.com",
@@ -10,12 +10,12 @@
       ],
       "notes": {
         "status": 404,
-        "latency_s": 0.26,
+        "latency_s": 0.31,
         "final_url": "https://kentpriceplumbing.com/",
         "cert_days_left": 36
       },
       "score": 4,
-      "checked_ts": 1790249160.7138417,
+      "checked_ts": 1790249462.6989477,
       "emails": []
     },
     {
@@ -26,12 +26,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 6.45,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790249212.4504370689392089843750",
+        "latency_s": 6.98,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790249515.3804190158843994140625",
         "cert_days_left": 181
       },
       "score": 3,
-      "checked_ts": 1790249209.4754236,
+      "checked_ts": 1790249512.2169497,
       "emails": []
     },
     {
@@ -42,12 +42,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.23,
+        "latency_s": 0.29,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790249171.289992,
+      "checked_ts": 1790249473.8682697,
       "emails": []
     },
     {
@@ -58,12 +58,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.43,
+        "latency_s": 0.46,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790249177.7046065,
+      "checked_ts": 1790249480.2004542,
       "emails": []
     },
     {
@@ -74,12 +74,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.6,
+        "latency_s": 0.68,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790249184.781738,
+      "checked_ts": 1790249487.1002736,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -92,12 +92,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.38,
+        "latency_s": 0.3,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790249186.5797868,
+      "checked_ts": 1790249488.9789963,
       "emails": []
     }
   ]
