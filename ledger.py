@@ -77,6 +77,20 @@ class Ledger:
             ).fetchone()
             return int(row["b"])
 
+    # -- one-time owner adjustments (grant resizes, etc.) --------------------
+    def get_meta(self, key: str) -> str | None:
+        with self._conn() as c:
+            row = c.execute("SELECT value FROM meta WHERE key = ?", (key,)).fetchone()
+            return row["value"] if row else None
+
+    def set_meta(self, key: str, value: str) -> None:
+        with self._conn() as c:
+            c.execute(
+                "INSERT INTO meta (key, value) VALUES (?, ?) "
+                "ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+                (key, value),
+            )
+
     def history(self, account: str | None = None, limit: int = 50) -> list[dict]:
         q = "SELECT * FROM transactions"
         args: list = []

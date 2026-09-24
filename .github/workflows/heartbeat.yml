@@ -1,7 +1,7 @@
 # Hermes survival heartbeat on GitHub's free tier.
 #
-# Hourly: restore state -> seek gigs -> run one heartbeat tick -> commit state
-# back so the ledger survives between runs (runners are ephemeral).
+# Every 25 min: restore state -> seek gigs -> run one heartbeat tick -> commit
+# state back so the ledger survives between runs (runners are ephemeral).
 #
 # Setup: add GEMINI_API_KEY as a repo secret (Settings -> Secrets -> Actions).
 # Stripe stays OFF here until you add STRIPE_SECRET_KEY and flip the config
@@ -10,7 +10,7 @@ name: hermes-heartbeat
 
 on:
   schedule:
-    - cron: "23 * * * *"   # hourly, off the :00 rush (GitHub may delay this)
+    - cron: "*/25 * * * *"   # every 25 min (GitHub may delay this)
   workflow_dispatch:
 
 concurrency:

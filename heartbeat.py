@@ -235,6 +235,24 @@ def main() -> None:
 
     tick = next_tick(Path(cfg["outbox_dir"])) - 1
     say("heartbeat online" + (" (once)" if once else ""))
+
+    # 0. One-time owner grant adjustment (e.g. resize runway for a new cadence).
+    # Recorded in the ledger meta table so it fires exactly once.
+    adj = cfg.get("grant_adjustment") or {}
+    if adj.get("id") and adj.get("target_credits"):
+        marker = f"grant_adjustment:{adj['id']}"
+        if not ledger.get_meta(marker):
+            target = int(adj["target_credits"])
+            bal = ledger.balance("agent:operating")
+            if bal < target:
+                ledger.grant_allowance(
+                    target - bal,
+                    adj.get("memo", "owner grant adjustment"),
+                )
+                say(f"grant adjustment: operating balance {bal} -> {target} credits")
+            else:
+                say(f"grant adjustment: balance {bal} already >= target {target}")
+            ledger.set_meta(marker, "applied")
     while True:
         tick += 1
         # 1. Money in: Stripe poll (safe to re-run; ledger dedups).

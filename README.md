@@ -36,7 +36,7 @@ Stripe dashboard.
 | `ledger.py` | SQLite ledger: treasury + agent accounts, append-only transactions |
 | `marketplace.py` | Virtual goods catalog: memory slots, tool unlocks, heartbeat boost, subcontractor calls, market stall, runway insurance, identity sigils |
 | `stripe_rails.py` | Stripe Payment Links for gigs + polling for completed payments (webhook optional) |
-| `heartbeat.py` | The daemon: hourly wake, burn, Deep Rest, survival prompt |
+| `heartbeat.py` | The daemon: 25-min wake, burn, Deep Rest, survival prompt |
 | `hermes_plugin.py` | Agent tools: `check_balance`, `list_goods`, `buy_good`, `create_gig_invoice`, `submit_completed_work`, `request_allowance_increase` |
 | `config.example.yaml` | Copy to `config.yaml` and tune |
 
@@ -136,8 +136,10 @@ https://aistudio.google.com/app/apikey, export `GEMINI_API_KEY`, and every
 tick the agent can afford calls the model with `persona/SOUL.md` as the system
 prompt and the survival state (balances, gigs, leads, bounties) as the message.
 Replies land in `data/outbox/tick_NNNNNN.reply.md`; API failures are recorded
-as `.llm_error.md` and never break the loop. At the default hourly heartbeat
-that's 24 calls/day against a 1,500/day free quota — under 2%.
+as `.llm_error.md` and never break the loop. At the default 25-min heartbeat
+that's 72 ticks/day; each tick makes 1 model call when idle and up to 4 with
+a full tool loop, so worst case ~290 calls/day against a 1,500/day free quota
+— under 20%.
 
 Notes: free-tier prompts may be used by Google to improve its models, so the
 prompt carries no secrets. Nous Research's portal was evaluated and rejected:
@@ -174,13 +176,13 @@ by hand in the review UI.
 
 ## Free cloud: GitHub Actions
 
-`.github/workflows/heartbeat.yml` runs the heartbeat **hourly on GitHub's free
+`.github/workflows/heartbeat.yml` runs the heartbeat **every 25 min on GitHub's free
 tier** — no server, no Oracle signup. Each run: checks out the repo, restores
 the ledger, runs the gig seeker, runs one heartbeat tick (`--once`), then
 commits the ledger/outbox back so state survives between runs. Private repos
-get 2,000 Actions minutes/month; an hourly tick bills ~1–2 min, so a month
-costs roughly 700–1,000 minutes — inside the free allowance, and it renews
-monthly.
+get 2,000 Actions minutes/month; a 25-min tick bills ~1 min, so a month costs
+roughly 2,160 minutes — about 8% over the free allowance (~$1.50/mo at list
+price). Drop the cron to `*/30` to stay fully inside free.
 
 Setup:
 1. Export a Gemini key and add it as a repo secret: **Settings → Secrets →
