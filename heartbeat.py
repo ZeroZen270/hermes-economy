@@ -99,7 +99,10 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
                 "send-ready leads (draft says 'Send-ready: YES', i.e. a public "
                 "contact email was found on their site). Prioritize send-ready "
                 "leads; keep drafting for the rest. Respect the tool's caps and "
-                "never re-pitch a domain inside its cooldown window.")
+                "never re-pitch a domain inside its cooldown window. "
+                "If send_pitch reports no email transport is configured (or a "
+                "send fails), do NOT drop the pitch: call stage_pitch() with "
+                "the draft's to/subject/body — Odin sends it for you.")
         else:
             lines.append(
                 "auto_send is OFF: drafts stay unsent for Aaron's review. "
@@ -128,6 +131,15 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
     for r in recent:
         lines.append(f"  {r['kind']} {r['delta']:+} — {r['memo']}")
     lines.append("\nAct now. Earn, spend wisely, survive. Report what you did.")
+    lines.append(
+        "SUBMISSION ROUTING: you have no browser and cannot click through "
+        "forms — web_fetch is read-only. For anything you cannot complete "
+        "yourself (bounty entry, application form, contact form, pitch email "
+        "when send_pitch is unavailable), STAGE it with complete details: "
+        "stage_bounty_entry() for bounties/applications, stage_pitch() for "
+        "emails. Odin, your operator, picks up staged items every 15 minutes "
+        "and submits/sends them for you. Never leave a finished deliverable "
+        "unsubmitted — stage it.")
     return "\n".join(lines)
 
 
