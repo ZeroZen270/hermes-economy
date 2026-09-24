@@ -81,6 +81,13 @@ payouts:
 # --- gig seeking ---
 gig_seeker:
   min_bounty_usd: 5.0
+  # Owner-enabled 2026-09-24: Hermes may SEND pitch emails itself to
+  # send-ready leads (public contact email found on their site) without
+  # waiting for Aaron's per-message approval. Safety rails stay in code:
+  # draft_pitch() drafts only; send_pitch() enforces send-ready-only,
+  # per-tick + per-day caps, and a per-domain cooldown. Flip to false to
+  # return to drafts-only mode.
+  auto_send: true
   # Bounty boards. 'feed' works today with any public JSON/RSS URL.
   # '0xwork' needs their CLI installed + the exact list command from their docs.
   # 'clawtasks' stays disabled until you paste their verified API base — we refuse to guess.
@@ -130,3 +137,20 @@ gig_seeker:
     reply_email: "techsquaredllc42071@gmail.com"  # set 2026-09-24
     postal_address: "1706 Brooklyn Dr A, Murray, KY 42071"  # confirmed by Aaron 2026-09-24
     base_price_usd: 25.0
+
+# --- outbound email (for send_pitch) ---
+# Credentials come ONLY from the environment — never commit them here.
+# In GitHub Actions they are repo secrets passed through by the workflow;
+# absent secrets = send_pitch() reports "not configured" and sends nothing.
+outreach:
+  max_per_tick: 3            # max pitches sent in one tick
+  max_per_day: 10            # max pitches sent per 24h
+  resend_cooldown_days: 7    # never re-pitch the same domain within this window
+  # Option A — SMTP (e.g. a Gmail app password for the sender address):
+  #   OUTREACH_SMTP_HOST=smtp.gmail.com
+  #   OUTREACH_SMTP_PORT=587
+  #   OUTREACH_SMTP_USER=techsquaredllc42071@gmail.com
+  #   OUTREACH_SMTP_PASS=<app password: Google Account -> Security -> 2-Step Verification -> App passwords>
+  # Option B — Resend API (https://resend.com):
+  #   RESEND_API_KEY=re_...
+  # If both are set, Resend is used.
