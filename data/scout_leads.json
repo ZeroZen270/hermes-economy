@@ -79,7 +79,10 @@
       "pay_range": "$15-50/hr",
       "friction": "Moderate vetting/assessments; newer platform",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Platform requires human application, onboarding, and assessments; prep work complete, awaiting Aaron login/KYC.",
+      "worked_ts": 1790254774.315047,
+      "worked_tick": 46
     },
     {
       "platform": "Braintrust",
