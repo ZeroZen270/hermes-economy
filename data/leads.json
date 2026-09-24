@@ -1,22 +1,6 @@
 {
-  "generated_ts": 1790274844.0733328,
+  "generated_ts": 1790275183.923292,
   "leads": [
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 6.18,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790274795.0794439315795898437500",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790274792.1711102,
-      "emails": []
-    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -25,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.22,
+        "latency_s": 0.38,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790274752.251252,
+      "checked_ts": 1790275088.986558,
       "emails": []
     },
     {
@@ -41,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.41,
+        "latency_s": 0.39,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790274758.6525168,
+      "checked_ts": 1790275097.8056128,
       "emails": []
     },
     {
@@ -57,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.66,
+        "latency_s": 0.56,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790274765.5756276,
+      "checked_ts": 1790275104.0907078,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -80,7 +64,7 @@
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790274767.455219,
+      "checked_ts": 1790275105.7677093,
       "emails": []
     }
   ]
