@@ -74,6 +74,16 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
         lines.append(f"Bounty board opportunities ({len(opps)} new):")
         for o in opps[:10]:
             lines.append(f"  - [{o['board']}] {o['title']} — ${o['reward_usd']:.2f} {o['url']}")
+    # Keep sight of open listings already seen in earlier ticks, so "no new"
+    # is never mistaken for "no bounties".
+    open_all = _read_json(data / "open_bounties.json", "bounties")
+    fresh_ids = {f"{o.get('board')}:{o.get('url')}" for o in opps}
+    still_open = [o for o in open_all
+                  if f"{o.get('board')}:{o.get('url')}" not in fresh_ids]
+    if still_open:
+        lines.append(f"Still open from earlier scans ({len(still_open)}):")
+        for o in still_open[:8]:
+            lines.append(f"  - [{o['board']}] {o['title']} — ${o['reward_usd']:.2f} {o['url']}")
     if leads:
         lines.append(f"Prospected leads ({len(leads)} with real issues):")
         for ld in leads[:10]:
