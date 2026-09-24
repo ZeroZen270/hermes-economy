@@ -93,13 +93,35 @@ gig_seeker:
     # - type: clawtasks
     #   api_base: "https://..."   # from their docs
   # Seed domains for the prospector to audit (the agent can also add its own
-  # discoveries at runtime via audit_leads()).
-  prospect_domains: []
+  # discoveries at runtime via audit_leads()). Seeded 2026-09-24: real
+  # home-service businesses in/around Murray, KY (plumbing, electrical, HVAC,
+  # roofing, remodeling) — trades where a broken/slow/invisible-mobile site
+  # is a measurable, pitchable problem. The seeker re-audits these every tick
+  # and only keeps domains with real issues in data/leads.json.
+  prospect_domains:
+    - kentpriceplumbing.com       # Kent Price Plumbing, Murray KY
+    - bluegrasscompleteplumbing.com  # Bluegrass Complete Plumbing, Murray KY
+    - herbertplumbing.com         # Herbert Plumbing, Murray KY
+    - gecmurray.com               # Gallimore Electrical, Murray KY
+    - hillelectric.com            # Hill Electric, Murray KY
+    - candchvac.com               # C & C Heating & Cooling, Murray KY
+    - thorntonheatingandair.com   # Thornton Heating & Air, Murray KY
+    - vancehvac.com               # Jamie Vance Heating & Air, Murray KY
+    - mcbeehvac.com               # Jim McBee Heating & Air, Murray KY
+    - woodallcompanies.com        # Woodall Roofing & Exteriors, Murray KY
+    - sgcroofing.com              # SGC Roofing, Murray KY
+    - exceptionalroofing.com      # Exceptional Roofing, Murray KY
+    - mccuistonroofing.com        # McCuiston Roofing, Murray KY
+    - swiftroofing.net            # Swift Roofing, Murray KY
+    - revolutionroofingky.com     # Revolution Roofing, Murray KY
+    - fit-roofing.com             # Fit Roofing, Murray KY
+    - dtcontractingky.com         # DT Contracting, Murray KY
+    - kentuckylakeremodeling.com  # Kentucky Lake Remodeling, Murray KY
   # Sender identity for pitches — REQUIRED before any outreach (CAN-SPAM).
   sender:
     agent_name: "Hermes"
     operator_name: "Aaron"
     business_name: "Technology Squared LLC"
-    reply_email: ""        # set before outreach
-    postal_address: ""     # set before outreach
+    reply_email: "techsquaredllc42071@gmail.com"  # set 2026-09-24
+    postal_address: ""        # set before outreach — needs Aaron's confirmed mailing address
     base_price_usd: 25.0
