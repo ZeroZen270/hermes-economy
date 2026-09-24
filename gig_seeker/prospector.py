@@ -27,6 +27,52 @@ META_DESC_RE = re.compile(
     r'<meta[^>]+name=["\']description["\'][^>]*>', re.I)
 VIEWPORT_RE = re.compile(
     r'<meta[^>]+name=["\']viewport["\'][^>]*>', re.I)
+MAILTO_RE = re.compile(r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', re.I)
+EMAIL_RE = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')
+
+# Addresses we never treat as outreach targets.
+EMAIL_BLOCKLIST_EXACT = {"techsquaredllc42071@gmail.com"}  # our own sender
+EMAIL_BLOCKLIST_SUBSTR = ("noreply", "no-reply", "donotreply", "do-not-reply",
+                          "example.com", "example.org", "example.net",
+                          "test.com", ".png", ".jpg", ".jpeg",
+                          ".gif", ".webp", ".svg", "sentry", "schema.org",
+                          "w3.org")
+# Likely contact pages worth one polite fetch each.
+CONTACT_PATHS = ("/contact", "/contact-us", "/contact.html",
+                 "/about/contact-us", "/about-us", "/about")
+UA = {"User-Agent": "HermesSiteAudit/1.0"}
+
+
+def _clean_email(raw: str) -> str | None:
+    e = raw.strip().strip(".,;:!?\"'()[]<>").lower()
+    if not EMAIL_RE.fullmatch(e):
+        return None
+    if e in EMAIL_BLOCKLIST_EXACT:
+        return None
+    if any(b in e for b in EMAIL_BLOCKLIST_SUBSTR):
+        return None
+    return e
+
+
+def extract_emails(html: str, domain: str) -> list[str]:
+    """Pull candidate outreach emails from page HTML.
+
+    mailto: links first (explicit contact intent), then plain-text matches.
+    Same-domain addresses rank first — they're the most likely legitimate
+    business inboxes. Returns at most 5, deduplicated."""
+    found: list[str] = []
+    for raw in MAILTO_RE.findall(html):
+        e = _clean_email(raw.split("?")[0])
+        if e and e not in found:
+            found.append(e)
+    text = re.sub(r"<[^>]+>", " ", html)
+    for raw in EMAIL_RE.findall(text):
+        e = _clean_email(raw)
+        if e and e not in found:
+            found.append(e)
+    same = [e for e in found if e.endswith("@" + domain)]
+    other = [e for e in found if not e.endswith("@" + domain)]
+    return (same + other)[:5]
 
 
 @dataclass
@@ -37,6 +83,7 @@ class Lead:
     notes: dict = field(default_factory=dict)
     score: int = 0
     checked_ts: float = field(default_factory=time.time)
+    emails: list[str] = field(default_factory=list)  # public contact emails found on-site
 
     def pitch_angle(self) -> str:
         if not self.issues:
@@ -73,7 +120,7 @@ def audit_domain(domain: str, timeout: int = 12) -> Lead:
     t0 = time.time()
     try:
         r = requests.get(f"https://{domain}", timeout=timeout, allow_redirects=True,
-                         headers={"User-Agent": "HermesSiteAudit/1.0"})
+                         headers=UA)
         elapsed = time.time() - t0
         lead.notes["status"] = r.status_code
         lead.notes["latency_s"] = round(elapsed, 2)
@@ -89,6 +136,23 @@ def audit_domain(domain: str, timeout: int = 12) -> Lead:
             lead.issues.append("no_meta_description")
         if not VIEWPORT_RE.search(html):
             lead.issues.append("not_mobile_friendly")
+        lead.emails = extract_emails(html, domain)
+        # One polite fetch per likely contact page — businesses often publish
+        # an email there even when the homepage doesn't.
+        if not lead.emails:
+            base = f"{urlparse(r.url).scheme}://{urlparse(r.url).hostname}"
+            for path in CONTACT_PATHS:
+                try:
+                    cr = requests.get(base + path, timeout=timeout,
+                                      allow_redirects=True, headers=UA)
+                    time.sleep(0.5)
+                    if cr.status_code == 200 and "text/html" in cr.headers.get("Content-Type", ""):
+                        lead.emails = extract_emails(cr.text[:200_000], domain)
+                        if lead.emails:
+                            lead.notes["email_source"] = path
+                            break
+                except Exception:
+                    continue
         days = _cert_days_left(urlparse(r.url).hostname or domain)
         if days is not None:
             lead.notes["cert_days_left"] = days
@@ -98,7 +162,7 @@ def audit_domain(domain: str, timeout: int = 12) -> Lead:
         # Try plain HTTP to distinguish "no HTTPS" from "dead site".
         try:
             r = requests.get(f"http://{domain}", timeout=timeout,
-                             headers={"User-Agent": "HermesSiteAudit/1.0"})
+                             headers=UA)
             lead.issues.append("no_https")
             lead.notes["http_status"] = r.status_code
             lead.url = f"http://{domain}"

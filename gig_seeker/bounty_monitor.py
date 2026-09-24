@@ -222,11 +222,15 @@ def scan(boards: list[Board], out_path: Path, seen_path: Path,
     if seen_path.exists():
         seen = set(json.loads(seen_path.read_text()))
     fresh: list[dict] = []
+    seen_ids: set[str] = set()  # dedupe the same listing across boards
     for board in boards:
         try:
             for opp in board.fetch_open():
                 if opp.reward_usd < min_reward_usd:
                     continue
+                if opp.id in seen_ids:
+                    continue
+                seen_ids.add(opp.id)
                 key = f"{opp.board}:{opp.id}"
                 if key not in seen:
                     seen.add(key)

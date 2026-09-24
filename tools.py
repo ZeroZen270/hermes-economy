@@ -154,8 +154,18 @@ def draft_pitch(ctx: ToolContext, lead_domain: str = "",
     drafts.mkdir(parents=True, exist_ok=True)
     stamp = time.strftime("%Y%m%dT%H%M%S")
     path = drafts / f"draft_{stamp}_{lead_domain}.md"
+    emails = lead.get("emails") or []
+    if emails:
+        routing = (f"To: {emails[0]}\n"
+                   f"Send-ready: YES — public contact email found on their site"
+                   + (f" ({lead.get('notes', {}).get('email_source', 'homepage')})" if lead.get("notes", {}).get("email_source") else " (homepage)")
+                   + (f"\nAlso found: {', '.join(emails[1:])}" if len(emails) > 1 else ""))
+    else:
+        routing = ("To: [no public email found — use their contact form or manual lookup]\n"
+                   "Send-ready: NO")
     path.write_text(f"# PITCH DRAFT — NOT SENT (tick {ctx.tick})\n"
                     f"Lead: {lead_domain} (score {lead.get('score')})\n"
+                    f"{routing}\n"
                     f"Service: {service} @ ${price_usd:.2f}\n\n{body}\n")
     return (f"Draft saved to {path.name} — NOT sent. It needs Aaron's "
             f"explicit approval before any outreach.")
