@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790243712.044506,
+  "generated_ts": 1790243968.7460454,
   "leads": [
     {
       "domain": "kentpriceplumbing.com",
@@ -10,28 +10,12 @@
       ],
       "notes": {
         "status": 404,
-        "latency_s": 0.14,
+        "latency_s": 0.08,
         "final_url": "https://kentpriceplumbing.com/",
         "cert_days_left": 36
       },
       "score": 4,
-      "checked_ts": 1790243622.3238373,
-      "emails": []
-    },
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 4.12,
-        "final_url": "https://swiftroofing.net/",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790243668.0215898,
+      "checked_ts": 1790243878.3525012,
       "emails": []
     },
     {
@@ -42,12 +26,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.43,
+        "latency_s": 0.51,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790243631.4429538,
+      "checked_ts": 1790243887.4168808,
       "emails": []
     },
     {
@@ -58,12 +42,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.23,
+        "latency_s": 0.21,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790243638.7035594,
+      "checked_ts": 1790243894.6558506,
       "emails": []
     },
     {
@@ -79,7 +63,7 @@
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790243643.965452,
+      "checked_ts": 1790243899.9009843,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -92,12 +76,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.24,
+        "latency_s": 0.5,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 55
       },
       "score": 2,
-      "checked_ts": 1790243645.3995898,
+      "checked_ts": 1790243901.4729962,
       "emails": []
     }
   ]
