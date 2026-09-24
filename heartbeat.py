@@ -91,6 +91,19 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
                          issues=ld["issues"]).pitch_angle()
             lines.append(f"  - {ld['domain']} (score {ld['score']}): {angle}")
         lines.append("Use draft_pitch() for honest outreach — only to leads with measured issues.")
+        auto_send = bool((cfg.get("gig_seeker") or {}).get("auto_send", False))
+        if auto_send:
+            lines.append(
+                "OUTREACH IS AUTHORIZED (owner-enabled auto_send): you may call "
+                "send_pitch() to actually SEND a drafted pitch — but ONLY for "
+                "send-ready leads (draft says 'Send-ready: YES', i.e. a public "
+                "contact email was found on their site). Prioritize send-ready "
+                "leads; keep drafting for the rest. Respect the tool's caps and "
+                "never re-pitch a domain inside its cooldown window.")
+        else:
+            lines.append(
+                "auto_send is OFF: drafts stay unsent for Aaron's review. "
+                "Keep drafting strong pitches; do not try to send.")
     if effects.get("market_stall"):
         lines.append("Your market stall is ACTIVE: advertise it in outreach.")
     lines.append("Recent ledger activity:")
@@ -316,3 +329,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
