@@ -524,6 +524,38 @@ def stage_bounty_entry(ctx: ToolContext, bounty_url: str = "",
     path.write_text(json.dumps(entry, indent=2))
     return (f"Staged bounty entry -> {path.name} (status: staged). It will be "
             "submitted through an interactive session outside the tick.")
+
+@tool("stage_pitch",
+      "Stage a pitch email Hermes cannot send itself (no email transport) so "
+      "Odin sends it. Saves to data/outbox/submissions/ with kind=pitch.",
+      args='{"to": "office@example.com", "subject": "Quick win for ...", '
+           '"body": "Hi ...", "lead_domain": "example.com", '
+           '"note": "send-ready lead, public contact email"}')
+def stage_pitch(ctx: ToolContext, to: str = "", subject: str = "",
+                body: str = "", lead_domain: str = "",
+                note: str = "") -> str:
+    to = (to or "").strip()
+    subject = (subject or "").strip()
+    body = (body or "").strip()
+    if not re.match(r"^[^@\s]+@[^@\s]+\.[^@\s]+$", to):
+        return "TOOL ERROR: to must be a valid email address."
+    if not subject:
+        return "TOOL ERROR: subject is empty."
+    if not body:
+        return "TOOL ERROR: body is empty."
+    sub_dir = ctx.data / "outbox" / "submissions"
+    sub_dir.mkdir(parents=True, exist_ok=True)
+    stamp = time.strftime("%Y%m%dT%H%M%S")
+    slug = re.sub(r"[^a-z0-9]+", "-",
+                  (lead_domain or to).lower()).strip("-")[:40]
+    entry = {"ts": time.time(), "tick": ctx.tick, "status": "staged",
+             "kind": "pitch", "to": to, "subject": subject, "body": body,
+             "lead_domain": (lead_domain or "").strip(),
+             "notes": (note or "").strip()[:1000]}
+    path = sub_dir / f"submission_{stamp}_pitch_{slug or 'lead'}.json"
+    path.write_text(json.dumps(entry, indent=2))
+    return (f"Staged pitch -> {path.name} (status: staged). Odin will send "
+            f"it to {to} outside the tick.")
 # ------------------------------------------------------- scouted channels
 
 @tool("scout_lead_update",
