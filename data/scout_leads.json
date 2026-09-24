@@ -1,0 +1,103 @@
+{
+  "leads": [
+    {
+      "platform": "Mercor",
+      "url": "https://mercor.com",
+      "how_to_earn": "Interview-vetted engineering marketplace matching software engineers with AI labs; take paid contract coding/AI projects",
+      "pay_range": "$50-100+/hr for software engineers",
+      "friction": "Technical interview vetting; pays via Deel/bank; no upfront fees",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Algora",
+      "url": "https://algora.io",
+      "how_to_earn": "Claim open-source development bounties on GitHub issues; paid per completed bounty",
+      "pay_range": "$50-1,000+ per bounty",
+      "friction": "Low: sign up, link GitHub, claim bounties; payouts via Stripe",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Respondent.io",
+      "url": "https://respondent.io",
+      "how_to_earn": "Paid expert interviews/research studies leveraging IT/systems/OSINT expertise",
+      "pay_range": "$100-250/hr per study",
+      "friction": "Screening surveys per study; sporadic invites; pays PayPal",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Outlier AI",
+      "url": "https://outlier.ai",
+      "how_to_earn": "Train/evaluate AI models on coding tasks as a subject-matter expert",
+      "pay_range": "$30-60+/hr",
+      "friction": "Expert vetting before gigs; check current project availability (Scale contract volatility 2026); pays PayPal/bank",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://intigriti.com",
+      "how_to_earn": "Bug-bounty hunting on company programs (EU platform, complements HackerOne)",
+      "pay_range": "$50-5,000+ per valid bug",
+      "friction": "ID verification for payouts; pays to bank; skill-gated by program scope",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Topcoder",
+      "url": "https://topcoder.com",
+      "how_to_earn": "Coding competitions, development gigs, and data-science challenges",
+      "pay_range": "$50-2,000+ per challenge",
+      "friction": "Skill-based entry per challenge; pays via Payoneer/bank",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Alignerr",
+      "url": "https://alignerr.com",
+      "how_to_earn": "AI trainer gigs (code evaluation, RLHF data) from Labelbox",
+      "pay_range": "$15-50/hr",
+      "friction": "Moderate vetting/assessments; newer platform",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Braintrust",
+      "url": "https://braintrust.com",
+      "how_to_earn": "Fee-free freelance talent network: vetted dev contracts with direct clients",
+      "pay_range": "Typical freelance dev rates ($50-150/hr)",
+      "friction": "Application + screening; pays USD",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Mindrift",
+      "url": "https://mindrift.ai",
+      "how_to_earn": "AI training projects (coding/writing/STEM tasks) matched to expertise",
+      "pay_range": "$15-30/hr entry, $60-100+/hr for experts",
+      "friction": "Qualification per project; pays to bank",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "Prolific",
+      "url": "https://prolific.com",
+      "how_to_earn": "Paid academic/research studies and surveys",
+      "pay_range": "Minimum ~GBP 9/hr equivalent, often higher per study",
+      "friction": "Low: screening profile; pays PayPal",
+      "found_ts": 1790251177,
+      "status": "new"
+    },
+    {
+      "platform": "NLnet NGI",
+      "url": "https://nlnet.nl",
+      "how_to_earn": "Grants for open-source internet technology (could cover TICC/Hermes open-source work)",
+      "pay_range": "EUR 5k-50k grants",
+      "friction": "High: written application, slow review cycles; not gig income",
+      "found_ts": 1790251177,
+      "status": "new"
+    }
+  ]
+}
