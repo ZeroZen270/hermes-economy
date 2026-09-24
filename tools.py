@@ -7,9 +7,13 @@ ReAct loop: the model emits ```tool fenced JSON blocks, heartbeat executes
 them here, feeds the results back.
 
 Safety rules, enforced in code not vibes:
-  - NOTHING sends email, messages, or money on its own. draft_pitch() writes
-    a draft for Aaron's review. marketplace_buy() stages a purchase REQUEST
-    for Aaron's approval. request_allowance() files a request Aaron grants.
+  - draft_pitch() writes a draft for review. send_pitch() SENDS a draft by
+    email, but ONLY when the owner enabled gig_seeker.auto_send, only to
+    send-ready leads (public email found on their site), and only within
+    per-tick/per-day caps and a per-domain cooldown. Transport credentials
+    come from the environment; absent credentials = sending disabled.
+  - marketplace_buy() stages a purchase REQUEST for Aaron's approval.
+    request_allowance() files a request Aaron grants.
   - Tools only read/write inside the configured data_dir.
 """
 from __future__ import annotations
@@ -306,3 +310,217 @@ def web_fetch(ctx: ToolContext, url: str = "") -> str:
     if len(text) > 6000:
         text = text[:6000] + "… [truncated]"
     return text or "Page had no readable text."
+
+
+
+# ---------------------------------------------------------------- outbound outreach
+#
+# Owner-enabled 2026-09-24: Hermes may SEND pitch emails itself to leads with
+# a public contact email found on their site ("Send-ready: YES" drafts).
+# Safety rails, enforced in code:
+#   - auto_send must be true in config (gig_seeker.auto_send)
+#   - only drafts written by draft_pitch() (draft_*.md in outbox/drafts)
+#   - only send-ready drafts (public email found on the lead's site)
+#   - per-tick cap, per-day cap, per-domain cooldown (configurable)
+#   - transport credentials come ONLY from the environment
+#     (OUTREACH_SMTP_* or RESEND_API_KEY as repo secrets); absent = disabled
+#   - every send is logged to data/outbox/sent/ and the draft is marked _SENT
+import os as _os
+import smtplib as _smtplib
+from email.message import EmailMessage as _EmailMessage
+
+_EMAIL_RE = re.compile(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+
+
+def _outreach_limits(ctx: ToolContext) -> dict:
+    gs = ctx.cfg.get("gig_seeker") or {}
+    oc = ctx.cfg.get("outreach") or {}
+    return {
+        "auto_send": bool(gs.get("auto_send", False)),
+        "max_per_tick": int(oc.get("max_per_tick", 3)),
+        "max_per_day": int(oc.get("max_per_day", 10)),
+        "cooldown_days": int(oc.get("resend_cooldown_days", 7)),
+    }
+
+
+def _smtp_creds() -> dict:
+    return {
+        "host": _os.environ.get("OUTREACH_SMTP_HOST", "").strip(),
+        "port": int(_os.environ.get("OUTREACH_SMTP_PORT", "587") or 587),
+        "user": _os.environ.get("OUTREACH_SMTP_USER", "").strip(),
+        "password": _os.environ.get("OUTREACH_SMTP_PASS", ""),
+    }
+
+
+def _resend_key() -> str:
+    return _os.environ.get("RESEND_API_KEY", "").strip()
+
+
+def _sent_records(data: Path) -> list:
+    recs = []
+    sent_dir = data / "outbox" / "sent"
+    if sent_dir.is_dir():
+        for p in sorted(sent_dir.glob("sent_*.json")):
+            try:
+                recs.append(json.loads(p.read_text()))
+            except Exception:
+                continue
+    return recs
+
+
+def _parse_draft(text: str) -> dict | None:
+    """Extract domain, To address, send-ready flag, subject, body from a draft."""
+    m_dom = re.search(r"^Lead:\s*(\S+)", text, re.M)
+    m_to = re.search(r"^To:\s*(\S+)", text, re.M)
+    m_subj = re.search(r"^Subject:\s*(.+?)\s*$", text, re.M)
+    if not (m_dom and m_to and m_subj):
+        return None
+    return {
+        "domain": m_dom.group(1).strip().lower(),
+        "to": m_to.group(1).strip(),
+        "send_ready": "Send-ready: YES" in text,
+        "subject": m_subj.group(1).strip(),
+        "body": text[m_subj.end():].strip(),
+    }
+
+
+def _send_via_smtp(creds: dict, from_addr: str, to_addr: str,
+                   subject: str, body: str) -> None:
+    msg = _EmailMessage()
+    msg["From"] = from_addr
+    msg["To"] = to_addr
+    msg["Subject"] = subject
+    msg.set_content(body)
+    with _smtplib.SMTP(creds["host"], creds["port"], timeout=30) as s:
+        s.starttls()
+        s.login(creds["user"], creds["password"])
+        s.send_message(msg)
+
+
+def _send_via_resend(api_key: str, from_addr: str, to_addr: str,
+                     subject: str, body: str) -> None:
+    payload = json.dumps({
+        "from": from_addr, "to": [to_addr],
+        "subject": subject, "text": body,
+    }).encode()
+    req = urllib.request.Request(
+        "https://api.resend.com/emails", data=payload,
+        headers={"Authorization": f"Bearer {api_key}",
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        resp = json.loads(r.read().decode("utf-8", "replace"))
+    if not resp.get("id"):
+        raise RuntimeError(f"Resend did not return an email id: {resp}")
+
+
+@tool("send_pitch",
+      "Send a saved pitch draft by email. Requires owner-enabled auto_send "
+      "and configured outreach email (OUTREACH_SMTP_* or RESEND_API_KEY). "
+      "Only send-ready drafts (public email found on lead's site). Enforces "
+      "per-tick/daily caps and a per-domain cooldown. Every send is logged.",
+      args='{"draft_name": "draft_20260924T085751_candchvac.com.md"}')
+def send_pitch(ctx: ToolContext, draft_name: str = "") -> str:
+    lim = _outreach_limits(ctx)
+    if not lim["auto_send"]:
+        return ("TOOL ERROR: auto_send is OFF — pitches stay as drafts for "
+                "Aaron's review. draft_pitch() only.")
+    base = Path(draft_name or "").name
+    if not base.startswith("draft_") or not base.endswith(".md"):
+        return ("TOOL ERROR: draft_name must be a draft_*.md file written by "
+                "draft_pitch().")
+    if "_SENT" in base:
+        return f"TOOL ERROR: {base} was already sent — no duplicates."
+    draft_path = ctx.data / "outbox" / "drafts" / base
+    if not draft_path.is_file():
+        return f"TOOL ERROR: draft not found: {base}. Run draft_pitch() first."
+    parsed = _parse_draft(draft_path.read_text())
+    if not parsed:
+        return f"TOOL ERROR: {base} is not a parseable pitch draft."
+    if not parsed["send_ready"]:
+        return (f"TOOL ERROR: {base} is not send-ready — no public contact "
+                "email was found on that lead's site. Pick a send-ready lead.")
+    if not _EMAIL_RE.match(parsed["to"]):
+        return f"TOOL ERROR: draft has no valid To address."
+    if not parsed["subject"] or not parsed["body"]:
+        return f"TOOL ERROR: draft has empty subject/body — refusing to send."
+
+    now = time.time()
+    recs = _sent_records(ctx.data)
+    if sum(1 for r in recs if now - r.get("ts", 0) < 86400) >= lim["max_per_day"]:
+        return f"TOOL ERROR: daily send cap reached ({lim['max_per_day']}/day)."
+    if sum(1 for r in recs if r.get("tick") == ctx.tick) >= lim["max_per_tick"]:
+        return f"TOOL ERROR: per-tick send cap reached ({lim['max_per_tick']})."
+    cool = lim["cooldown_days"] * 86400
+    if any(r.get("domain") == parsed["domain"] and now - r.get("ts", 0) < cool
+           for r in recs):
+        return (f"TOOL ERROR: {parsed['domain']} was pitched within the last "
+                f"{lim['cooldown_days']} days — cooldown active.")
+
+    sender = (ctx.cfg.get("gig_seeker") or {}).get("sender") or {}
+    from_addr = (sender.get("reply_email") or "").strip()
+    if not from_addr or not (sender.get("postal_address") or "").strip():
+        return ("TOOL ERROR: sender identity incomplete in config "
+                "(reply_email + postal_address required, CAN-SPAM).")
+    creds = _smtp_creds()
+    api_key = _resend_key()
+    smtp_ok = bool(creds["host"] and creds["user"] and creds["password"])
+    if not (smtp_ok or api_key):
+        return ("TOOL ERROR: outreach email not configured — set "
+                "OUTREACH_SMTP_HOST/PORT/USER/PASS or RESEND_API_KEY as repo "
+                "secrets. Nothing was sent.")
+
+    try:
+        if api_key:
+            _send_via_resend(api_key, from_addr, parsed["to"],
+                             parsed["subject"], parsed["body"])
+            via = "resend"
+        else:
+            _send_via_smtp(creds, from_addr, parsed["to"],
+                           parsed["subject"], parsed["body"])
+            via = "smtp"
+    except Exception as e:
+        return f"TOOL ERROR: send failed ({e}). Nothing was marked sent."
+
+    sent_dir = ctx.data / "outbox" / "sent"
+    sent_dir.mkdir(parents=True, exist_ok=True)
+    stamp = time.strftime("%Y%m%dT%H%M%S")
+    rec = {"ts": now, "tick": ctx.tick, "draft": base,
+           "domain": parsed["domain"], "to": parsed["to"],
+           "subject": parsed["subject"], "via": via}
+    (sent_dir / f"sent_{stamp}_{parsed['domain']}.json").write_text(
+        json.dumps(rec, indent=2))
+    draft_path.rename(draft_path.with_name(base[:-3] + "_SENT.md"))
+    return (f"Sent pitch to {parsed['to']} ({parsed['domain']}) via {via} — "
+            f"subject: {parsed['subject']}. Logged to outbox/sent/. "
+            f"Do not re-pitch {parsed['domain']} for {lim['cooldown_days']} days.")
+
+
+@tool("stage_bounty_entry",
+      "Stage a finished bounty submission package for review/submission. "
+      "Saves deliverable links + writeup to data/outbox/submissions/. Does "
+      "NOT submit — bounty platforms need an interactive session, so a staged "
+      "entry is picked up for submission outside the tick.",
+      args='{"bounty_url": "https://superteam.fun/...", "title": "Bounty title", '
+           '"deliverable": "https://link-to-your-work", "payout_address": "wallet or email", '
+           '"notes": "what was delivered"}')
+def stage_bounty_entry(ctx: ToolContext, bounty_url: str = "",
+                       title: str = "", deliverable: str = "",
+                       payout_address: str = "", notes: str = "") -> str:
+    bounty_url = (bounty_url or "").strip()
+    deliverable = (deliverable or "").strip()
+    if not bounty_url.startswith(("http://", "https://")):
+        return "TOOL ERROR: bounty_url must be an http(s) URL."
+    if not deliverable.startswith(("http://", "https://")):
+        return "TOOL ERROR: deliverable must be an http(s) link to the work."
+    sub_dir = ctx.data / "outbox" / "submissions"
+    sub_dir.mkdir(parents=True, exist_ok=True)
+    stamp = time.strftime("%Y%m%dT%H%M%S")
+    slug = re.sub(r"[^a-z0-9]+", "-", (title or "entry").lower()).strip("-")[:40]
+    entry = {"ts": time.time(), "tick": ctx.tick, "status": "staged",
+             "bounty_url": bounty_url, "title": title.strip(),
+             "deliverable": deliverable, "payout_address": payout_address.strip(),
+             "notes": (notes or "").strip()[:2000]}
+    path = sub_dir / f"submission_{stamp}_{slug or 'entry'}.json"
+    path.write_text(json.dumps(entry, indent=2))
+    return (f"Staged bounty entry -> {path.name} (status: staged). It will be "
+            "submitted through an interactive session outside the tick.")
