@@ -1,22 +1,6 @@
 {
-  "generated_ts": 1790256951.0337439,
+  "generated_ts": 1790257462.304584,
   "leads": [
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 6.2,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790256897.9093239307403564453125",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790256894.219267,
-      "emails": []
-    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -25,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.6,
+        "latency_s": 0.3,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790256851.3719826,
+      "checked_ts": 1790257376.3775547,
       "emails": []
     },
     {
@@ -41,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.37,
+        "latency_s": 0.33,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790256860.6135337,
+      "checked_ts": 1790257382.9890068,
       "emails": []
     },
     {
@@ -57,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.61,
+        "latency_s": 0.58,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790256866.9617434,
+      "checked_ts": 1790257389.0966127,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -75,12 +59,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.63,
+        "latency_s": 0.69,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790256868.6887536,
+      "checked_ts": 1790257390.8774884,
       "emails": []
     }
   ]
