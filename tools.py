@@ -524,3 +524,32 @@ def stage_bounty_entry(ctx: ToolContext, bounty_url: str = "",
     path.write_text(json.dumps(entry, indent=2))
     return (f"Staged bounty entry -> {path.name} (status: staged). It will be "
             "submitted through an interactive session outside the tick.")
+# ------------------------------------------------------- scouted channels
+
+@tool("scout_lead_update",
+      "Update the status of a scouted revenue channel from data/scout_leads.json.",
+      args='{"platform": "ExampleGigs", "status": "pursued|blocked|needs_aaron", "note": "what you did or need"}')
+def scout_lead_update(ctx: ToolContext, platform: str = "",
+                      status: str = "", note: str = "") -> str:
+    platform = (platform or "").strip()
+    status = (status or "").strip().lower()
+    if not platform:
+        return "TOOL ERROR: platform is empty."
+    if status not in ("pursued", "blocked", "needs_aaron"):
+        return ("TOOL ERROR: status must be one of pursued | blocked | "
+                "needs_aaron.")
+    path = ctx.data / "scout_leads.json"
+    try:
+        leads = json.loads(path.read_text()).get("leads", [])
+    except Exception:
+        return "TOOL ERROR: data/scout_leads.json not found or unreadable."
+    for lead in leads:
+        if str(lead.get("platform", "")).lower() == platform.lower():
+            lead["status"] = status
+            lead["agent_note"] = (note or "").strip()[:1000]
+            lead["worked_ts"] = time.time()
+            lead["worked_tick"] = ctx.tick
+            path.write_text(json.dumps({"leads": leads}, indent=2))
+            return f"{lead.get('platform')}: status -> {status}."
+    return (f"TOOL ERROR: no scout lead named '{platform}'. "
+            "Use the exact platform name from the prompt.")
