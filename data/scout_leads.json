@@ -7,7 +7,10 @@
       "pay_range": "$50-100+/hr for software engineers",
       "friction": "Technical interview vetting; pays via Deel/bank; no upfront fees",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Platform requires a technical interview, video/profile setup, and identity verification (KYC/Deel/bank) which Aaron must complete.",
+      "worked_ts": 1790253694.0241022,
+      "worked_tick": 43
     },
     {
       "platform": "Algora",
@@ -28,7 +31,10 @@
       "pay_range": "$100-250/hr per study",
       "friction": "Screening surveys per study; sporadic invites; pays PayPal",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human expert profile setup, screening surveys, and PayPal/bank details managed by Aaron.",
+      "worked_ts": 1790253749.5385938,
+      "worked_tick": 43
     },
     {
       "platform": "Outlier AI",
@@ -37,7 +43,10 @@
       "pay_range": "$30-60+/hr",
       "friction": "Expert vetting before gigs; check current project availability (Scale contract volatility 2026); pays PayPal/bank",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human vetting/coding assessments and identity verification by Aaron.",
+      "worked_ts": 1790253749.5391033,
+      "worked_tick": 43
     },
     {
       "platform": "Intigriti",
@@ -46,7 +55,10 @@
       "pay_range": "$50-5,000+ per valid bug",
       "friction": "ID verification for payouts; pays to bank; skill-gated by program scope",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires ID verification and bank setup managed by Aaron.",
+      "worked_ts": 1790253788.8212712,
+      "worked_tick": 43
     },
     {
       "platform": "Topcoder",
@@ -55,7 +67,10 @@
       "pay_range": "$50-2,000+ per challenge",
       "friction": "Skill-based entry per challenge; pays via Payoneer/bank",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires profile creation and Payoneer/bank integration by Aaron.",
+      "worked_ts": 1790253788.8217342,
+      "worked_tick": 43
     },
     {
       "platform": "Alignerr",
