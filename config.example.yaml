@@ -85,13 +85,18 @@ gig_seeker:
   # '0xwork' needs their CLI installed + the exact list command from their docs.
   # 'clawtasks' stays disabled until you paste their verified API base — we refuse to guess.
   boards:
-    - type: feed
-      name: example-board
-      url: https://example.com/bounties.json
+    # Superteam Earn — public keyless API, verified live 2026-09-24.
+    # Solana-ecosystem bounties/projects; pays in USDG/USDC.
+    - type: superteam
+      category: Development
+    - type: superteam
+      category: Content
     # - type: 0xwork
     #   list_command: "0xwork tasks list --json"
     # - type: clawtasks
     #   api_base: "https://..."   # from their docs
+  # NOTE: Gitcoin's old per-task bounty API is dead (sunset 2024-25);
+  # do not re-add a gitcoin board without verifying a live endpoint.
   # Seed domains for the prospector to audit (the agent can also add its own
   # discoveries at runtime via audit_leads()). Seeded 2026-09-24: real
   # home-service businesses in/around Murray, KY (plumbing, electrical, HVAC,

@@ -150,6 +150,56 @@ class ClawTasksBoard(Board):
             "set the verified listing path in config; refusing to guess endpoints")
 
 
+class SuperteamBoard(Board):
+    """Superteam Earn (superteam.fun) — Solana-ecosystem bounties/projects.
+
+    Uses the public keyless listings endpoint, verified live 2026-09-24:
+      GET https://superteam.fun/api/listings?context=home&tab=all&category=<cat>
+    Returns OPEN listings with id/title/rewardAmount/token/deadline/slug/
+    sponsor/agentAccess. Listing pages live at
+    https://superteam.fun/earn/listing/<slug>/ (verified 200).
+
+    NOTE: this endpoint is not filtered by agent eligibility — agentAccess
+    is surfaced in skills so the agent (or Aaron) can pick accordingly.
+    The agent-only API (api/agents/...) needs a registered agent API key;
+    wire it only after Aaron approves the registration."""
+    name = "superteam"
+
+    def __init__(self, category: str = "Development"):
+        self.category = category
+        self.name = f"superteam-{category.lower()}"
+
+    def fetch_open(self) -> list[Opportunity]:
+        url = ("https://superteam.fun/api/listings?context=home&tab=all"
+               f"&category={self.category}")
+        req = urllib.request.Request(
+            url, headers={"User-Agent": "HermesBountyMonitor/1.0"})
+        with urllib.request.urlopen(req, timeout=25) as r:
+            data = json.loads(r.read().decode("utf-8", "replace"))
+        items = data if isinstance(data, list) else data.get("listings", [])
+        opps = []
+        for it in items:
+            if it.get("status") != "OPEN" or it.get("isWinnersAnnounced"):
+                continue
+            slug = it.get("slug") or ""
+            reward = it.get("rewardAmount") or 0
+            try:
+                reward = float(reward)
+            except (TypeError, ValueError):
+                reward = 0.0
+            opps.append(Opportunity(
+                board=self.name,
+                id=str(it.get("id", slug)),
+                title=str(it.get("title", "untitled"))[:160],
+                reward_usd=reward,
+                url=f"https://superteam.fun/earn/listing/{slug}/" if slug else "https://superteam.fun",
+                skills=[f"pays:{it.get('token', '?')}",
+                        f"access:{it.get('agentAccess', '?')}",
+                        f"type:{it.get('type', '?')}"],
+                posted_ts=time.time()))
+        return opps
+
+
 def load_boards(cfg: dict) -> list[Board]:
     boards: list[Board] = []
     for b in cfg.get("boards", []):
@@ -160,6 +210,8 @@ def load_boards(cfg: dict) -> list[Board]:
             boards.append(ZeroXWorkBoard(b.get("list_command")))
         elif t == "clawtasks":
             boards.append(ClawTasksBoard(b.get("api_base"), b.get("api_key")))
+        elif t == "superteam":
+            boards.append(SuperteamBoard(b.get("category", "Development")))
     return boards
 
 
