@@ -1,4 +1,187 @@
 {
-  "generated_ts": 1790233200.4753358,
-  "opportunities": []
+  "generated_ts": 1790240079.2385502,
+  "opportunities": [
+    {
+      "board": "superteam-development",
+      "id": "fc4526b4-8b27-4cee-92c7-ae0d9c662a0d",
+      "title": "Road to Colosseum Hackathon: Build your MVP",
+      "reward_usd": 8000.0,
+      "url": "https://superteam.fun/earn/listing/road-to-colosseum-hackathon-build-your-mvp/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.01395
+    },
+    {
+      "board": "superteam-development",
+      "id": "20399663-14c3-4d43-aa07-833c14459863",
+      "title": "Get a realistic dev roadmap for your project",
+      "reward_usd": 150.0,
+      "url": "https://superteam.fun/earn/listing/get-a-realistic-dev-roadmap-for-your-project/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.01396
+    },
+    {
+      "board": "superteam-development",
+      "id": "43f663e0-ef0b-40b4-89c9-b4e11375cff5",
+      "title": "Steve Agent Arena: Launch Your Agent & Win 500 USDC",
+      "reward_usd": 500.0,
+      "url": "https://superteam.fun/earn/listing/steve-agent-arena-launch-your-agent-and-win-500-usdc/",
+      "skills": [
+        "pays:USDC",
+        "access:AGENT_ALLOWED",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.0139632
+    },
+    {
+      "board": "superteam-development",
+      "id": "e741d54d-e551-4403-bf3d-dc3327b43c03",
+      "title": "Colosseum: Show Us What You Got",
+      "reward_usd": 1500.0,
+      "url": "https://superteam.fun/earn/listing/colosseum-show-us-what-got/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.0139654
+    },
+    {
+      "board": "superteam-development",
+      "id": "ad7dfc28-cb9b-4448-a111-426619506fe1",
+      "title": "Build and Demo a Mermail Agent Skill",
+      "reward_usd": 500.0,
+      "url": "https://superteam.fun/earn/listing/build-and-demo-a-mermail-agent-skill/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.0139673
+    },
+    {
+      "board": "superteam-development",
+      "id": "00360512-10ed-4910-97be-b68563a8efc6",
+      "title": "Blockchain Hack Krak\u00f3w - Submissions",
+      "reward_usd": 2000.0,
+      "url": "https://superteam.fun/earn/listing/blockchain-hack-krakow-submissions/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.0139697
+    },
+    {
+      "board": "superteam-development",
+      "id": "73dce3a4-26f5-4f69-8315-786483c59a89",
+      "title": "Blockchain Hack Warsaw - Submissions",
+      "reward_usd": 2000.0,
+      "url": "https://superteam.fun/earn/listing/blockchain-hack-warsaw-submissions/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240078.013972
+    },
+    {
+      "board": "superteam-content",
+      "id": "766eb23d-2ffe-4fe9-8f2a-17f476ff7003",
+      "title": "Create a Short Video Explainer for Hisa: $5000 up for grabs.",
+      "reward_usd": 5002.0,
+      "url": "https://superteam.fun/earn/listing/create-a-short-video-explainer-for-hisa-dollar5000-up-for-grabs/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381074
+    },
+    {
+      "board": "superteam-content",
+      "id": "b6fb5b64-9755-4e6d-8b86-1573f35e33a1",
+      "title": "NectarFi x Dominion Market",
+      "reward_usd": 1000.0,
+      "url": "https://superteam.fun/earn/listing/nectarfi-x-dominion-market/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381153
+    },
+    {
+      "board": "superteam-content",
+      "id": "d54bdf0d-a49f-4fbe-93f3-0f811ac3b869",
+      "title": "Anti Brain Drain Content Bounty - Colosseum Push",
+      "reward_usd": 500.0,
+      "url": "https://superteam.fun/earn/listing/anti-brain-drain-content-bounty-colosseum-push/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381182
+    },
+    {
+      "board": "superteam-content",
+      "id": "28be6272-6c81-4aab-b351-4da39390bf3c",
+      "title": "Create a post about Stealf",
+      "reward_usd": 500.0,
+      "url": "https://superteam.fun/earn/listing/stealf-bounty/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381217
+    },
+    {
+      "board": "superteam-content",
+      "id": "919bf401-8c2e-4f46-9e31-6cf1eb3d964b",
+      "title": "Solana Summit Canada Creator Challenge - part 2",
+      "reward_usd": 10000.0,
+      "url": "https://superteam.fun/earn/listing/solana-summit-canada-creator-challenge-part-2/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381234
+    },
+    {
+      "board": "superteam-content",
+      "id": "68837710-fc48-44f1-b92c-b709610fbdbb",
+      "title": "Create X Thread About Moony Tips With Flipcash",
+      "reward_usd": 300.0,
+      "url": "https://superteam.fun/earn/listing/moonyfoundationtipcards/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.2381253
+    },
+    {
+      "board": "superteam-content",
+      "id": "1f63114b-1bf0-4fbe-8db6-282f2bec10c5",
+      "title": "Introduce Web3 Projects to Segmento",
+      "reward_usd": 300.0,
+      "url": "https://superteam.fun/earn/listing/introduce-web3-projects-to-segmento/",
+      "skills": [
+        "pays:USDC",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790240079.238128
+    }
+  ]
 }

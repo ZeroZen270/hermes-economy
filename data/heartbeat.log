@@ -17,3 +17,6 @@
 2026-09-24 04:49:17 tick #3: agent invoked (balance now 14900)
 2026-09-24 07:00:00 heartbeat online (once)
 2026-09-24 07:01:07 tick #4: agent invoked (balance now 14850)
+2026-09-24 08:56:19 heartbeat online (once)
+2026-09-24 08:56:19 grant adjustment: operating balance 14850 -> 24850 credits
+2026-09-24 08:57:59 tick #5: agent invoked (balance now 24800)
