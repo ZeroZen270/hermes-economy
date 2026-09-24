@@ -131,6 +131,87 @@
       "agent_note": "Requires extensive written grant application. Needs Aaron.",
       "worked_ts": 1790255301.069552,
       "worked_tick": 47
+    },
+    {
+      "platform": "Micro1",
+      "url": "https://micro1.ai",
+      "how_to_earn": "AI-lab expert marketplace: coding evals, STEM reasoning, software-engineering tracks for frontier AI model training",
+      "pay_range": "$25-200+/hr role-dependent",
+      "friction": "AI video interview screening; project-based, no guaranteed hours; US OK; pays to wallet",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "YesWeHack",
+      "url": "https://www.yeswehack.com",
+      "how_to_earn": "Bug-bounty hunting on EU/EMEA corporate and public-sector programs (web, API, mobile)",
+      "pay_range": "Hundreds to thousands of dollars per valid bug",
+      "friction": "Free signup; ID verification typical for payouts; standard rails; lower competition than HackerOne",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "Immunefi",
+      "url": "https://immunefi.com",
+      "how_to_earn": "Web3 bug bounties on live DeFi protocols (stick to web/app scopes; smart-contract scopes later)",
+      "pay_range": "Median confirmed payout ~$2,000; big criticals much higher; paid in USDC/ETH",
+      "friction": "KYC on many programs; PoC required; needs crypto wallet; smart-contract work outside current skillset",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "Turing",
+      "url": "https://work.turing.com",
+      "how_to_earn": "AI-training data contributor: review/rate AI answers, code review, fact-checking",
+      "pay_range": "~$15/hr generalist AI-trainer roles; expert roles higher",
+      "friction": "Application + screening; pay opaque pre-screening; feast-or-famine projects",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "Synack Red Team",
+      "url": "https://www.synack.com/red-team",
+      "how_to_earn": "Vetted pentester doing mission-based engagements for enterprise clients",
+      "pay_range": "Mission-based (exact figures unverified; one researcher review notes duplicate-driven low effective pay)",
+      "friction": "High: 5-stage vetting (application, interview, skills test, background/ID check); not fast income",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "Appen / CrowdGen",
+      "url": "https://crowdgen.com",
+      "how_to_earn": "Search evaluation, transcription, image/text labeling projects",
+      "pay_range": "$8-25/hr per worker reports",
+      "friction": "Low signup bar per project; PayPal/Payoneer payouts biweekly-monthly; stagnant vs newer AI-training entrants",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "Gitcoin",
+      "url": "https://gitcoin.co",
+      "how_to_earn": "Open-source bounties, hackathons, grants rounds for devs (fits Python/automation skills)",
+      "pay_range": "$100 to several thousand per bounty, variable",
+      "friction": "Free; needs crypto wallet (ETH/L2); KYC for larger grant payouts; competitive",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "NordVPN affiliate",
+      "url": "https://nordvpn.com/affiliate",
+      "how_to_earn": "40-100% commission on referred VPN subscription purchases + 30% renewals",
+      "pay_range": "Tens of dollars per sale; $10 minimum payout",
+      "friction": "Free signup; PayPal or wire; needs traffic source Aaron doesn't have yet",
+      "found_ts": 1790285376,
+      "status": "new"
+    },
+    {
+      "platform": "FLOSS/fund",
+      "url": "https://floss.fund",
+      "how_to_earn": "No-strings-attached grants for FOSS maintainers/projects",
+      "pay_range": "Variable grants, application-based",
+      "friction": "Application effort; needs open-sourced projects first (TICC/Hermes components); slow, low odds",
+      "found_ts": 1790285376,
+      "status": "new"
     }
   ]
 }
