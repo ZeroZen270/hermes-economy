@@ -26,7 +26,7 @@ import requests
 @dataclass
 class LLMConfig:
     base_url: str = "https://generativelanguage.googleapis.com/v1beta/openai/"
-    model: str = "gemini-2.5-flash"
+    model: str = "gemini-3.6-flash"
     api_key_env: str = "GEMINI_API_KEY"
     timeout_seconds: int = 120
     max_tokens: int = 1024

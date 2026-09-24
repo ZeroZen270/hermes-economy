@@ -129,7 +129,7 @@ New agent tools: `scan_bounties()`, `audit_leads(domains)`, `draft_pitch(lead)`,
 
 ## Free brain
 
-The heartbeat's default runner is a real model: **Gemini 2.5 Flash** on Google
+The heartbeat's default runner is a real model: **Gemini 3.6 Flash** on Google
 AI Studio's **free tier** — $0, no credit card, just a Google account
 (`llm.py`, OpenAI-compatible endpoint). Get a key at
 https://aistudio.google.com/app/apikey, export `GEMINI_API_KEY`, and every
