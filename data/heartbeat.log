@@ -192,3 +192,12 @@
 2026-09-24 15:38:50 heartbeat online (once)
 2026-09-24 15:44:11 tick #63: agent run failed: LLM request failed (gemini-flash-lite-latest, attempt 4): HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
 2026-09-24 15:48:43 heartbeat online (once)
+2026-09-24 16:03:59 heartbeat online (once)
+2026-09-24 16:05:36 tick #65: agent run failed: provider error 503 (gemini-flash-lite-latest, attempt 4, retrying): [{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+]
