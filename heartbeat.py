@@ -104,6 +104,24 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
             lines.append(
                 "auto_send is OFF: drafts stay unsent for Aaron's review. "
                 "Keep drafting strong pitches; do not try to send.")
+    scout_leads = _read_json(data / "scout_leads.json", "leads")
+    fresh_scout = [l for l in scout_leads
+                   if str(l.get("status", "new")).lower() == "new"]
+    if fresh_scout:
+        lines.append(f"NEW revenue channels scouted for you ({len(fresh_scout)} — work every one):")
+        for l in fresh_scout[:6]:
+            lines.append(
+                f"  - {l.get('platform')}: {l.get('how_to_earn', '')} | "
+                f"pay: {l.get('pay_range', '?')} | friction: {l.get('friction', '?')} | "
+                f"{l.get('url', '')}")
+        lines.append(
+            "Pursue each channel: web_fetch its URL, find the concrete earning "
+            "action, and DO it yourself when possible (public application form, "
+            "email pitch via draft_pitch/send_pitch, bounty entry via "
+            "stage_bounty_entry). If it needs Aaron (signup, KYC, login, payment), "
+            "do all prep work first. Finish EVERY channel with scout_lead_update: "
+            "status pursued, blocked (say why), or needs_aaron (say exactly what "
+            "Aaron must do). Never leave a scouted channel unworked.")
     if effects.get("market_stall"):
         lines.append("Your market stall is ACTIVE: advertise it in outreach.")
     lines.append("Recent ledger activity:")
@@ -329,4 +347,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
