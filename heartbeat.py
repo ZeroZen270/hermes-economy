@@ -103,13 +103,51 @@ def next_tick(outbox: Path) -> int:
     return max(nums, default=0) + 1
 
 
-def run_agent(cfg: dict, prompt: str, tick: int) -> None:
+import json as _json
+import re as _re
+
+
+_TOOL_RE = _re.compile(r"```tool\s*\n(.*?)```", _re.S)
+
+TOOL_FORMAT = """
+To call a tool, emit a fenced block like this (one JSON object per block,
+up to 4 blocks per message):
+
+```tool
+{"name": "ledger_status", "arguments": {}}
+```
+
+Tool results come back as TOOL RESULTS. Use them, then either call more
+tools or write your final tick report as plain markdown with NO tool blocks.
+"""
+
+
+def _parse_tool_calls(text: str) -> list[dict]:
+    calls = []
+    for m in _TOOL_RE.finditer(text or ""):
+        try:
+            obj = _json.loads(m.group(1))
+            if isinstance(obj, dict) and obj.get("name"):
+                calls.append(obj)
+        except Exception:
+            continue  # malformed block: ignore, model sees no result for it
+    return calls
+
+
+def _strip_tool_blocks(text: str) -> str:
+    return _TOOL_RE.sub("", text or "").strip()
+
+
+def run_agent(cfg: dict, prompt: str, tick: int,
+              ledger: Ledger, inventory: Inventory, gigs: GigStore) -> None:
     """Invoke the agent. Precedence:
     1. agent_command — shell command receiving the prompt on stdin (the real
        Hermes runner, when it exists).
-    2. llm (enabled) — the free Step 3.7 Flash brain via the Nous portal.
+    2. llm (enabled) — ReAct loop: the model may call tools (see tools.py)
+       for up to max_tool_rounds rounds, then writes its tick report.
     3. Otherwise the prompt is just logged to the outbox."""
-    outbox = Path(cfg["outbox_dir"])
+    from pathlib import Path as _P
+    outbox = _P(cfg["outbox_dir"])
     outbox.mkdir(parents=True, exist_ok=True)
     (outbox / f"tick_{tick:06d}.md").write_text(prompt)
     cmd = cfg.get("agent_command")
@@ -117,16 +155,55 @@ def run_agent(cfg: dict, prompt: str, tick: int) -> None:
         subprocess.run(cmd, input=prompt.encode(), shell=True, check=False)
         return
     llm_cfg = cfg.get("llm") or {}
-    if llm_cfg.get("enabled"):
-        from llm import LLMConfig, LLMError, chat as llm_chat
-        persona = Path(cfg["persona_path"]).read_text()
-        try:
-            reply = llm_chat(LLMConfig.from_dict(llm_cfg), persona, prompt)
-        except LLMError as e:
-            # A dead brain must never kill the body: record it, heartbeat logs it.
-            (outbox / f"tick_{tick:06d}.llm_error.md").write_text(str(e))
-            raise
-        (outbox / f"tick_{tick:06d}.reply.md").write_text(reply)
+    if not llm_cfg.get("enabled"):
+        return
+    from llm import LLMConfig, LLMError, chat_messages as llm_chat
+    from tools import TOOLS, ToolContext, catalog_text, run_tool
+
+    persona = _P(cfg["persona_path"]).read_text()
+    system = (persona + "\n\n--- YOUR HANDS (tools) ---\n"
+              + catalog_text() + "\n" + TOOL_FORMAT)
+    ctx = ToolContext(cfg=cfg, ledger=ledger, inventory=inventory,
+                      gigs=gigs, data=_P(cfg["data_dir"]), tick=tick)
+    llm = LLMConfig.from_dict(llm_cfg)
+    max_rounds = int(cfg.get("max_tool_rounds", 3))
+
+    messages = [{"role": "user", "content": prompt}]
+    transcript = [f"# tick {tick:06d} transcript",
+                  f"model: {llm.model}, max_tool_rounds: {max_rounds}", ""]
+    reply = ""
+    try:
+        for rnd in range(max_rounds + 1):
+            resp = llm_chat(llm, [{"role": "system", "content": system}]
+                            + messages)
+            transcript.append(f"## assistant (round {rnd})\n{resp}")
+            calls = _parse_tool_calls(resp)[:4]
+            if not calls or rnd == max_rounds:
+                reply = _strip_tool_blocks(resp)
+                break
+            messages.append({"role": "assistant", "content": resp})
+            results = []
+            for c in calls:
+                args = c.get("arguments") or {}
+                if not isinstance(args, dict):
+                    args = {}
+                out = run_tool(ctx, c["name"], args)
+                results.append(f"### tool: {c['name']}\n{out}")
+                transcript.append(f"## tool result: {c['name']}\n{out}")
+            messages.append({
+                "role": "user",
+                "content": ("TOOL RESULTS:\n\n" + "\n\n".join(results) +
+                            "\n\nContinue: call more tools if useful, else "
+                            "write your final tick report as plain markdown "
+                            "(no tool blocks).")})
+    except LLMError as e:
+        # A dead brain must never kill the body: record it, heartbeat logs it.
+        (outbox / f"tick_{tick:06d}.llm_error.md").write_text(str(e))
+        (outbox / f"tick_{tick:06d}.transcript.md").write_text(
+            "\n\n".join(transcript))
+        raise
+    (outbox / f"tick_{tick:06d}.reply.md").write_text(reply or "(empty reply)")
+    (outbox / f"tick_{tick:06d}.transcript.md").write_text("\n\n".join(transcript))
 
 
 def main() -> None:
@@ -194,10 +271,15 @@ def main() -> None:
         interval = effects.get("interval", base_interval)
         try:
             prompt = build_prompt(cfg, ledger, inventory, gigs, tick)
-            run_agent(cfg, prompt, tick)
+            run_agent(cfg, prompt, tick, ledger, inventory, gigs)
             say(f"tick #{tick}: agent invoked (balance now {ledger.balance('agent:operating')})")
         except Exception as e:
             say(f"tick #{tick}: agent run failed: {e}")
+        try:
+            from dashboard import write_dashboard
+            write_dashboard(cfg)
+        except Exception as e:
+            say(f"dashboard refresh failed: {e}")
 
         if once:
             break

@@ -17,6 +17,14 @@ outbox_dir: "./data/outbox"       # heartbeat prompts land here
 # Point at the real Hermes runner when it exists; empty = log prompt only.
 agent_command: ""
 
+# --- agent hands: ReAct tool-use loop ---
+# Each affordable tick, the model may call tools (tools.py) for up to
+# max_tool_rounds rounds before writing its report. Rounds x 4 calls max.
+max_tool_rounds: 3
+
+# --- review web UI ---
+webui_port: 5000   # python3 webui.py --config config.yaml
+
 # --- free brain: Google AI Studio (Gemini) free tier ---
 # $0, no credit card — just a Google account. Get a key at
 # https://aistudio.google.com/app/apikey and export it. Every affordable tick
@@ -32,6 +40,8 @@ llm:
   timeout_seconds: 120
   max_tokens: 1024
   temperature: 0.7
+  max_retries: 3              # extra attempts on 429 / 5xx (Gemini 503 spikes)
+  retry_backoff_seconds: 5.0  # base; waits base * 2^attempt + jitter
 # export GEMINI_API_KEY=...
 # Alternatives (same OpenAI-compatible shape):
 #   Groq (free, no card): https://api.groq.com/openai/v1  -> GROQ_API_KEY

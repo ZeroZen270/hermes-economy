@@ -144,9 +144,33 @@ prompt carries no secrets. Nous Research's portal was evaluated and rejected:
 it requires a funded balance even for `:free` models. Groq's free tier is a
 drop-in alternative (`base_url: https://api.groq.com/openai/v1`).
 
-Honest limit: this wires the **brain** — the model thinks and answers each
-tick. The **hands** (a tool-use loop letting it actually call `draft_pitch()`,
-`scan_bounties()`, marketplace purchases, etc.) are the next build.
+Reliability: the client retries transient failures (429 rate limits, 5xx
+including Gemini's "high demand" 503 spikes) with exponential backoff —
+`max_retries` / `retry_backoff_seconds` in config. A brain outage still burns
+the tick (fair — the body woke up) but never kills the loop.
+
+## Hands (the agent's tools)
+
+The brain is wired to **hands**: each tick runs a ReAct loop (`tools.py`) for
+up to `max_tool_rounds` rounds. The model emits ```tool fenced JSON calls,
+the heartbeat executes them, feeds results back, and the model finishes with
+its report. Full transcripts land in `data/outbox/tick_NNNNNN.transcript.md`.
+
+| Tool | What it does |
+|---|---|
+| `ledger_status` | balances + runway |
+| `scan_bounties` | bounty-board opportunities the seeker collected |
+| `audit_leads` | prospected domains with measured issues |
+| `draft_pitch` | writes a pitch **draft** for a real audited lead — never sends |
+| `marketplace_list` / `marketplace_buy` | catalog; buy **stages a purchase request** for your approval |
+| `request_allowance` | files a funding request for your grant |
+| `remember` / `recall` | the agent's own persistent memory across ticks |
+| `web_fetch` | fetch a public URL as text (research a bounty/prospect) |
+
+Hard rule, enforced in code: nothing sends email, messages, or spends money
+on its own. Drafts, purchase requests, and allowance requests land in
+`data/outbox/drafts/` and `data/requests/` as `pending_review` — you approve
+by hand in the review UI.
 
 ## Free cloud: GitHub Actions
 
@@ -171,12 +195,26 @@ after long repo inactivity — the manual trigger always works. Stripe stays
 **off** in cloud runs until you wire `STRIPE_SECRET_KEY` as a secret and flip
 it on; the ledger just won't see real payments until then.
 
+## Reviewing Hermes (dashboard + web UI)
+
+Two ways to watch the agent, both read-only:
+
+1. **Static dashboard** — every tick regenerates `data/dashboard.html`
+   (balances, runway, recent ticks with links to each prompt/reply/
+   transcript, ledger activity, drafts + requests awaiting your review).
+   It's committed back to the repo by the cloud workflow, so you can open it
+   straight from GitHub with zero setup.
+2. **Web UI** — `python3 webui.py --config config.yaml` (port 5000,
+   `webui_port` in config). Overview, per-tick detail pages, full ledger,
+   drafts, and requests. In Codespaces, open the forwarded port URL.
+
 ## Aaron's controls
 
 - `EconomyTools.owner_treasury()` — see the treasury + history
 - `EconomyTools.owner_grant_allowance(n)` — refill the agent
 - `ledger.sweep_to_owner(n, memo)` — record a sweep to yourself
-- `data/allowance_requests/` — the agent's petitions, approved by hand
+- `data/requests/` — allowance + purchase petitions (`pending_review`), approved by hand
+- `data/outbox/drafts/` — pitch drafts, never sent without your approval
 - `data/DEEP_REST` exists → the agent is hibernating; fund it or let it sleep
 - Edit `persona/SOUL.md` — the agent's prime directive is a file you own
 
