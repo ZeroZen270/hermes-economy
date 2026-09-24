@@ -1,4 +1,16 @@
 {
-  "generated_ts": 1790240439.2086527,
-  "opportunities": []
+  "generated_ts": 1790240736.6842923,
+  "opportunities": [],
+  "boards": {
+    "superteam-development": {
+      "open": 7,
+      "new": 0,
+      "error": null
+    },
+    "superteam-content": {
+      "open": 7,
+      "new": 0,
+      "error": null
+    }
+  }
 }
