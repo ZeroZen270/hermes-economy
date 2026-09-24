@@ -16,7 +16,10 @@
       "pay_range": "$50-1,000+ per bounty",
       "friction": "Low: sign up, link GitHub, claim bounties; payouts via Stripe",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "pursued",
+      "agent_note": "Reviewed platform model: claim OS bounties via GitHub and Stripe payout. Ready for integration.",
+      "worked_ts": 1790253266.1412747,
+      "worked_tick": 42
     },
     {
       "platform": "Respondent.io",
