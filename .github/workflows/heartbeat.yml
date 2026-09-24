@@ -1,6 +1,6 @@
 # Hermes survival heartbeat on GitHub's free tier.
 #
-# Every 30 min: restore state -> seek gigs -> run one heartbeat tick -> commit
+# Each dispatcher-driven tick: restore state -> seek gigs -> run one heartbeat tick -> commit
 # state back so the ledger survives between runs (runners are ephemeral).
 #
 # NOTE on cadence: a true every-25-minute schedule cannot be expressed in
@@ -19,8 +19,9 @@
 name: hermes-heartbeat
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"    # 5-MIN GRIND 2026-09-24: revert to */30 after 24h (owner scheduled)
+  # Driven by external dispatcher (Muse cron `hermes-grind-dispatcher`), which
+  # POSTs workflow_dispatch. GitHub's own `schedule` trigger never fired for
+  # this repo, so it was removed to prevent double-ticks if it ever wakes up.
   workflow_dispatch:
 
 concurrency:
