@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790244878.7966506,
+  "generated_ts": 1790245187.5263233,
   "leads": [
     {
       "domain": "kentpriceplumbing.com",
@@ -10,12 +10,28 @@
       ],
       "notes": {
         "status": 404,
-        "latency_s": 0.08,
+        "latency_s": 0.13,
         "final_url": "https://kentpriceplumbing.com/",
         "cert_days_left": 36
       },
       "score": 4,
-      "checked_ts": 1790244791.0293605,
+      "checked_ts": 1790245099.6750672,
+      "emails": []
+    },
+    {
+      "domain": "swiftroofing.net",
+      "url": "https://swiftroofing.net",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 5.23,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790245147.8228080272674560546875",
+        "cert_days_left": 181
+      },
+      "score": 3,
+      "checked_ts": 1790245144.797455,
       "emails": []
     },
     {
@@ -26,12 +42,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.68,
+        "latency_s": 0.49,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790244800.2336779,
+      "checked_ts": 1790245108.8199303,
       "emails": []
     },
     {
@@ -42,12 +58,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.22,
+        "latency_s": 0.2,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790244807.5370843,
+      "checked_ts": 1790245115.9973173,
       "emails": []
     },
     {
@@ -58,12 +74,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.42,
+        "latency_s": 0.68,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790244812.676467,
+      "checked_ts": 1790245121.3734398,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -81,7 +97,7 @@
         "cert_days_left": 55
       },
       "score": 2,
-      "checked_ts": 1790244814.1463404,
+      "checked_ts": 1790245123.1002982,
       "emails": []
     }
   ]
