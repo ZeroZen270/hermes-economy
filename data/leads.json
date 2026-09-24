@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790249934.0652635,
+  "generated_ts": 1790250274.7935243,
   "leads": [
     {
       "domain": "kentpriceplumbing.com",
@@ -10,12 +10,12 @@
       ],
       "notes": {
         "status": 404,
-        "latency_s": 0.26,
+        "latency_s": 0.25,
         "final_url": "https://kentpriceplumbing.com/",
         "cert_days_left": 36
       },
       "score": 4,
-      "checked_ts": 1790249821.2807262,
+      "checked_ts": 1790250172.323897,
       "emails": []
     },
     {
@@ -26,12 +26,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 7.71,
-        "final_url": "https://swiftroofing.net/",
+        "latency_s": 10.94,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790250224.5971069335937500000000",
         "cert_days_left": 181
       },
       "score": 3,
-      "checked_ts": 1790249875.4777262,
+      "checked_ts": 1790250221.6071842,
       "emails": []
     },
     {
@@ -42,12 +42,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.87,
+        "latency_s": 0.3,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790249831.7682185,
+      "checked_ts": 1790250182.8273203,
       "emails": []
     },
     {
@@ -58,12 +58,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.37,
+        "latency_s": 0.53,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790249842.5433908,
+      "checked_ts": 1790250189.5056398,
       "emails": []
     },
     {
@@ -74,12 +74,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.62,
+        "latency_s": 0.6,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790249849.2371442,
+      "checked_ts": 1790250196.4648893,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
