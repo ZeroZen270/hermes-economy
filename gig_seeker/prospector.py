@@ -37,6 +37,9 @@ EMAIL_BLOCKLIST_SUBSTR = ("noreply", "no-reply", "donotreply", "do-not-reply",
                           "test.com", ".png", ".jpg", ".jpeg",
                           ".gif", ".webp", ".svg", "sentry", "schema.org",
                           "w3.org")
+# Domains the owner has permanently removed — never audit, score, or pitch these.
+# Edit this set (not leads.json) to kill a dead lead for good.
+SUPPRESSED_DOMAINS = {"kentpriceplumbing.com"}
 # Likely contact pages worth one polite fetch each.
 CONTACT_PATHS = ("/contact", "/contact-us", "/contact.html",
                  "/about/contact-us", "/about-us", "/about")
@@ -183,6 +186,8 @@ def audit_list(domains: list[str], out_path: Path) -> list[dict]:
     leads = []
     for d in domains:
         if not d.strip():
+            continue
+        if d.strip().lower().removeprefix("http://").removeprefix("https://").split("/")[0] in SUPPRESSED_DOMAINS:
             continue
         try:
             lead = audit_domain(d)

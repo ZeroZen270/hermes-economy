@@ -2,23 +2,6 @@
   "generated_ts": 1790251316.3764575,
   "leads": [
     {
-      "domain": "kentpriceplumbing.com",
-      "url": "https://kentpriceplumbing.com",
-      "issues": [
-        "no_meta_description",
-        "not_mobile_friendly"
-      ],
-      "notes": {
-        "status": 404,
-        "latency_s": 0.19,
-        "final_url": "https://kentpriceplumbing.com/",
-        "cert_days_left": 35
-      },
-      "score": 4,
-      "checked_ts": 1790251214.6842787,
-      "emails": []
-    },
-    {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
       "issues": [
