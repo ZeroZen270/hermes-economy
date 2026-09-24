@@ -386,6 +386,38 @@ def _submission_records(data: Path) -> list:
     return recs
 
 
+def _recent_draft_domains(data: Path, cooldown_days: int) -> dict:
+    """Domains with an unsent pitch draft newer than the cooldown window.
+
+    draft_pitch() names files draft_<stamp>_<domain>.md; a recent draft means
+    the lead is already in the pipeline — re-drafting it just burns a tick.
+    Returns {domain: newest_mtime}.
+    """
+    cutoff = time.time() - max(int(cooldown_days or 0), 0) * 86400
+    found: dict = {}
+    drafts = data / "outbox" / "drafts"
+    if drafts.is_dir():
+        for p in drafts.glob("draft_*.md"):
+            name = p.name
+            if name.endswith("_SENT.md"):
+                continue
+            if not name.startswith("draft_") or not name.endswith(".md"):
+                continue
+            body = name[len("draft_"):-len(".md")]
+            # stamp format: YYYYMMDDTHHMMSS (15 chars) + "_" + domain
+            dom = (body[16:] if len(body) > 17 and body[15] == "_"
+                   else body)
+            try:
+                mt = p.stat().st_mtime
+            except OSError:
+                continue
+            if mt >= cutoff and dom:
+                prev = found.get(dom, 0)
+                if mt > prev:
+                    found[dom] = mt
+    return found
+
+
 def _quarantined_domains(data: Path) -> set:
     """Domains permanently off-limits (junk leads, removal requests)."""
     try:
@@ -426,6 +458,11 @@ def _domain_outreach_blocked(data: Path, domain: str,
     if domain in _quarantined_domains(data):
         return (f"TOOL ERROR: {domain} is quarantined — do not pitch it "
                 f"again, ever.")
+    recent = _recent_draft_domains(data, cooldown_days)
+    if domain in recent:
+        return (f"TOOL ERROR: {domain} already has a draft from within the "
+                f"last {cooldown_days} days — no re-draft. Work a fresh "
+                f"lead.")
     return None
 
 
