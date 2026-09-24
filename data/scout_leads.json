@@ -139,7 +139,10 @@
       "pay_range": "$25-200+/hr role-dependent",
       "friction": "AI video interview screening; project-based, no guaranteed hours; US OK; pays to wallet",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human expert application via opportunities page, video screening, and identity/payout setup.",
+      "worked_ts": 1790292074.9960265,
+      "worked_tick": 119
     },
     {
       "platform": "YesWeHack",
