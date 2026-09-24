@@ -1,6 +1,22 @@
 {
-  "generated_ts": 1790253652.883076,
+  "generated_ts": 1790254042.5016136,
   "leads": [
+    {
+      "domain": "swiftroofing.net",
+      "url": "https://swiftroofing.net",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 11.83,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790253993.8557279109954833984375",
+        "cert_days_left": 181
+      },
+      "score": 3,
+      "checked_ts": 1790253990.6160774,
+      "emails": []
+    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -9,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.44,
+        "latency_s": 0.52,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790253569.4124846,
+      "checked_ts": 1790253943.3779223,
       "emails": []
     },
     {
@@ -25,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.29,
+        "latency_s": 0.49,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790253576.62136,
+      "checked_ts": 1790253953.2190325,
       "emails": []
     },
     {
@@ -41,12 +57,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.63,
+        "latency_s": 0.61,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790253582.3678613,
+      "checked_ts": 1790253960.2167234,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -59,12 +75,28 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.39,
+        "latency_s": 0.35,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790253584.0347896,
+      "checked_ts": 1790253962.0267596,
+      "emails": []
+    },
+    {
+      "domain": "mcbeehvac.com",
+      "url": "https://mcbeehvac.com",
+      "issues": [
+        "no_meta_description"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 0.38,
+        "final_url": "https://mcbeehvac.com/",
+        "cert_days_left": 61
+      },
+      "score": 2,
+      "checked_ts": 1790253974.8934636,
       "emails": []
     }
   ]
