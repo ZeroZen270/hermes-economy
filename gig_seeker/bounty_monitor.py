@@ -17,6 +17,7 @@ credits it exactly like a Stripe payment (commission + treasury split).
 """
 from __future__ import annotations
 
+import http.client
 import json
 import shutil
 import subprocess
@@ -49,6 +50,45 @@ class Board:
         raise NotImplementedError
 
 
+def _http_get(url: str, timeout: int = 25, attempts: int = 3) -> str:
+    """GET a URL as text, tolerating flaky chunked responses.
+
+    Retries with exponential backoff. Some bounty APIs (Superteam) sometimes
+    terminate the connection mid-body; urllib raises IncompleteRead in that
+    case — if the partial body is complete JSON we use it, otherwise retry.
+    """
+    last: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "HermesBountyMonitor/1.0"})
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
+                    return r.read().decode("utf-8", "replace")
+            except http.client.IncompleteRead as e:
+                partial = (e.partial or b"").decode("utf-8", "replace")
+                try:
+                    json.loads(partial)  # complete JSON despite the dropped tail
+                    return partial
+                except Exception:
+                    last = e
+        except Exception as e:  # URLError, TimeoutError, SSLError, ...
+            last = e
+        time.sleep(2 ** attempt)
+    # Fallback: curl handles some servers' chunked responses more gracefully
+    # than urllib (observed on Superteam). Present on GH runners + most hosts.
+    try:
+        out = subprocess.run(
+            ["curl", "-sS", "--max-time", str(timeout),
+             "-A", "HermesBountyMonitor/1.0", url],
+            capture_output=True, text=True, timeout=timeout + 10)
+        if out.returncode == 0 and out.stdout.strip():
+            return out.stdout
+        last = RuntimeError(f"curl exit {out.returncode}: {out.stderr.strip()[:120]}")
+    except Exception as e:
+        last = e
+    raise RuntimeError(f"GET failed: {url} ({last})")
+
+
 class GenericFeedBoard(Board):
     """Any public JSON or RSS/Atom feed of bounties.
 
@@ -64,9 +104,7 @@ class GenericFeedBoard(Board):
         self.url = url
 
     def fetch_open(self) -> list[Opportunity]:
-        req = urllib.request.Request(self.url, headers={"User-Agent": "HermesBountyMonitor/1.0"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            body = r.read().decode("utf-8", "replace")
+        body = _http_get(self.url, timeout=20)
         if body.lstrip().startswith("<"):
             return self._parse_rss(body)
         return self._parse_json(body)
@@ -172,10 +210,7 @@ class SuperteamBoard(Board):
     def fetch_open(self) -> list[Opportunity]:
         url = ("https://superteam.fun/api/listings?context=home&tab=all"
                f"&category={self.category}")
-        req = urllib.request.Request(
-            url, headers={"User-Agent": "HermesBountyMonitor/1.0"})
-        with urllib.request.urlopen(req, timeout=25) as r:
-            data = json.loads(r.read().decode("utf-8", "replace"))
+        data = json.loads(_http_get(url, timeout=25))
         items = data if isinstance(data, list) else data.get("listings", [])
         opps = []
         for it in items:
@@ -217,13 +252,22 @@ def load_boards(cfg: dict) -> list[Board]:
 
 def scan(boards: list[Board], out_path: Path, seen_path: Path,
          min_reward_usd: float = 0.0) -> list[dict]:
-    """Poll all boards, return NEW opportunities since last scan."""
+    """Poll all boards, return NEW opportunities since last scan.
+
+    Also writes a snapshot of every currently-open listing to
+    data/open_bounties.json (so the agent keeps sight of open bounties it
+    has already seen) and per-board poll stats into opportunities.json
+    under "boards" (so diagnostics report reality, not guesses).
+    """
     seen: set[str] = set()
     if seen_path.exists():
         seen = set(json.loads(seen_path.read_text()))
     fresh: list[dict] = []
+    all_open: list[dict] = []
+    board_stats: dict[str, dict] = {}
     seen_ids: set[str] = set()  # dedupe the same listing across boards
     for board in boards:
+        stats: dict = {"open": 0, "new": 0, "error": None}
         try:
             for opp in board.fetch_open():
                 if opp.reward_usd < min_reward_usd:
@@ -231,15 +275,25 @@ def scan(boards: list[Board], out_path: Path, seen_path: Path,
                 if opp.id in seen_ids:
                     continue
                 seen_ids.add(opp.id)
+                stats["open"] += 1
+                all_open.append(opp.as_dict())
                 key = f"{opp.board}:{opp.id}"
                 if key not in seen:
                     seen.add(key)
+                    stats["new"] += 1
                     fresh.append(opp.as_dict())
         except Exception as e:
+            stats["error"] = str(e)[:160]
             print(f"board {board.name} failed: {e}")
+        board_stats[board.name] = stats
     seen_path.parent.mkdir(parents=True, exist_ok=True)
     seen_path.write_text(json.dumps(sorted(seen)))
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(
-        {"generated_ts": time.time(), "opportunities": fresh}, indent=2))
+        {"generated_ts": time.time(), "opportunities": fresh,
+         "boards": board_stats}, indent=2))
+    (out_path.parent / "open_bounties.json").write_text(json.dumps(
+        {"generated_ts": time.time(), "bounties": all_open}, indent=2))
+    print(f"bounty snapshot: {len(all_open)} open, {len(fresh)} new, "
+          f"{len(board_stats)} boards")
     return fresh
