@@ -1,6 +1,22 @@
 {
-  "generated_ts": 1790272312.3008106,
+  "generated_ts": 1790272688.550174,
   "leads": [
+    {
+      "domain": "swiftroofing.net",
+      "url": "https://swiftroofing.net",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 5.15,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790272640.3503260612487792968750",
+        "cert_days_left": 181
+      },
+      "score": 3,
+      "checked_ts": 1790272638.2214227,
+      "emails": []
+    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -9,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.55,
+        "latency_s": 0.31,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790272217.6335237,
+      "checked_ts": 1790272596.9717376,
       "emails": []
     },
     {
@@ -25,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.21,
+        "latency_s": 0.56,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790272224.820509,
+      "checked_ts": 1790272603.7210026,
       "emails": []
     },
     {
@@ -41,12 +57,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.41,
+        "latency_s": 0.65,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790272230.0232553,
+      "checked_ts": 1790272610.9788246,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -59,12 +75,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.41,
+        "latency_s": 0.74,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790272231.4856026,
+      "checked_ts": 1790272612.8579965,
       "emails": []
     }
   ]
