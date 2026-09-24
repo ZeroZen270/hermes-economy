@@ -91,7 +91,10 @@
       "pay_range": "Typical freelance dev rates ($50-150/hr)",
       "friction": "Application + screening; pays USD",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human signup/KYC. Needs Aaron to link account.",
+      "worked_ts": 1790255301.0682056,
+      "worked_tick": 47
     },
     {
       "platform": "Mindrift",
@@ -100,7 +103,10 @@
       "pay_range": "$15-30/hr entry, $60-100+/hr for experts",
       "friction": "Qualification per project; pays to bank",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human platform login & AI expert evaluation. Needs Aaron.",
+      "worked_ts": 1790255301.068754,
+      "worked_tick": 47
     },
     {
       "platform": "Prolific",
@@ -109,7 +115,10 @@
       "pay_range": "Minimum ~GBP 9/hr equivalent, often higher per study",
       "friction": "Low: screening profile; pays PayPal",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human participant screening profile and ID verification. Needs Aaron.",
+      "worked_ts": 1790255301.0691438,
+      "worked_tick": 47
     },
     {
       "platform": "NLnet NGI",
@@ -118,7 +127,10 @@
       "pay_range": "EUR 5k-50k grants",
       "friction": "High: written application, slow review cycles; not gig income",
       "found_ts": 1790251177,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires extensive written grant application. Needs Aaron.",
+      "worked_ts": 1790255301.069552,
+      "worked_tick": 47
     }
   ]
 }
