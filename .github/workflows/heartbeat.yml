@@ -1,17 +1,26 @@
 # Hermes survival heartbeat on GitHub's free tier.
 #
-# Every 25 min: restore state -> seek gigs -> run one heartbeat tick -> commit
+# Every 30 min: restore state -> seek gigs -> run one heartbeat tick -> commit
 # state back so the ledger survives between runs (runners are ephemeral).
+#
+# NOTE on cadence: a true every-25-minute schedule cannot be expressed in
+# standard cron (25 does not divide 60) — `*/25` fires at :00/:25/:50, which
+# is uneven. `*/30` is a true 30-minute cadence. It also keeps the account
+# inside the free tier: 48 runs/day x ~1 min/run ~= 1,440 min/month, under
+# the 2,000-minute free allowance for private repos.
 #
 # Setup: add GEMINI_API_KEY as a repo secret (Settings -> Secrets -> Actions).
 # Stripe is retired; real-money payouts go by bank direct deposit, configured
 # via PAYOUT_* env vars only on machines Aaron controls (never in the repo).
+# The five PAYOUT_* values can also live as GitHub repo secrets — the tick
+# step below passes them through, and payout_rails.py reports "not configured"
+# (and does nothing) when any of them is absent.
 # Manual trigger: Actions -> hermes-heartbeat -> Run workflow.
 name: hermes-heartbeat
 
 on:
   schedule:
-    - cron: "*/25 * * * *"   # every 25 min (GitHub may delay this)
+    - cron: "*/30 * * * *"   # true 30-min cadence (GitHub may still delay it)
   workflow_dispatch:
 
 concurrency:
@@ -30,6 +39,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"   # keeps each run near ~1 billed minute
 
       - name: Install deps
         run: pip install -r requirements.txt
@@ -52,6 +62,15 @@ jobs:
       - name: Heartbeat tick
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Payout rail passthrough. Missing secrets evaluate to empty
+          # strings, and payout_rails.py treats that as "not configured"
+          # (nothing payout-related executes). Only a masked summary
+          # (bank + last 4) is ever displayed or logged.
+          PAYOUT_BANK_NAME: ${{ secrets.PAYOUT_BANK_NAME }}
+          PAYOUT_ACCOUNT_HOLDER: ${{ secrets.PAYOUT_ACCOUNT_HOLDER }}
+          PAYOUT_ACCOUNT_TYPE: ${{ secrets.PAYOUT_ACCOUNT_TYPE }}
+          PAYOUT_ROUTING: ${{ secrets.PAYOUT_ROUTING }}
+          PAYOUT_ACCOUNT: ${{ secrets.PAYOUT_ACCOUNT }}
         run: python3 heartbeat.py --config config.yaml --once
 
       - name: Persist state
