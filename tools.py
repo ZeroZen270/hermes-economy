@@ -91,15 +91,40 @@ def ledger_status(ctx: ToolContext) -> str:
       "List fresh bounty-board opportunities the seeker collected.",
       args="{}")
 def scan_bounties(ctx: ToolContext) -> str:
-    opps = _read_json(ctx.data / "opportunities.json", "opportunities")
-    if not opps:
-        return ("No bounty opportunities on file. The seeker scans boards "
-                "before each tick (see gig_seeker config); add a real board "
-                "URL to config.yaml gig_seeker.boards to get live bounties.")
-    lines = [f"Bounties ({len(opps)}):"]
-    for o in opps[:15]:
-        lines.append(f"  - [{o.get('board')}] {o.get('title')} — "
-                     f"${o.get('reward_usd', 0):.2f} {o.get('url', '')}")
+    try:
+        doc = json.loads((ctx.data / "opportunities.json").read_text())
+    except Exception:
+        doc = {}
+    opps = doc.get("opportunities", []) or []
+    boards = doc.get("boards", {}) or {}
+    open_all = _read_json(ctx.data / "open_bounties.json", "bounties")
+    lines: list[str] = []
+    if opps:
+        lines.append(f"New bounties since last scan ({len(opps)}):")
+        for o in opps[:15]:
+            lines.append(f"  - [{o.get('board')}] {o.get('title')} — "
+                         f"${o.get('reward_usd', 0):.2f} {o.get('url', '')}")
+    if boards:
+        bl = []
+        for name, st in boards.items():
+            if st.get("error"):
+                bl.append(f"{name}: ERROR ({st['error']})")
+            else:
+                bl.append(f"{name}: {st.get('open', 0)} open / {st.get('new', 0)} new")
+        lines.append("Boards last polled: " + "; ".join(bl))
+    elif not opps:
+        return ("No bounty boards are configured. Add a board under "
+                "config.yaml gig_seeker.boards (type: feed with a public "
+                "JSON/RSS url, or type: superteam with a category) and it "
+                "will be polled before the next tick.")
+    if not opps and open_all:
+        lines.append(f"No new bounties, but {len(open_all)} listings are still open:")
+        for o in open_all[:10]:
+            lines.append(f"  - [{o.get('board')}] {o.get('title')} — "
+                         f"${o.get('reward_usd', 0):.2f} {o.get('url', '')}")
+    if not opps and not open_all and boards:
+        lines.append("No open listings right now — boards are configured and "
+                     "polling; check back next tick.")
     return "\n".join(lines)
 
 
@@ -108,10 +133,20 @@ def scan_bounties(ctx: ToolContext) -> str:
       args="{}")
 def audit_leads(ctx: ToolContext) -> str:
     leads = _read_json(ctx.data / "leads.json", "leads")
+    seeds = (ctx.cfg.get("gig_seeker") or {}).get("prospect_domains", []) or []
     if not leads:
-        return ("No leads on file. Add seed domains to "
-                "config.yaml gig_seeker.prospect_domains and they will be "
-                "audited before the next tick.")
+        if not (ctx.data / "leads.json").exists():
+            if seeds:
+                return (f"No audit output yet — {len(seeds)} seed domains are "
+                        f"configured and will be audited before the next tick.")
+            return ("No seed domains configured. Add domains under config.yaml "
+                    "gig_seeker.prospect_domains and they will be audited "
+                    "before the next tick.")
+        if seeds:
+            return (f"Audited {len(seeds)} seed domains: no pitchable issues "
+                    f"found this round.")
+        return ("leads.json exists but is empty and no seed domains are "
+                "configured.")
     lines = [f"Leads ({len(leads)}):"]
     for ld in leads[:15]:
         issues = "; ".join(ld.get("issues", [])) or "no issues recorded"
