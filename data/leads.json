@@ -1,6 +1,22 @@
 {
-  "generated_ts": 1790273516.707086,
+  "generated_ts": 1790273865.8689976,
   "leads": [
+    {
+      "domain": "swiftroofing.net",
+      "url": "https://swiftroofing.net",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 5.44,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790273816.0260579586029052734375",
+        "cert_days_left": 181
+      },
+      "score": 3,
+      "checked_ts": 1790273813.860025,
+      "emails": []
+    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -9,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 1.41,
+        "latency_s": 1.2,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790273430.9775076,
+      "checked_ts": 1790273770.1367927,
       "emails": []
     },
     {
@@ -25,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.18,
+        "latency_s": 0.59,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790273443.2178156,
+      "checked_ts": 1790273780.7716215,
       "emails": []
     },
     {
@@ -41,12 +57,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.46,
+        "latency_s": 0.65,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790273448.4614675,
+      "checked_ts": 1790273787.85274,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -59,12 +75,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.51,
+        "latency_s": 0.49,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790273449.9775357,
+      "checked_ts": 1790273789.7340896,
       "emails": []
     }
   ]
