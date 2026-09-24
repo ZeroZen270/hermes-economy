@@ -1,6 +1,24 @@
 {
-  "generated_ts": 1790250274.7935243,
+  "generated_ts": 1790250564.6836762,
   "leads": [
+    {
+      "domain": "woodallcompanies.com",
+      "url": "https://woodallcompanies.com",
+      "issues": [
+        "server_error",
+        "slow",
+        "no_meta_description"
+      ],
+      "notes": {
+        "status": 500,
+        "latency_s": 10.96,
+        "final_url": "https://woodallcompanies.com/",
+        "cert_days_left": 66
+      },
+      "score": 10,
+      "checked_ts": 1790250495.7403076,
+      "emails": []
+    },
     {
       "domain": "kentpriceplumbing.com",
       "url": "https://kentpriceplumbing.com",
@@ -10,28 +28,12 @@
       ],
       "notes": {
         "status": 404,
-        "latency_s": 0.25,
+        "latency_s": 0.16,
         "final_url": "https://kentpriceplumbing.com/",
-        "cert_days_left": 36
+        "cert_days_left": 35
       },
       "score": 4,
-      "checked_ts": 1790250172.323897,
-      "emails": []
-    },
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 10.94,
-        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790250224.5971069335937500000000",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790250221.6071842,
+      "checked_ts": 1790250455.6936731,
       "emails": []
     },
     {
@@ -42,12 +44,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.3,
+        "latency_s": 0.53,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790250182.8273203,
+      "checked_ts": 1790250465.033996,
       "emails": []
     },
     {
@@ -58,12 +60,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.53,
+        "latency_s": 0.17,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790250189.5056398,
+      "checked_ts": 1790250474.7621255,
       "emails": []
     },
     {
@@ -74,15 +76,31 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.6,
+        "latency_s": 0.42,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790250196.4648893,
+      "checked_ts": 1790250480.5088043,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
+    },
+    {
+      "domain": "thorntonheatingandair.com",
+      "url": "https://thorntonheatingandair.com",
+      "issues": [
+        "not_mobile_friendly"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 0.47,
+        "final_url": "https://www.thorntonheatingandair.com/",
+        "cert_days_left": 54
+      },
+      "score": 2,
+      "checked_ts": 1790250482.02824,
+      "emails": []
     }
   ]
 }

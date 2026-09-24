@@ -1,33 +1,6 @@
 {
-  "generated_ts": 1790250172.323322,
-  "opportunities": [
-    {
-      "board": "superteam-content",
-      "id": "51fa9f5a-57ec-4118-966f-beb247923e25",
-      "title": "Explain Market Tokenization in Your Country",
-      "reward_usd": 5500.0,
-      "url": "https://superteam.fun/earn/listing/explain-market-tokenization-in-your-country/",
-      "skills": [
-        "pays:USDC",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790250172.3228872
-    },
-    {
-      "board": "superteam-content",
-      "id": "6b9d9eda-937a-4b5e-831c-b1afac7634b5",
-      "title": "Show Tokenization in 2050 via X Post, Thread, or Short Video",
-      "reward_usd": 5500.0,
-      "url": "https://superteam.fun/earn/listing/show-tokenization-in-2050-via-x-post-thread-or-short-video/",
-      "skills": [
-        "pays:USDC",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790250172.3228886
-    }
-  ],
+  "generated_ts": 1790250455.693132,
+  "opportunities": [],
   "boards": {
     "superteam-development": {
       "open": 7,
@@ -36,7 +9,7 @@
     },
     "superteam-content": {
       "open": 9,
-      "new": 2,
+      "new": 0,
       "error": null
     }
   }
