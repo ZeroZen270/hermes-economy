@@ -1,15 +1,20 @@
 """
-Free brain for Hermes: StepFun Step 3.7 Flash via the Nous Research portal.
+Free brain for Hermes: Google AI Studio (Gemini) free tier.
 
-Nous runs an OpenAI-compatible inference API with a $0 free plan; Step 3.7
-Flash is currently served free as `stepfun/step-3.7-flash:free`. Sign up at
-https://portal.nousresearch.com, grab a key, and export it:
+$0, no credit card — just a Google account. Get a key at
+https://aistudio.google.com/app/apikey and export it:
 
-    export NOUS_PORTAL_API_KEY=nk-...
+    export GEMINI_API_KEY=...
 
 The client is provider-agnostic on purpose — point `base_url` at any
-OpenAI-compatible endpoint (local Ollama, OpenRouter, ...) to swap brains
-later without touching the heartbeat.
+OpenAI-compatible endpoint to swap brains without touching the heartbeat:
+
+  - Groq (free tier, no card): https://api.groq.com/openai/v1  (GROQ_API_KEY)
+  - Nous Research portal:      https://inference-api.nousresearch.com/v1
+    (needs a funded balance even for :free models — not actually $0)
+
+Note: Google's free tier may use prompts to improve its models, so the
+heartbeat prompt carries no secrets — only ledger balances and gig state.
 """
 from __future__ import annotations
 
@@ -20,9 +25,9 @@ import requests
 
 @dataclass
 class LLMConfig:
-    base_url: str = "https://inference-api.nousresearch.com/v1"
-    model: str = "stepfun/step-3.7-flash:free"
-    api_key_env: str = "NOUS_PORTAL_API_KEY"
+    base_url: str = "https://generativelanguage.googleapis.com/v1beta/openai/"
+    model: str = "gemini-2.5-flash"
+    api_key_env: str = "GEMINI_API_KEY"
     timeout_seconds: int = 120
     max_tokens: int = 1024
     temperature: float = 0.7
@@ -45,7 +50,8 @@ def chat(cfg: LLMConfig, system: str, user: str, api_key: str = "") -> str:
     key = api_key or os.environ.get(cfg.api_key_env, "")
     if not key:
         raise LLMError(
-            f"set {cfg.api_key_env} — free key at https://portal.nousresearch.com"
+            f"set {cfg.api_key_env} — free key, no card: "
+            f"https://aistudio.google.com/app/apikey"
         )
     url = cfg.base_url.rstrip("/") + "/chat/completions"
     try:
@@ -66,14 +72,12 @@ def chat(cfg: LLMConfig, system: str, user: str, api_key: str = "") -> str:
     except requests.RequestException as e:
         raise LLMError(f"LLM request failed: {e}") from e
     if r.status_code == 402:
-        raise LLMError(
-            "portal returned 402: model is not on the free plan or the key lacks access"
-        )
+        raise LLMError("provider returned 402: payment required on this model/key")
     if r.status_code == 429:
-        raise LLMError("portal rate limit (429): free-tier quota hit, retry next tick")
+        raise LLMError("rate limit (429): free-tier quota hit, retry next tick")
     if not r.ok:
-        raise LLMError(f"portal error {r.status_code}: {r.text[:200]}")
+        raise LLMError(f"provider error {r.status_code}: {r.text[:200]}")
     try:
         return r.json()["choices"][0]["message"]["content"]
     except (KeyError, IndexError, ValueError) as e:
-        raise LLMError(f"unexpected portal response: {r.text[:200]}") from e
+        raise LLMError(f"unexpected provider response: {r.text[:200]}") from e

@@ -1,0 +1,68 @@
+# Hermes survival heartbeat on GitHub's free tier.
+#
+# Hourly: restore state -> seek gigs -> run one heartbeat tick -> commit state
+# back so the ledger survives between runs (runners are ephemeral).
+#
+# Setup: add GEMINI_API_KEY as a repo secret (Settings -> Secrets -> Actions).
+# Stripe stays OFF here until you add STRIPE_SECRET_KEY and flip the config
+# step below. Manual trigger: Actions -> hermes-heartbeat -> Run workflow.
+name: hermes-heartbeat
+
+on:
+  schedule:
+    - cron: "23 * * * *"   # hourly, off the :00 rush (GitHub may delay this)
+  workflow_dispatch:
+
+concurrency:
+  group: hermes-heartbeat
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so the state commit can rebase+push
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Build config (Stripe off until wired)
+        run: |
+          cp config.example.yaml config.yaml
+          python3 - <<'EOF'
+          import yaml
+          p = "config.yaml"
+          cfg = yaml.safe_load(open(p))
+          cfg["stripe_enabled"] = False  # real money needs STRIPE_SECRET_KEY + review
+          yaml.safe_dump(cfg, open(p, "w"))
+          print("stripe_enabled ->", cfg["stripe_enabled"])
+          EOF
+
+      - name: Seek gigs
+        run: python3 gig_seeker/seek.py --config config.yaml
+
+      - name: Heartbeat tick
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 heartbeat.py --config config.yaml --once
+
+      - name: Persist state
+        if: always()
+        run: |
+          git config user.name "hermes-heartbeat"
+          git config user.email "hermes-heartbeat@localhost"
+          git add -f data/
+          if git diff --cached --quiet; then
+            echo "no state change"
+          else
+            git commit -m "heartbeat tick $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" || echo "push failed; next tick retries"
+          fi

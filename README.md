@@ -129,18 +129,47 @@ New agent tools: `scan_bounties()`, `audit_leads(domains)`, `draft_pitch(lead)`,
 
 ## Free brain
 
-The heartbeat's default runner is now a real model: **StepFun Step 3.7 Flash**
-via the Nous Research portal's **$0 free plan** (`llm.py`, OpenAI-compatible).
-Sign up at https://portal.nousresearch.com, export `NOUS_PORTAL_API_KEY`, and
-every tick the agent can afford calls the model with `persona/SOUL.md` as the
-system prompt and the survival state (balances, gigs, leads, bounties) as the
-message. Replies land in `data/outbox/tick_NNNNNN.reply.md`; API failures are
-recorded as `.llm_error.md` and never break the loop. Point `llm.base_url` at
-Ollama/OpenRouter to swap brains later.
+The heartbeat's default runner is a real model: **Gemini 2.5 Flash** on Google
+AI Studio's **free tier** — $0, no credit card, just a Google account
+(`llm.py`, OpenAI-compatible endpoint). Get a key at
+https://aistudio.google.com/app/apikey, export `GEMINI_API_KEY`, and every
+tick the agent can afford calls the model with `persona/SOUL.md` as the system
+prompt and the survival state (balances, gigs, leads, bounties) as the message.
+Replies land in `data/outbox/tick_NNNNNN.reply.md`; API failures are recorded
+as `.llm_error.md` and never break the loop. At the default hourly heartbeat
+that's 24 calls/day against a 1,500/day free quota — under 2%.
+
+Notes: free-tier prompts may be used by Google to improve its models, so the
+prompt carries no secrets. Nous Research's portal was evaluated and rejected:
+it requires a funded balance even for `:free` models. Groq's free tier is a
+drop-in alternative (`base_url: https://api.groq.com/openai/v1`).
 
 Honest limit: this wires the **brain** — the model thinks and answers each
 tick. The **hands** (a tool-use loop letting it actually call `draft_pitch()`,
 `scan_bounties()`, marketplace purchases, etc.) are the next build.
+
+## Free cloud: GitHub Actions
+
+`.github/workflows/heartbeat.yml` runs the heartbeat **hourly on GitHub's free
+tier** — no server, no Oracle signup. Each run: checks out the repo, restores
+the ledger, runs the gig seeker, runs one heartbeat tick (`--once`), then
+commits the ledger/outbox back so state survives between runs. Private repos
+get 2,000 Actions minutes/month; an hourly tick bills ~1–2 min, so a month
+costs roughly 700–1,000 minutes — inside the free allowance, and it renews
+monthly.
+
+Setup:
+1. Export a Gemini key and add it as a repo secret: **Settings → Secrets →
+   Actions → `GEMINI_API_KEY`**.
+2. Push (the workflow file is committed; Actions picks it up automatically).
+3. Trigger manually once: **Actions → hermes-heartbeat → Run workflow**.
+4. Watch `data/outbox/` — `tick_NNNNNN.reply.md` files appear as the agent
+   wakes. `data/DEEP_REST` existing means it's hibernating for lack of funds.
+
+Caveats: scheduled runs can be delayed by GitHub's queue and get disabled
+after long repo inactivity — the manual trigger always works. Stripe stays
+**off** in cloud runs until you wire `STRIPE_SECRET_KEY` as a secret and flip
+it on; the ledger just won't see real payments until then.
 
 ## Aaron's controls
 

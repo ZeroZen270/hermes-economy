@@ -17,19 +17,25 @@ outbox_dir: "./data/outbox"       # heartbeat prompts land here
 # Point at the real Hermes runner when it exists; empty = log prompt only.
 agent_command: ""
 
-# --- free brain: StepFun Step 3.7 Flash via the Nous Research portal ---
-# $0 free plan, OpenAI-compatible API. Sign up at https://portal.nousresearch.com
-# and export your key; every affordable tick calls the model with the persona
-# as system prompt and the survival state as the user message. Replies land in
-# data/outbox/tick_NNNNNN.reply.md.
+# --- free brain: Google AI Studio (Gemini) free tier ---
+# $0, no credit card — just a Google account. Get a key at
+# https://aistudio.google.com/app/apikey and export it. Every affordable tick
+# calls the model with the persona as system prompt and the survival state as
+# the user message. Replies land in data/outbox/tick_NNNNNN.reply.md.
+# Free-tier prompts may be used by Google to improve its models, so the prompt
+# carries no secrets — only ledger balances and gig state.
 llm:
   enabled: true
-  base_url: "https://inference-api.nousresearch.com/v1"
-  model: "stepfun/step-3.7-flash:free"
+  base_url: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  model: "gemini-2.5-flash"
+  api_key_env: "GEMINI_API_KEY"
   timeout_seconds: 120
   max_tokens: 1024
   temperature: 0.7
-# export NOUS_PORTAL_API_KEY=nk-...   (free plan, no card)
+# export GEMINI_API_KEY=...
+# Alternatives (same OpenAI-compatible shape):
+#   Groq (free, no card): https://api.groq.com/openai/v1  -> GROQ_API_KEY
+#   Nous portal (needs funded balance even for :free models) -> NOUS_PORTAL_API_KEY
 
 # --- real money ---
 stripe_enabled: true              # false = virtual ledger only, no Stripe calls

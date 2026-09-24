@@ -13,6 +13,7 @@ Every tick:
 Deep Rest is real: no prompt is built, no model is called, nothing burns.
 
 Run:  python heartbeat.py --config config.yaml
+      python heartbeat.py --config config.yaml --once   # single tick (cron / CI)
 Stop: Ctrl-C or `systemctl stop hermes-heartbeat` (see README for the unit).
 """
 from __future__ import annotations
@@ -89,6 +90,19 @@ def build_prompt(cfg: dict, ledger: Ledger, inventory: Inventory,
     return "\n".join(lines)
 
 
+def next_tick(outbox: Path) -> int:
+    """Next tick number from existing outbox prompts, so restarts and
+    --once runs never overwrite an earlier tick."""
+    nums = []
+    if outbox.is_dir():
+        for p in outbox.glob("tick_*.md"):
+            try:
+                nums.append(int(p.stem.split("_")[1]))
+            except (IndexError, ValueError):
+                pass  # tick_NNNNNN.reply.md / .llm_error.md
+    return max(nums, default=0) + 1
+
+
 def run_agent(cfg: dict, prompt: str, tick: int) -> None:
     """Invoke the agent. Precedence:
     1. agent_command — shell command receiving the prompt on stdin (the real
@@ -118,10 +132,14 @@ def run_agent(cfg: dict, prompt: str, tick: int) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="config.yaml")
+    ap.add_argument("--once", action="store_true",
+                    help="run a single tick then exit (for cron / GitHub Actions)")
     args = ap.parse_args()
     cfg = load_config(Path(args.config))
+    once = args.once
 
     data = Path(cfg["data_dir"])
+    data.mkdir(parents=True, exist_ok=True)
     ledger = Ledger(data / "economy.db")
     gigs = GigStore(data / "economy.db")
     inventory = Inventory(ledger, data / "inventory.json")
@@ -138,8 +156,8 @@ def main() -> None:
         with open(log, "a") as f:
             f.write(line + "\n")
 
-    tick = 0
-    say("heartbeat online")
+    tick = next_tick(Path(cfg["outbox_dir"])) - 1
+    say("heartbeat online" + (" (once)" if once else ""))
     while True:
         tick += 1
         # 1. Money in: Stripe poll (safe to re-run; ledger dedups).
@@ -158,14 +176,18 @@ def main() -> None:
             if inventory.consume_insurance():
                 say("runway insurance consumed: tick covered")
             else:
-                say(f"DEEP REST: balance {balance} < cost {cost}. Sleeping.")
+                say(f"DEEP REST: balance {balance} < cost {cost}.")
                 (data / "DEEP_REST").touch()
+                if once:
+                    break  # next scheduled run checks again
+                say(f"Sleeping {deep_rest_check}s.")
                 time.sleep(deep_rest_check)
                 (data / "DEEP_REST").unlink(missing_ok=True)
                 continue
 
         # 3. Burn the tick.
         ledger.burn(cost, memo=f"heartbeat tick #{tick}")
+        (data / "DEEP_REST").unlink(missing_ok=True)  # funded again
 
         # 4. Wake the agent.
         effects = inventory.active_effects()
@@ -177,6 +199,8 @@ def main() -> None:
         except Exception as e:
             say(f"tick #{tick}: agent run failed: {e}")
 
+        if once:
+            break
         time.sleep(interval)
 
 
