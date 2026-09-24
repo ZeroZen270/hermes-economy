@@ -96,6 +96,8 @@ def gather_stats(cfg: dict) -> dict:
         "agent_usd": s["agent_usd"],
         "treasury_credits": s["treasury_credits"],
         "treasury_usd": s["treasury_usd"],
+        "real_earned_credits": s["real_earned_credits"],
+        "real_earned_usd": s["real_earned_usd"],
         "runway": s["agent_credits"] // cost if cost else 0,
         "cost": cost,
         "latest_tick": ticks[0]["n"] if ticks else 0,
@@ -142,6 +144,7 @@ def render_dashboard(s: dict) -> str:
       <div class="card"><div class="v">{s['agent_credits']:,}</div><div class="l">Operating credits (${s['agent_usd']:.2f})</div></div>
       <div class="card"><div class="v">~{s['runway']}</div><div class="l">Ticks of runway ({s['cost']}/tick)</div></div>
       <div class="card"><div class="v">${s['treasury_usd']:.2f}</div><div class="l">Treasury — Aaron's ({s['treasury_credits']:,} cr)</div></div>
+      <div class="card"><div class="v">${s['real_earned_usd']:.2f}</div><div class="l">Real money earned (goal: $100)</div></div>
       <div class="card"><div class="v">{s['latest_tick']}</div><div class="l">Latest tick</div></div>
       <div class="card"><div class="v">{len(s['open_gigs'])}</div><div class="l">Open gigs</div></div>
       <div class="card"><div class="v">{len(s['drafts'])} / {len([r for r in s['requests'] if r.get('status')=='pending_review'])}</div><div class="l">Drafts / pending requests</div></div>
