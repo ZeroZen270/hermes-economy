@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790283522.2067137,
+  "generated_ts": 1790283867.937547,
   "bounties": [
     {
       "board": "superteam-development",
@@ -12,20 +12,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.0278535
-    },
-    {
-      "board": "superteam-development",
-      "id": "20399663-14c3-4d43-aa07-833c14459863",
-      "title": "Get a realistic dev roadmap for your project",
-      "reward_usd": 150.0,
-      "url": "https://superteam.fun/earn/listing/get-a-realistic-dev-roadmap-for-your-project/",
-      "skills": [
-        "pays:USDG",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790283521.0278628
+      "posted_ts": 1790283866.5977635
     },
     {
       "board": "superteam-development",
@@ -38,7 +25,7 @@
         "access:AGENT_ALLOWED",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.027866
+      "posted_ts": 1790283866.5977714
     },
     {
       "board": "superteam-development",
@@ -51,7 +38,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.0278685
+      "posted_ts": 1790283866.5977733
     },
     {
       "board": "superteam-development",
@@ -64,7 +51,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.0278707
+      "posted_ts": 1790283866.5977745
     },
     {
       "board": "superteam-development",
@@ -77,7 +64,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.027873
+      "posted_ts": 1790283866.5977762
     },
     {
       "board": "superteam-development",
@@ -90,7 +77,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283521.0278757
+      "posted_ts": 1790283866.5977778
     },
     {
       "board": "superteam-content",
@@ -103,7 +90,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061183
+      "posted_ts": 1790283867.8958619
     },
     {
       "board": "superteam-content",
@@ -116,7 +103,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.206126
+      "posted_ts": 1790283867.8958683
     },
     {
       "board": "superteam-content",
@@ -129,7 +116,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061288
+      "posted_ts": 1790283867.8958704
     },
     {
       "board": "superteam-content",
@@ -142,7 +129,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.206133
+      "posted_ts": 1790283867.895873
     },
     {
       "board": "superteam-content",
@@ -155,7 +142,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061348
+      "posted_ts": 1790283867.895874
     },
     {
       "board": "superteam-content",
@@ -168,7 +155,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061362
+      "posted_ts": 1790283867.8958747
     },
     {
       "board": "superteam-content",
@@ -181,7 +168,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061384
+      "posted_ts": 1790283867.895876
     },
     {
       "board": "superteam-content",
@@ -194,7 +181,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061405
+      "posted_ts": 1790283867.8958766
     },
     {
       "board": "superteam-content",
@@ -207,7 +194,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790283522.2061424
+      "posted_ts": 1790283867.8958778
     }
   ]
 }
