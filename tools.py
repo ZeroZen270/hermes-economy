@@ -172,6 +172,11 @@ def draft_pitch(ctx: ToolContext, lead_domain: str = "",
         return (f"TOOL ERROR: '{lead_domain}' is not an audited lead. "
                 "Only pitch domains from audit_leads() with measured issues — "
                 "no cold spam to strangers.")
+    blocked = _domain_outreach_blocked(
+        ctx.data, lead_domain,
+        int((ctx.cfg.get("outreach") or {}).get("resend_cooldown_days", 7)))
+    if blocked:
+        return blocked
     sender = (ctx.cfg.get("gig_seeker") or {}).get("sender") or {}
     issues = "; ".join(lead.get("issues", []))
     body = (
@@ -368,6 +373,62 @@ def _sent_records(data: Path) -> list:
     return recs
 
 
+def _submission_records(data: Path) -> list:
+    """Pitch submissions already in the pipeline (staged / hold / submitted)."""
+    recs = []
+    sub_dir = data / "outbox" / "submissions"
+    if sub_dir.is_dir():
+        for p in sorted(sub_dir.glob("submission_*_pitch_*.json")):
+            try:
+                recs.append(json.loads(p.read_text()))
+            except Exception:
+                continue
+    return recs
+
+
+def _quarantined_domains(data: Path) -> set:
+    """Domains permanently off-limits (junk leads, removal requests)."""
+    try:
+        q = json.loads((data / "quarantine.json").read_text())
+        return {str(x).strip().lower() for x in (q.get("domains") or []) if str(x).strip()}
+    except Exception:
+        return set()
+
+
+def _domain_outreach_blocked(data: Path, domain: str,
+                             cooldown_days: int) -> "str | None":
+    """Return a TOOL ERROR reason if the domain must not be (re-)pitched
+    right now, else None. Enforced by draft_pitch() and stage_pitch() so a
+    tick can never re-draft a quarantined, in-flight, or cooling-down lead —
+    the same guarantee send_pitch() already has."""
+    domain = (domain or "").strip().lower()
+    if not domain:
+        return None
+    now = time.time()
+    cool = max(int(cooldown_days or 0), 0) * 86400
+    for r in _sent_records(data):
+        if (r.get("domain") or "").strip().lower() == domain \
+                and now - r.get("ts", 0) < cool:
+            return (f"TOOL ERROR: {domain} was pitched within the last "
+                    f"{cooldown_days} days — cooldown active. Move on to a "
+                    f"fresh lead.")
+    for r in _submission_records(data):
+        if (r.get("lead_domain") or "").strip().lower() != domain:
+            continue
+        status = (r.get("status") or "").strip().lower()
+        if status in ("staged", "hold"):
+            return (f"TOOL ERROR: {domain} already has a {status} pitch "
+                    f"submission in the pipeline — no re-draft.")
+        if status == "submitted" and now - r.get("ts", 0) < cool:
+            return (f"TOOL ERROR: {domain} was pitched within the last "
+                    f"{cooldown_days} days — cooldown active. Move on to a "
+                    f"fresh lead.")
+    if domain in _quarantined_domains(data):
+        return (f"TOOL ERROR: {domain} is quarantined — do not pitch it "
+                f"again, ever.")
+    return None
+
+
 def _parse_draft(text: str) -> dict | None:
     """Extract domain, To address, send-ready flag, subject, body from a draft."""
     m_dom = re.search(r"^Lead:\s*(\S+)", text, re.M)
@@ -543,6 +604,14 @@ def stage_pitch(ctx: ToolContext, to: str = "", subject: str = "",
         return "TOOL ERROR: subject is empty."
     if not body:
         return "TOOL ERROR: body is empty."
+    dom = (lead_domain or "").strip().lower()
+    if not dom and "@" in to:
+        dom = to.rsplit("@", 1)[-1].strip().lower()
+    blocked = _domain_outreach_blocked(
+        ctx.data, dom,
+        int((ctx.cfg.get("outreach") or {}).get("resend_cooldown_days", 7)))
+    if blocked:
+        return blocked
     sub_dir = ctx.data / "outbox" / "submissions"
     sub_dir.mkdir(parents=True, exist_ok=True)
     stamp = time.strftime("%Y%m%dT%H%M%S")
