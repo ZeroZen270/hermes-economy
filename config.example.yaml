@@ -58,9 +58,25 @@ llm:
 #   Nous portal (needs funded balance even for :free models) -> NOUS_PORTAL_API_KEY
 
 # --- real money ---
-stripe_enabled: true              # false = virtual ledger only, no Stripe calls
-# export STRIPE_SECRET_KEY=sk_test_...   (start in TEST mode)
-# export STRIPE_WEBHOOK_SECRET=whsec_... (only needed for the optional webhook)
+# Stripe is RETIRED (owner decision 2026-09-24): direct deposit to the owner's
+# bank covers every freelance/bounty channel. Re-enable only if Hermes ever
+# takes card payments directly from its own clients.
+stripe_enabled: false             # false = virtual ledger only, no Stripe calls
+# export STRIPE_SECRET_KEY=sk_test_...   (only if stripe_enabled is ever flipped back)
+
+# --- real-money payouts: where earnings land ---
+# Bank direct deposit (owner's Chime checking). Details come ONLY from the
+# environment — never commit them, never log them. The dashboard/ledger only
+# ever show the masked summary (bank + last 4).
+payouts:
+  rail: "bank"                    # 'bank' = direct deposit; 'none' = virtual only
+  # export PAYOUT_BANK_NAME="Chime"
+  # export PAYOUT_ACCOUNT_HOLDER="Aaron Victor Svoboda"
+  # export PAYOUT_ACCOUNT_TYPE="checking"
+  # export PAYOUT_ROUTING="<routing number>"    # via Secure Vault / secrets mgr
+  # export PAYOUT_ACCOUNT="<account number>"   # via Secure Vault / secrets mgr
+  # The agent never moves money itself: record_bank_payout() in payout_rails.py
+  # only LOGS payouts Aaron confirms he completed.
 
 # --- gig seeking ---
 gig_seeker:

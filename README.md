@@ -35,7 +35,8 @@ Stripe dashboard.
 | `persona/SOUL.md` | Full survival persona. Every claim is enforced by the code below. |
 | `ledger.py` | SQLite ledger: treasury + agent accounts, append-only transactions |
 | `marketplace.py` | Virtual goods catalog: memory slots, tool unlocks, heartbeat boost, subcontractor calls, market stall, runway insurance, identity sigils |
-| `stripe_rails.py` | Stripe Payment Links for gigs + polling for completed payments (webhook optional) |
+| `stripe_rails.py` | RETIRED 2026-09-24: Stripe Payment Links for gigs (kept for reference only) |
+| `payout_rails.py` | Real-money payouts: bank direct deposit to Aaron's Chime checking (env-configured, masked display) |
 | `heartbeat.py` | The daemon: 25-min wake, burn, Deep Rest, survival prompt |
 | `hermes_plugin.py` | Agent tools: `check_balance`, `list_goods`, `buy_good`, `create_gig_invoice`, `submit_completed_work`, `request_allowance_increase` |
 | `config.example.yaml` | Copy to `config.yaml` and tune |
@@ -48,8 +49,13 @@ pip install stripe flask pyyaml
 cp config.example.yaml config.yaml
 mkdir -p data
 
-# 1. Start in Stripe TEST mode
-export STRIPE_SECRET_KEY=sk_test_...
+# 1. Configure the payout rail (where real earnings land)
+export PAYOUT_BANK_NAME="Chime"
+export PAYOUT_ACCOUNT_HOLDER="Aaron Victor Svoboda"
+export PAYOUT_ACCOUNT_TYPE="checking"
+# Routing + account numbers go through the Secure Vault / secrets manager —
+# never in a file, never in chat. The system only ever displays a masked
+# summary (bank + last 4).
 
 # 2. Smoke-test the ledger (no Stripe needed)
 python - <<'EOF'
@@ -68,6 +74,22 @@ python heartbeat.py --config config.yaml
 ```
 
 ### Going live with real money
+
+Stripe is retired (owner decision 2026-09-24) — direct deposit to Aaron's
+Chime checking covers every freelance/bounty channel. To wire it up:
+
+1. Put the routing and account numbers in the Secure Vault / secrets
+   manager (ask Odin for the capture link) — never in a file or chat.
+2. `export PAYOUT_ROUTING=...` and `export PAYOUT_ACCOUNT=...` (plus the
+   `PAYOUT_BANK_NAME` / `PAYOUT_ACCOUNT_HOLDER` / `PAYOUT_ACCOUNT_TYPE`
+   vars) in the systemd unit's `EnvironmentFile`, then
+   `systemctl start hermes-heartbeat`.
+3. The agent never moves money itself: when a payout completes,
+   `record_bank_payout()` in `payout_rails.py` logs it against the masked
+   destination (`Chime checking ••••last4`).
+
+(Stripe docs below are kept for reference in case Hermes ever needs to
+take card payments directly from its own clients.)
 
 1. In the Stripe dashboard: activate the account, complete payouts setup
    (bank account where **you** collect).
@@ -195,9 +217,12 @@ Setup:
    wakes. `data/DEEP_REST` existing means it's hibernating for lack of funds.
 
 Caveats: scheduled runs can be delayed by GitHub's queue and get disabled
-after long repo inactivity — the manual trigger always works. Stripe stays
-**off** in cloud runs until you wire `STRIPE_SECRET_KEY` as a secret and flip
-it on; the ledger just won't see real payments until then.
+after long repo inactivity — the manual trigger always works. Stripe is
+retired: real-money payouts go by bank direct deposit to Aaron's Chime
+checking, configured via `PAYOUT_*` env vars on the machine that runs the
+heartbeat (never in the repo). Cloud runs simply don't have those vars,
+so the payout rail reports "not configured" there and the ledger won't
+see real payouts until then.
 
 ## Reviewing Hermes (dashboard + web UI)
 

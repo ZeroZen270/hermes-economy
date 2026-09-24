@@ -4,8 +4,9 @@
 # state back so the ledger survives between runs (runners are ephemeral).
 #
 # Setup: add GEMINI_API_KEY as a repo secret (Settings -> Secrets -> Actions).
-# Stripe stays OFF here until you add STRIPE_SECRET_KEY and flip the config
-# step below. Manual trigger: Actions -> hermes-heartbeat -> Run workflow.
+# Stripe is retired; real-money payouts go by bank direct deposit, configured
+# via PAYOUT_* env vars only on machines Aaron controls (never in the repo).
+# Manual trigger: Actions -> hermes-heartbeat -> Run workflow.
 name: hermes-heartbeat
 
 on:
@@ -33,14 +34,14 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
-      - name: Build config (Stripe off until wired)
+      - name: Build config (Stripe retired; payouts via PAYOUT_* env on owned machines)
         run: |
           cp config.example.yaml config.yaml
           python3 - <<'EOF'
           import yaml
           p = "config.yaml"
           cfg = yaml.safe_load(open(p))
-          cfg["stripe_enabled"] = False  # real money needs STRIPE_SECRET_KEY + review
+          cfg["stripe_enabled"] = False  # retired 2026-09-24; bank direct deposit instead
           yaml.safe_dump(cfg, open(p, "w"))
           print("stripe_enabled ->", cfg["stripe_enabled"])
           EOF
