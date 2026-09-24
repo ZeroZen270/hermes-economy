@@ -10,6 +10,8 @@
 # the 2,000-minute free allowance for private repos.
 #
 # Setup: add GEMINI_API_KEY as a repo secret (Settings -> Secrets -> Actions).
+# For outbound pitch email, also add OUTREACH_SMTP_HOST/PORT/USER/PASS
+# (e.g. smtp.gmail.com + a Gmail app password) or RESEND_API_KEY.
 # Stripe is retired; real-money payouts go by bank direct deposit, configured
 # via PAYOUT_* env vars only on machines Aaron controls (never in the repo).
 # The five PAYOUT_* values can also live as GitHub repo secrets — the tick
@@ -72,6 +74,14 @@ jobs:
           PAYOUT_ACCOUNT_TYPE: ${{ secrets.PAYOUT_ACCOUNT_TYPE }}
           PAYOUT_ROUTING: ${{ secrets.PAYOUT_ROUTING }}
           PAYOUT_ACCOUNT: ${{ secrets.PAYOUT_ACCOUNT }}
+          # Outreach email passthrough for send_pitch(). Missing secrets
+          # evaluate to empty strings and send_pitch() treats that as
+          # "not configured" (nothing sends). Secrets are never logged.
+          OUTREACH_SMTP_HOST: ${{ secrets.OUTREACH_SMTP_HOST }}
+          OUTREACH_SMTP_PORT: ${{ secrets.OUTREACH_SMTP_PORT }}
+          OUTREACH_SMTP_USER: ${{ secrets.OUTREACH_SMTP_USER }}
+          OUTREACH_SMTP_PASS: ${{ secrets.OUTREACH_SMTP_PASS }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python3 heartbeat.py --config config.yaml --once
 
       - name: Persist state
