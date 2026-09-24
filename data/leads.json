@@ -1,22 +1,6 @@
 {
-  "generated_ts": 1790264330.221169,
+  "generated_ts": 1790264923.4712794,
   "leads": [
-    {
-      "domain": "swiftroofing.net",
-      "url": "https://swiftroofing.net",
-      "issues": [
-        "slow"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 4.15,
-        "final_url": "https://swiftroofing.net/",
-        "cert_days_left": 181
-      },
-      "score": 3,
-      "checked_ts": 1790264278.8146474,
-      "emails": []
-    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -25,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.28,
+        "latency_s": 0.73,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 42
       },
       "score": 2,
-      "checked_ts": 1790264239.607825,
+      "checked_ts": 1790264833.609237,
       "emails": []
     },
     {
@@ -41,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.27,
+        "latency_s": 0.22,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 143
       },
       "score": 2,
-      "checked_ts": 1790264246.2801707,
+      "checked_ts": 1790264842.3786142,
       "emails": []
     },
     {
@@ -57,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.61,
+        "latency_s": 0.46,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790264252.3668897,
+      "checked_ts": 1790264847.8667521,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -75,12 +59,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.57,
+        "latency_s": 0.45,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790264254.2088754,
+      "checked_ts": 1790264849.400692,
       "emails": []
     }
   ]
