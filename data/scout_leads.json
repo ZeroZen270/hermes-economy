@@ -284,7 +284,10 @@
       "pay_range": "Up to $1,500 per OSS vuln, $4,000+ for critical model-file vulns; monthly contests with larger pools",
       "friction": "Needs AI/ML security research skills (Python + model formats fit Aaron's AI agent work); no signup fees; researcher-friendly disclosure process",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "pursued",
+      "agent_note": "Fetched huntr.dev; platform offers AI/ML bug bounties. Requires Python/security research skills. Prepared for vulnerability analysis.",
+      "worked_ts": 1790345980.6848748,
+      "worked_tick": 138
     },
     {
       "platform": "Patchstack",
@@ -293,7 +296,10 @@
       "pay_range": "Monthly pool ~$25k+ ($650/$350/$250 top-3 leaderboard); single bounties up to $49,500 zero-day; $466k+ paid lifetime",
       "friction": "Leaderboard-based: only top researchers paid monthly, so income needs consistent output; WordPress/PHP web skills needed; free signup",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "pursued",
+      "agent_note": "Checked Patchstack security research platform. WP plugin security audits provide monthly leaderboard and single bug bounties. Fits PHP/web auditing workflow.",
+      "worked_ts": 1790346035.6076226,
+      "worked_tick": 138
     },
     {
       "platform": "HackenProof",
@@ -326,7 +332,10 @@
       "pay_range": "$25-150 per mission; PayPal; 4.5* app-store rating, $67M+ paid out",
       "friction": "Low: free app, apply per mission; inconsistent selection; good occasional side cash, not reliable income",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "pursued",
+      "agent_note": "Checked dscout research platform. Mobile diary studies and interviews offer occasional paid research ($25-150).",
+      "worked_ts": 1790346079.381523,
+      "worked_tick": 138
     },
     {
       "platform": "User Interviews",
@@ -335,7 +344,10 @@
       "pay_range": "$10-80+ per study; some professional studies $100+; PayPal",
       "friction": "Low signup; screening per study; sporadic invites; complements Respondent.io niche",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "pursued",
+      "agent_note": "Reviewed User Interviews platform for paid IT/tech research studies ($10-80+ per study). Needs profile signup.",
+      "worked_ts": 1790346035.6082501,
+      "worked_tick": 138
     },
     {
       "platform": "Cobalt",
@@ -344,7 +356,10 @@
       "pay_range": "Engagement-based (credit model: 1 credit = 8 hrs pentesting); professional pentester rates; pays in USD",
       "friction": "Requires certified, vetted pentester profile - heavy screening; engagement-based not fast income; similar profile to Synack Red Team",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Cobalt pentesting marketplace requires a vetted, certified pentester profile and identity verification, which Aaron must set up.",
+      "worked_ts": 1790346079.3822334,
+      "worked_tick": 138
     },
     {
       "platform": "Emergent Ventures",
