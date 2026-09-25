@@ -1,6 +1,20 @@
 {
-  "generated_ts": 1790305643.0897236,
-  "opportunities": [],
+  "generated_ts": 1790324322.8727715,
+  "opportunities": [
+    {
+      "board": "superteam-content",
+      "id": "87f2aa3b-bfc0-43a1-ac9d-928b126f06cc",
+      "title": "Solana Ideathon @ Caucasus University",
+      "reward_usd": 1000.0,
+      "url": "https://superteam.fun/earn/listing/solana-ideathon-caucasus-university/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790324322.8723319
+    }
+  ],
   "boards": {
     "superteam-development": {
       "open": 6,
@@ -9,7 +23,7 @@
     },
     "superteam-content": {
       "open": 9,
-      "new": 0,
+      "new": 1,
       "error": null
     }
   }

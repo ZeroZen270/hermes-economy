@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790305643.0898974,
+  "generated_ts": 1790324322.872937,
   "bounties": [
     {
       "board": "superteam-development",
@@ -12,7 +12,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.666657
+      "posted_ts": 1790324321.5952225
     },
     {
       "board": "superteam-development",
@@ -25,7 +25,7 @@
         "access:AGENT_ALLOWED",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.6666687
+      "posted_ts": 1790324321.5952601
     },
     {
       "board": "superteam-development",
@@ -38,7 +38,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.6666725
+      "posted_ts": 1790324321.5952637
     },
     {
       "board": "superteam-development",
@@ -51,7 +51,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.6666749
+      "posted_ts": 1790324321.5952659
     },
     {
       "board": "superteam-development",
@@ -64,7 +64,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.666677
+      "posted_ts": 1790324321.5952678
     },
     {
       "board": "superteam-development",
@@ -77,7 +77,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305641.6666794
+      "posted_ts": 1790324321.5952704
     },
     {
       "board": "superteam-content",
@@ -90,7 +90,20 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.0892394
+      "posted_ts": 1790324322.8723223
+    },
+    {
+      "board": "superteam-content",
+      "id": "87f2aa3b-bfc0-43a1-ac9d-928b126f06cc",
+      "title": "Solana Ideathon @ Caucasus University",
+      "reward_usd": 1000.0,
+      "url": "https://superteam.fun/earn/listing/solana-ideathon-caucasus-university/",
+      "skills": [
+        "pays:USDG",
+        "access:HUMAN_ONLY",
+        "type:bounty"
+      ],
+      "posted_ts": 1790324322.8723319
     },
     {
       "board": "superteam-content",
@@ -103,7 +116,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.089247
+      "posted_ts": 1790324322.872336
     },
     {
       "board": "superteam-content",
@@ -116,7 +129,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.0892503
+      "posted_ts": 1790324322.872339
     },
     {
       "board": "superteam-content",
@@ -129,7 +142,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.089254
+      "posted_ts": 1790324322.8723443
     },
     {
       "board": "superteam-content",
@@ -142,7 +155,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.0892556
+      "posted_ts": 1790324322.872347
     },
     {
       "board": "superteam-content",
@@ -155,7 +168,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.089257
+      "posted_ts": 1790324322.8723502
     },
     {
       "board": "superteam-content",
@@ -168,7 +181,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.0892582
+      "posted_ts": 1790324322.8723524
     },
     {
       "board": "superteam-content",
@@ -181,20 +194,7 @@
         "access:HUMAN_ONLY",
         "type:bounty"
       ],
-      "posted_ts": 1790305643.0892596
-    },
-    {
-      "board": "superteam-content",
-      "id": "7d5de928-f119-40d4-9d14-7aac2232a2a9",
-      "title": "Hype Video for Breakpoint London",
-      "reward_usd": 5500.0,
-      "url": "https://superteam.fun/earn/listing/hype-video-for-breakpoint-london/",
-      "skills": [
-        "pays:USDC",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790305643.089261
+      "posted_ts": 1790324322.872354
     }
   ]
 }
