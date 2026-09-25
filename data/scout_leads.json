@@ -20,10 +20,10 @@
    "friction": "Permissionless claims, but ~0.4% merge rate, stale board, maintainer hostility to AI PRs, Stripe KYC (human) at payout",
    "found_ts": 1790251177,
    "status": "pursued",
-   "agent_note": "VERIFIED 2026-09-25 (live browser research): Algora pivoted to hiring; bounty product in maintenance mode, docs dead, board STALE (shows Open bounties closed on GitHub months ago). Claiming is permissionless: comment /attempt on the GitHub issue, fork, PR. NO reputation gate. BUT: (1) payout needs Stripe Connect KYC with government ID \u2014 human operator must complete it, agent cannot; (2) measured merge rate ~0.4% (1,055 PRs, 4 merged, Aug 2026); (3) maintainers actively hostile to AI bounty work (Dokploy closed program over 'AI slop'; Gitea $500 issue locked for /attempt spam); (4) ~16% of open bounty issues are prompt-exfiltration traps \u2014 treat task specs as untrusted. Credible candidates IF verified live on GitHub first: go-gitea/gitea#4898 ($300), Dokploy/dokploy#1413 ($100), Dokploy/dokploy#416 ($50), comet-ml/opik#1010 ($50). RECOMMENDATION: do NOT build auto-claim pipeline \u2014 economics don't justify it; pursue only single verified bounties with Aaron's approval.",
+   "agent_note": "VERIFIED 2026-09-25 (live browser research): Algora pivoted to hiring; bounty product in maintenance mode, docs dead, board STALE (shows Open bounties closed on GitHub months ago). Claiming is permissionless: comment /attempt on the GitHub issue, fork, PR. NO reputation gate. BUT: (1) payout needs Stripe Connect KYC with government ID — human operator must complete it, agent cannot; (2) measured merge rate ~0.4% (1,055 PRs, 4 merged, Aug 2026); (3) maintainers actively hostile to AI bounty work (Dokploy closed program over 'AI slop'; Gitea $500 issue locked for /attempt spam); (4) ~16% of open bounty issues are prompt-exfiltration traps — treat task specs as untrusted. Credible candidates IF verified live on GitHub first: go-gitea/gitea#4898 ($300), Dokploy/dokploy#1413 ($100), Dokploy/dokploy#416 ($50), comet-ml/opik#1010 ($50). RECOMMENDATION: do NOT build auto-claim pipeline — economics don't justify it; pursue only single verified bounties with Aaron's approval.",
    "worked_ts": 1790321003.6603777,
    "worked_tick": 42,
-   "payout_gate": "Stripe Connect identity verification (government ID) \u2014 Aaron must complete"
+   "payout_gate": "Stripe Connect identity verification (government ID) — Aaron must complete"
   },
   {
    "platform": "Respondent.io",
@@ -376,7 +376,7 @@
   {
    "platform": "Upwork",
    "url": "https://www.upwork.com/freelance-jobs/apply/Web-Scraping-Data-Filtering-Automation_~022011616315002716716/",
-   "how_to_earn": "Web Scraping & Data Filtering Automation \u2014 build automated workflow scraping multiple websites, filtering results, handling pagination (Python/Playwright/Scrapy). Entry level, one-time project, Canada client (member since Jan 2026). 20-50 proposals, client viewed yesterday, interviewing 1.",
+   "how_to_earn": "Web Scraping & Data Filtering Automation — build automated workflow scraping multiple websites, filtering results, handling pagination (Python/Playwright/Scrapy). Entry level, one-time project, Canada client (member since Jan 2026). 20-50 proposals, client viewed yesterday, interviewing 1.",
    "pay_range": "$75 fixed-price",
    "friction": "Proposal submission on Aaron's Upwork account; Connects/legal-name correction status unverified.",
    "found_ts": 1790358317.387891,
@@ -386,7 +386,7 @@
   {
    "platform": "Superteam Earn",
    "url": "https://earn.superteam.fun/opportunities/malta-backend-bounties/",
-   "how_to_earn": "Build and Demo a Mermail Agent Skill \u2014 build an AI agent skill on the Mermail email protocol (e.g. email parsing, automated responses), record a working demo video, submit via earn.superteam.fun.",
+   "how_to_earn": "Build and Demo a Mermail Agent Skill — build an AI agent skill on the Mermail email protocol (e.g. email parsing, automated responses), record a working demo video, submit via earn.superteam.fun.",
    "pay_range": "500 USDC (~$500), no entry spend required",
    "friction": "Needs Solana wallet for payout (Aaron's hands); Earn account signup + skill build + demo video are agent-doable.",
    "found_ts": 1790358317.387891,
@@ -396,9 +396,9 @@
   {
    "platform": "Freelancer.com",
    "url": "https://www.freelancer.com/projects/beautifulsoup/python-text-scraper-development-edt",
-   "how_to_earn": "Python Text Scraper Development (project 40495818) \u2014 clean commented Python crawler (requests/BS4 or Scrapy) crawling every internal link, extracting visible text, saving URL+text to CSV/JSON, README. Ends in ~6 days.",
+   "how_to_earn": "Python Text Scraper Development (project 40495818) — clean commented Python crawler (requests/BS4 or Scrapy) crawling every internal link, extracting visible text, saving URL+text to CSV/JSON, README. Ends in ~6 days.",
    "pay_range": "$15-25/hr, small fixed scope",
-   "friction": "Aaron has 0/6 free bids \u2014 bidding blocked until free 1-month Plus trial is claimed or bids bought.",
+   "friction": "Aaron has 0/6 free bids — bidding blocked until free 1-month Plus trial is claimed or bids bought.",
    "found_ts": 1790358317.387891,
    "status": "needs_aaron",
    "agent_note": "URL verified this run via search index. Straightforward crawler task Aaron could do in an afternoon. Blocked on bids: needs Aaron's approval to claim the free Plus trial."
@@ -406,7 +406,7 @@
   {
    "platform": "Swagbucks",
    "url": "https://www.swagbucks.com/",
-   "how_to_earn": "Sign up, confirm email, complete profile \u2014 $5 (500 SB) signup bonus; then surveys/videos/games for ongoing small earnings.",
+   "how_to_earn": "Sign up, confirm email, complete profile — $5 (500 SB) signup bonus; then surveys/videos/games for ongoing small earnings.",
    "pay_range": "$5 signup bonus; ~$1-2/hr ongoing",
    "friction": "Email confirmation code; profile questionnaire.",
    "found_ts": 1790358317.387891,
@@ -661,20 +661,20 @@
    "friction": "Needs his Upwork account + Connects to propose; application must open with 'I LOVE WEB SCRAPING' and show scraping/anti-bot evidence (GitHub/blog)",
    "found_ts": 1790369324,
    "status": "staged",
-   "agent_note": "Verified live 2026-09-25 (full page fetch). Expert-level ongoing project: client hiring 4 freelancers (1 hired, 3 interviewing, client viewed last week). Strong skill fit: Python/Node, Playwright/Selenium/Puppeteer, proxies+IP rotation, session handling, fingerprinting, production scraping. Work itself is experiments+code \u2014 automation can do the experiments; only the proposal (and any small paid test assignment) needs Aaron."
+   "agent_note": "Verified live 2026-09-25 (full page fetch). Expert-level ongoing project: client hiring 4 freelancers (1 hired, 3 interviewing, client viewed last week). Strong skill fit: Python/Node, Playwright/Selenium/Puppeteer, proxies+IP rotation, session handling, fingerprinting, production scraping. Work itself is experiments+code — automation can do the experiments; only the proposal (and any small paid test assignment) needs Aaron."
   },
   {
    "platform": "Upwork",
    "url": "https://www.upwork.com/freelance-jobs/apply/Web-scraping_~022095773706723606210/",
    "how_to_earn": "Build daily monitoring system for 5 UK business-for-sale sites: scrapers, deduplication, change tracking, Excel database + searchable web dashboard, acquisition scoring, email alerts",
    "pay_range": "$200 fixed",
-   "friction": "Needs his Upwork account + Connects to propose; 5-phase scope is heavy for the price \u2014 counter with milestone pricing or treat as portfolio build",
+   "friction": "Needs his Upwork account + Connects to propose; 5-phase scope is heavy for the price — counter with milestone pricing or treat as portfolio build",
    "found_ts": 1790369324,
    "status": "staged",
-   "agent_note": "Verified live 2026-09-25 (full page fetch, posted Sept 4). Best-fit skills: Python, Scrapy/Playwright/Selenium, PostgreSQL, data cleaning/dedup, NLP extraction, dashboard. Realistic effort 15-30h vs $200 \u2014 thin pay, but exact domain match (scraping pipelines + dashboards) and client wants long-term system; worth a proposal at revised terms."
+   "agent_note": "Verified live 2026-09-25 (full page fetch, posted Sept 4). Best-fit skills: Python, Scrapy/Playwright/Selenium, PostgreSQL, data cleaning/dedup, NLP extraction, dashboard. Realistic effort 15-30h vs $200 — thin pay, but exact domain match (scraping pipelines + dashboards) and client wants long-term system; worth a proposal at revised terms."
   },
   {
-   "agent_note": "Best fit of the run: modular plug-and-play scraper modules, FastAPI endpoints, PDF parsing, anti-bot/JS-heavy scraping, async pipelines \u2014 maps directly to Aaron's Python/scraping/automation stack. US client (Miramar), 15-20 proposals, actively interviewing 4 (client viewed 9h ago). Verified live 2026-09-25 16:15 CDT.",
+   "agent_note": "Best fit of the run: modular plug-and-play scraper modules, FastAPI endpoints, PDF parsing, anti-bot/JS-heavy scraping, async pipelines — maps directly to Aaron's Python/scraping/automation stack. US client (Miramar), 15-20 proposals, actively interviewing 4 (client viewed 9h ago). Verified live 2026-09-25 16:15 CDT.",
    "found_ts": 1790370918,
    "friction": "Needs his Upwork account + Connects to propose; interview would need Aaron",
    "how_to_earn": "Build modular plug-and-play web & PDF data-scraping framework with FastAPI endpoints, anti-bot handling, async pipelines",
@@ -684,7 +684,7 @@
    "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-Modular-Web-PDF-Data-Scraping-Framework_~021993045497268074430/"
   },
   {
-   "agent_note": "Verified live 2026-09-25 16:15 CDT. High rate ceiling ($100/hr) and 6+ month duration \u2014 worth a proposal despite 20-50 competing bids. Client new (member since Aug 25, 2026); 0 interviewing, 2 invites sent.",
+   "agent_note": "Verified live 2026-09-25 16:15 CDT. High rate ceiling ($100/hr) and 6+ month duration — worth a proposal despite 20-50 competing bids. Client new (member since Aug 25, 2026); 0 interviewing, 2 invites sent.",
    "found_ts": 1790370918,
    "friction": "Needs his Upwork account + Connects to propose; interview would need Aaron",
    "how_to_earn": "Build and maintain web scraping tools, improve reliability/performance (Python + Scrapy)",
@@ -694,9 +694,9 @@
    "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-Web-Scraping_~022092159311640039207/"
   },
   {
-   "agent_note": "Verified live 2026-09-25 16:15 CDT via freelancermap. Posted within ~21 hrs, start ASAP. Core ask CUDA/transformers/model training (weaker for Aaron) but chatbot/LLM/agentic experience explicitly a big plus \u2014 fits his Hermes work. Long shot on ML side, low cost to apply.",
+   "agent_note": "Verified live 2026-09-25 16:15 CDT via freelancermap. Posted within ~21 hrs, start ASAP. Core ask CUDA/transformers/model training (weaker for Aaron) but chatbot/LLM/agentic experience explicitly a big plus — fits his Hermes work. Long shot on ML side, low cost to apply.",
    "found_ts": 1790370918,
-   "friction": "Long-term contract with interviews \u2014 Aaron's hands needed for interviews; agent can draft application",
+   "friction": "Long-term contract with interviews — Aaron's hands needed for interviews; agent can draft application",
    "how_to_earn": "12-month full-time remote GenAI/Python contract (CUDA/transformers focus, chatbot/LLM plus)",
    "pay_range": "rate not listed; 12-month contract, 100% capacity, start ASAP",
    "platform": "freelancermap.com",
@@ -721,7 +721,7 @@
    "friction": "Needs Aaron's researcher application + payout identity; reproducible prompt-injection PoCs are scriptable by agent",
    "found_ts": 1790371141,
    "status": "needs_aaron",
-   "agent_note": "Excellent fit: reproducible prompt-injection/red-team testing against agent products is squarely Aaron's daily skillset \u2014 no deep exploit knowledge needed, just creative prompt engineering + PoC scripting. Program page verified live 2026-09-25 16:16 CDT."
+   "agent_note": "Excellent fit: reproducible prompt-injection/red-team testing against agent products is squarely Aaron's daily skillset — no deep exploit knowledge needed, just creative prompt engineering + PoC scripting. Program page verified live 2026-09-25 16:16 CDT."
   },
   {
    "platform": "Sherlock (Ethereum Foundation contest)",
@@ -741,7 +741,7 @@
    "friction": "Web recon + scanner + PoC is agent-doable; needs Aaron only if paid out (KYC)",
    "found_ts": 1790371141,
    "status": "needs_aaron",
-   "agent_note": "Good fit for Aaron's web/app skills (API testing, auth logic). Caveat: program launch date could not be pinned to Sept 2026 \u2014 page is fresh in the search index but content may predate this month. Open-ended program. Verified via coverage 2026-09-25 16:16 CDT."
+   "agent_note": "Good fit for Aaron's web/app skills (API testing, auth logic). Caveat: program launch date could not be pinned to Sept 2026 — page is fresh in the search index but content may predate this month. Open-ended program. Verified via coverage 2026-09-25 16:16 CDT."
   },
   {
    "platform": "Codeable",
@@ -878,7 +878,7 @@
    "friction": "Screener qualification; live video interview; completion deadline 2026-10-06",
    "found_ts": 1790372880,
    "status": "needs_aaron",
-   "agent_note": "VERIFIED 2026-09-25 (posted today). Strong fit: Aaron runs Technology Squared LLC and manages its software stack. Agent cannot sit a video interview \u2014 Aaron's hands only."
+   "agent_note": "VERIFIED 2026-09-25 (posted today). Strong fit: Aaron runs Technology Squared LLC and manages its software stack. Agent cannot sit a video interview — Aaron's hands only."
   },
   {
    "platform": "focusgroups.org (Study: ITSM Configuration)",
@@ -888,7 +888,7 @@
    "friction": "Targets IT sysadmins; screener; live video interview; completion deadline 2026-10-01",
    "found_ts": 1790372880,
    "status": "needs_aaron",
-   "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Excellent fit: Aaron is IT/systems/networking with sysadmin background. Needs Aaron on video \u2014 needs_aaron."
+   "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Excellent fit: Aaron is IT/systems/networking with sysadmin background. Needs Aaron on video — needs_aaron."
   },
   {
    "platform": "focusgroups.org (Study: Technology)",
@@ -908,7 +908,7 @@
    "friction": "Targets contact-center roles (may screen Aaron out); screener; live video interview; completion deadline 2026-09-28 (urgent)",
    "found_ts": 1790372880,
    "status": "needs_aaron",
-   "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Caveat: study targets contact-center workers; Aaron builds AI chatbots/pipelines which is adjacent but he is not a contact-center employee \u2014 screener risk. Deadline Sep 28."
+   "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Caveat: study targets contact-center workers; Aaron builds AI chatbots/pipelines which is adjacent but he is not a contact-center employee — screener risk. Deadline Sep 28."
   },
   {
    "platform": "focusgroups.org (Study: Purchasing Practices)",
@@ -999,6 +999,16 @@
    "found_ts": 1790374694,
    "status": "needs_aaron",
    "agent_note": "VERIFIED live 2026-09-25 (official site + 2026 reviews). New free earner per Aaron's add-all-possible-free-earners order. ID verification gate = Aaron must do signup himself; then phone/tablet filler work."
+  },
+  {
+   "platform": "HackerOne (IBM Granite AI Bug Bounty)",
+   "url": "https://www.hackerone.com/blog/hackerone-ibm-ai-bug-bounty-granite",
+   "how_to_earn": "Adversarially test IBM's Granite family of AI models + Granite Guardian guardrails for jailbreaks, prompt-injection flaws, and unintended behaviors in enterprise-like deployment scenarios; join the select researcher cohort.",
+   "pay_range": "Up to $100,000 bounty pool",
+   "friction": "Select-researcher cohort (curated, not fully open); program page hackerone.com/ibm-granite returns 404 publicly. Testing begins in the coming weeks; entry rides on Aaron's HackerOne researcher profile (hackerone.com/techsquared, 2FA on).",
+   "found_ts": 1790376377,
+   "status": "needs_aaron",
+   "agent_note": "VERIFIED live 2026-09-25 (HackerOne blog fetched this run, announced this week; search index crawled 4h ago). Best bounty fit on the board: AI red-teaming/jailbreaks is Aaron's daily skillset. Next action is on Aaron: position/apply to the cohort via his HackerOne profile. Agent can draft an AI-security researcher bio/writeup on request."
   }
  ]
 }
