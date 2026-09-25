@@ -412,6 +412,46 @@
       "found_ts": 1790358317.387891,
       "status": "staged",
       "agent_note": "Standard ongoing $5 signup bonus (not limited-time). Signup agent-doable via live browser task with email-code confirmation per standing instruction. Low value but zero friction; do only when idle."
+    },
+    {
+      "platform": "focusgroups.org (Study: AI-Powered Applications)",
+      "url": "https://focusgroups.org/category/interview-studies/research-study-on-ai-powered-applications-150/350ec17f-fcf9-4775-b7dd-1d3545ee5b5d/",
+      "how_to_earn": "60-min online 1-on-1 interview for developers building AI-powered applications; sign up, pass screening survey",
+      "pay_range": "$150 (must complete by Sept 29, 2026; posted 09/23/26)",
+      "friction": "Needs Aaron: screening survey + live video call; no payment/KYC to start",
+      "found_ts": 1790360094,
+      "status": "needs_aaron",
+      "agent_note": "Perfect skill fit (Hermes/AI agent builder). Apply ASAP - deadline 2026-09-29. Note in today's daily log."
+    },
+    {
+      "platform": "focusgroups.org (Study: Software Development Workflow)",
+      "url": "https://focusgroups.org/category/interview-studies/research-study-on-software-development-workflow-50/d357f8dd-9dd4-42f6-8bdc-1800f338847f/",
+      "how_to_earn": "30-min online research study about dev tools/workflows; sign up, screening survey",
+      "pay_range": "$50 (must complete by 2026-10-10; posted 09/11/26)",
+      "friction": "Needs Aaron: screening survey + online session",
+      "found_ts": 1790360094,
+      "status": "needs_aaron",
+      "agent_note": "Easy fit - daily dev workflow is Aaron's actual life. Quick $50."
+    },
+    {
+      "platform": "Sonic Labs x Immunefi bug bounty",
+      "url": "https://adbytes.media/blog/sonic-labs-and-immunefi-unveil-2m-bug-bounty-to-secure-blockchain",
+      "how_to_earn": "New $2M bug bounty program with Immunefi covering Sonic L1 protocol + Gateway bridge (EVM smart contracts)",
+      "pay_range": "Up to ~$1.85M total pool; per-bug bounties for critical protocol/bridge bugs",
+      "friction": "Needs Aaron: KYC on payout (Immunefi), crypto wallet, smart-contract auditing skills (outside current skillset)",
+      "found_ts": 1790360094,
+      "status": "needs_aaron",
+      "agent_note": "Verified live 2026-09-25 via news coverage. Low skill-fit (Solidity), but worth watching; protocol bugs pay largest."
+    },
+    {
+      "platform": "focusgroups.org (Study: Cloud Infrastructure for AI)",
+      "url": "https://focusgroups.org/all/",
+      "how_to_earn": "1-on-1 tech interview on cloud infrastructure for AI; posted 09/19/26 on the /all/ studies listing",
+      "pay_range": "$180",
+      "friction": "Needs Aaron: screening survey + live video call",
+      "found_ts": 1790360094,
+      "status": "needs_aaron",
+      "agent_note": "Strong fit (Proxmox/homelab/AI stack). Found on listing page; apply via the study's detail link there."
     }
   ]
 }
