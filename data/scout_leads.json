@@ -248,7 +248,10 @@
       "pay_range": "$80-200/hr contractor-set rates; Glassdoor devs report on-time automated direct-deposit pay, no hidden fees",
       "friction": "Top ~10% pass screening; community skews to 10+ yrs senior engineers - vetting bar is the friction; no upfront fees; paid-trial vetting",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Reviewed Gun.io requirements; vetting requires senior background and live tech screening, needing Aaron's onboarding.",
+      "worked_ts": 1790333443.2062702,
+      "worked_tick": 131
     },
     {
       "platform": "Arc.dev",
