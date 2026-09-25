@@ -372,6 +372,46 @@
       "agent_note": "Reviewed Emergent Ventures grant info. High upside, non-dilutive, requires <1500 word proposal. Hermes open-source agent work is a strong fit. Needs Aaron to review/submit application.",
       "worked_ts": 1790347906.6140146,
       "worked_tick": 139
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Web-Scraping-Data-Filtering-Automation_~022011616315002716716/",
+      "how_to_earn": "Web Scraping & Data Filtering Automation \u2014 build automated workflow scraping multiple websites, filtering results, handling pagination (Python/Playwright/Scrapy). Entry level, one-time project, Canada client (member since Jan 2026). 20-50 proposals, client viewed yesterday, interviewing 1.",
+      "pay_range": "$75 fixed-price",
+      "friction": "Proposal submission on Aaron's Upwork account; Connects/legal-name correction status unverified.",
+      "found_ts": 1790358317.387891,
+      "status": "staged",
+      "agent_note": "VERIFIED live 2026-09-25 (page fetched, 'Posted yesterday', still open). Exact-fit for Hermes automation stack (Playwright + structured data + scheduling). Main agent should submit proposal via live browser task using Aaron's Upwork session."
+    },
+    {
+      "platform": "Superteam Earn",
+      "url": "https://earn.superteam.fun/opportunities/malta-backend-bounties/",
+      "how_to_earn": "Build and Demo a Mermail Agent Skill \u2014 build an AI agent skill on the Mermail email protocol (e.g. email parsing, automated responses), record a working demo video, submit via earn.superteam.fun.",
+      "pay_range": "500 USDC (~$500), no entry spend required",
+      "friction": "Needs Solana wallet for payout (Aaron's hands); Earn account signup + skill build + demo video are agent-doable.",
+      "found_ts": 1790358317.387891,
+      "status": "needs_aaron",
+      "agent_note": "VERIFIED live 2026-09-25 on earn.superteam.fun (bounty still open, listed in current backend-bounty pages). Perfect Hermes-shaped task: agent skills + demo pipeline. Aaron must supply wallet; do NOT start without his go-ahead since payout is crypto."
+    },
+    {
+      "platform": "Freelancer.com",
+      "url": "https://www.freelancer.com/projects/beautifulsoup/python-text-scraper-development-edt",
+      "how_to_earn": "Python Text Scraper Development (project 40495818) \u2014 clean commented Python crawler (requests/BS4 or Scrapy) crawling every internal link, extracting visible text, saving URL+text to CSV/JSON, README. Ends in ~6 days.",
+      "pay_range": "$15-25/hr, small fixed scope",
+      "friction": "Aaron has 0/6 free bids \u2014 bidding blocked until free 1-month Plus trial is claimed or bids bought.",
+      "found_ts": 1790358317.387891,
+      "status": "needs_aaron",
+      "agent_note": "URL verified this run via search index. Straightforward crawler task Aaron could do in an afternoon. Blocked on bids: needs Aaron's approval to claim the free Plus trial."
+    },
+    {
+      "platform": "Swagbucks",
+      "url": "https://www.swagbucks.com/",
+      "how_to_earn": "Sign up, confirm email, complete profile \u2014 $5 (500 SB) signup bonus; then surveys/videos/games for ongoing small earnings.",
+      "pay_range": "$5 signup bonus; ~$1-2/hr ongoing",
+      "friction": "Email confirmation code; profile questionnaire.",
+      "found_ts": 1790358317.387891,
+      "status": "staged",
+      "agent_note": "Standard ongoing $5 signup bonus (not limited-time). Signup agent-doable via live browser task with email-code confirmation per standing instruction. Low value but zero friction; do only when idle."
     }
   ]
 }
