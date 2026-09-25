@@ -40,6 +40,61 @@ class ToolContext:
 TOOLS: dict[str, dict] = {}
 
 
+# ---------------------------------------------------------------------------
+# Outreach honesty gates (added 2026-09-25 after a real failure analysis):
+# 178 drafts had piled up with zero sendable — 170 re-drafted suppressed /
+# quarantined domains, the rest had no public email, and one pitch claimed
+# "no HTTPS" for a site that serves HTTPS fine. Two rules now enforced here:
+#   1. draft_pitch() REFUSES leads with no public contact email (logged to
+#      data/no_email_leads.json for manual lookup instead of rotting in
+#      drafts/).
+#   2. stage_pitch() re-audits the domain at stage time and refuses when the
+#      original finding is gone — a stale finding must never become a false
+#      claim in an outbound email.
+PITCHABLE_ISSUES = frozenset({
+    "no_https", "slow", "no_title", "no_meta_description",
+    "not_mobile_friendly", "server_error", "cert_expiring",
+})
+
+
+def _load_audit_domain():
+    """Load audit_domain from gig_seeker/prospector.py by file path, so this
+    works no matter how tools.py itself was imported (no package layout
+    needed). Returns None when prospector can't load (verification skipped)."""
+    try:
+        import importlib.util
+        here = Path(__file__).resolve().parent
+        spec = importlib.util.spec_from_file_location(
+            "_hermes_prospector", here / "gig_seeker" / "prospector.py")
+        if spec is None or spec.loader is None:
+            return None
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod.audit_domain
+    except Exception:
+        return None
+
+
+_audit_domain = _load_audit_domain()
+
+
+def _record_no_email_lead(data: Path, domain: str, issues: list) -> None:
+    """Log a lead that has real issues but no public contact email, so the
+    manual email-hunt can work it later instead of it rotting in drafts."""
+    try:
+        p = data / "no_email_leads.json"
+        doc = json.loads(p.read_text()) if p.exists() else {"leads": []}
+        leads = doc.get("leads") or []
+        if not any((l.get("domain") or "").lower() == domain.lower()
+                   for l in leads):
+            leads.append({"domain": domain, "issues": issues,
+                          "ts": time.time(), "status": "needs_email_lookup"})
+            doc["leads"] = leads
+            p.write_text(json.dumps(doc, indent=2))
+    except Exception:
+        pass
+
+
 def tool(name: str, description: str, args: str = ""):
     """Register a tool. `args` documents the JSON arguments object."""
     def deco(fn):
@@ -162,7 +217,8 @@ def audit_leads(ctx: ToolContext) -> str:
 
 @tool("draft_pitch",
       "Write an outreach pitch DRAFT for a real audited lead. NEVER sends — "
-      "the draft is saved for Aaron's review and approval.",
+      "the draft is saved for review. REFUSES leads with no public contact "
+      "email (they go to data/no_email_leads.json for manual lookup).",
       args='{"lead_domain": "example.com", "service": "code audit", "price_usd": 25.0}')
 def draft_pitch(ctx: ToolContext, lead_domain: str = "",
                 service: str = "", price_usd: float = 0) -> str:
@@ -177,6 +233,13 @@ def draft_pitch(ctx: ToolContext, lead_domain: str = "",
         int((ctx.cfg.get("outreach") or {}).get("resend_cooldown_days", 7)))
     if blocked:
         return blocked
+    emails = lead.get("emails") or []
+    if not emails:
+        _record_no_email_lead(ctx.data, lead_domain, lead.get("issues", []))
+        return (f"TOOL ERROR: '{lead_domain}' has no public contact email on "
+                "its site. No draft written — an unsendable draft helps "
+                "nobody. The lead was logged to data/no_email_leads.json for "
+                "manual email lookup. Move on to a lead with a public email.")
     sender = (ctx.cfg.get("gig_seeker") or {}).get("sender") or {}
     issues = "; ".join(lead.get("issues", []))
     body = (
@@ -198,15 +261,12 @@ def draft_pitch(ctx: ToolContext, lead_domain: str = "",
     drafts.mkdir(parents=True, exist_ok=True)
     stamp = time.strftime("%Y%m%dT%H%M%S")
     path = drafts / f"draft_{stamp}_{lead_domain}.md"
-    emails = lead.get("emails") or []
-    if emails:
-        routing = (f"To: {emails[0]}\n"
-                   f"Send-ready: YES — public contact email found on their site"
-                   + (f" ({lead.get('notes', {}).get('email_source', 'homepage')})" if lead.get("notes", {}).get("email_source") else " (homepage)")
-                   + (f"\nAlso found: {', '.join(emails[1:])}" if len(emails) > 1 else ""))
-    else:
-        routing = ("To: [no public email found — use their contact form or manual lookup]\n"
-                   "Send-ready: NO")
+    # NOTE: empty emails already refused above — every draft from here on is
+    # addressable to a real public inbox.
+    routing = (f"To: {emails[0]}\n"
+               f"Send-ready: YES — public contact email found on their site"
+               + (f" ({lead.get('notes', {}).get('email_source', 'homepage')})" if lead.get("notes", {}).get("email_source") else " (homepage)")
+               + (f"\nAlso found: {', '.join(emails[1:])}" if len(emails) > 1 else ""))
     path.write_text(f"# PITCH DRAFT — NOT SENT (tick {ctx.tick})\n"
                     f"Lead: {lead_domain} (score {lead.get('score')})\n"
                     f"{routing}\n"
@@ -649,6 +709,40 @@ def stage_pitch(ctx: ToolContext, to: str = "", subject: str = "",
         int((ctx.cfg.get("outreach") or {}).get("resend_cooldown_days", 7)))
     if blocked:
         return blocked
+    # Honesty gate: re-audit the domain RIGHT NOW and refuse when the
+    # original finding is gone. A stale finding (site fixed it since the
+    # audit, or a misread) must never become a false claim in an outbound
+    # email — that burns the sender's reputation and the reply-to inbox.
+    # Scoped to domains with a lead record (the real draft->stage flow);
+    # freeform stages without one keep the existing guards above.
+    verify_note = ""
+    lead_rec = next(
+        (ld for ld in _read_json(ctx.data / "leads.json", "leads")
+         if (ld.get("domain") or "").strip().lower() == dom), None)
+    if lead_rec is not None and _audit_domain is not None:
+        try:
+            fresh = _audit_domain(dom)
+            fresh_issues = set(fresh.issues or []) & set(PITCHABLE_ISSUES)
+            base_issues = (set(lead_rec.get("issues", []))
+                           & set(PITCHABLE_ISSUES))
+            if base_issues and not (base_issues & fresh_issues):
+                return (f"TOOL ERROR: fresh re-audit of {dom} just now shows "
+                        f"none of the original pitch issues "
+                        f"{sorted(base_issues)} (now: "
+                        f"{sorted(fresh_issues) or 'no issues'}). The finding "
+                        "is stale — the site fixed it or it was misread. Do "
+                        "NOT pitch a problem they don't have. Move on to a "
+                        "fresh lead.")
+            if not base_issues and not fresh_issues:
+                return (f"TOOL ERROR: fresh re-audit of {dom} just now shows "
+                        "no pitchable issues (site looks clean). Nothing "
+                        "honest to pitch — move on to a fresh lead.")
+            verify_note = (f"Claim re-verified "
+                           f"{time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}: "
+                           f"still {', '.join(sorted(fresh_issues)) or 'clean'}.")
+        except Exception as e:
+            verify_note = (f"Re-audit failed ({str(e)[:80]}); staged on "
+                           "original audit without fresh verification.")
     sub_dir = ctx.data / "outbox" / "submissions"
     sub_dir.mkdir(parents=True, exist_ok=True)
     stamp = time.strftime("%Y%m%dT%H%M%S")
@@ -657,7 +751,8 @@ def stage_pitch(ctx: ToolContext, to: str = "", subject: str = "",
     entry = {"ts": time.time(), "tick": ctx.tick, "status": "staged",
              "kind": "pitch", "to": to, "subject": subject, "body": body,
              "lead_domain": (lead_domain or "").strip(),
-             "notes": (note or "").strip()[:1000]}
+             "notes": ((note or "").strip() + (" | " if (note or "").strip() and verify_note else "")
+                       + verify_note)[:1200]}
     path = sub_dir / f"submission_{stamp}_pitch_{slug or 'lead'}.json"
     path.write_text(json.dumps(entry, indent=2))
     return (f"Staged pitch -> {path.name} (status: staged). Odin will send "
