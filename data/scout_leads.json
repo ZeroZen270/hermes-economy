@@ -452,6 +452,56 @@
       "found_ts": 1790360094,
       "status": "needs_aaron",
       "agent_note": "Strong fit (Proxmox/homelab/AI stack). Found on listing page; apply via the study's detail link there."
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Automation-and-Scraping-Tools-Developer_~021988855314198601116/",
+      "how_to_earn": "Build automation + web-scraping tools (Python, Scrapy); hiring 5 freelancers; ongoing hourly project, less than 30 hrs/week, 1-3 months",
+      "pay_range": "$20-40/hr (client Philippines, $648 spent, 307 hires, 67 active; viewed job 5h ago)",
+      "friction": "Staged for main agent: submit proposal from Aaron's Upwork session (connects needed); no payment/KYC to bid",
+      "found_ts": 1790361997.1480916,
+      "status": "staged",
+      "agent_note": "Strong fit: Python/Scrapy/web-crawling/data-integrity is Aaron's core stack and Hermes can do the work. Proposal angle: lead with data-quality guarantees and a maintainable tool design; undercut with reliability, not price."
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Scraping-Automation-and-n8n-Expert-Needed_~021991725128394890511/",
+      "how_to_earn": "Set up + optimize n8n scraping workflows for data gathering; hiring 10 freelancers; 30+ hrs/week, 6+ months ongoing",
+      "pay_range": "Hourly (rate unstated; long-term, high volume)",
+      "friction": "Staged for main agent: submit proposal from Aaron's Upwork session; no payment/KYC to bid",
+      "found_ts": 1790361997.1480916,
+      "status": "staged",
+      "agent_note": "Strong fit: n8n + Scrapy + Python + data accuracy is Aaron's automation sweet spot (Hermes infra). Bulk-hire listing (10 seats) = lower per-bid competition pressure. Propose n8n workflow architecture with proxy/anti-bot handling."
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Deploy-schedule-finished-Python-scraping-automation-script-Linux-VPS-setup-only-hrs_~022097328815332827213/",
+      "how_to_earn": "Deployment-only job: provision small Linux VPS, install Python tool (Gmail IMAP -> Notion + CSV/XLSX), set env vars, verify with check_gmail.py + capped test run, schedule weekly cron, leave 1-page ops note. 1-3 hrs work.",
+      "pay_range": "$80 fixed (posted Sept 8, 2026)",
+      "friction": "Staged for main agent: submit proposal from Aaron's Upwork session; no payment/KYC to bid",
+      "found_ts": 1790361997.1480916,
+      "status": "staged",
+      "agent_note": "Near-perfect fit: Linux VPS provisioning, cron scheduling, IMAP/Notion automation, env hygiene = Aaron's daily work (TICC/Hermes). Low effort ($80 for 1-3h), quick first win. Proposal: promise a handover note + one verified cron run in the log."
+    },
+    {
+      "platform": "User Interviews (study: Microsoft Azure usability)",
+      "url": "https://www.userinterviews.com/r/dzwtdynop",
+      "how_to_earn": "Online Azure usability research study for developers (build/deploy/manage apps); screening + live session",
+      "pay_range": "$100",
+      "friction": "Needs Aaron: screening survey, live video session, phone number for SMS confirmations; no payment/KYC to start",
+      "found_ts": 1790361997.1480916,
+      "status": "needs_aaron",
+      "agent_note": "Found 2026-09-25 via YouTube short posted 1 day ago; referral signup page verified live. Strong dev fit (Azure/cloud, real developer experience). Low friction."
+    },
+    {
+      "platform": "Compound Finance x Immunefi bug bounty",
+      "url": "https://cryptonews.com/news/compound-finance-launches-1m-bug-bounty-to-bolster-platform-security/",
+      "how_to_earn": "Find smart-contract vulnerabilities in Compound Finance DeFi protocol via Immunefi platform; tiered rewards, up to $1M or 10% of affected funds for critical",
+      "pay_range": "Up to $1M per critical (10% of funds at risk); lower tiers for high/medium",
+      "friction": "Needs Aaron: KYC + wallet on payout (Immunefi); Solidity/smart-contract auditing skills required",
+      "found_ts": 1790361997.1480916,
+      "status": "needs_aaron",
+      "agent_note": "News-verified 2026-09-25 (article crawled same day). Verify on Immunefi platform before engaging. Low skill-fit (Solidity, outside current stack) - watch list only unless Aaron picks up web3 auditing."
     }
   ]
 }
