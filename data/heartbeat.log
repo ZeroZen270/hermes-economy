@@ -327,3 +327,5 @@
 2026-09-25 08:50:28 tick #127: agent invoked (balance now 18700)
 2026-09-25 09:18:21 heartbeat online (once)
 2026-09-25 09:21:07 tick #128: agent invoked (balance now 18650)
+2026-09-25 09:48:49 heartbeat online (once)
+2026-09-25 09:48:51 tick #129: agent run failed: unexpected provider response: {"choices":[{"finish_reason":"tool_calls","index":0,"message":{"role":"assistant","tool_calls":[{"extra_content":{"google":{"thought_signature":"EqwDCqkDAWkUfRPAEs1xRCYLhBCMKNWmzdY/4/a2GwJHdHkWeCEcjAV
