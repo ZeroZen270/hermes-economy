@@ -368,7 +368,10 @@
       "pay_range": "Typical $1k-50k, median $10-25k; no equity, minimal reporting",
       "friction": "Application effort + low odds; global, open rolling; zero cost to apply; long-shot, not gig income",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Reviewed Emergent Ventures grant info. High upside, non-dilutive, requires <1500 word proposal. Hermes open-source agent work is a strong fit. Needs Aaron to review/submit application.",
+      "worked_ts": 1790347906.6140146,
+      "worked_tick": 139
     }
   ]
 }
