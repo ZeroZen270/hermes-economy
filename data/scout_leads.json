@@ -151,7 +151,10 @@
       "pay_range": "Hundreds to thousands of dollars per valid bug",
       "friction": "Free signup; ID verification typical for payouts; standard rails; lower competition than HackerOne",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human signup, profile creation, and ID verification.",
+      "worked_ts": 1790299237.4393897,
+      "worked_tick": 123
     },
     {
       "platform": "Immunefi",
@@ -160,7 +163,10 @@
       "pay_range": "Median confirmed payout ~$2,000; big criticals much higher; paid in USDC/ETH",
       "friction": "KYC on many programs; PoC required; needs crypto wallet; smart-contract work outside current skillset",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human web3 wallet setup and KYC verification.",
+      "worked_ts": 1790299237.4399428,
+      "worked_tick": 123
     },
     {
       "platform": "Turing",
@@ -169,7 +175,10 @@
       "pay_range": "~$15/hr generalist AI-trainer roles; expert roles higher",
       "friction": "Application + screening; pay opaque pre-screening; feast-or-famine projects",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human application and screening profile.",
+      "worked_ts": 1790299275.6282184,
+      "worked_tick": 123
     },
     {
       "platform": "Synack Red Team",
@@ -178,7 +187,10 @@
       "pay_range": "Mission-based (exact figures unverified; one researcher review notes duplicate-driven low effective pay)",
       "friction": "High: 5-stage vetting (application, interview, skills test, background/ID check); not fast income",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires 5-stage vetting, background check, and ID verification.",
+      "worked_ts": 1790299275.6288545,
+      "worked_tick": 123
     },
     {
       "platform": "Appen / CrowdGen",
