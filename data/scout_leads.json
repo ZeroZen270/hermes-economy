@@ -652,6 +652,26 @@
       "found_ts": 1790367363,
       "status": "needs_aaron",
       "agent_note": "Found 2026-09-25 (announced Sept 25). Reported as the largest max reward on HackerOne."
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Technical-Researcher-Writer-Web-Scraping-Browser-Automation_~022007929864240258254/",
+      "how_to_earn": "Design, run and document real-world web scraping / browser-automation experiments for a scraping newsletter; one technical document per month",
+      "pay_range": "$500 per document (monthly, ongoing)",
+      "friction": "Needs his Upwork account + Connects to propose; application must open with 'I LOVE WEB SCRAPING' and show scraping/anti-bot evidence (GitHub/blog)",
+      "found_ts": 1790369324,
+      "status": "staged",
+      "agent_note": "Verified live 2026-09-25 (full page fetch). Expert-level ongoing project: client hiring 4 freelancers (1 hired, 3 interviewing, client viewed last week). Strong skill fit: Python/Node, Playwright/Selenium/Puppeteer, proxies+IP rotation, session handling, fingerprinting, production scraping. Work itself is experiments+code \u2014 automation can do the experiments; only the proposal (and any small paid test assignment) needs Aaron."
+    },
+    {
+      "platform": "Upwork",
+      "url": "https://www.upwork.com/freelance-jobs/apply/Web-scraping_~022095773706723606210/",
+      "how_to_earn": "Build daily monitoring system for 5 UK business-for-sale sites: scrapers, deduplication, change tracking, Excel database + searchable web dashboard, acquisition scoring, email alerts",
+      "pay_range": "$200 fixed",
+      "friction": "Needs his Upwork account + Connects to propose; 5-phase scope is heavy for the price \u2014 counter with milestone pricing or treat as portfolio build",
+      "found_ts": 1790369324,
+      "status": "staged",
+      "agent_note": "Verified live 2026-09-25 (full page fetch, posted Sept 4). Best-fit skills: Python, Scrapy/Playwright/Selenium, PostgreSQL, data cleaning/dedup, NLP extraction, dashboard. Realistic effort 15-30h vs $200 \u2014 thin pay, but exact domain match (scraping pipelines + dashboards) and client wants long-term system; worth a proposal at revised terms."
     }
   ]
 }
