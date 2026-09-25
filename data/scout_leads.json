@@ -260,7 +260,10 @@
       "pay_range": "$60-120/hr freelance; dev keeps 100% of quoted rate (margin taken from client side); 4.4/5 Trustpilot",
       "friction": "6-stage vetting, ~1-2% acceptance, 2-4 weeks; global pool; startup clients",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Platform requires developer profile creation, GitHub/LinkedIn linking, and technical screening/interview by Aaron or with Aaron's assistance.",
+      "worked_ts": 1790342438.9587014,
+      "worked_tick": 136
     },
     {
       "platform": "Toptal",
@@ -269,7 +272,10 @@
       "pay_range": "$100-250/hr; dev keeps 100% of quoted rate; weekly Payoneer/bank payout",
       "friction": "Long vetting gauntlet (3-8 weeks), under 3% acceptance; highest barrier of all dev marketplaces but premium client rates",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Elite freelance network requiring multi-stage screening and an unpaid test project. Needs Aaron's developer credentials and participation.",
+      "worked_ts": 1790342438.9593883,
+      "worked_tick": 136
     },
     {
       "platform": "huntr",
@@ -296,7 +302,10 @@
       "pay_range": "Criticals avg ~$22k (up to $1M+ on top programs); $26M+ lifetime payouts; crypto payouts (USDT/USDC)",
       "friction": "KYC required before payout on many programs; smart-contract focus is outside current skillset - Web2/web-scope programs are the entry fit; free signup",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Web3 bug bounty platform. Free signup, but payout requires KYC and crypto wallet connection which needs Aaron.",
+      "worked_ts": 1790342438.9599762,
+      "worked_tick": 136
     },
     {
       "platform": "UserTesting",
@@ -305,7 +314,10 @@
       "pay_range": "$10 per 20-min test (~$30/hr nominal, ~$14-18/hr after screener time); live interviews $30-120; PayPal",
       "friction": "Low: sample test to join; test volume down post-2023 PE acquisition - realistic $20-100/mo side income; needs mic/webcam + quiet space",
       "found_ts": 1790328444,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Usability testing platform paying $10 per 20-min test. Requires sample test submission with microphone/webcam and personal details by Aaron.",
+      "worked_ts": 1790342438.9605904,
+      "worked_tick": 136
     },
     {
       "platform": "dscout",
