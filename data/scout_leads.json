@@ -742,6 +742,123 @@
    "found_ts": 1790371141,
    "status": "needs_aaron",
    "agent_note": "Good fit for Aaron's web/app skills (API testing, auth logic). Caveat: program launch date could not be pinned to Sept 2026 \u2014 page is fresh in the search index but content may predate this month. Open-ended program. Verified via coverage 2026-09-25 16:16 CDT."
+  },
+  {
+   "platform": "Codeable",
+   "url": "https://www.codeable.io",
+   "how_to_earn": "Pass expert vetting, then receive pre-qualified WordPress/WooCommerce project workrooms (no bidding; 5 experts per project, estimates averaged). Fits only if WordPress chops demonstrable.",
+   "pay_range": "$80-120/hr recommended; expert keeps 90% (10% expert fee)",
+   "friction": "No signup fees; high vetting gate (written test, live client project, interview, trial); gates sometimes closed",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "DrivenData",
+   "url": "https://www.drivendata.org",
+   "how_to_earn": "Enter data-science-for-social-good competitions; top-5 leaderboard finishes win prize money paid by check/bank ~30 days after verification.",
+   "pay_range": "Typical pools ~$15K; 2026 live: $300K DOE geothermal (1st $100K), $20K Mozilla speech",
+   "friction": "Free signup, no KYC to enter; elite competition, few simultaneous comps",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Microworkers",
+   "url": "https://www.microworkers.com",
+   "how_to_earn": "Pick up microtasks from the board (surveys, app testing, tagging, AI labeling); no bidding.",
+   "pay_range": "$0.05-0.20/beginner task, up to $1-2 medium; realistic $2-7/hr, ~$40/mo",
+   "friction": "Free signup; slow first-withdrawal KYC (ID selfie); $9 min; ~10% task fee + ~7% payout fee; weekly PayPal/Skrill/Payoneer/bank",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "SproutGigs",
+   "url": "https://sproutgigs.com",
+   "how_to_earn": "Complete micro jobs from the board with proof screenshots; content-writing/technical categories pay best.",
+   "pay_range": "$0.02-2.00/task, typical $0.10-0.50; active workers $5-20/day",
+   "friction": "Free signup; $5 min withdrawal; crypto rail (LTC/ETH); ~18% withdrawal processing fee; KYC demanded at withdrawal with reported holds",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Dework",
+   "url": "https://dework.xyz",
+   "how_to_earn": "Connect wallet + Discord/GitHub, apply to DAO bounties (dev, docs); paid in crypto on approval.",
+   "pay_range": "Varies widely; rewards in stablecoins, ETH, or illiquid DAO tokens",
+   "friction": "Free, no KYC; NO platform escrow - each DAO is a judgment call; illiquid token payouts a real downside",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Zapier Experts",
+   "url": "https://zapier.com/experts",
+   "how_to_earn": "Apply, pass certification exam, get listed in Zapier's official automation-consultant directory; receive warm inbound client leads, bill hourly/fixed/retainer.",
+   "pay_range": "Certified experts typically $40-150/hr; projects $200-5,000+; retainers $300-3,000/mo",
+   "friction": "No fees; requires active business website; application + certification exam (days-weeks before listing); inbound-only leads, slow ramp",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "PlaytestCloud",
+   "url": "https://www.playtestcloud.com",
+   "how_to_earn": "Pass qualification test, receive email invitations; 15-20 min playtests with screen+voice recording + follow-ups.",
+   "pay_range": "~$9 per 15-min session (~$36/hr while testing); realistic = pocket money, few tests/month, invite-gated",
+   "friction": "No signup fee, no min payout, PayPal 0-7 days; REQUIRES real phone - tablet-only via AnyDesk, cannot run on VM",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Userbrain",
+   "url": "https://www.userbrain.com",
+   "how_to_earn": "Qualification test, then email test notifications; 5-20 min think-aloud screen/voice usability sessions.",
+   "pay_range": "$5/test via PayPal; ~$15-30/hr while testing but first-come-first-served and infrequent",
+   "friction": "Free signup; $10 min payout; same tablet-only constraint (real mobile IP), not VM browser",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "RapidAPI Hub",
+   "url": "https://rapidapi.com/hub",
+   "how_to_earn": "Publish own APIs (scraping wrappers, lead-enrichment, utilities) with freemium + paid tiers; RapidAPI bills developers, pays provider monthly.",
+   "pay_range": "Real provider reports ~$50 MRR simple API up to ~$1,200/mo for a 46-API portfolio; recurring, scales with niche quality",
+   "friction": "Free to publish, no KYC to list; 20% RapidAPI cut; PayPal-only payouts; ~2-month settlement lag; ongoing support/uptime load",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Wordfence bug bounty",
+   "url": "https://www.wordfence.com/threat-intel/vulnerabilities/bounty-program",
+   "how_to_earn": "Hunt vulns in in-scope WordPress plugins/themes (50K+ installs), submit via their form; validated reports earn bounties, paid twice monthly.",
+   "pay_range": "Avg $230 per validated submission; top single $5,200; caps $31,200-32,760/vuln",
+   "friction": "Free signup, no gov-ID KYC evident; PayPal-only payouts; Feb-2026 report of retroactive scope disputes; competitive PHP/WP security research outside Aaron's core",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Wellfound",
+   "url": "https://wellfound.com",
+   "how_to_earn": "Free job-seeker profile (GitHub, skills, bio); apply or get messaged for remote startup roles; contract positions are an explicit filter with live listings.",
+   "pay_range": "Contract listings show $30-50/hr ranges (e.g. remote ML/AI trainer roles)",
+   "friction": "Completely free for job seekers, no platform fees, lightweight profile; contract/freelance slice thin vs full-time volume",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Andela",
+   "url": "https://www.andela.com",
+   "how_to_earn": "Talent Cloud: 3-step screening (English test, coding assessment, live interview) -> long-term remote engagements or flex RLHF/data-training roles.",
+   "pay_range": "~$35-90/hr equivalent (client-side $6k-15k/mo, 12-month minimums)",
+   "friction": "No fees; 4+ yrs professional experience required and freelance explicitly excluded - screening risk; matching slow (1-4 wks); 12-month terms",
+   "found_ts": 1790372115,
+   "status": "new"
+  },
+  {
+   "platform": "Remotasks",
+   "url": "https://www.remotasks.com",
+   "how_to_earn": "Free account -> unpaid training courses -> accuracy assessments -> paid task queues; Python/dev background maps to higher bands (RLHF eval, code tasks).",
+   "pay_range": "Beginners $3-5/hr, intermediate $6-9/hr, advanced $10-15/hr; US skilled $10-12/hr+; RLHF/eval tiers $15-40/hr; pay trending down",
+   "friction": "No upfront fees; weekly PayPal/Wise, no minimum; unpaid training; queues can sit empty days/weeks; arbitrary rejections; removal risk",
+   "found_ts": 1790372115,
+   "status": "new"
   }
  ]
 }
