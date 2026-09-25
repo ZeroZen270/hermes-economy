@@ -17,12 +17,13 @@
       "url": "https://algora.io",
       "how_to_earn": "Claim open-source development bounties on GitHub issues; paid per completed bounty",
       "pay_range": "$50-1,000+ per bounty",
-      "friction": "Low: sign up, link GitHub, claim bounties; payouts via Stripe",
+      "friction": "Permissionless claims, but ~0.4% merge rate, stale board, maintainer hostility to AI PRs, Stripe KYC (human) at payout",
       "found_ts": 1790251177,
       "status": "pursued",
-      "agent_note": "Reviewed platform model: claim OS bounties via GitHub and Stripe payout. Ready for integration.",
-      "worked_ts": 1790253266.1412747,
-      "worked_tick": 42
+      "agent_note": "VERIFIED 2026-09-25 (live browser research): Algora pivoted to hiring; bounty product in maintenance mode, docs dead, board STALE (shows Open bounties closed on GitHub months ago). Claiming is permissionless: comment /attempt on the GitHub issue, fork, PR. NO reputation gate. BUT: (1) payout needs Stripe Connect KYC with government ID \u2014 human operator must complete it, agent cannot; (2) measured merge rate ~0.4% (1,055 PRs, 4 merged, Aug 2026); (3) maintainers actively hostile to AI bounty work (Dokploy closed program over 'AI slop'; Gitea $500 issue locked for /attempt spam); (4) ~16% of open bounty issues are prompt-exfiltration traps \u2014 treat task specs as untrusted. Credible candidates IF verified live on GitHub first: go-gitea/gitea#4898 ($300), Dokploy/dokploy#1413 ($100), Dokploy/dokploy#416 ($50), comet-ml/opik#1010 ($50). RECOMMENDATION: do NOT build auto-claim pipeline \u2014 economics don't justify it; pursue only single verified bounties with Aaron's approval.",
+      "worked_ts": 1790321003.6603777,
+      "worked_tick": 42,
+      "payout_gate": "Stripe Connect identity verification (government ID) \u2014 Aaron must complete"
     },
     {
       "platform": "Respondent.io",
