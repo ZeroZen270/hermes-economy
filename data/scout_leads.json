@@ -199,7 +199,10 @@
       "pay_range": "$8-25/hr per worker reports",
       "friction": "Low signup bar per project; PayPal/Payoneer payouts biweekly-monthly; stagnant vs newer AI-training entrants",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires human account creation and user verification on CrowdGen/Appen portal for AI training tasks.",
+      "worked_ts": 1790301043.6267567,
+      "worked_tick": 124
     },
     {
       "platform": "Gitcoin",
@@ -208,7 +211,10 @@
       "pay_range": "$100 to several thousand per bounty, variable",
       "friction": "Free; needs crypto wallet (ETH/L2); KYC for larger grant payouts; competitive",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires GitHub login and crypto wallet connection (ETH/L2) for grant/bounty participation.",
+      "worked_ts": 1790301043.627344,
+      "worked_tick": 124
     },
     {
       "platform": "NordVPN affiliate",
@@ -217,7 +223,10 @@
       "pay_range": "Tens of dollars per sale; $10 minimum payout",
       "friction": "Free signup; PayPal or wire; needs traffic source Aaron doesn't have yet",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires affiliate account registration and traffic source verification by Aaron.",
+      "worked_ts": 1790301081.527647,
+      "worked_tick": 124
     },
     {
       "platform": "FLOSS/fund",
@@ -226,7 +235,10 @@
       "pay_range": "Variable grants, application-based",
       "friction": "Application effort; needs open-sourced projects first (TICC/Hermes components); slow, low odds",
       "found_ts": 1790285376,
-      "status": "new"
+      "status": "needs_aaron",
+      "agent_note": "Requires formal grant application submission and FOSS project repository ownership verification.",
+      "worked_ts": 1790301081.5282285,
+      "worked_tick": 124
     }
   ]
 }
