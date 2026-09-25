@@ -1,6 +1,22 @@
 {
-  "generated_ts": 1790293771.4203436,
+  "generated_ts": 1790295565.1464415,
   "leads": [
+    {
+      "domain": "swiftroofing.net",
+      "url": "https://swiftroofing.net",
+      "issues": [
+        "slow"
+      ],
+      "notes": {
+        "status": 200,
+        "latency_s": 5.7,
+        "final_url": "https://swiftroofing.net/?doing_wp_cron=1790295514.3157000541687011718750",
+        "cert_days_left": 180
+      },
+      "score": 3,
+      "checked_ts": 1790295512.1838415,
+      "emails": []
+    },
     {
       "domain": "herbertplumbing.com",
       "url": "https://herbertplumbing.com",
@@ -9,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.39,
+        "latency_s": 0.81,
         "final_url": "https://www.herbertplumbing.com/",
         "cert_days_left": 41
       },
       "score": 2,
-      "checked_ts": 1790293673.2590055,
+      "checked_ts": 1790295470.7726512,
       "emails": []
     },
     {
@@ -25,12 +41,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.53,
+        "latency_s": 0.51,
         "final_url": "https://hillelectric.com/",
-        "cert_days_left": 143
+        "cert_days_left": 142
       },
       "score": 2,
-      "checked_ts": 1790293681.3515534,
+      "checked_ts": 1790295478.7969627,
       "emails": []
     },
     {
@@ -41,12 +57,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.61,
+        "latency_s": 0.52,
         "final_url": "https://candchvac.com/",
         "cert_days_left": 53
       },
       "score": 2,
-      "checked_ts": 1790293688.02419,
+      "checked_ts": 1790295485.4728408,
       "emails": [
         "office@ccheatingandcooling.com"
       ]
@@ -59,12 +75,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.75,
+        "latency_s": 0.7,
         "final_url": "https://www.thorntonheatingandair.com/",
         "cert_days_left": 54
       },
       "score": 2,
-      "checked_ts": 1790293689.8659625,
+      "checked_ts": 1790295487.1697536,
       "emails": []
     }
   ]
