@@ -240,6 +240,105 @@
       "agent_note": "Requires formal grant application submission and FOSS project repository ownership verification.",
       "worked_ts": 1790301081.5282285,
       "worked_tick": 124
+    },
+    {
+      "platform": "Gun.io",
+      "url": "https://gun.io",
+      "how_to_earn": "Vetted US-centric freelance dev marketplace: pass automated coding tests + live tech interview, get matched to client contracts (backend, APIs, automation, scraping work fits)",
+      "pay_range": "$80-200/hr contractor-set rates; Glassdoor devs report on-time automated direct-deposit pay, no hidden fees",
+      "friction": "Top ~10% pass screening; community skews to 10+ yrs senior engineers - vetting bar is the friction; no upfront fees; paid-trial vetting",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "Arc.dev",
+      "url": "https://arc.dev",
+      "how_to_earn": "Vetted remote dev marketplace for funded startups: profile screen + behavioral + technical interview, matched to freelance/contract or full-time roles",
+      "pay_range": "$60-120/hr freelance; dev keeps 100% of quoted rate (margin taken from client side); 4.4/5 Trustpilot",
+      "friction": "6-stage vetting, ~1-2% acceptance, 2-4 weeks; global pool; startup clients",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "Toptal",
+      "url": "https://www.toptal.com",
+      "how_to_earn": "Elite freelance network (top 3%): apply, pass 4-stage screening incl. unpaid 10-30hr test project, bid for enterprise contracts",
+      "pay_range": "$100-250/hr; dev keeps 100% of quoted rate; weekly Payoneer/bank payout",
+      "friction": "Long vetting gauntlet (3-8 weeks), under 3% acceptance; highest barrier of all dev marketplaces but premium client rates",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "huntr",
+      "url": "https://huntr.dev",
+      "how_to_earn": "AI/ML bug bounties (Protect AI): find vulns in OSS AI/ML libraries and model file formats (.safetensors, .gguf, .pkl), earn bounties + CVE credit",
+      "pay_range": "Up to $1,500 per OSS vuln, $4,000+ for critical model-file vulns; monthly contests with larger pools",
+      "friction": "Needs AI/ML security research skills (Python + model formats fit Aaron's AI agent work); no signup fees; researcher-friendly disclosure process",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "Patchstack",
+      "url": "https://patchstack.com",
+      "how_to_earn": "WordPress plugin/theme/theme security research: join Patchstack Alliance, audit plugins, earn via monthly leaderboard pool + single bounties for top vulns",
+      "pay_range": "Monthly pool ~$25k+ ($650/$350/$250 top-3 leaderboard); single bounties up to $49,500 zero-day; $466k+ paid lifetime",
+      "friction": "Leaderboard-based: only top researchers paid monthly, so income needs consistent output; WordPress/PHP web skills needed; free signup",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "HackenProof",
+      "url": "https://hackenproof.com",
+      "how_to_earn": "Web3 bug bounties + crowdsourced audits (by Hacken): ongoing programs for DeFi protocols, exchanges, wallets; Aug 2026 alone paid ~$500k across severities",
+      "pay_range": "Criticals avg ~$22k (up to $1M+ on top programs); $26M+ lifetime payouts; crypto payouts (USDT/USDC)",
+      "friction": "KYC required before payout on many programs; smart-contract focus is outside current skillset - Web2/web-scope programs are the entry fit; free signup",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "UserTesting",
+      "url": "https://www.usertesting.com",
+      "how_to_earn": "Recorded usability tests: think aloud while using websites/apps, submit screen+voice recordings; occasional live interviews",
+      "pay_range": "$10 per 20-min test (~$30/hr nominal, ~$14-18/hr after screener time); live interviews $30-120; PayPal",
+      "friction": "Low: sample test to join; test volume down post-2023 PE acquisition - realistic $20-100/mo side income; needs mic/webcam + quiet space",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "dscout",
+      "url": "https://dscout.com",
+      "how_to_earn": "Mobile research missions: video/text diary studies, interviews, product feedback for brands (Google, Salesforce etc.)",
+      "pay_range": "$25-150 per mission; PayPal; 4.5* app-store rating, $67M+ paid out",
+      "friction": "Low: free app, apply per mission; inconsistent selection; good occasional side cash, not reliable income",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "User Interviews",
+      "url": "https://www.userinterviews.com",
+      "how_to_earn": "Paid research studies: surveys, 1:1 interviews, focus groups matched to profile (tech/IT background screens well)",
+      "pay_range": "$10-80+ per study; some professional studies $100+; PayPal",
+      "friction": "Low signup; screening per study; sporadic invites; complements Respondent.io niche",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "Cobalt",
+      "url": "https://cobalt.io",
+      "how_to_earn": "Pentest-as-a-Service marketplace: vetted researchers take scoped pentest engagements for enterprise clients",
+      "pay_range": "Engagement-based (credit model: 1 credit = 8 hrs pentesting); professional pentester rates; pays in USD",
+      "friction": "Requires certified, vetted pentester profile - heavy screening; engagement-based not fast income; similar profile to Synack Red Team",
+      "found_ts": 1790328444,
+      "status": "new"
+    },
+    {
+      "platform": "Emergent Ventures",
+      "url": "https://www.mercatus.org/emergent-ventures",
+      "how_to_earn": "Non-dilutive grants (Tyler Cowen / Mercatus Center) for high-upside builders: apply with <1500-word proposal; Hermes/TICC open-source work is a fit narrative",
+      "pay_range": "Typical $1k-50k, median $10-25k; no equity, minimal reporting",
+      "friction": "Application effort + low odds; global, open rolling; zero cost to apply; long-shot, not gig income",
+      "found_ts": 1790328444,
+      "status": "new"
     }
   ]
 }
