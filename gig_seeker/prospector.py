@@ -39,7 +39,13 @@ EMAIL_BLOCKLIST_SUBSTR = ("noreply", "no-reply", "donotreply", "do-not-reply",
                           "w3.org")
 # Domains the owner has permanently removed — never audit, score, or pitch these.
 # Edit this set (not leads.json) to kill a dead lead for good.
-SUPPRESSED_DOMAINS = {"kentpriceplumbing.com"}
+# Dead/quarantined leads — never audit, score, draft, or pitch these.
+# Added 2026-09-25: these domains consumed 170 of 178 draft files with
+# zero sendable pitches (suppressed, quarantined, or no public email).
+SUPPRESSED_DOMAINS = {"kentpriceplumbing.com", "herbertplumbing.com",
+                      "thorntonheatingandair.com", "vancehvac.com",
+                      "candchvac.com", "swiftroofing.net",
+                      "woodallcompanies.com"}
 # Likely contact pages worth one polite fetch each.
 CONTACT_PATHS = ("/contact", "/contact-us", "/contact.html",
                  "/about/contact-us", "/about-us", "/about")
