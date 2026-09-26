@@ -1671,6 +1671,36 @@
    "found_ts": 1790391094,
    "status": "needs_aaron",
    "agent_note": "Verified live listing this run. Winner-take-all with 34 submissions = low odds; consider only if primary SendAI entry is strong anyway."
+  },
+  {
+   "platform": "Superteam Earn",
+   "url": "https://superteam.fun/earn/listing/build-a-solana-app-with-reown-appkit",
+   "how_to_earn": "Build a Solana app using Reown AppKit (prev. WalletConnect) - frontend/backend skills. Prize split: 1st 2,500 USDC, 2nd 1,500 USDC, 3rd 1,000 USDC. 78 submissions so far.",
+   "pay_range": "5,000 USDC total pool",
+   "friction": "Wallet submission under Aaron's identity; needs Aaron's hands to submit and claim.",
+   "found_ts": 1790392563,
+   "status": "needs_aaron",
+   "agent_note": "Verified live listing this run (22:11 CDT). Wallet-connect integration is Aaron's web skillset, but 78 submissions = high competition; only enter if he has an existing Solana project to adapt quickly."
+  },
+  {
+   "platform": "Superteam Earn",
+   "url": "https://superteam.fun/earn/listing/share-your-most-memorable-solana-breakpoint-moment-on-x/",
+   "how_to_earn": "Post your most memorable Solana Breakpoint moment on X (content bounty). 10 winners x 550 USDC. Only 6 submissions so far. Winner announcement by Oct 13, 2026.",
+   "pay_range": "5,500 USDC total pool (10 x 550 USDC)",
+   "friction": "Must post from Aaron's X account (X account restriction means Aaron posts manually). Agent can draft the post text.",
+   "found_ts": 1790392563,
+   "status": "needs_aaron",
+   "agent_note": "Verified live this run. Content-only, very low competition (6 submissions, 10 prizes = most entries likely win). Agent drafts the post; Aaron posts manually from his X."
+  },
+  {
+   "platform": "Freelancer.com",
+   "url": "https://www.freelancer.com/projects/python/web-mobile-control-scraping-system-40124535",
+   "how_to_earn": "Build a web/mobile control + scraping system in Python + Playwright per the client's task doc (dating-app-adjacent project). Regular weekday updates + code pushes required. 6 proposals so far, avg bid ~$401.",
+   "pay_range": "$250-750 USD fixed",
+   "friction": "Freelancer.com gates bidding behind $20 min balance - Aaron's account has $0/0 free bids; he must fund $20 or approve the Plus trial to bid.",
+   "found_ts": 1790392563,
+   "status": "needs_aaron",
+   "agent_note": "Verified OPEN this run (project 40124535, ends in ~6 days). Python/Playwright scraping = strong skill fit; dating-app scraping target is client-side TOS gray area but the work itself is standard automation. Needs Aaron to unlock bidding first."
   }
  ]
 }
