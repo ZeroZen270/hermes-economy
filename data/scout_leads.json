@@ -1641,6 +1641,36 @@
    "found_ts": 1790390310.166322,
    "status": "staged",
    "agent_note": "VERIFIED live 2026-09-25 (per-study page fetched live). Posted 09/24. High payout for 20 min; Aaron is currently a student. URGENT: complete by Sep 28. Staged for the main agent to attempt."
+  },
+  {
+   "platform": "Upwork",
+   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Data-Engineer-Automated-Public-Records-Pipeline-Supabase-Integration-Counties_~022099538307756641785/",
+   "how_to_earn": "Audit a live production ETL pipeline (FL county public records: lis pendens/liens/deeds via HTTP clients, parcel matching against appraiser NAL rolls, Supabase upserts on daily cron) and expand it to 3 more counties (Pinellas, Pasco, Orange). 3 milestones ($50/$75/$75). Proposal must start with the word 'PIPELINE'.",
+   "pay_range": "$200 fixed-price (Intermediate), ongoing project",
+   "friction": "No payment/ID to start; proposal needs Aaron's Upwork account (legal-name correction still incomplete). Client interviewing 1, 20-50 proposals, last active last week. Client spent $211, 2 hires, USA Port Charlotte.",
+   "found_ts": 1790391094,
+   "status": "staged",
+   "agent_note": "Best gig fit this run: public-records scraping + cron automation + Supabase is exactly the Hermes/OSINT skillset and fully automatable. Agent can draft the PIPELINE-prefixed proposal; Aaron submits (or main agent via takeover). Verified live page this run (21:45 CDT)."
+  },
+  {
+   "platform": "Superteam Earn",
+   "url": "https://superteam.fun/earn/listing/contribute-to-the-solana-ai-agent-toolkit",
+   "how_to_earn": "Contribute to the Solana AI Agent Toolkit by SendAI (frontend/backend). Pool split: 1st 1,000 USDC, 2nd 750, 3rd 500, 4th 250. 33 submissions so far.",
+   "pay_range": "2,500 USDC total pool",
+   "friction": "Wallet submission under Aaron's identity; needs Aaron's hands to submit and claim.",
+   "found_ts": 1790391094,
+   "status": "needs_aaron",
+   "agent_note": "Verified live listing this run. AI-agent tooling = strong skill fit, but 33 submissions means moderate competition. Aaron submits."
+  },
+  {
+   "platform": "Superteam Earn",
+   "url": "https://superteam.fun/earn/listing/contribute-to-the-solana-ai-agent-toolkit-part-2",
+   "how_to_earn": "Contribute to the Solana AI Agent Toolkit by SendAI (part 2). Single 1,000 USDC prize. 34 submissions so far.",
+   "pay_range": "1,000 USDC winner-take-all",
+   "friction": "Wallet submission under Aaron's identity; needs Aaron's hands to submit and claim.",
+   "found_ts": 1790391094,
+   "status": "needs_aaron",
+   "agent_note": "Verified live listing this run. Winner-take-all with 34 submissions = low odds; consider only if primary SendAI entry is strong anyway."
   }
  ]
 }
