@@ -2385,5 +2385,14 @@
     "friction": "Free, no monthly fees; 10% + $0.50 + 2.9% + $0.30 per sale; $100 min payout unverified / $10 after ID verification; weekly payouts; 1.4/5 Trustpilot trust caveat",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Whop",
+    "url": "https://whop.com",
+    "how_to_earn": "Sell digital products (automation scripts, prompt packs, lead-gen templates, courses) with built-in Discover marketplace distribution",
+    "pay_range": "Aaron sets pricing; testers report ~$2,400 in 60 days selling memberships",
+    "friction": "Free, no monthly fees; 2.7% + $0.30 per txn; $12 min payout ~48hr; use standard ACH ($2.50), not instant bank (4%) or crypto (5%)",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
