@@ -2430,5 +2430,14 @@
     "friction": "Invite-only, handpicked - must show real research chops; not fast income; no fees",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "BugBase",
+    "url": "https://bugbase.ai",
+    "how_to_earn": "Web-app/API bug hunting on Indian fintech/SaaS programs; managed triage and payouts",
+    "pay_range": "$100-$4,500 per vuln depending on program",
+    "friction": "Free researcher signup; program pool skews to Indian companies; web pentest skills needed",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
