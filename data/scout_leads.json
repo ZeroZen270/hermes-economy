@@ -2403,5 +2403,14 @@
     "friction": "Free browsing; free YC account to apply; no platform fees; must write human-specific messages (listings flooded with AI spam)",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Handshake",
+    "url": "https://joinhandshake.com",
+    "how_to_earn": "Apply to internships, part-time, and entry-level remote tech jobs posted for students on 1,000+ campuses",
+    "pay_range": "Internships typically $15-$25/hr; part-time roles employer-set",
+    "friction": "Free for students; requires student status verification (school email); employer payroll; mixed listing quality reported",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
