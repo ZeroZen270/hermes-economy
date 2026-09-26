@@ -3328,5 +3328,38 @@
   "found_ts": 1790441524,
   "status": "needs_aaron",
   "agent_note": "Verified live this run via listing + detail page. HIGH value. Screener risk: targets org display buyers. Aaron specs hardware for his LLC builds - he may legitimately qualify; if not, skip."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-football-media-175/ca05a959-2a37-418a-83b4-c688218ad1cb/",
+  "how_to_earn": "90-minute online research study about football, sport, and digital media (football passion and its representation in media).",
+  "pay_range": "$175",
+  "friction": "Screener: 'passionate about football and its representation in media'. Self-select; do not misrepresent.",
+  "deadline": "2026-09-30",
+  "found_ts": 1790443200,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page (posted 09/24/26). URGENT: must complete by Sep 30 (4 days). Live video interview - needs Aaron's hands."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-data-tools-usage-50/88540d81-e1a2-47af-9014-0be686e907ee/",
+  "how_to_earn": "40-minute online research study about data and API tools used by builders, freelancers, and sales teams.",
+  "pay_range": "$50",
+  "friction": "Screener: professionals who use data/API tools in their work. Strong legitimate fit for Aaron (builds data pipelines, uses API tools daily).",
+  "deadline": "2026-10-04",
+  "found_ts": 1790443200,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page (posted 09/04/26). BEST tech fit: data/API tools for builders + freelancers = Aaron's daily work. Live interview - needs Aaron's hands."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-digital-banking-concepts-50-mpim4g/8dbcc0c8-2129-4668-981d-4559c47ef770/",
+  "how_to_earn": "39-minute online unmoderated task about new digital banking app ideas.",
+  "pay_range": "$50",
+  "friction": "Self-select: digital banking users (Aaron banks via Chime). No pro gate.",
+  "deadline": "2026-10-18",
+  "found_ts": 1790443200,
+  "status": "staged",
+  "agent_note": "Verified live this run via listing + detail page (posted 08/23/26). Unmoderated solo task, staged for main agent. Self-select on digital banking usage."
  }
 ]
