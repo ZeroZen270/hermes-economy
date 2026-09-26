@@ -2367,5 +2367,14 @@
     "friction": "Free signup, no bidding; 55-point seller vetting before selling; payouts via PayPal",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Codementor",
+    "url": "https://codementor.io",
+    "how_to_earn": "Live 1:1 coding-help/mentoring sessions (Python, backend automation, web scraping, APIs, AI agents); also fixed-price freelance gigs",
+    "pay_range": "Mentors set own rates, typically $60-$120/hr; ~20-22% platform commission",
+    "friction": "Free to apply as expert (profile/vetting review, not instant); weekly PayPal payouts; 15-min minimum charge",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
