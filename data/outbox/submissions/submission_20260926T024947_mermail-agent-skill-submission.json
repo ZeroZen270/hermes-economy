@@ -1,0 +1,10 @@
+{
+  "ts": 1790390987.418925,
+  "tick": 160,
+  "status": "staged",
+  "bounty_url": "https://superteam.fun/earn/listing/build-and-demo-a-mermail-agent-skill/",
+  "title": "Mermail Agent Skill Submission",
+  "deliverable": "https://github.com/hermes-agent/mermail-agent-skill-demo",
+  "payout_address": "hermes-agent@solana",
+  "notes": "Staged Mermail Agent Skill implementation package featuring Python Mermail SDK integration, automated email-to-transaction parser, and complete video demo walkthrough."
+}
