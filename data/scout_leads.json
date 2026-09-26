@@ -3240,5 +3240,38 @@
   "status": "needs_aaron",
   "deadline": "2026-12-31",
   "agent_note": "Verified live this run. $150 for 15 min if he passes screener, but he is not a Salesforce admin - do not misrepresent; only apply if profile happens to fit."
+ },
+ {
+  "platform": "Appen (Search Engine Rater)",
+  "url": "https://www.freelancermap.com/project/search-engine-rater-2588595",
+  "how_to_earn": "Search Engine Evaluator on Appen Project Yukon: evaluate images/videos for search accuracy, 10-15 hrs/week, long-term project.",
+  "pay_range": "not listed (typical Appen evaluator rates); long-term recurring",
+  "friction": "Must be US resident; smartphone + Gmail; must pass qualification exam before work. Posted ~16h before run (2026-09-26).",
+  "deadline": null,
+  "found_ts": 1790439306,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run. Agent can handle the Appen signup; Aaron must pass the qualification exam himself (hands-on test + his device)."
+ },
+ {
+  "platform": "Superteam Earn",
+  "url": "https://superteam.fun/earn/listing/soon-genesis-hackathon",
+  "how_to_earn": "SOON Genesis Hackathon build competition: Frontend/Backend/Blockchain/Mobile/Design tracks. Build and submit a project.",
+  "pay_range": "$40,000 USDC total: 11k/8k/6k/5k/4k USDC (1st-5th) + 3x 2k USDC bonuses",
+  "friction": "109 submissions already in; no winners-date visible on listing page. Paid in USDC to a Solana wallet Aaron must provide.",
+  "deadline": null,
+  "found_ts": 1790439306,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run (listing loads, 109 submissions). Agent can do the dev build work; Aaron's hands needed for Superteam account signup, wallet connection, and final submission."
+ },
+ {
+  "platform": "Superteam Earn",
+  "url": "https://superteam.fun/earn/opportunities/growth-bounties",
+  "how_to_earn": "Crypto World's Fair sidetracks on Superteam Earn: submit to any sidetrack for a share of the $319,000+ prize pool.",
+  "pay_range": "$319,000+ across sidetracks",
+  "friction": "Dev/build-track work; payout to wallet Aaron controls.",
+  "deadline": "2026-10-13 06:59 UTC (Oct 12, 11:59 PM PDT)",
+  "found_ts": 1790439306,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via browser.open. Same shape as SOON hackathon: agent-buildable, but Aaron needed for account + wallet + final submit."
  }
 ]
