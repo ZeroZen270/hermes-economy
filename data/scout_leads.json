@@ -2394,5 +2394,14 @@
     "friction": "Free, no monthly fees; 2.7% + $0.30 per txn; $12 min payout ~48hr; use standard ACH ($2.50), not instant bank (4%) or crypto (5%)",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "workatastartup.com",
+    "url": "https://www.workatastartup.com",
+    "how_to_earn": "Filter YC startup job board for contract/remote listings (fractional dev, contract full-stack) and apply direct to founders",
+    "pay_range": "Observed contract listings $2.5K-$10K/mo retainers; dev contract roles vary $2K-$5K+/mo",
+    "friction": "Free browsing; free YC account to apply; no platform fees; must write human-specific messages (listings flooded with AI spam)",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
