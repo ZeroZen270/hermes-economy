@@ -2421,5 +2421,14 @@
     "friction": "Free freelancer account, no commission; profile vetting (Pangea Pro = top 1%); blog stale but platform live",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Detectify Crowdsource",
+    "url": "https://labs.detectify.com/crowdsource-community",
+    "how_to_earn": "Submit web-app vulns (SQLi, RCE, SSRF, XSS in common products) with PoC; accepted modules pay every time they hit unique customer assets (recurring pay-per-hit)",
+    "pay_range": "Variable; researchers report $1,400-$2,000+ per accepted submission over weeks",
+    "friction": "Invite-only, handpicked - must show real research chops; not fast income; no fees",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
