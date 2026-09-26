@@ -2765,5 +2765,25 @@
   "found_ts": 1790419639,
   "status": "needs_aaron",
   "agent_note": "VERIFIED live 2026-09-26 (posted 09/26/26)."
+ },
+ {
+  "platform": "Superteam Earn (Sponsor: KriptoK)",
+  "url": "https://superteam.fun/earn/listing/kriptok-league-trading-experience-bounty/",
+  "how_to_earn": "Trade one round on KriptoK League, then submit an experience write-up; top 5 win prizes.",
+  "pay_range": "$2,000 USDC total (1st $800 / 2nd $500 / 3rd $350 / 4th $200 / 5th $150)",
+  "friction": "Requires Aaron's wallet + actual trading on the platform; submit by ~2026-09-27 (winner announcement Sept 27) \u2014 TIME-SENSITIVE",
+  "found_ts": 1790421465,
+  "status": "needs_aaron",
+  "agent_note": "VERIFIED live 2026-09-26 (14 submissions, listing open). Low competition, crypto-content fit."
+ },
+ {
+  "platform": "Superteam Earn (Sponsor: KriptoK)",
+  "url": "https://superteam.fun/earn/listing/kriptok-league-trading-content-partner/",
+  "how_to_earn": "2-month trading-content partner project for KriptoK League (application; sponsor selects).",
+  "pay_range": "$1k-2k USDC over 2 months",
+  "friction": "Application-based; 50-100 applications; needs Aaron's application + content work; winner announced ~Oct 5",
+  "found_ts": 1790421465,
+  "status": "needs_aaron",
+  "agent_note": "VERIFIED live 2026-09-26. Recurring USDC stream; analytical writing + research fit."
  }
 ]
