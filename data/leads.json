@@ -1,6 +1,22 @@
 {
-  "generated_ts": 1790387306.5816963,
+  "generated_ts": 1790389127.2920597,
   "leads": [
+    {
+      "domain": "bluegrasscompleteplumbing.com",
+      "url": "https://bluegrasscompleteplumbing.com",
+      "issues": [
+        "no_meta_description"
+      ],
+      "notes": {
+        "status": 403,
+        "latency_s": 0.29,
+        "final_url": "https://bluegrasscompleteplumbing.com/",
+        "cert_days_left": 58
+      },
+      "score": 2,
+      "checked_ts": 1790389077.07598,
+      "emails": []
+    },
     {
       "domain": "hillelectric.com",
       "url": "https://hillelectric.com",
@@ -9,12 +25,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.44,
+        "latency_s": 0.85,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 141
       },
       "score": 2,
-      "checked_ts": 1790387277.5702374,
+      "checked_ts": 1790389085.4707587,
       "emails": []
     }
   ]

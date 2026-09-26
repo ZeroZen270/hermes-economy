@@ -1,0 +1,12 @@
+{
+  "leads": [
+    {
+      "domain": "bluegrasscompleteplumbing.com",
+      "issues": [
+        "no_meta_description"
+      ],
+      "ts": 1790389211.4415567,
+      "status": "needs_email_lookup"
+    }
+  ]
+}
