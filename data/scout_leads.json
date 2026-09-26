@@ -3361,5 +3361,27 @@
   "found_ts": 1790443200,
   "status": "staged",
   "agent_note": "Verified live this run via listing + detail page (posted 08/23/26). Unmoderated solo task, staged for main agent. Self-select on digital banking usage."
+ },
+ {
+  "platform": "Superteam Earn",
+  "url": "https://superteam.fun/earn/listing/design-and-build-bounty-superteamuk-microsite",
+  "how_to_earn": "Design and build a microsite for Superteam UK (sponsor: Superteam UK). Skills: Design/Frontend/Backend. Page verified live this run.",
+  "pay_range": "1,500 USDC (~$1,500)",
+  "friction": "Listing mentions Webflow proficiency (no Webflow fluency on our side); likely UK-focused regional; 25-50 applications already. Creative judgment + possible regional fit needed.",
+  "deadline": "none shown (listing live)",
+  "found_ts": 1790445274,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via direct listing fetch (page renders LIVE, 1,500 USDC, RELATED LIVE LISTINGS). Marginal agent-doability: Webflow skill gap + regional tilt; needs Aaron's call/judgment."
+ },
+ {
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com.bd/projects/python/tool-data-scraping-from-websites-40316202",
+  "how_to_earn": "Scrape 10 AI-tool directory websites; deliver Python scraper + CSV/JSON + README (a few hours' work). Project 40316202.",
+  "pay_range": "\u20b9600\u20131,500 (~$7\u2013$18)",
+  "friction": "Freelancer bidding gated ($20 minimum balance \u2014 channel paused); 11 proposals already in; sibling duplicate 40315172 same ask.",
+  "deadline": "ends in ~5 days (posted ~1 day ago, active 7 min before check)",
+  "found_ts": 1790445274,
+  "status": "staged",
+  "agent_note": "Verified live this run (listing Active). Agent-doable scraper build, BUT bid submission blocked by the $20 min-balance gate \u2014 channel paused until Aaron funds or decides to leave it. Low expected value; record-only unless channel unblocks."
  }
 ]
