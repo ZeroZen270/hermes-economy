@@ -1519,6 +1519,56 @@
       "found_ts": 1790385255,
       "status": "staged",
       "agent_note": "VERIFIED 2026-09-25 ~20:15 CDT: listing live on superteam.fun, winner announcement Sept 28, 2026 (3 days out). Tight turnaround but a deployable mini-app is feasible; entry is submission-based, no KYC to enter. Payout in USDC needs Aaron's Solana wallet."
+    },
+    {
+      "platform": "Freelancer.com",
+      "url": "https://www.freelancer.co.za/projects/ai-chatbot/Job-Application-Agent",
+      "how_to_earn": "Bid on and build an 'AI Job Application Agent': Playwright scrapers for LinkedIn/Indeed/Monster, keyword filter engine, LLM resume-tailoring toggle, dashboard, server deployment.",
+      "pay_range": "\u20b912,500\u201337,500 INR (~$140\u2013420 USD); average bid \u20b926,241 (~$295)",
+      "friction": "Bid must be placed from Aaron's Freelancer.com account (@aaronv68); new listings gated behind a $20 minimum account balance; 26 proposals already in.",
+      "found_ts": 1790389668.0807347,
+      "status": "needs_aaron",
+      "agent_note": "VERIFIED 2026-09-25 ~20:47 CDT: listing Open/open-for-bidding, posted ~2h before verification. Perfect skill fit (Playwright + LLM + data pipelines + dashboards). A same-day $250-750 scraping job was verified awarded/in-progress - verification mattered. Listing ends 2026-10-01."
+    },
+    {
+      "platform": "focusgroups.org (1-on-1 interview)",
+      "url": "https://focusgroups.org/category/interview-studies/research-study-on-data-analytics-tools-100/e13312e5-75c6-45a8-af18-82b75a98aeb9/",
+      "how_to_earn": "$100 for a 60-minute online 1-on-1 video interview about experiences with data analytics tools/platforms.",
+      "pay_range": "$100 for 60-min interview",
+      "friction": "Live video interview; must pass the screener application first.",
+      "found_ts": 1790389668.0807347,
+      "status": "needs_aaron",
+      "agent_note": "VERIFIED live 2026-09-25 ~20:48 CDT (individual study page opened, not closed/filled). Direct fit: data-pipeline/analysis background. Apply ASAP - spots fill fast. Deadline 2026-10-09."
+    },
+    {
+      "platform": "focusgroups.org (unmoderated)",
+      "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-money-transfer-service-110/248f45e7-f72e-4deb-be44-abb01e630ecf/",
+      "how_to_earn": "$110 unmoderated online task (300-min total listed): test sending/receiving funds via a digital bank.",
+      "pay_range": "$110 unmoderated task",
+      "friction": "Unmoderated screen task on his own device with a digital-bank app; may involve real fund movements - read terms first.",
+      "found_ts": 1790389668.0807347,
+      "status": "needs_aaron",
+      "agent_note": "VERIFIED live 2026-09-25 ~20:48 CDT. Strong fit: Aaron sends/receives money via Chime regularly. Posted 2026-09-25. Unmoderated slots fill quickly. Deadline 2026-10-09."
+    },
+    {
+      "platform": "focusgroups.org (1-on-1 interview)",
+      "url": "https://focusgroups.org/category/interview-studies/research-study-on-task-management-automation-125/035091da-0aa5-452c-bbea-61d91116eb94/",
+      "how_to_earn": "$125 for a 60-minute online 1-on-1 video interview: usability testing of Rules automation in task management.",
+      "pay_range": "$125 for 60-min interview",
+      "friction": "Live video interview; must pass the screener application first.",
+      "found_ts": 1790389668.0807347,
+      "status": "needs_aaron",
+      "agent_note": "VERIFIED live 2026-09-25 ~20:48 CDT. Highest payout of the new batch; workflow-automation background is a direct fit. Posted 09/23 - deadline 2026-10-01 is time-sensitive."
+    },
+    {
+      "platform": "Superteam Earn",
+      "url": "https://superteam.fun/earn/listing/solana-soapbox-september",
+      "how_to_earn": "Write and submit a short Solana opinion piece; 12 submissions so far - low-competition monthly content bounty.",
+      "pay_range": "$125 USDC total pool ($100 1st prize, $25 2nd)",
+      "friction": "Final submission needs Aaron's Superteam Earn login (no KYC to enter; payout in USDC needs a Solana wallet).",
+      "found_ts": 1790389668.0807347,
+      "status": "staged",
+      "agent_note": "VERIFIED live 2026-09-25 ~20:48 CDT: open monthly content bounty. Agent can draft the opinion piece now; Aaron does the submit via his Superteam Earn login. September edition - assume closes ~Sept 30."
     }
   ]
 }
