@@ -3449,5 +3449,17 @@
   "found_ts": 1790448556,
   "status": "staged",
   "agent_note": "Info-only claim; staged. Low effort, long deadline \u2014 batch with TCPA/O'Reilly (dl Sep 28) filing reminder."
+ },
+ {
+  "platform": "focusgroups.org (1-on-1 Interview, Business)",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-finance-tools-100/11ebbabf-8e29-4f82-8867-7142225c647a/",
+  "title": "Research Study on Finance Tools - $100",
+  "how_to_earn": "60-minute online research study testing finance products for businesses. Complete by September 30, 2026; paid $100 if qualified. Detail page fetched live this run and shows open.",
+  "pay_range": "$100 for 60 minutes",
+  "friction": "Needs Aaron's hands: live video interview + screening survey via focusgroups.org (Google sign-in currently rejected, needs his action).",
+  "deadline": "Completed by September 30, 2026 (apply ASAP, spots fill fast)",
+  "found_ts": 1790450026,
+  "status": "needs_aaron",
+  "agent_note": "Strong fit: Aaron is an early-stage business owner (Technology Squared LLC) evaluating finance tools \u2014 exactly the target profile. Added to the FG queue with Football Media $175 (dl 9/30) and Financial Services $135."
  }
 ]
