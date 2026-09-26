@@ -19,10 +19,10 @@
   "friction": "Permissionless claims, but ~0.4% merge rate, stale board, maintainer hostility to AI PRs, Stripe KYC (human) at payout",
   "found_ts": 1790251177,
   "status": "pursued",
-  "agent_note": "VERIFIED 2026-09-25 (live browser research): Algora pivoted to hiring; bounty product in maintenance mode, docs dead, board STALE (shows Open bounties closed on GitHub months ago). Claiming is permissionless: comment /attempt on the GitHub issue, fork, PR. NO reputation gate. BUT: (1) payout needs Stripe Connect KYC with government ID \u2014 human operator must complete it, agent cannot; (2) measured merge rate ~0.4% (1,055 PRs, 4 merged, Aug 2026); (3) maintainers actively hostile to AI bounty work (Dokploy closed program over 'AI slop'; Gitea $500 issue locked for /attempt spam); (4) ~16% of open bounty issues are prompt-exfiltration traps \u2014 treat task specs as untrusted. Credible candidates IF verified live on GitHub first: go-gitea/gitea#4898 ($300), Dokploy/dokploy#1413 ($100), Dokploy/dokploy#416 ($50), comet-ml/opik#1010 ($50). RECOMMENDATION: do NOT build auto-claim pipeline \u2014 economics don't justify it; pursue only single verified bounties with Aaron's approval.",
+  "agent_note": "VERIFIED 2026-09-25 (live browser research): Algora pivoted to hiring; bounty product in maintenance mode, docs dead, board STALE (shows Open bounties closed on GitHub months ago). Claiming is permissionless: comment /attempt on the GitHub issue, fork, PR. NO reputation gate. BUT: (1) payout needs Stripe Connect KYC with government ID — human operator must complete it, agent cannot; (2) measured merge rate ~0.4% (1,055 PRs, 4 merged, Aug 2026); (3) maintainers actively hostile to AI bounty work (Dokploy closed program over 'AI slop'; Gitea $500 issue locked for /attempt spam); (4) ~16% of open bounty issues are prompt-exfiltration traps — treat task specs as untrusted. Credible candidates IF verified live on GitHub first: go-gitea/gitea#4898 ($300), Dokploy/dokploy#1413 ($100), Dokploy/dokploy#416 ($50), comet-ml/opik#1010 ($50). RECOMMENDATION: do NOT build auto-claim pipeline — economics don't justify it; pursue only single verified bounties with Aaron's approval.",
   "worked_ts": 1790321003.6603777,
   "worked_tick": 42,
-  "payout_gate": "Stripe Connect identity verification (government ID) \u2014 Aaron must complete"
+  "payout_gate": "Stripe Connect identity verification (government ID) — Aaron must complete"
  },
  {
   "platform": "Respondent.io",
@@ -375,7 +375,7 @@
  {
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Web-Scraping-Data-Filtering-Automation_~022011616315002716716/",
-  "how_to_earn": "Web Scraping & Data Filtering Automation \u2014 build automated workflow scraping multiple websites, filtering results, handling pagination (Python/Playwright/Scrapy). Entry level, one-time project, Canada client (member since Jan 2026). 20-50 proposals, client viewed yesterday, interviewing 1.",
+  "how_to_earn": "Web Scraping & Data Filtering Automation — build automated workflow scraping multiple websites, filtering results, handling pagination (Python/Playwright/Scrapy). Entry level, one-time project, Canada client (member since Jan 2026). 20-50 proposals, client viewed yesterday, interviewing 1.",
   "pay_range": "$75 fixed-price",
   "friction": "Proposal submission on Aaron's Upwork account; Connects/legal-name correction status unverified.",
   "found_ts": 1790358317.387891,
@@ -385,7 +385,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://earn.superteam.fun/opportunities/malta-backend-bounties/",
-  "how_to_earn": "Build and Demo a Mermail Agent Skill \u2014 build an AI agent skill on the Mermail email protocol (e.g. email parsing, automated responses), record a working demo video, submit via earn.superteam.fun.",
+  "how_to_earn": "Build and Demo a Mermail Agent Skill — build an AI agent skill on the Mermail email protocol (e.g. email parsing, automated responses), record a working demo video, submit via earn.superteam.fun.",
   "pay_range": "500 USDC (~$500), no entry spend required",
   "friction": "Needs Solana wallet for payout (Aaron's hands); Earn account signup + skill build + demo video are agent-doable.",
   "found_ts": 1790358317.387891,
@@ -395,9 +395,9 @@
  {
   "platform": "Freelancer.com",
   "url": "https://www.freelancer.com/projects/beautifulsoup/python-text-scraper-development-edt",
-  "how_to_earn": "Python Text Scraper Development (project 40495818) \u2014 clean commented Python crawler (requests/BS4 or Scrapy) crawling every internal link, extracting visible text, saving URL+text to CSV/JSON, README. Ends in ~6 days.",
+  "how_to_earn": "Python Text Scraper Development (project 40495818) — clean commented Python crawler (requests/BS4 or Scrapy) crawling every internal link, extracting visible text, saving URL+text to CSV/JSON, README. Ends in ~6 days.",
   "pay_range": "$15-25/hr, small fixed scope",
-  "friction": "Aaron has 0/6 free bids \u2014 bidding blocked until free 1-month Plus trial is claimed or bids bought.",
+  "friction": "Aaron has 0/6 free bids — bidding blocked until free 1-month Plus trial is claimed or bids bought.",
   "found_ts": 1790358317.387891,
   "status": "needs_aaron",
   "agent_note": "URL verified this run via search index. Straightforward crawler task Aaron could do in an afternoon. Blocked on bids: needs Aaron's approval to claim the free Plus trial."
@@ -405,7 +405,7 @@
  {
   "platform": "Swagbucks",
   "url": "https://www.swagbucks.com/",
-  "how_to_earn": "Sign up, confirm email, complete profile \u2014 $5 (500 SB) signup bonus; then surveys/videos/games for ongoing small earnings.",
+  "how_to_earn": "Sign up, confirm email, complete profile — $5 (500 SB) signup bonus; then surveys/videos/games for ongoing small earnings.",
   "pay_range": "$5 signup bonus; ~$1-2/hr ongoing",
   "friction": "Email confirmation code; profile questionnaire.",
   "found_ts": 1790358317.387891,
@@ -660,20 +660,20 @@
   "friction": "Needs his Upwork account + Connects to propose; application must open with 'I LOVE WEB SCRAPING' and show scraping/anti-bot evidence (GitHub/blog)",
   "found_ts": 1790369324,
   "status": "staged",
-  "agent_note": "Verified live 2026-09-25 (full page fetch). Expert-level ongoing project: client hiring 4 freelancers (1 hired, 3 interviewing, client viewed last week). Strong skill fit: Python/Node, Playwright/Selenium/Puppeteer, proxies+IP rotation, session handling, fingerprinting, production scraping. Work itself is experiments+code \u2014 automation can do the experiments; only the proposal (and any small paid test assignment) needs Aaron."
+  "agent_note": "Verified live 2026-09-25 (full page fetch). Expert-level ongoing project: client hiring 4 freelancers (1 hired, 3 interviewing, client viewed last week). Strong skill fit: Python/Node, Playwright/Selenium/Puppeteer, proxies+IP rotation, session handling, fingerprinting, production scraping. Work itself is experiments+code — automation can do the experiments; only the proposal (and any small paid test assignment) needs Aaron."
  },
  {
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Web-scraping_~022095773706723606210/",
   "how_to_earn": "Build daily monitoring system for 5 UK business-for-sale sites: scrapers, deduplication, change tracking, Excel database + searchable web dashboard, acquisition scoring, email alerts",
   "pay_range": "$200 fixed",
-  "friction": "Needs his Upwork account + Connects to propose; 5-phase scope is heavy for the price \u2014 counter with milestone pricing or treat as portfolio build",
+  "friction": "Needs his Upwork account + Connects to propose; 5-phase scope is heavy for the price — counter with milestone pricing or treat as portfolio build",
   "found_ts": 1790369324,
   "status": "staged",
-  "agent_note": "Verified live 2026-09-25 (full page fetch, posted Sept 4). Best-fit skills: Python, Scrapy/Playwright/Selenium, PostgreSQL, data cleaning/dedup, NLP extraction, dashboard. Realistic effort 15-30h vs $200 \u2014 thin pay, but exact domain match (scraping pipelines + dashboards) and client wants long-term system; worth a proposal at revised terms."
+  "agent_note": "Verified live 2026-09-25 (full page fetch, posted Sept 4). Best-fit skills: Python, Scrapy/Playwright/Selenium, PostgreSQL, data cleaning/dedup, NLP extraction, dashboard. Realistic effort 15-30h vs $200 — thin pay, but exact domain match (scraping pipelines + dashboards) and client wants long-term system; worth a proposal at revised terms."
  },
  {
-  "agent_note": "Best fit of the run: modular plug-and-play scraper modules, FastAPI endpoints, PDF parsing, anti-bot/JS-heavy scraping, async pipelines \u2014 maps directly to Aaron's Python/scraping/automation stack. US client (Miramar), 15-20 proposals, actively interviewing 4 (client viewed 9h ago). Verified live 2026-09-25 16:15 CDT.",
+  "agent_note": "Best fit of the run: modular plug-and-play scraper modules, FastAPI endpoints, PDF parsing, anti-bot/JS-heavy scraping, async pipelines — maps directly to Aaron's Python/scraping/automation stack. US client (Miramar), 15-20 proposals, actively interviewing 4 (client viewed 9h ago). Verified live 2026-09-25 16:15 CDT.",
   "found_ts": 1790370918,
   "friction": "Needs his Upwork account + Connects to propose; interview would need Aaron",
   "how_to_earn": "Build modular plug-and-play web & PDF data-scraping framework with FastAPI endpoints, anti-bot handling, async pipelines",
@@ -683,7 +683,7 @@
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-Modular-Web-PDF-Data-Scraping-Framework_~021993045497268074430/"
  },
  {
-  "agent_note": "Verified live 2026-09-25 16:15 CDT. High rate ceiling ($100/hr) and 6+ month duration \u2014 worth a proposal despite 20-50 competing bids. Client new (member since Aug 25, 2026); 0 interviewing, 2 invites sent.",
+  "agent_note": "Verified live 2026-09-25 16:15 CDT. High rate ceiling ($100/hr) and 6+ month duration — worth a proposal despite 20-50 competing bids. Client new (member since Aug 25, 2026); 0 interviewing, 2 invites sent.",
   "found_ts": 1790370918,
   "friction": "Needs his Upwork account + Connects to propose; interview would need Aaron",
   "how_to_earn": "Build and maintain web scraping tools, improve reliability/performance (Python + Scrapy)",
@@ -693,9 +693,9 @@
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-Web-Scraping_~022092159311640039207/"
  },
  {
-  "agent_note": "Verified live 2026-09-25 16:15 CDT via freelancermap. Posted within ~21 hrs, start ASAP. Core ask CUDA/transformers/model training (weaker for Aaron) but chatbot/LLM/agentic experience explicitly a big plus \u2014 fits his Hermes work. Long shot on ML side, low cost to apply.",
+  "agent_note": "Verified live 2026-09-25 16:15 CDT via freelancermap. Posted within ~21 hrs, start ASAP. Core ask CUDA/transformers/model training (weaker for Aaron) but chatbot/LLM/agentic experience explicitly a big plus — fits his Hermes work. Long shot on ML side, low cost to apply.",
   "found_ts": 1790370918,
-  "friction": "Long-term contract with interviews \u2014 Aaron's hands needed for interviews; agent can draft application",
+  "friction": "Long-term contract with interviews — Aaron's hands needed for interviews; agent can draft application",
   "how_to_earn": "12-month full-time remote GenAI/Python contract (CUDA/transformers focus, chatbot/LLM plus)",
   "pay_range": "rate not listed; 12-month contract, 100% capacity, start ASAP",
   "platform": "freelancermap.com",
@@ -720,7 +720,7 @@
   "friction": "Needs Aaron's researcher application + payout identity; reproducible prompt-injection PoCs are scriptable by agent",
   "found_ts": 1790371141,
   "status": "needs_aaron",
-  "agent_note": "Excellent fit: reproducible prompt-injection/red-team testing against agent products is squarely Aaron's daily skillset \u2014 no deep exploit knowledge needed, just creative prompt engineering + PoC scripting. Program page verified live 2026-09-25 16:16 CDT."
+  "agent_note": "Excellent fit: reproducible prompt-injection/red-team testing against agent products is squarely Aaron's daily skillset — no deep exploit knowledge needed, just creative prompt engineering + PoC scripting. Program page verified live 2026-09-25 16:16 CDT."
  },
  {
   "platform": "Sherlock (Ethereum Foundation contest)",
@@ -740,7 +740,7 @@
   "friction": "Web recon + scanner + PoC is agent-doable; needs Aaron only if paid out (KYC)",
   "found_ts": 1790371141,
   "status": "needs_aaron",
-  "agent_note": "Good fit for Aaron's web/app skills (API testing, auth logic). Caveat: program launch date could not be pinned to Sept 2026 \u2014 page is fresh in the search index but content may predate this month. Open-ended program. Verified via coverage 2026-09-25 16:16 CDT."
+  "agent_note": "Good fit for Aaron's web/app skills (API testing, auth logic). Caveat: program launch date could not be pinned to Sept 2026 — page is fresh in the search index but content may predate this month. Open-ended program. Verified via coverage 2026-09-25 16:16 CDT."
  },
  {
   "platform": "Codeable",
@@ -916,7 +916,7 @@
   "friction": "Screener qualification; live video interview; completion deadline 2026-10-06",
   "found_ts": 1790372880,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 (posted today). Strong fit: Aaron runs Technology Squared LLC and manages its software stack. Agent cannot sit a video interview \u2014 Aaron's hands only."
+  "agent_note": "VERIFIED 2026-09-25 (posted today). Strong fit: Aaron runs Technology Squared LLC and manages its software stack. Agent cannot sit a video interview — Aaron's hands only."
  },
  {
   "platform": "focusgroups.org (Study: ITSM Configuration)",
@@ -926,7 +926,7 @@
   "friction": "Targets IT sysadmins; screener; live video interview; completion deadline 2026-10-01",
   "found_ts": 1790372880,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Excellent fit: Aaron is IT/systems/networking with sysadmin background. Needs Aaron on video \u2014 needs_aaron."
+  "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Excellent fit: Aaron is IT/systems/networking with sysadmin background. Needs Aaron on video — needs_aaron."
  },
  {
   "platform": "focusgroups.org (Study: Technology)",
@@ -946,7 +946,7 @@
   "friction": "Targets contact-center roles (may screen Aaron out); screener; live video interview; completion deadline 2026-09-28 (urgent)",
   "found_ts": 1790372880,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Caveat: study targets contact-center workers; Aaron builds AI chatbots/pipelines which is adjacent but he is not a contact-center employee \u2014 screener risk. Deadline Sep 28."
+  "agent_note": "VERIFIED 2026-09-25 (posted 09-23). Caveat: study targets contact-center workers; Aaron builds AI chatbots/pipelines which is adjacent but he is not a contact-center employee — screener risk. Deadline Sep 28."
  },
  {
   "platform": "focusgroups.org (Study: Purchasing Practices)",
@@ -1266,7 +1266,7 @@
   "friction": "Free signup; intake survey per study; 60 min, 1-on-1 interview. Pays via VISA card or check.",
   "found_ts": 1790380352,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 \u2014 fresh. Complete-by: Oct 6, 2026. Needs Aaron's hands (1-on-1 interview)."
+  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 — fresh. Complete-by: Oct 6, 2026. Needs Aaron's hands (1-on-1 interview)."
  },
  {
   "platform": "focusgroups.org (Workflow Management)",
@@ -1276,7 +1276,7 @@
   "friction": "Free signup; intake survey per study; 60 min interview. Pays via VISA card or check.",
   "found_ts": 1790380352,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 \u2014 fresh. Complete-by: Oct 31, 2026. Needs Aaron's hands (interview)."
+  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 — fresh. Complete-by: Oct 31, 2026. Needs Aaron's hands (interview)."
  },
  {
   "platform": "focusgroups.org (Design Tools)",
@@ -1286,7 +1286,7 @@
   "friction": "Free signup; intake survey per study; 60 min interview. Pays via VISA card or check.",
   "found_ts": 1790380352,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 \u2014 fresh. Complete-by: Oct 14, 2026. Lower priority (creative-platform topic). Needs Aaron's hands."
+  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted TODAY 09/25/26 — fresh. Complete-by: Oct 14, 2026. Lower priority (creative-platform topic). Needs Aaron's hands."
  },
  {
   "platform": "focusgroups.org (Data Protection Platforms)",
@@ -1296,12 +1296,12 @@
   "friction": "Free signup; intake survey per study; 45 min 1-on-1. Pays via VISA card or check.",
   "found_ts": 1790380352,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted 09/17/26. Complete-by: Sept 29, 2026 \u2014 URGENT (4 days). Apply with sysadmin angle. Needs Aaron's hands."
+  "agent_note": "VERIFIED live 2026-09-25 ~19:00 CDT (study page fetched this run). Posted 09/17/26. Complete-by: Sept 29, 2026 — URGENT (4 days). Apply with sysadmin angle. Needs Aaron's hands."
  },
  {
   "platform": "Superteam Earn (Fetch.ai Agent Track)",
   "url": "https://superteam.fun/earn/listing/the-fetchai-agent-track",
-  "how_to_earn": "Solana Breakout Hackathon special track \u2014 build a Fetch.ai agent-track project (backend + blockchain). 26 submissions so far. Best channel fit this run (Aaron builds AI agents daily).",
+  "how_to_earn": "Solana Breakout Hackathon special track — build a Fetch.ai agent-track project (backend + blockchain). 26 submissions so far. Best channel fit this run (Aaron builds AI agents daily).",
   "pay_range": "$5,000 USDC (1st $2,500 / 2nd $2,500)",
   "friction": "Free Superteam Earn profile + Solana wallet required; prize payout via wallet. No purchase needed.",
   "found_ts": 1790380352,
@@ -1372,7 +1372,7 @@
  {
   "platform": "Spark/Sky (Immunefi)",
   "url": "https://immunefi.com/bug-bounty/sparklend/information/",
-  "how_to_earn": "Find DeFi vulnerabilities in Spark (Sky ecosystem) \u2014 385 in-scope targets after 9/19 scope expansion",
+  "how_to_earn": "Find DeFi vulnerabilities in Spark (Sky ecosystem) — 385 in-scope targets after 9/19 scope expansion",
   "pay_range": "$5M max (10% of funds at risk, min critical $50K, paid in DAI; >$1M paid monthly)",
   "friction": "No KYC required; expert DeFi audit; agent can run recon (repo diff, slither) without Aaron",
   "found_ts": 1790384098,
@@ -1384,7 +1384,7 @@
   "url": "https://immunefi.com/bug-bounty/gmx/information/",
   "how_to_earn": "Find vulnerabilities in GMX perps/AMM scope (EVM + GMX-Solana via gmsol)",
   "pay_range": "$5M max (10% of funds at risk, paid in DAI/USDC-class assets)",
-  "friction": "No KYC required \u2014 rare for a $5M program; web/apps + smart contracts in scope; expert audit",
+  "friction": "No KYC required — rare for a $5M program; web/apps + smart contracts in scope; expert audit",
   "found_ts": 1790384098,
   "status": "staged",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT via live Immunefi page fetch. Known-issues list refreshed 9/14/2026. Staged: agent recon doable, no KYC gate."
@@ -1404,10 +1404,10 @@
   "url": "https://cantina.xyz/bounties/3709ca85-4050-407e-9b36-51f5d5ea9b00",
   "how_to_earn": "Find smart-contract vulnerabilities in Reserve Protocol tokenized-asset scope on Cantina",
   "pay_range": "$10M max (per SCH table; reward at protocol's discretion by severity)",
-  "friction": "No deposit required (unlike Uniswap/Polymarket/Euler); KYC only at payouts >=$600 (W-9/W-8BEN) \u2014 Aaron must complete",
+  "friction": "No deposit required (unlike Uniswap/Polymarket/Euler); KYC only at payouts >=$600 (W-9/W-8BEN) — Aaron must complete",
   "found_ts": 1790384098,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT via live Cantina bounty page \u2014 explicitly NO deposit tag. Participation free; KYC at payout only."
+  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT via live Cantina bounty page — explicitly NO deposit tag. Participation free; KYC at payout only."
  },
  {
   "platform": "Morpho (Cantina)",
@@ -1417,12 +1417,12 @@
   "friction": "No deposit required; web-app side fits Aaron's systems/web background better than pure Solidity; KYC at payout",
   "found_ts": 1790384098,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT via live Cantina bounty page \u2014 NO deposit tag. Unusually broad scope incl web apps = best fit of the smart-contract set for Aaron."
+  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT via live Cantina bounty page — NO deposit tag. Unusually broad scope incl web apps = best fit of the smart-contract set for Aaron."
  },
  {
   "platform": "Aera (Immunefi, via bountyhunte.rs)",
   "url": "https://bountyhunte.rs/programs/aera",
-  "how_to_earn": "Find vulnerabilities in Aera scope \u2014 29 in-scope targets after 9/19 expansion",
+  "how_to_earn": "Find vulnerabilities in Aera scope — 29 in-scope targets after 9/19 expansion",
   "pay_range": "$500K max (range $20K-$500K)",
   "friction": "Medium-high effort; smaller program = less researcher competition",
   "found_ts": 1790384098,
@@ -1432,7 +1432,7 @@
  {
   "platform": "GMTrade (Immunefi, via bountyhunte.rs)",
   "url": "https://bountyhunte.rs/programs/gmtrade",
-  "how_to_earn": "Find vulnerabilities in GMTrade scope \u2014 only 6 in-scope targets (Solana gmsol program)",
+  "how_to_earn": "Find vulnerabilities in GMTrade scope — only 6 in-scope targets (Solana gmsol program)",
   "pay_range": "$100K max (min $1K as of 9/17/2026)",
   "friction": "Medium effort; tiny scope auditable in a focused weekend",
   "found_ts": 1790384098,
@@ -1444,7 +1444,7 @@
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-professional-work-practices-120/06380f40-982c-447e-8581-b10e6ef71f52/",
   "how_to_earn": "60-minute online interview on professional work practices (Career)",
   "pay_range": "$120",
-  "friction": "Video interview \u2014 Aaron must attend; screener may filter",
+  "friction": "Video interview — Aaron must attend; screener may filter",
   "found_ts": 1790384098,
   "status": "needs_aaron",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-05. Fits his IT-professional profile."
@@ -1454,17 +1454,17 @@
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-tax-filing-software-100/c2d57ed1-6978-4afe-95d3-364701fafabe/",
   "how_to_earn": "60-minute online interview on tax filing software decision-making (Finance)",
   "pay_range": "$100",
-  "friction": "Video interview \u2014 Aaron must attend",
+  "friction": "Video interview — Aaron must attend",
   "found_ts": 1790384098,
   "status": "needs_aaron",
-  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-15. He runs Technology Squared LLC \u2014 genuinely researching options."
+  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-15. He runs Technology Squared LLC — genuinely researching options."
  },
  {
   "platform": "focusgroups.org (unmoderated)",
   "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-desktop-prototype-testing-61/167e3092-f97a-4a97-bf55-130fbeb4772b/",
   "how_to_earn": "46-minute online unmoderated desktop UX feedback task (Technology)",
   "pay_range": "$61",
-  "friction": "Unmoderated web task \u2014 agent can attempt; may need Aaron for voice/video segments",
+  "friction": "Unmoderated web task — agent can attempt; may need Aaron for voice/video segments",
   "found_ts": 1790384098,
   "status": "staged",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-01. Agent-doable from VM browser; dev background helps."
@@ -1474,17 +1474,17 @@
   "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-user-experiences-40/ae9c5f73-ebc0-4610-961d-648bd73da55a/",
   "how_to_earn": "30-minute online unmoderated tech-opinion task (Technology)",
   "pay_range": "$40",
-  "friction": "Unmoderated web task \u2014 agent can attempt",
+  "friction": "Unmoderated web task — agent can attempt",
   "found_ts": 1790384098,
   "status": "staged",
-  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-09-29 (4 days) \u2014 act soon."
+  "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-09-29 (4 days) — act soon."
  },
  {
   "platform": "focusgroups.org (unmoderated)",
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-mulesoft-feedback-30/41d297f5-7ef8-429c-9651-354b53d8af91/",
   "how_to_earn": "15-minute online unmoderated MuleSoft integration-platform feedback task (Technology)",
   "pay_range": "$30",
-  "friction": "Unmoderated web task \u2014 agent can attempt; quick",
+  "friction": "Unmoderated web task — agent can attempt; quick",
   "found_ts": 1790384098,
   "status": "staged",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-17. MuleSoft/API background fit."
@@ -1494,7 +1494,7 @@
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-speech-to-text-tools-25/bf6de6e6-3429-4690-89e0-03b7df7e6e1d/",
   "how_to_earn": "25-minute online unmoderated speech-to-text tool usage task (Technology)",
   "pay_range": "$25",
-  "friction": "Unmoderated web task \u2014 agent can attempt; low value but fast",
+  "friction": "Unmoderated web task — agent can attempt; low value but fast",
   "found_ts": 1790384098,
   "status": "staged",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Deadline 2026-10-01."
@@ -1504,7 +1504,7 @@
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-architecture-decisions-20/74b16c8b-1d04-4b8d-ad9e-2f7f2d624ab0/",
   "how_to_earn": "30-minute online research study on architecture decision records + AI coding agents (Technology)",
   "pay_range": "$20",
-  "friction": "Unmoderated web task \u2014 agent can attempt; directly his wheelhouse",
+  "friction": "Unmoderated web task — agent can attempt; directly his wheelhouse",
   "found_ts": 1790384098,
   "status": "staged",
   "agent_note": "VERIFIED 2026-09-25 ~19:50 CDT. Long window (dl 2027-09-22). Low priority filler."
@@ -1523,7 +1523,7 @@
   "platform": "Freelancer.com",
   "url": "https://www.freelancer.co.za/projects/ai-chatbot/Job-Application-Agent",
   "how_to_earn": "Bid on and build an 'AI Job Application Agent': Playwright scrapers for LinkedIn/Indeed/Monster, keyword filter engine, LLM resume-tailoring toggle, dashboard, server deployment.",
-  "pay_range": "\u20b912,500\u201337,500 INR (~$140\u2013420 USD); average bid \u20b926,241 (~$295)",
+  "pay_range": "₹12,500–37,500 INR (~$140–420 USD); average bid ₹26,241 (~$295)",
   "friction": "Bid must be placed from Aaron's Freelancer.com account (@aaronv68); new listings gated behind a $20 minimum account balance; 26 proposals already in.",
   "found_ts": 1790389668.0807347,
   "status": "needs_aaron",
@@ -1953,49 +1953,49 @@
  },
  {
   "id": 1,
-  "title": "Crypto World's Fair \u2014 Colosseum global online hackathon (Solana track $100K)",
+  "title": "Crypto World's Fair — Colosseum global online hackathon (Solana track $100K)",
   "platform": "Colosseum + Superteam Earn",
   "url": "https://colosseum.com/worldsfair",
   "payout": "$840,000 total prizes + $2.5M seed funding; Solana track 10 x $10,000; grand prize $30,000, next 20 x $15,000",
-  "effort": "High \u2014 build a blockchain product over ~4 weeks, free to enter, 100% online",
+  "effort": "High — build a blockchain product over ~4 weeks, free to enter, 100% online",
   "status": "needs_aaron",
   "hands": "hybrid: agent can help build, but Aaron needed for registration, submission, and prize wallet",
   "deadline": "2026-10-12 (submission deadline 23:59 Brasilia)",
-  "notes": "Verified live 2026-09-26 by scout. Solana track fits Aaron's Python/automation/agent skillset. Caveat: prizes paid after judging \u2014 will NOT pay inside the $100-in-7-days window (ends ~Oct 1). Bigger-swing lead, not a challenge-time earner.",
+  "notes": "Verified live 2026-09-26 by scout. Solana track fits Aaron's Python/automation/agent skillset. Caveat: prizes paid after judging — will NOT pay inside the $100-in-7-days window (ends ~Oct 1). Bigger-swing lead, not a challenge-time earner.",
   "scouted_at": "2026-09-26 00:11 CDT"
  },
  {
   "id": 2,
-  "title": "Olympus Bug Bounty \u2014 up to $3.33M on Immunefi (no KYC)",
+  "title": "Olympus Bug Bounty — up to $3.33M on Immunefi (no KYC)",
   "platform": "Immunefi",
   "url": "https://immunefi.com/bug-bounty/olympus/information/",
   "payout": "Up to $3,333,333 critical (paid in OHM, denominated USD); Tier 1 user-fund loss up to $333,333; Tier 2 treasury loss up to $3,333,333; Tier 3 discretionary up to $16,942",
-  "effort": "Very high \u2014 expert Solidity/DeFi security research on treasury-backed monetary protocol (treasury, user, bond-fund loss in scope); PoC required for all severities",
+  "effort": "Very high — expert Solidity/DeFi security research on treasury-backed monetary protocol (treasury, user, bond-fund loss in scope); PoC required for all severities",
   "status": "staged",
   "hands": "agent-doable recon (NO KYC gate); payout via OlympusDAO in OHM; submission via Immunefi account",
   "deadline": "Ongoing",
-  "notes": "Verified live 2026-09-26 by scout: found on smartcontractshacking.com bounty table (updated Sep 24, 2026), then Immunefi program page fetched live. NO KYC required for payout \u2014 agent can run recon and draft reports. Primacy of Rules; testing only on local forks. Expert Solidity fit; long-shot but highest no-KYC bounty not yet tracked.",
+  "notes": "Verified live 2026-09-26 by scout: found on smartcontractshacking.com bounty table (updated Sep 24, 2026), then Immunefi program page fetched live. NO KYC required for payout — agent can run recon and draft reports. Primacy of Rules; testing only on local forks. Expert Solidity fit; long-shot but highest no-KYC bounty not yet tracked.",
   "scouted_at": "2026-09-26 00:41 CDT"
  },
  {
   "id": 3,
-  "title": "0x Bug Bounty \u2014 up to $1M on Immunefi (KYC)",
+  "title": "0x Bug Bounty — up to $1M on Immunefi (KYC)",
   "platform": "Immunefi",
   "url": "https://immunefi.com/bug-bounty/0x/information/",
-  "payout": "Up to $1,000,000 max critical (10% of funds at risk, $100,000 min critical); web/apps critical $15K\u2013$50K; paid in USDC on Ethereum",
-  "effort": "Very high \u2014 DEX aggregator smart contracts (0x v2 settler, audited by Trail of Bits/OpenZeppelin/Ourovoros) + API/web/mobile; PoC required all severities",
+  "payout": "Up to $1,000,000 max critical (10% of funds at risk, $100,000 min critical); web/apps critical $15K–$50K; paid in USDC on Ethereum",
+  "effort": "Very high — DEX aggregator smart contracts (0x v2 settler, audited by Trail of Bits/OpenZeppelin/Ourovoros) + API/web/mobile; PoC required all severities",
   "status": "needs_aaron",
-  "hands": "needs_aaron: KYC required for full payout (70% payout if KYC declined \u2014 SSN/EIN for US); submission via Immunefi account; agent can run recon/PoC assist",
+  "hands": "needs_aaron: KYC required for full payout (70% payout if KYC declined — SSN/EIN for US); submission via Immunefi account; agent can run recon/PoC assist",
   "deadline": "Ongoing",
   "notes": "Verified live 2026-09-26 01:11 CDT scout: full program page fetched. 0x v2 settler contracts recently audited; program carries Immunefi Standard Badge, triaged by Immunefi, arbitration enabled. Primacy of Impact for smart-contract critical."
  },
  {
   "id": 4,
-  "title": "OpenZeppelin on Stellar Bug Bounty \u2014 up to $25K on Immunefi (KYC)",
+  "title": "OpenZeppelin on Stellar Bug Bounty — up to $25K on Immunefi (KYC)",
   "platform": "Immunefi",
   "url": "https://immunefi.com/bug-bounty/openzeppelin-stellar/information/",
   "payout": "Up to $25,000 max critical (10% of funds directly affected, $5,000 min critical); high $2,500 min; medium flat $2,500; low flat $1,000; paid in XLM on Stellar",
-  "effort": "High \u2014 OpenZeppelin Stellar Contracts library (Soroban/Rust); PoC required all severities; release-candidate bugs get 50% bonus",
+  "effort": "High — OpenZeppelin Stellar Contracts library (Soroban/Rust); PoC required all severities; release-candidate bugs get 50% bonus",
   "status": "needs_aaron",
   "hands": "needs_aaron: KYC + invoice required for payout (full legal name, address, Stellar wallet); submission via Immunefi account; agent can run recon",
   "deadline": "Ongoing (live since May 2025; known-issues list updated Sep 7, 2026)",
@@ -2004,7 +2004,7 @@
  {
   "platform": "focusgroups.org",
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-experiences-40/633b7ad9-d0f5-4d2d-8d37-1bba72cc78e5/",
-  "how_to_earn": "Research Study on Experiences \u2014 $40. 30-min online unmoderated task sharing opinions and insights; sign up + screener to qualify.",
+  "how_to_earn": "Research Study on Experiences — $40. 30-min online unmoderated task sharing opinions and insights; sign up + screener to qualify.",
   "pay_range": "$40",
   "friction": "focusgroups.org account + screener; unmoderated (self-paced, no live interview). Spots fill fast.",
   "found_ts": 1790405278,
@@ -2015,7 +2015,7 @@
  {
   "platform": "focusgroups.org",
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-car-search-behaviors-20/923d6e85-6c03-4e92-9d12-e7293f5757ff/",
-  "how_to_earn": "Research Study on Car Search Behaviors \u2014 $20. 15-min online unmoderated task on how you search for your next vehicle (Aaron owns a 2010 Ford Focus \u2014 natural fit).",
+  "how_to_earn": "Research Study on Car Search Behaviors — $20. 15-min online unmoderated task on how you search for your next vehicle (Aaron owns a 2010 Ford Focus — natural fit).",
   "pay_range": "$20",
   "friction": "focusgroups.org account + screener; unmoderated, self-paced.",
   "found_ts": 1790405278,
@@ -2026,7 +2026,7 @@
  {
   "platform": "focusgroups.org",
   "url": "http://focusgroups.org/category/unmoderated-studies/research-study-on-fashion-shopping-experience-30/3b0ef96a-471e-4796-bd14-768d660db98c/",
-  "how_to_earn": "Research Study on Fashion Shopping Experience \u2014 $30. 36-min online unmoderated task evaluating an online fashion website.",
+  "how_to_earn": "Research Study on Fashion Shopping Experience — $30. 36-min online unmoderated task evaluating an online fashion website.",
   "pay_range": "$30",
   "friction": "focusgroups.org account + screener; unmoderated, self-paced. Low topic fit.",
   "found_ts": 1790405278,
@@ -2037,9 +2037,9 @@
  {
   "platform": "focusgroups.org",
   "url": "http://focusgroups.org/category/interview-studies/research-study-on-hvac-products-100/ccf306e7-3675-4df3-bac4-4ef5a2a97634/",
-  "how_to_earn": "Research Study on HVAC Products \u2014 $100. 45-min online 1-on-1 interview on HVAC components and market demand.",
+  "how_to_earn": "Research Study on HVAC Products — $100. 45-min online 1-on-1 interview on HVAC components and market demand.",
   "pay_range": "$100",
-  "friction": "focusgroups.org account + screener; LIVE 1-on-1 video interview. Screener asks HVAC industry knowledge \u2014 real screener risk, low fit.",
+  "friction": "focusgroups.org account + screener; LIVE 1-on-1 video interview. Screener asks HVAC industry knowledge — real screener risk, low fit.",
   "found_ts": 1790405278,
   "status": "needs_aaron",
   "agent_note": "needs_aaron: requires Aaron's live 45-min video interview; screener screens for HVAC knowledge (likely fail unless he can talk shop). Only attempt if interested.",
@@ -2048,7 +2048,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-ai-experiences-45/17f1ff1c-2309-4aa4-bbbd-8293eee817e0/",
-  "how_to_earn": "Research Study on AI Experiences \u2014 $45. 24-minute online unmoderated study about experiences with AI; qualified participants paid $45 if completed by Sept 29, 2026.",
+  "how_to_earn": "Research Study on AI Experiences — $45. 24-minute online unmoderated study about experiences with AI; qualified participants paid $45 if completed by Sept 29, 2026.",
   "pay_range": "$45",
   "friction": "focusgroups.org account + screener; unmoderated, self-paced. Spots fill fast; application does not guarantee a slot.",
   "found_ts": 1790407488,
@@ -2059,7 +2059,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/unmoderated-studies/unmoderated-task-on-broadband-devices-25/2a980ddb-97e7-46a4-ad30-b9440bda24bc/",
-  "how_to_earn": "Unmoderated Task on Broadband Devices \u2014 $25. 60-minute online unmoderated task testing broadband devices; paid $25 if completed by Oct 9, 2026.",
+  "how_to_earn": "Unmoderated Task on Broadband Devices — $25. 60-minute online unmoderated task testing broadband devices; paid $25 if completed by Oct 9, 2026.",
   "pay_range": "$25",
   "friction": "focusgroups.org account + screener; unmoderated, self-paced. Familiarity with broadband devices helps.",
   "found_ts": 1790407488,
@@ -2070,20 +2070,20 @@
  {
   "platform": "respondent.io",
   "url": "https://app.respondent.io/next/participants/projects/6ab262992c68ca2386773924",
-  "how_to_earn": "Discuss.io consumer study \u2014 $50. 45-min video call (webcam) Sept 29\u2013Oct 8 sharing opinions on consumer issues; paid $50 minus ~5% platform fee via Tremendous.",
+  "how_to_earn": "Discuss.io consumer study — $50. 45-min video call (webcam) Sept 29–Oct 8 sharing opinions on consumer issues; paid $50 minus ~5% platform fee via Tremendous.",
   "pay_range": "$50",
   "friction": "Respondent.io account + 25 screener questions; researcher reviews application before invite. Needs Aaron's live interview time.",
   "found_ts": 1790407488,
   "status": "needs_aaron",
-  "agent_note": "Needs Aaron: 45-min webcam interview + screener. Apply ASAP \u2014 screener open now, sessions run Sept 29\u2013Oct 8.",
+  "agent_note": "Needs Aaron: 45-min webcam interview + screener. Apply ASAP — screener open now, sessions run Sept 29–Oct 8.",
   "deadline": "2026-10-08"
  },
  {
   "platform": "openclassactions.com",
   "url": "https://openclassactions.com/settlements/false-advertising/apple-intelligence-siri-false-advertising-class-action-settlement.php",
-  "how_to_earn": "Apple Intelligence Siri class action settlement \u2014 $25 per eligible iPhone, up to $95 pro rata. Claim period opened Sept 21, 2026; no receipt needed (serial number or Apple Account email + phone). Official claim site: www.smartphoneaisettlement.com.",
-  "pay_range": "$25\u2013$95/device",
-  "friction": "Sworn attestation under penalty of perjury \u2014 must be Aaron. Eligibility: original US purchaser of iPhone 15 Pro/15 Pro Max/16/16 Plus/16 Pro/16 Pro Max/16e between June 10, 2024 and March 29, 2025. His device/purchase status is unknown \u2014 needs one yes/no check first.",
+  "how_to_earn": "Apple Intelligence Siri class action settlement — $25 per eligible iPhone, up to $95 pro rata. Claim period opened Sept 21, 2026; no receipt needed (serial number or Apple Account email + phone). Official claim site: www.smartphoneaisettlement.com.",
+  "pay_range": "$25–$95/device",
+  "friction": "Sworn attestation under penalty of perjury — must be Aaron. Eligibility: original US purchaser of iPhone 15 Pro/15 Pro Max/16/16 Plus/16 Pro/16 Pro Max/16e between June 10, 2024 and March 29, 2025. His device/purchase status is unknown — needs one yes/no check first.",
   "found_ts": 1790407488,
   "status": "needs_aaron",
   "agent_note": "Needs Aaron: file claim himself (sworn declaration). First confirm he bought an eligible iPhone in the class window; if yes, quick money, no proof of purchase needed.",
@@ -2092,9 +2092,9 @@
  {
   "platform": "openclassactions.com",
   "url": "https://openclassactions.com/blog/class-action-settlements-to-claim-fall-2026.php",
-  "how_to_earn": "CVS Digital Privacy settlement \u2014 up to $5 no documentation ($10 with proof like browser history/screenshots). Anyone who accessed cvs.com/CVSHealth.com/CVS app in the US before July 27, 2026. One claim per household. Official site: cvsdigitalprivacysettlement.com.",
+  "how_to_earn": "CVS Digital Privacy settlement — up to $5 no documentation ($10 with proof like browser history/screenshots). Anyone who accessed cvs.com/CVSHealth.com/CVS app in the US before July 27, 2026. One claim per household. Official site: cvsdigitalprivacysettlement.com.",
   "pay_range": "up to $5 ($10 w/ docs)",
-  "friction": "Sworn attestation \u2014 must be Aaron. Low value; claim takes minutes.",
+  "friction": "Sworn attestation — must be Aaron. Low value; claim takes minutes.",
   "found_ts": 1790407488,
   "status": "needs_aaron",
   "agent_note": "Needs Aaron (low value): quick no-doc claim if he ever used CVS's website/app. Included for completeness; $5.",
@@ -2103,9 +2103,9 @@
  {
   "platform": "Freelancer.com",
   "url": "https://www.freelancer.com/projects/chatbot-development/based-social-media-automation-system",
-  "how_to_earn": "'AI-based Social Media Automation System' \u2014 agentic multi-agent content/publishing system: Python, FastAPI, n8n, chatbot dev, RAG, LLM integration, social API integrations + admin dashboard. Fixed price.",
+  "how_to_earn": "'AI-based Social Media Automation System' — agentic multi-agent content/publishing system: Python, FastAPI, n8n, chatbot dev, RAG, LLM integration, social API integrations + admin dashboard. Fixed price.",
   "pay_range": "~$4,000-$5,700 (INR 350k-500k fixed)",
-  "friction": "39 proposals competing; Freelancer.com bidding gated behind $20 min balance \u2014 Aaron must fund/unlock.",
+  "friction": "39 proposals competing; Freelancer.com bidding gated behind $20 min balance — Aaron must fund/unlock.",
   "found_ts": 1790409204,
   "status": "needs_aaron",
   "agent_note": "Verified open this run (posted ~02:53 CDT, ends in 6d). Big scope (agency-scale), high value; agent can draft the proposal but bidding needs Aaron's funded account.",
@@ -2114,9 +2114,9 @@
  {
   "platform": "Freelancer.com",
   "url": "https://www.freelancer.com/projects/python/create-chatbot-39753950",
-  "how_to_earn": "'Create AI chatbot + n8n' \u2014 AI + ChatBot + n8n + Python (React nice-to-have). Hourly ongoing, 3-month deadline. Write 'BOT' at top of proposal.",
+  "how_to_earn": "'Create AI chatbot + n8n' — AI + ChatBot + n8n + Python (React nice-to-have). Hourly ongoing, 3-month deadline. Write 'BOT' at top of proposal.",
   "pay_range": "$15-25/hr, ongoing",
-  "friction": "Re-listed project (ID 39753950); client unverified (0.0 rating, Lutsk UA). Freelancer.com bidding gated behind $20 min balance \u2014 Aaron must unlock.",
+  "friction": "Re-listed project (ID 39753950); client unverified (0.0 rating, Lutsk UA). Freelancer.com bidding gated behind $20 min balance — Aaron must unlock.",
   "found_ts": 1790409204,
   "status": "needs_aaron",
   "agent_note": "Verified open this run; direct chatbot/automation skill fit. Hourly = cash-flow friendly, but client risk is real.",
@@ -2125,20 +2125,20 @@
  {
   "platform": "HackenProof",
   "url": "https://hackenproof.com/audit-programs/rain-smart-contract-audit-contest",
-  "how_to_earn": "Rain Smart Contract Audit Contest \u2014 5 Solidity contracts (RainPool, RainDeployer, RainFactory, Globals, LinkedList); contest format, code access via Discord support ticket.",
+  "how_to_earn": "Rain Smart Contract Audit Contest — 5 Solidity contracts (RainPool, RainDeployer, RainFactory, Globals, LinkedList); contest format, code access via Discord support ticket.",
   "pay_range": "$14,000 pool (40% crit / 30% high / 20% med / 10% gas+BP)",
-  "friction": "No deposit. KYC unstated (HackenProof typically verifies at payout \u2014 identity will be Aaron). Pure AI PoCs rejected; human-validated.",
+  "friction": "No deposit. KYC unstated (HackenProof typically verifies at payout — identity will be Aaron). Pure AI PoCs rejected; human-validated.",
   "found_ts": 1790409204,
   "status": "staged",
-  "agent_note": "Agent can run full recon and draft PoCs; Aaron validates + identity at payout. URGENT: contest ends Oct 1 (5 days). Launched right after Rain's $1.1M card-contract exploit \u2014 post-exploit code, high finding probability.",
+  "agent_note": "Agent can run full recon and draft PoCs; Aaron validates + identity at payout. URGENT: contest ends Oct 1 (5 days). Launched right after Rain's $1.1M card-contract exploit — post-exploit code, high finding probability.",
   "deadline": "2026-10-01"
  },
  {
   "platform": "HackenProof",
   "url": "https://hackenproof.com/programs/gmgn-web-and-mobile",
-  "how_to_earn": "GMGN Web & Mobile bounty \u2014 scope: gmgn.ai, *.gmgn.ai, iOS + Android apps. Web app testing.",
+  "how_to_earn": "GMGN Web & Mobile bounty — scope: gmgn.ai, *.gmgn.ai, iOS + Android apps. Web app testing.",
   "pay_range": "up to $1M USDT (extreme); typical critical $3K-10K, high $1K-3K, med $300-1K, low $50-300",
-  "friction": "No deposit. KYC unstated on page. No pure-AI PoCs \u2014 human validation.",
+  "friction": "No deposit. KYC unstated on page. No pure-AI PoCs — human validation.",
   "found_ts": 1790409204,
   "status": "staged",
   "agent_note": "Best evergreen bounty fit this run: web-app security testing matches Aaron's systems/web background. Program updated Sep 24, LIVE. Agent-doable end-to-end.",
@@ -2147,7 +2147,7 @@
  {
   "platform": "Immunefi",
   "url": "https://immunefi.com/bug-bounty/pareto",
-  "how_to_earn": "Pareto Credit bug bounty \u2014 Solidity vaults, PoC required. Scope expanded 1->27 targets Sep 17.",
+  "how_to_earn": "Pareto Credit bug bounty — Solidity vaults, PoC required. Scope expanded 1->27 targets Sep 17.",
   "pay_range": "up to $50K (min $10K critical per sev table; USDC under $10K, USDC+IDLE above)",
   "friction": "NO KYC required. No deposit. PoC required.",
   "found_ts": 1790409204,
@@ -2158,9 +2158,9 @@
  {
   "platform": "Immunefi",
   "url": "https://immunefi.com/bug-bounty/onre/information/",
-  "how_to_earn": "OnRe bug bounty \u2014 Solana/Rust, PoC required. New program (announced on onre.finance blog ~3d ago).",
+  "how_to_earn": "OnRe bug bounty — Solana/Rust, PoC required. New program (announced on onre.finance blog ~3d ago).",
   "pay_range": "up to $100K (min $10K critical, USDC)",
-  "friction": "KYC required at payout \u2014 Aaron. Heavily audited (Quantstamp x3, Ackee, OtterSec Jul 2026). Solana/Rust weak fit.",
+  "friction": "KYC required at payout — Aaron. Heavily audited (Quantstamp x3, Ackee, OtterSec Jul 2026). Solana/Rust weak fit.",
   "found_ts": 1790409204,
   "status": "needs_aaron",
   "agent_note": "Verified live this run via program page fetch. Fresh program but tough, heavily-audited target; weak skill fit.",
@@ -2169,9 +2169,9 @@
  {
   "platform": "HackenProof",
   "url": "https://hackenproof.com/programs/starknet-blockchain-slash-dlt",
-  "how_to_earn": "Starknet Blockchain/DLT bounty \u2014 program updated Sep 24, LIVE (92 submissions, $11K paid).",
+  "how_to_earn": "Starknet Blockchain/DLT bounty — program updated Sep 24, LIVE (92 submissions, $11K paid).",
   "pay_range": "up to $250K (min $15K critical)",
-  "friction": "Cairo / zk-STARK code \u2014 very weak skill fit; HackenProof payout norms unknown KYC. Deprioritize.",
+  "friction": "Cairo / zk-STARK code — very weak skill fit; HackenProof payout norms unknown KYC. Deprioritize.",
   "found_ts": 1790409204,
   "status": "needs_aaron",
   "agent_note": "Listed for completeness only; verified live this run. Skill fit too weak to prioritize.",
@@ -2180,9 +2180,9 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-ai-at-work-120/cbc0e64d-6ab4-42f4-af70-698bd6cce655/",
-  "how_to_earn": "Research Study on AI at Work \u2014 60-min online 1-on-1 interview: how you incorporate AI into your workplace.",
+  "how_to_earn": "Research Study on AI at Work — 60-min online 1-on-1 interview: how you incorporate AI into your workplace.",
   "pay_range": "$120",
-  "friction": "Live 1-on-1 interview \u2014 needs Aaron's hands. Apply + screener survey.",
+  "friction": "Live 1-on-1 interview — needs Aaron's hands. Apply + screener survey.",
   "found_ts": 1790409204,
   "status": "needs_aaron",
   "agent_note": "Verified live via per-study page this run; posted 09/26/26 (today). Complete by Oct 7. Strong tech fit.",
@@ -2191,9 +2191,9 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-household-decisions-57/30bcb87f-c820-4fe1-b3b5-3ce09b6c7a56/",
-  "how_to_earn": "Research Study on Household Decisions \u2014 43-min unmoderated online study about everyday household decisions.",
+  "how_to_earn": "Research Study on Household Decisions — 43-min unmoderated online study about everyday household decisions.",
   "pay_range": "$57",
-  "friction": "Unmoderated, self-paced \u2014 potentially agent-doable in VM browser; screener signup under Aaron.",
+  "friction": "Unmoderated, self-paced — potentially agent-doable in VM browser; screener signup under Aaron.",
   "found_ts": 1790409204,
   "status": "staged",
   "agent_note": "Verified live via per-study page this run; posted 09/26/26 (today). Complete by Oct 2. Staged for the survey grind.",
@@ -2202,9 +2202,9 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/1-on-1-interview-on-siem-management-350/16a1a5a1-e770-4524-961c-44a4287f8ff3/",
-  "how_to_earn": "1-on-1 Interview on SIEM Management \u2014 $350. 30-min online 1-on-1 interview on security telemetry/SIEM management strategies; sign up + screener to qualify.",
+  "how_to_earn": "1-on-1 Interview on SIEM Management — $350. 30-min online 1-on-1 interview on security telemetry/SIEM management strategies; sign up + screener to qualify.",
   "pay_range": "$350",
-  "friction": "focusgroups.org account + screener; LIVE 1-on-1 video interview. Screener asks about org security-data/telemetry experience \u2014 strong fit for Aaron's IT/systems/OSINT background.",
+  "friction": "focusgroups.org account + screener; LIVE 1-on-1 video interview. Screener asks about org security-data/telemetry experience — strong fit for Aaron's IT/systems/OSINT background.",
   "found_ts": 1790410661,
   "status": "needs_aaron",
   "agent_note": "needs_aaron: requires Aaron's live 30-min video interview; screener fit is strong (sysadmin/security background). Spots fill fast. Apply ASAP.",
@@ -2213,7 +2213,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-ai-model-management-150/619376c5-2704-4efd-98f5-6a733db0d69b/",
-  "how_to_earn": "Research Study on AI Model Management \u2014 $150. 45-min online one-on-one interview on selecting/managing AI models and providers.",
+  "how_to_earn": "Research Study on AI Model Management — $150. 45-min online one-on-one interview on selecting/managing AI models and providers.",
   "pay_range": "$150",
   "friction": "focusgroups.org account + screener; 1-on-1 interview (likely video). Strong fit (runs local LLMs: Qwen3.5/GPT-OSS benchmark plan, Hermes).",
   "found_ts": 1790410661,
@@ -2224,7 +2224,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-photo-video-storage-300/388f04da-44fe-4ce1-a782-c8509c223a32/",
-  "how_to_earn": "Research Study on Photo/Video Storage \u2014 $300. 180-min online unmoderated task about photo/video storage apps.",
+  "how_to_earn": "Research Study on Photo/Video Storage — $300. 180-min online unmoderated task about photo/video storage apps.",
   "pay_range": "$300",
   "friction": "focusgroups.org account + screener; unmoderated (self-paced, no live interview). 3 hours of task time.",
   "found_ts": 1790410661,
@@ -2235,7 +2235,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-architecture-tools-100/287ea5ce-fa69-4f9a-a7ab-a4959473f65a/",
-  "how_to_earn": "Research Study on Architecture Tools \u2014 $100. 60-min online study on enterprise architecture tools.",
+  "how_to_earn": "Research Study on Architecture Tools — $100. 60-min online study on enterprise architecture tools.",
   "pay_range": "$100",
   "friction": "focusgroups.org account + screener; 60-min online session.",
   "found_ts": 1790410661,
@@ -2246,7 +2246,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-e-signature-tools-100/3b6b6a04-da0d-4954-b22c-1f2945fac197/",
-  "how_to_earn": "Research Study on E-Signature Tools \u2014 $100. 60-min online study on e-signature tool experience + prototype review.",
+  "how_to_earn": "Research Study on E-Signature Tools — $100. 60-min online study on e-signature tool experience + prototype review.",
   "pay_range": "$100",
   "friction": "focusgroups.org account + screener; 60-min online session. Tight deadline (Oct 1).",
   "found_ts": 1790410661,
@@ -2257,7 +2257,7 @@
  {
   "platform": "focusgroups.org",
   "url": "https://focusgroups.org/category/interview-studies/research-study-on-it-service-management-100/81a99e68-59c9-4f10-b1cc-62f755705289/",
-  "how_to_earn": "Research Study on IT Service Management \u2014 $100. 45-min online 1-on-1 interview on IT service desk management experience.",
+  "how_to_earn": "Research Study on IT Service Management — $100. 45-min online 1-on-1 interview on IT service desk management experience.",
   "pay_range": "$100",
   "friction": "focusgroups.org account + screener; LIVE 1-on-1 video interview. Very strong fit (IT systems background). URGENT: deadline Sept 28.",
   "found_ts": 1790410661,
@@ -2268,18 +2268,18 @@
  {
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Automation-Developer-Email-Inbox-Ingestion-PDF-Parsing-MySQL-Pipeline-MVP_~022100648447821780212/",
-  "how_to_earn": "Python Automation Developer: Email Inbox Ingestion, AI PDF Parsing & MySQL Pipeline (MVP) \u2014 $600 fixed. Build headless Python backend: IMAP inbox monitoring (5-min cron), AI API PDF field extraction (Claude Haiku/GPT-4o-mini), MySQL storage with audit history, CSV export to target schema.",
+  "how_to_earn": "Python Automation Developer: Email Inbox Ingestion, AI PDF Parsing & MySQL Pipeline (MVP) — $600 fixed. Build headless Python backend: IMAP inbox monitoring (5-min cron), AI API PDF field extraction (Claude Haiku/GPT-4o-mini), MySQL storage with audit history, CSV export to target schema.",
   "pay_range": "$600 fixed",
-  "friction": "Upwork account + connects to bid; proposal must include relevant automation examples. Aaron's Upwork legal-name correction is still incomplete (stuck at human-verification checkbox) \u2014 bidding may be gated until he finishes it.",
+  "friction": "Upwork account + connects to bid; proposal must include relevant automation examples. Aaron's Upwork legal-name correction is still incomplete (stuck at human-verification checkbox) — bidding may be gated until he finishes it.",
   "found_ts": 1790410661,
   "status": "staged",
-  "agent_note": "Staged: very strong fit (Python automation + AI parsing + MySQL \u2014 exactly Aaron's stack, and AI-parsed PDF pipeline mirrors his skillset). Agent can draft the proposal; needs Aaron's Upwork session/connects. Posted Sept 17.",
+  "agent_note": "Staged: very strong fit (Python automation + AI parsing + MySQL — exactly Aaron's stack, and AI-parsed PDF pipeline mirrors his skillset). Agent can draft the proposal; needs Aaron's Upwork session/connects. Posted Sept 17.",
   "deadline": null
  },
  {
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Workflow-Automation-Specialist_~022095503358934989865/",
-  "how_to_earn": "Python Workflow Automation Specialist \u2014 $100 fixed. Automate CSV import -> processing -> Airtable record updates: data mapping/validation, reliable script for ongoing use.",
+  "how_to_earn": "Python Workflow Automation Specialist — $100 fixed. Automate CSV import -> processing -> Airtable record updates: data mapping/validation, reliable script for ongoing use.",
   "pay_range": "$100 fixed",
   "friction": "Upwork account + connects; same Upwork name-correction caveat as above.",
   "found_ts": 1790410661,
@@ -2290,18 +2290,18 @@
  {
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-LLM-Integration-Automation_~022098550397914757733/",
-  "how_to_earn": "Python Developer for LLM Integration & AI Automation \u2014 $100 fixed. Integrate LLM APIs (OpenAI et al.) into Python apps: workflows, webhooks, structured outputs, function/tool calling, data processing.",
+  "how_to_earn": "Python Developer for LLM Integration & AI Automation — $100 fixed. Integrate LLM APIs (OpenAI et al.) into Python apps: workflows, webhooks, structured outputs, function/tool calling, data processing.",
   "pay_range": "$100 fixed",
   "friction": "Upwork account + connects; same Upwork name-correction caveat as above.",
   "found_ts": 1790410661,
   "status": "staged",
-  "agent_note": "Staged: strong fit (LLM APIs, agents, Python automation \u2014 Hermes work is the portfolio). Agent drafts proposal; Aaron's session/connects needed. Posted Sept 11.",
+  "agent_note": "Staged: strong fit (LLM APIs, agents, Python automation — Hermes work is the portfolio). Agent drafts proposal; Aaron's session/connects needed. Posted Sept 11.",
   "deadline": null
  },
  {
   "platform": "Freelancer.com",
   "url": "https://www.freelancer.com/projects/ai-chatbot-development/Python-Chatbot-Hardening",
-  "how_to_earn": "Python AI Chatbot Hardening \u2014 harden a multichannel AI chatbot codebase: modularize Python 3.10+ code, improve async integrations (aiohttp/asyncpg), structured logging, retry/timeout strategies, external integrations (e.g., Instagram Business API).",
+  "how_to_earn": "Python AI Chatbot Hardening — harden a multichannel AI chatbot codebase: modularize Python 3.10+ code, improve async integrations (aiohttp/asyncpg), structured logging, retry/timeout strategies, external integrations (e.g., Instagram Business API).",
   "pay_range": "seen bids $100-$160",
   "friction": "Freelancer.com channel currently PAUSED: new listings gate bidding behind a $20 USD minimum balance. Aaron must fund $20 or decide to drop the channel.",
   "found_ts": 1790410661,
@@ -2460,15 +2460,15 @@
  },
  {
   "id": "scout-20260926-01",
-  "title": "Upwork: Python Lead Gen Scraper \u2014 Serper + OpenAI Validation (n8n Migration)",
+  "title": "Upwork: Python Lead Gen Scraper — Serper + OpenAI Validation (n8n Migration)",
   "platform": "Upwork",
   "url": "https://www.upwork.com/freelance-jobs/apply/Python-Lead-Gen-Scraper-Serper-OpenAI-Validation-n8n-Migration_~022092038316381455737/",
   "payout": "Fixed-price Phase 1; client asks for quote in proposal (budget behind human-verification checkbox)",
-  "effort": "Small\u2013medium: Python script, Serper API + OpenAI validation, dedupe, progress tracking, CSV output, README; one test run on 3 sector groups; client provides search terms, prompts, API keys",
+  "effort": "Small–medium: Python script, Serper API + OpenAI validation, dedupe, progress tracking, CSV output, README; one test run on 3 sector groups; client provides search terms, prompts, API keys",
   "status": "staged",
   "hands": "agent-doable (proposal draft); Aaron submits on Upwork himself (logged-in account + Connects); client wants judgment-style proposal answering spec questions",
   "deadline": "None listed; client asked 'can you start this week?'",
-  "notes": "Best-fit gig this run: exact match (Python, scraping, LLM APIs, n8n). Verified live: 0 hires, client viewed yesterday, Interviewing 2, Invites 4 \u2014 active buyer. Optional Phase 2 (Hunter.io contact scraping) quoted separately",
+  "notes": "Best-fit gig this run: exact match (Python, scraping, LLM APIs, n8n). Verified live: 0 hires, client viewed yesterday, Interviewing 2, Invites 4 — active buyer. Optional Phase 2 (Hunter.io contact scraping) quoted separately",
   "scouted_at": "2026-09-26 05:30"
  },
  {
@@ -2481,7 +2481,7 @@
   "status": "staged",
   "hands": "agent-doable (proposal draft); Aaron submits on Upwork himself (logged-in account + Connects)",
   "deadline": "None listed",
-  "notes": "Stretch bid: still open (no hires) but cooling \u2014 client last viewed 2 weeks ago, 20\u201350 proposals already, posted Sept 2",
+  "notes": "Stretch bid: still open (no hires) but cooling — client last viewed 2 weeks ago, 20–50 proposals already, posted Sept 2",
   "scouted_at": "2026-09-26 05:30"
  },
  {
@@ -2489,10 +2489,10 @@
   "title": "Arc (Circle's Arc blockchain) bug bounty",
   "platform": "HackerOne",
   "url": "https://hackerone.com/arc-bbp?type=team",
-  "payout": "Up to $1,000,000 (Extreme: chain halt, unlimited minting, validator-set takeover); Critical $20K\u2013$200K; Tier B web/product Critical $3K\u2013$10K down to Low up to $400",
-  "effort": "Medium\u2013High (web tier agent-doable; chain tier needs protocol-audit depth)",
+  "payout": "Up to $1,000,000 (Extreme: chain halt, unlimited minting, validator-set takeover); Critical $20K–$200K; Tier B web/product Critical $3K–$10K down to Low up to $400",
+  "effort": "Medium–High (web tier agent-doable; chain tier needs protocol-audit depth)",
   "status": "staged",
-  "hands": "agent-doable recon (Tier B web hunting on *.arc.io); Aaron needed for payout \u2014 Circle requires HackerOne tax/compliance info sharing",
+  "hands": "agent-doable recon (Tier B web hunting on *.arc.io); Aaron needed for payout — Circle requires HackerOne tax/compliance info sharing",
   "deadline": "Ongoing (launched Sept 2026)",
   "notes": "Brand-new program: 2 reports resolved, 90%+ response efficiency, ~14h first response. Testnet/dev.net only, no mainnet. 18+, English reports",
   "scouted_at": "2026-09-26 05:30"
@@ -2502,7 +2502,7 @@
   "title": "Live Nation Entertainment bug bounty",
   "platform": "HackerOne",
   "url": "https://hackerone.com/live_nation?type=team",
-  "payout": "Min $50, avg $500\u2013$2K per report (52 reports resolved); SafeTix 2.0 mobile-ticket bypass + Persona identity-verification bypass campaigns in scope",
+  "payout": "Min $50, avg $500–$2K per report (52 reports resolved); SafeTix 2.0 mobile-ticket bypass + Persona identity-verification bypass campaigns in scope",
   "effort": "Medium (web/API + mobile; focused test campaigns with defined targets)",
   "status": "needs_aaron",
   "hands": "needs_aaron: program policy EXPLICITLY bans AI/LLM-assisted discovery ('bugs found by humans only'; no bots, scanners, or generative AI). Hunting must be human; agent cannot touch it",
@@ -2525,14 +2525,14 @@
  },
  {
   "id": "scout-20260926-06",
-  "title": "TELUS Digital AI Community: Content Reviewer \u2014 English (US)",
+  "title": "TELUS Digital AI Community: Content Reviewer — English (US)",
   "platform": "TELUS Digital",
   "url": "https://jooble.org/jdp/-3718713973997418957",
   "payout": "~$14/hr estimated ($0.2333 per completed task), part-time independent contractor, task-based",
   "effort": "Part-time, flexible hours, remote; rate search results for relevance/quality on an online platform",
   "status": "needs_aaron",
   "hands": "needs_aaron: apply via TELUS Digital AI Community, pass English assessment + open-book qualification exam + ID verification; agent can draft background/CV text",
-  "deadline": "None stated; featured in Sept 22\u201324, 2026 job roundups, actively hiring now",
+  "deadline": "None stated; featured in Sept 22–24, 2026 job roundups, actively hiring now",
   "notes": "Good fit: native English, US resident 3+ years, broadband + smartphone + PC. No degree required. Use the Jooble variant (no Apple requirement). One member per household",
   "scouted_at": "2026-09-26 05:30"
  },
@@ -2541,25 +2541,25 @@
   "title": "TELUS Digital AI Community: Online Ad Assessor (US, remote)",
   "platform": "TELUS Digital",
   "url": "https://www.virtualvocations.com/blog/employer-alerts/september-2026-employer-partner-remote-job-openings/",
-  "payout": "~$13\u201314/hr part-time realistic (based on comparable TELUS US rater roles; not stated in roundup)",
+  "payout": "~$13–14/hr part-time realistic (based on comparable TELUS US rater roles; not stated in roundup)",
   "effort": "Part-time, flexible, remote; evaluate online ads/content for quality and relevance",
   "status": "needs_aaron",
   "hands": "needs_aaron: apply via TELUS Digital AI Community and pass qualification assessment + ID verification; agent can draft application materials",
   "deadline": "None stated; listed in Virtual Vocations September 2026 roundup (updated ~3 days ago)",
-  "notes": "CAVEAT: URL is the roundup page, not the application page \u2014 actual application link is inside it. Same TELUS AI Community pipeline as Content Reviewer above",
+  "notes": "CAVEAT: URL is the roundup page, not the application page — actual application link is inside it. Same TELUS AI Community pipeline as Content Reviewer above",
   "scouted_at": "2026-09-26 05:30"
  },
  {
   "id": "scout-20260926-08",
-  "title": "Appen/CrowdGen Lever board \u2014 rolling US remote independent-contractor gigs (watchlist)",
+  "title": "Appen/CrowdGen Lever board — rolling US remote independent-contractor gigs (watchlist)",
   "platform": "Appen/CrowdGen",
   "url": "https://jobs.lever.co/appen?workplaceType=remote&location=United+States&department=AI+Trainers+-+Domain+Experts&commitment=Independent+Contractor+-+Project+Based",
-  "payout": "Varies per project; CrowdGen US English projects recently seen at $18\u201320/hr",
+  "payout": "Varies per project; CrowdGen US English projects recently seen at $18–20/hr",
   "effort": "Monitor weekly; new English-US projects appear sporadically and fill fast",
   "status": "staged",
   "hands": "agent-doable (staged): agent re-checks this board for new English-US listings and drafts applications",
   "deadline": "Rolling",
-  "notes": "Board verified live this run; currently only 2 US roles and both are language-specific (Vietnamese-US, Arabic) \u2014 neither fits. Project Athabasca ($18/hr English-US) requires counseling/psych background, skipped",
+  "notes": "Board verified live this run; currently only 2 US roles and both are language-specific (Vietnamese-US, Arabic) — neither fits. Project Athabasca ($18/hr English-US) requires counseling/psych background, skipped",
   "scouted_at": "2026-09-26 05:30"
  },
  {
@@ -2571,7 +2571,7 @@
   "effort": "90-minute online focus group on technology usage habits",
   "status": "needs_aaron",
   "hands": "needs_aaron: his live video time",
-  "deadline": "Complete by Sep 28, 2026 (posted Sep 23) \u2014 TIGHT, Monday deadline; conflicts with NectarFi video deadline same day",
+  "deadline": "Complete by Sep 28, 2026 (posted Sep 23) — TIGHT, Monday deadline; conflicts with NectarFi video deadline same day",
   "notes": "Broad-eligibility tech focus group (daily tech users)",
   "scouted_at": "2026-09-26 05:30"
  },
@@ -2585,7 +2585,7 @@
   "status": "needs_aaron",
   "hands": "needs_aaron: his live video time",
   "deadline": "Complete by Oct 5, 2026 (posted Sep 24, 2026)",
-  "notes": "LOW FIT: explicitly targets local government workers; Aaron would likely screen out \u2014 fallback only",
+  "notes": "LOW FIT: explicitly targets local government workers; Aaron would likely screen out — fallback only",
   "scouted_at": "2026-09-26 05:30"
  },
  {
@@ -2594,37 +2594,37 @@
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/create-a-wormhole-explainer-video-for-beginners/",
   "payout": "3,000 USDC total (2,000 / 500 / 500)",
-  "effort": "Medium \u2014 produce a beginner-friendly explainer video on Wormhole; AI-generated visuals allowed",
+  "effort": "Medium — produce a beginner-friendly explainer video on Wormhole; AI-generated visuals allowed",
   "status": "staged",
   "hands": "agent-doable (staged): script + visuals/TTS via the existing NectarFi reel pipeline; posting + submitting on Earn is mechanical",
   "deadline": "Not shown on listing page; 65 submissions so far",
-  "notes": "Listing LIVE this run, no regional restriction shown. Different from the dead tracked 'Wormhole ideation' listing \u2014 this is a separate explainer-video bounty",
+  "notes": "Listing LIVE this run, no regional restriction shown. Different from the dead tracked 'Wormhole ideation' listing — this is a separate explainer-video bounty",
   "scouted_at": "2026-09-26 05:30"
  },
  {
   "id": "scout-20260926-12",
-  "title": "Superteam Earn: BAXUS Creators \u2014 Film Real Vending Machine Spins",
+  "title": "Superteam Earn: BAXUS Creators — Film Real Vending Machine Spins",
   "platform": "Superteam Earn",
   "url": "https://earn.superteam.fun/listing/baxus-creators-film-real-vending-machine-spins/",
-  "payout": "~$7,000 USDC (prize block did not render on live page; figure from third-party research doc ~Sept 18 \u2014 CONFIRM on-page before committing effort)",
-  "effort": "Medium \u2014 film real BAXUS vending machine spins on phone/camera",
+  "payout": "~$7,000 USDC (prize block did not render on live page; figure from third-party research doc ~Sept 18 — CONFIRM on-page before committing effort)",
+  "effort": "Medium — film real BAXUS vending machine spins on phone/camera",
   "status": "needs_aaron",
   "hands": "needs_aaron: must physically film at a real BAXUS vending machine (location-dependent); agent handles editing, captions, submission",
   "deadline": "Not shown on listing page",
-  "notes": "Listing LIVE this run. Region: North America only \u2014 Aaron (Kentucky, US) qualifies. Distinct from tracked BAXUS AI Agent BOB ($3,000)",
+  "notes": "Listing LIVE this run. Region: North America only — Aaron (Kentucky, US) qualifies. Distinct from tracked BAXUS AI Agent BOB ($3,000)",
   "scouted_at": "2026-09-26 05:30"
  },
  {
   "id": "scout-20260926-13",
-  "title": "Superteam Earn: Solana Summit Canada Creator Challenge \u2014 part 1",
+  "title": "Superteam Earn: Solana Summit Canada Creator Challenge — part 1",
   "platform": "Superteam Earn",
   "url": "https://earn.superteam.fun/listing/solana-summit-canada-creator-challenge-part-1/",
-  "payout": "~$10,000 USDG (prize block did not render on live page; figure from third-party research doc ~Sept 18 \u2014 CONFIRM on-page before committing effort)",
-  "effort": "Medium \u2014 creator challenge content about Solana Summit Canada",
+  "payout": "~$10,000 USDG (prize block did not render on live page; figure from third-party research doc ~Sept 18 — CONFIRM on-page before committing effort)",
+  "effort": "Medium — creator challenge content about Solana Summit Canada",
   "status": "staged",
   "hands": "agent-doable (staged): content producible remotely; verify exact part-1 requirements on-page before starting",
   "deadline": "Not shown on listing page",
-  "notes": "Listing LIVE this run. Region: North America only \u2014 Aaron qualifies",
+  "notes": "Listing LIVE this run. Region: North America only — Aaron qualifies",
   "scouted_at": "2026-09-26 05:30"
  },
  {
@@ -2633,7 +2633,7 @@
   "platform": "Superteam Earn",
   "url": "https://earn.superteam.fun/listings/bounty/jupiter-perps-product-feedback",
   "payout": "2,000 USDC total (1,000 / 600 / 400)",
-  "effort": "Low\u2013medium \u2014 test Jupiter Perps and submit structured product feedback",
+  "effort": "Low–medium — test Jupiter Perps and submit structured product feedback",
   "status": "staged",
   "hands": "agent-doable (staged): product walkthrough analysis + drafted feedback submission; submitting on Earn is mechanical",
   "deadline": "Not shown on listing page; 32 submissions so far (low competition for 2,000 USDC)",
@@ -2642,11 +2642,11 @@
  },
  {
   "id": "scout-20260926-15",
-  "title": "Superteam Earn: Huma Creator Competition \u2014 Grand Prize",
+  "title": "Superteam Earn: Huma Creator Competition — Grand Prize",
   "platform": "Superteam Earn",
   "url": "https://earn.superteam.fun/listings/bounty/huma-grand-prize/",
-  "payout": "$5,000 USDC grand prize (2,500 / 1,500 / 1,000) \u2014 auto-qualifies by submitting to any of 3 tracks: video ($1,700), thread/article ($1,000), memes ($300)",
-  "effort": "Medium \u2014 one creator submission (video or thread recommended)",
+  "payout": "$5,000 USDC grand prize (2,500 / 1,500 / 1,000) — auto-qualifies by submitting to any of 3 tracks: video ($1,700), thread/article ($1,000), memes ($300)",
+  "effort": "Medium — one creator submission (video or thread recommended)",
   "status": "staged",
   "hands": "agent-doable (staged): script/thread drafting and media generation via the existing reel pipeline; posting + submission mechanical",
   "deadline": "Not shown on listing page; 213 submissions (competitive)",
@@ -2659,7 +2659,7 @@
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/stealf-bounty/",
   "payout": "500 USDC total (200 / 150 / 100 / 50)",
-  "effort": "Low \u2014 one X/social post about Stealf (Content + Design)",
+  "effort": "Low — one X/social post about Stealf (Content + Design)",
   "status": "staged",
   "hands": "agent-doable (staged): drafting + asset generation; posting on the X account + submission needs the usual X flow",
   "deadline": "Winner announcement by October 04, 2026; 346 submissions (very competitive)",
@@ -2771,7 +2771,7 @@
   "url": "https://superteam.fun/earn/listing/kriptok-league-trading-experience-bounty/",
   "how_to_earn": "Trade one round on KriptoK League, then submit an experience write-up; top 5 win prizes.",
   "pay_range": "$2,000 USDC total (1st $800 / 2nd $500 / 3rd $350 / 4th $200 / 5th $150)",
-  "friction": "Requires Aaron's wallet + actual trading on the platform; submit by ~2026-09-27 (winner announcement Sept 27) \u2014 TIME-SENSITIVE",
+  "friction": "Requires Aaron's wallet + actual trading on the platform; submit by ~2026-09-27 (winner announcement Sept 27) — TIME-SENSITIVE",
   "found_ts": 1790421465,
   "status": "needs_aaron",
   "agent_note": "VERIFIED live 2026-09-26 (14 submissions, listing open). Low competition, crypto-content fit."
@@ -2794,7 +2794,7 @@
   "friction": "Proposal needed; client interviewing only 2, 10-15 proposals so far; US client; client last viewed 6 days ago",
   "found_ts": 1790425275,
   "status": "staged",
-  "agent_note": "VERIFIED live 2026-09-26. Pure scraping + data engineering pipeline \u2014 core Aaron skill. Agent can draft the proposal AND build the deliverable; needs Aaron only for interview/contract acceptance."
+  "agent_note": "VERIFIED live 2026-09-26. Pure scraping + data engineering pipeline — core Aaron skill. Agent can draft the proposal AND build the deliverable; needs Aaron only for interview/contract acceptance."
  },
  {
   "platform": "Upwork (AI Chatbot)",
@@ -2814,7 +2814,7 @@
   "friction": "Proposal + NDA + interview needed; no posted date or activity stats rendered on page",
   "found_ts": 1790425275,
   "status": "staged",
-  "agent_note": "VERIFIED live 2026-09-26 (page opened) but AGE UNVERIFIED \u2014 may be stale. Nearly identical to Hermes lead-list pipelines (highest skill match). Worth one follow-up attempt by main agent; not a top pick."
+  "agent_note": "VERIFIED live 2026-09-26 (page opened) but AGE UNVERIFIED — may be stale. Nearly identical to Hermes lead-list pipelines (highest skill match). Worth one follow-up attempt by main agent; not a top pick."
  },
  {
   "platform": "focusgroups.org (Study: AI Model Management)",
@@ -2825,7 +2825,7 @@
   "found_ts": 1790425275,
   "status": "needs_aaron",
   "deadline": "2026-10-30",
-  "agent_note": "needs_aaron: live 45-min video interview. Strong fit (mirrors his AI/Hermes work). Posted today \u2014 apply ASAP, spots fill fast."
+  "agent_note": "needs_aaron: live 45-min video interview. Strong fit (mirrors his AI/Hermes work). Posted today — apply ASAP, spots fill fast."
  },
  {
   "platform": "User Interviews (study: AI model buying/management for tech leaders)",
@@ -2856,7 +2856,7 @@
   "friction": "Fresh program launched 8 Sep 2026 (less picked over); Cantina-triaged; payout via Cantina",
   "found_ts": 1790425275,
   "status": "staged",
-  "payout_gate": "Cantina payout likely requires wallet/KYC \u2014 Aaron handles payout step",
+  "payout_gate": "Cantina payout likely requires wallet/KYC — Aaron handles payout step",
   "agent_note": "VERIFIED live 2026-09-26. Agent-doable web recon/testing with Python tooling (subdomain takeover, XSS, SSRF, faucet logic). Classic web security surface, matches Aaron's security/recon skills."
  },
  {
@@ -2867,7 +2867,7 @@
   "friction": "PoC requirements (Foundry test for contract Critical/High; step-by-step repro for Web/App)",
   "found_ts": 1790425275,
   "status": "staged",
-  "payout_gate": "Cantina payout likely requires wallet/KYC \u2014 Aaron handles payout step",
+  "payout_gate": "Cantina payout likely requires wallet/KYC — Aaron handles payout step",
   "agent_note": "VERIFIED live 2026-09-26 (launched Apr 2026). Web2 scope avoids needing deep Solidity chops for first submissions; agent-doable web/API security research."
  },
  {
@@ -2878,7 +2878,7 @@
   "friction": "Payout requires valid government photo ID + IRS W-9/W-8",
   "found_ts": 1790425275,
   "status": "staged",
-  "payout_gate": "Government photo ID + IRS W-9/W-8 at payout \u2014 Aaron must complete",
+  "payout_gate": "Government photo ID + IRS W-9/W-8 at payout — Aaron must complete",
   "agent_note": "VERIFIED live 2026-09-26 (0din.ai + /policy). Research itself is agent-doable and LLM-native (exactly Hermes-style work); low-medium effort per submission with fast iteration loop. needs_aaron ONLY at payout."
  },
  {
@@ -2890,13 +2890,13 @@
   "found_ts": 1790425275,
   "status": "staged",
   "deadline": "2026-10-02",
-  "payout_gate": "Prize payout identity step \u2014 Aaron handles",
+  "payout_gate": "Prize payout identity step — Aaron handles",
   "agent_note": "VERIFIED live 2026-09-26. Agent-doable: Hermes can build the project with AI IDEs. Registration needs Aaron; act within days. Fallback: Arbitrum Open House Dubai Online Buildathon ($30K, starts in ~1 month)."
  },
  {
   "platform": "User Interviews",
   "url": "https://www.userinterviews.com/projects/7wT7LOClSQ/apply",
-  "how_to_earn": "'How are you using AI at work?' \u2014 60-minute 1-on-1 online interview, choice of digital gift cards. Direct fit for Aaron's agent-building/IT background.",
+  "how_to_earn": "'How are you using AI at work?' — 60-minute 1-on-1 online interview, choice of digital gift cards. Direct fit for Aaron's agent-building/IT background.",
   "pay_range": "$120",
   "friction": "Application + screener agent-fillable; live interview needs Aaron's time.",
   "found_ts": 1790427900,
@@ -2907,7 +2907,7 @@
  {
   "platform": "User Interviews",
   "url": "https://www.userinterviews.com/projects/_tjOlPWxTg/apply",
-  "how_to_earn": "'Digital Media Professionals Study' \u2014 10-minute unmoderated online task, choice of digital gift cards. Fully agent-doable.",
+  "how_to_earn": "'Digital Media Professionals Study' — 10-minute unmoderated online task, choice of digital gift cards. Fully agent-doable.",
   "pay_range": "$10",
   "friction": "Weak fit (targets digital media professionals); must clear screener TODAY.",
   "found_ts": 1790427900,
@@ -2918,7 +2918,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/show-tokenization-in-2050-via-x-post-thread-or-short-video/",
-  "how_to_earn": "'Show Tokenization in 2050' \u2014 Next Stop Breakpoint content track; X post, thread, or short video accepted. 14 submissions so far.",
+  "how_to_earn": "'Show Tokenization in 2050' — Next Stop Breakpoint content track; X post, thread, or short video accepted. 14 submissions so far.",
   "pay_range": "5,500 USDC total (ten 550 USDC prizes)",
   "friction": "Fully agent-producible; Aaron submits/claims via wallet.",
   "found_ts": 1790427900,
@@ -2929,7 +2929,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/hype-video-for-breakpoint-london/",
-  "how_to_earn": "'Hype Video for Breakpoint London' \u2014 generated hype video, Next Stop Breakpoint track. Only 4 submissions = best prize-to-competition ratio found this run.",
+  "how_to_earn": "'Hype Video for Breakpoint London' — generated hype video, Next Stop Breakpoint track. Only 4 submissions = best prize-to-competition ratio found this run.",
   "pay_range": "5,500 USDC total (ten 550 USDC prizes)",
   "friction": "2-4 hours generated video; fits existing NectarFi reel pipeline.",
   "found_ts": 1790427900,
@@ -2940,7 +2940,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/explain-tokenization-supercycle-for-an-asset-category/",
-  "how_to_earn": "'Explain Tokenization Supercycle for an Asset Category' \u2014 explainer article/thread, Content skill. 13 submissions.",
+  "how_to_earn": "'Explain Tokenization Supercycle for an Asset Category' — explainer article/thread, Content skill. 13 submissions.",
   "pay_range": "5,500 USDC total (ten 550 USDC prizes)",
   "friction": "1-2 hours explainer content; fully agent-doable.",
   "found_ts": 1790427900,
@@ -2951,7 +2951,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/explain-market-tokenization-in-your-country/",
-  "how_to_earn": "'Explain Market Tokenization in Your Country' \u2014 country-focused tokenization explainer; USA/Kentucky angle writes itself. 15 submissions.",
+  "how_to_earn": "'Explain Market Tokenization in Your Country' — country-focused tokenization explainer; USA/Kentucky angle writes itself. 15 submissions.",
   "pay_range": "5,500 USDC total (ten 550 USDC prizes)",
   "friction": "1-2 hours explainer content; fully agent-doable.",
   "found_ts": 1790427900,
@@ -2962,7 +2962,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/breakpoint-london-starter-pack/",
-  "how_to_earn": "'Breakpoint London Starter Pack' \u2014 starter-pack guide, Content/Design. 13 submissions.",
+  "how_to_earn": "'Breakpoint London Starter Pack' — starter-pack guide, Content/Design. 13 submissions.",
   "pay_range": "5,500 USDC total (ten 550 USDC prizes)",
   "friction": "1-2 hours guide/content pack; fully agent-doable.",
   "found_ts": 1790427900,
@@ -2973,7 +2973,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/solana-summit-canada-creator-challenge-part-2/",
-  "how_to_earn": "'Solana Summit Canada Creator Challenge - part 2' \u2014 creator challenge, 21 submissions, no regional restriction shown on page.",
+  "how_to_earn": "'Solana Summit Canada Creator Challenge - part 2' — creator challenge, 21 submissions, no regional restriction shown on page.",
   "pay_range": "10,000 USDG total (2,000/1,250/750/500/500 plus twenty 250 bonuses)",
   "friction": "2-4 hours; verify part-2 brief has no filming/travel requirement before producing (part 1 involved filmed content).",
   "found_ts": 1790427900,
@@ -2984,7 +2984,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/create-twitter-post-about-the-stream-burn/",
-  "how_to_earn": "'Create twitter Post about the STREAM burn' \u2014 single X post about the STREAM burn. Platform flags this listing AGENT_ALLOWED. 57 submissions.",
+  "how_to_earn": "'Create twitter Post about the STREAM burn' — single X post about the STREAM burn. Platform flags this listing AGENT_ALLOWED. 57 submissions.",
   "pay_range": "500 USDC total (five 100 USDC prizes)",
   "friction": "30-60 minutes; fully agent-doable.",
   "found_ts": 1790427900,
@@ -2995,7 +2995,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/moonyfoundationtipcards/",
-  "how_to_earn": "'Create X Thread About Moony Tips With Flipcash' \u2014 one X thread. 124 submissions (crowded, but fast to produce).",
+  "how_to_earn": "'Create X Thread About Moony Tips With Flipcash' — one X thread. 124 submissions (crowded, but fast to produce).",
   "pay_range": "300 USDC total (150/100/50)",
   "friction": "~1 hour thread; fully agent-doable.",
   "found_ts": 1790427900,
@@ -3006,20 +3006,20 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/introduce-web3-projects-to-segmento/",
-  "how_to_earn": "'Introduce Web3 Projects to Segmento' \u2014 Growth/Content; requires actual project introductions to Segmento. Only 5 submissions.",
+  "how_to_earn": "'Introduce Web3 Projects to Segmento' — Growth/Content; requires actual project introductions to Segmento. Only 5 submissions.",
   "pay_range": "300 USDC total (150/100/50)",
   "friction": "1-2 hours; verify referral mechanics on-page before producing (full brief not visible in fetch).",
   "found_ts": 1790427900,
   "status": "staged",
   "deadline": "2026-10-06 4:59 PM CDT",
-  "agent_note": "Low competition but mechanics unverified \u2014 confirm brief first. Wallet needed for payout."
+  "agent_note": "Low competition but mechanics unverified — confirm brief first. Wallet needed for payout."
  },
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/road-to-colosseum-builders-reflect-and-share/",
-  "how_to_earn": "'Road to Colosseum | Builders Reflect & Share' \u2014 reflect-and-share content. 43 submissions.",
+  "how_to_earn": "'Road to Colosseum | Builders Reflect & Share' — reflect-and-share content. 43 submissions.",
   "pay_range": "1,000 USDC total (five 100 USDC plus ten 50 USDC)",
-  "friction": "1-2 hours; may require truthful builder reflection or actual Colosseum participation \u2014 verify brief before producing.",
+  "friction": "1-2 hours; may require truthful builder reflection or actual Colosseum participation — verify brief before producing.",
   "found_ts": 1790427900,
   "status": "staged",
   "deadline": "2026-10-12 11:59 AM CDT",
@@ -3028,7 +3028,7 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/summitvideos/",
-  "how_to_earn": "'Solana Summit Video Challenge' \u2014 summit video challenge. 108 submissions.",
+  "how_to_earn": "'Solana Summit Video Challenge' — summit video challenge. 108 submissions.",
   "pay_range": "500 USDC total (five 100 USDC prizes)",
   "friction": "2-4 hours video; confirm brief allows generated/edited content before producing.",
   "found_ts": 1790427900,
@@ -3039,12 +3039,87 @@
  {
   "platform": "Superteam Earn",
   "url": "https://superteam.fun/earn/listing/show-the-world-solara-content-seeker-dapp-reviews-1/",
-  "how_to_earn": "'Show the world SOLARA \u2014 Content + Seeker dApp reviews' \u2014 generated-content branch agent-doable; hands-on Seeker dApp review branch needs Aaron's device. URGENT.",
+  "how_to_earn": "'Show the world SOLARA — Content + Seeker dApp reviews' — generated-content branch agent-doable; hands-on Seeker dApp review branch needs Aaron's device. URGENT.",
   "pay_range": "500 USDC total (180/120/100 plus ten 10 bonuses)",
   "friction": "Winners announced tomorrow; dApp-review branch needs Aaron's phone.",
   "found_ts": 1790427900,
   "status": "needs_aaron",
   "deadline": "Winners announced 2026-09-28 (tomorrow)",
   "agent_note": "Urgent: winners announced tomorrow. Generated-content branch is agent-doable if time permits; device-based branch needs Aaron. Wallet needed for payout."
+ },
+ {
+  "platform": "HackerOne",
+  "url": "https://hackerone.com/hyatt",
+  "how_to_earn": "Hyatt Hotels NEW public bug bounty (launched this week): test hyatt.com, world.hyatt.com, iOS/Android apps, ALG brands (CheapCaribbean, Funjet), in-scope IPv4 ranges. Three World of Hyatt test accounts with points/bookings provided. Web2 surface (booking flows, APIs, auth, PII) fits Aaron's IT/networking skills - no Solidity needed.",
+  "pay_range": "Per-CVSS severity rewards (dollar table not published)",
+  "friction": "1-3 days recon/testing for first credible submission; needs Aaron's HackerOne account session (hackerone.com/techsquared).",
+  "found_ts": 1790430995,
+  "status": "staged",
+  "agent_note": "Agent-doable: recon, API/auth testing, PoC + report drafting under auto-submit mandate. Fresh public programs have a short low-hanging-fruit window before the crowd arrives."
+ },
+ {
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/data-collection/marketplace-scraper-python-based-data",
+  "how_to_earn": "'Marketplace Scraper: Python-based Data and Image Collector' - build reusable Python CLI: marketplace listing + image collection, CSV/JSON export, dedupe, checkpoint/resume, concurrent downloads. Verified OPEN, 32 proposals, avg bid ~$118, ends ~6d.",
+  "pay_range": "$30-250 USD, paid on delivery",
+  "friction": "Freelancer bidding gated behind $20 min balance - channel paused until Aaron funds it or bids himself.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "agent_note": "Agent can build the scraper in 1-2 days; Aaron must clear the $20 balance gate and submit the bid."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-cloud-infrastructure-for-ai-180/0182b49d-76e4-457a-a7db-ec028a96db5c/",
+  "how_to_earn": "'Research Study on Cloud Infrastructure for AI' - 60-min 1-on-1 online interview. Strong Aaron/Hermes fit (AI infra).",
+  "pay_range": "$180",
+  "friction": "Live interview - needs Aaron; complete by 2026-10-06.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "deadline": "2026-10-06",
+  "agent_note": "Best new study fit: cloud AI infra. Pays post-completion (likely outside Oct 1 challenge window)."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-data-governance-initiatives-100/1d0604fa-8c65-4e16-8969-0e236dc73c63/",
+  "how_to_earn": "'Research Study on Data Governance Initiatives' - 60-min 1-on-1 online interview.",
+  "pay_range": "$100",
+  "friction": "Live interview - needs Aaron; complete by 2026-10-10.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "deadline": "2026-10-10",
+  "agent_note": "Data/pipeline background fits. Pays post-completion."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-procurement-processes-75/c820edaa-5567-466f-9c22-ae9a27d72200/",
+  "how_to_earn": "'Research Study on Procurement Processes' - 30-min 1-on-1 online interview on sourcing physical products from suppliers outside the EU.",
+  "pay_range": "$75",
+  "friction": "Live interview - needs Aaron; complete by 2026-09-30. EU framing may exclude him; LLC-owner procurement angle may still qualify.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "deadline": "2026-09-30",
+  "agent_note": "Screener risk: EU-framed. Quick 30-min if he qualifies."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-software-development-processes-60/580c67e3-d0af-4f35-9609-e6abcda3fe43/",
+  "how_to_earn": "'Research Study on Software Development Processes' - 30-min 1-on-1 online interview on change review/approval processes.",
+  "pay_range": "$60",
+  "friction": "Live interview - needs Aaron; complete by 2026-10-09.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "deadline": "2026-10-09",
+  "agent_note": "Developer-workflow topic fits Aaron's daily work. Pays post-completion."
+ },
+ {
+  "platform": "UserInterviews",
+  "url": "https://www.userinterviews.com/projects/ve9himDvNQ/apply",
+  "how_to_earn": "'Shaping the Future of Architecture Tools' - 60-min 1-on-1 online interview, targets enterprise IT.",
+  "pay_range": "$100 Tremendous.com gift card",
+  "friction": "Live interview - needs Aaron; study window 2026-10-06 to 2026-10-16. Screener criteria behind login.",
+  "found_ts": 1790430995,
+  "status": "needs_aaron",
+  "deadline": "2026-10-16",
+  "agent_note": "Enterprise-IT target fits Aaron. Screener behind UserInterviews login; qualification unconfirmed."
  }
 ]
