@@ -7,6 +7,14 @@
       ],
       "ts": 1790389211.4415567,
       "status": "needs_email_lookup"
+    },
+    {
+      "domain": "mcbeehvac.com",
+      "issues": [
+        "no_meta_description"
+      ],
+      "ts": 1790421545.8974648,
+      "status": "needs_email_lookup"
     }
   ]
 }
