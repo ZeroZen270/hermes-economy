@@ -3174,5 +3174,71 @@
   "status": "needs_aaron",
   "deadline": "2026-09-30",
   "agent_note": "Easy fit: Aaron is a heavy online-video user. Posted 2026-09-25."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/focus-groups/focus-group-on-business-concepts-300/2b87e1f5-c52d-46bc-ab19-aa69f7bfe5d1/",
+  "how_to_earn": "120-min online focus group reviewing a new business concept (Business). Complete by Sept 30, 2026.",
+  "pay_range": "$300",
+  "friction": "Needs Aaron's live attendance (120-min video session). LLC-owner fit.",
+  "found_ts": 1790437565,
+  "status": "needs_aaron",
+  "deadline": "2026-09-30",
+  "agent_note": "Verified live this run. Highest-value FG study not yet tracked; business-concept topic is a strong fit for a Technology Squared LLC owner. Apply ASAP - spots fill fast."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/focus-group-on-football-fans-175/892ac52d-da06-4245-999c-7c16248c5d23/",
+  "how_to_earn": "90-min online focus group on football, sport, and digital media. Complete by Sept 30, 2026.",
+  "pay_range": "$175",
+  "friction": "Needs Aaron's live attendance.",
+  "found_ts": 1790437565,
+  "status": "needs_aaron",
+  "deadline": "2026-09-30",
+  "agent_note": "Verified live this run. Fans/media topic - easy screener if Aaron follows football. Apply fast."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-football-media-175/ca05a959-2a37-418a-83b3-c688218ad1cb/",
+  "how_to_earn": "90-min online research study on football and its representation in media. Complete by Sept 30, 2026.",
+  "pay_range": "$175",
+  "friction": "Needs Aaron's live attendance.",
+  "found_ts": 1790437565,
+  "status": "needs_aaron",
+  "deadline": "2026-09-30",
+  "agent_note": "Verified live this run. Sibling study to the football-fans focus group above; can apply to both."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/focus-group-on-football-and-media-175/8e8a429f-41df-4795-948e-1c1b8e502952/",
+  "how_to_earn": "90-min online focus group on football + digital media plus 30-min online pre-task. Complete by Sept 30, 2026.",
+  "pay_range": "$175",
+  "friction": "Needs Aaron's live attendance + pre-task.",
+  "found_ts": 1790437565,
+  "status": "needs_aaron",
+  "deadline": "2026-09-30",
+  "agent_note": "Verified live this run. Third football/media study from same researcher batch - all three can be applied together."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-business-purchasing-75/8bcea396-bf50-440f-b90f-a39f03e2b887/",
+  "how_to_earn": "28-min online unmoderated task about ordering products and using digital tools in work settings.",
+  "pay_range": "$75",
+  "friction": "Screener on work purchasing experiences; LLC owner fit.",
+  "found_ts": 1790437565,
+  "status": "staged",
+  "deadline": "2026-10-26",
+  "agent_note": "Verified live this run. Unmoderated = agent-doable; answer screener honestly (LLC procurement is truthful). Take via VM browser."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-crm-services-150/d3de69f8-e172-4a81-946b-7845a21afcbc/",
+  "how_to_earn": "15-min online unmoderated task about CRM services and administering these systems. Complete by Dec 31, 2026.",
+  "pay_range": "$150",
+  "friction": "Screener targets Salesforce Administrators - HIGH screen-out risk; Aaron self-selects.",
+  "found_ts": 1790437565,
+  "status": "needs_aaron",
+  "deadline": "2026-12-31",
+  "agent_note": "Verified live this run. $150 for 15 min if he passes screener, but he is not a Salesforce admin - do not misrepresent; only apply if profile happens to fit."
  }
 ]
