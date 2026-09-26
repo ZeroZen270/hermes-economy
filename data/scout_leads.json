@@ -2376,5 +2376,14 @@
     "friction": "Free to apply as expert (profile/vetting review, not instant); weekly PayPal payouts; 15-min minimum charge",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Gumroad",
+    "url": "https://gumroad.com",
+    "how_to_earn": "Sell digital products: scraping templates, lead-list playbooks, chatbot starter kits, OSINT workflows as downloads/memberships",
+    "pay_range": "Aaron sets prices (e.g. $20-$100); keeps ~86% of a $20 direct sale after fees",
+    "friction": "Free, no monthly fees; 10% + $0.50 + 2.9% + $0.30 per sale; $100 min payout unverified / $10 after ID verification; weekly payouts; 1.4/5 Trustpilot trust caveat",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
