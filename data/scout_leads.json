@@ -3273,5 +3273,60 @@
   "found_ts": 1790439306,
   "status": "needs_aaron",
   "agent_note": "Verified live this run via browser.open. Same shape as SOON hackathon: agent-buildable, but Aaron needed for account + wallet + final submit."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-data-driven-decision-making-125/3d178303-7c7a-4b4f-b4da-464058f0f7ed/",
+  "how_to_earn": "60-minute online 1-on-1 interview about using data and metrics in business decision-making.",
+  "pay_range": "$125",
+  "friction": "Screener survey signup; live interview needs Aaron.",
+  "deadline": "2026-09-26 (TODAY)",
+  "found_ts": 1790441524,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page. URGENT: deadline today. Strong fit - Aaron runs data pipelines and Hermes' ledger economy daily; answer truthfully."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-social-media-apps-175/2394da70-28d4-4e41-a187-66d243b25e32/",
+  "how_to_earn": "75-minute online research study about social media and apps engagement.",
+  "pay_range": "$175",
+  "friction": "Screener survey signup; study participation needs Aaron.",
+  "deadline": "2026-09-26 (TODAY)",
+  "found_ts": 1790441524,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page. URGENT: deadline today. Moderate fit - Aaron posts Instagram reels; generic consumer screener."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-everyday-software-use-100/7d5c4534-03ea-4419-9eb6-4a5a345cebf4/",
+  "how_to_earn": "45-minute online 1-on-1 interview about professionals' workflow with everyday/specialized software.",
+  "pay_range": "$100",
+  "friction": "Screener survey signup; live interview needs Aaron.",
+  "deadline": "2026-10-12",
+  "found_ts": 1790441524,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page. Strong IT-professional fit - Aaron is a systems/IT professional using specialized tools daily."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-online-shopping-65/571e15c8-b0c0-42c1-9f52-d4d06aa84890/",
+  "how_to_earn": "60-minute online research study about online shopping habits and preferences.",
+  "pay_range": "$65",
+  "friction": "Screener survey signup; study participation needs Aaron.",
+  "deadline": "2026-10-03",
+  "found_ts": 1790441524,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page. Posted 09/25/26. Generic consumer fit; low effort."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-premium-displays-300/5256770a-16f8-440b-9f77-47efbffab411/",
+  "how_to_earn": "60-minute online research study about premium display purchasing decisions (requirements, brand preferences, future plans).",
+  "pay_range": "$300",
+  "friction": "Screener: 'involved in selecting premium displays for your organization'. Self-select; do not misrepresent.",
+  "deadline": "2026-12-17",
+  "found_ts": 1790441524,
+  "status": "needs_aaron",
+  "agent_note": "Verified live this run via listing + detail page. HIGH value. Screener risk: targets org display buyers. Aaron specs hardware for his LLC builds - he may legitimately qualify; if not, skip."
  }
 ]
