@@ -2412,5 +2412,14 @@
     "friction": "Free for students; requires student status verification (school email); employer payroll; mixed listing quality reported",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Pangea.app",
+    "url": "https://pangea.app",
+    "how_to_earn": "AI-matched freelance contracts (web dev, automation, data, design) from startups; invoicing + payout in-platform",
+    "pay_range": "Freelancer-set rates; typical student freelance $20-$75/hr; zero commission taken from freelancers",
+    "friction": "Free freelancer account, no commission; profile vetting (Pangea Pro = top 1%); blog stale but platform live",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
