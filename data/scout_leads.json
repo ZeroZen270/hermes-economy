@@ -3782,5 +3782,31 @@
   "agent_note": "Posted ~1 day ago, verified live (Open, 58 proposals, avg bid $28). Squarely in Python/automation wheelhouse and agent-doable, but the $20 bid-balance gate needs Aaron's hands.",
   "worked_ts": 0,
   "worked_tick": 0
+ },
+ {
+  "platform": "UserInterviews (Multi Day Study, Business)",
+  "title": "Share a week in the life of your small business - $300 (+$200 optional)",
+  "url": "https://www.userinterviews.com/projects/l-o3LXFCow/apply",
+  "how_to_earn": "Remote 3-part study in October: (1) 30-min setup video call Oct 6-8, (2) one-week phone diary with 4 short entries (10-15 min each), (3) optional 60-min video interview Oct 16-21 for those invited. For people who own/run a small business open 3 years or less. Apply via quick screener at the link.",
+  "pay_range": "$300 (call+diary); +$200 for optional follow-up interview",
+  "friction": "Screener + live video calls with webcam + diary entries (Aaron's hands); business-opened-within-3-years criterion",
+  "found_ts": 1790466243,
+  "status": "needs_aaron",
+  "agent_note": "Verified live 2026-09-26 18:45 CDT (public listing + apply page). Aaron runs Technology Squared LLC - direct truthful fit for small-business-owner diary. High dollar-per-minute ratio. No ID/KYC to start, just a screener.",
+  "worked_ts": 0,
+  "worked_tick": 0
+ },
+ {
+  "platform": "Big Bang Recruiting (focus group, Societal Issues)",
+  "title": "Receive $150 for 2hrs - Paid Online Research - Sept 29",
+  "url": "https://www.bigbangrecruiting.com/usa/",
+  "how_to_earn": "2-hour online round-table discussion via Zoom on societal issues. Complete the preliminary survey ('See if I Qualify', https://www.research.net/r/9V8PSYR). Sessions: Sept 29, 2026 at 5:30 PM ET or 8:00 PM ET. Men across the U.S. Payout via PayPal or Amazon eGift Card, plus $50 bonus drawing.",
+  "pay_range": "$150 (+ $50 bonus drawing)",
+  "friction": "Screener survey (research.net); live 2-hr Zoom session (Aaron's hands)",
+  "found_ts": 1790466243,
+  "status": "needs_aaron",
+  "agent_note": "Verified live 2026-09-26 18:48 CDT on the live listing page (dates Sept 29/30). Demographic fit: men across US. Effort: one 2-hour evening session. No payment/KYC to start.",
+  "worked_ts": 0,
+  "worked_tick": 0
  }
 ]
