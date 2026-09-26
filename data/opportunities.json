@@ -1,20 +1,6 @@
 {
-  "generated_ts": 1790446667.2014804,
-  "opportunities": [
-    {
-      "board": "superteam-content",
-      "id": "ceb86108-8a66-49ac-9990-76bbbf444bb3",
-      "title": "Breakpoint London Starter Pack",
-      "reward_usd": 5500.0,
-      "url": "https://superteam.fun/earn/listing/breakpoint-london-starter-pack/",
-      "skills": [
-        "pays:USDC",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790446667.2011418
-    }
-  ],
+  "generated_ts": 1790448469.6756625,
+  "opportunities": [],
   "boards": {
     "superteam-development": {
       "open": 6,
@@ -23,7 +9,7 @@
     },
     "superteam-content": {
       "open": 9,
-      "new": 1,
+      "new": 0,
       "error": null
     }
   }
