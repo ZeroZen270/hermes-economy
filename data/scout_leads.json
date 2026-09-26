@@ -2448,5 +2448,14 @@
     "friction": "Mobile-only; task density location-dependent; no minimum PayPal payout",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Ethereum Foundation ESP",
+    "url": "https://esp.ethereum.foundation/",
+    "how_to_earn": "Project grants for Ethereum-aligned open-source work (e.g. Hermes agent tooling for on-chain automation); rolling wishlist/RFP",
+    "pay_range": "$5K-$500K+ non-dilutive, paid in fiat or ETH",
+    "friction": "Needs Ethereum-ecosystem-aligned proposal (none currently); identity verification + formal grant letter; long review cycle",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
