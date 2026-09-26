@@ -2439,5 +2439,14 @@
     "friction": "Free researcher signup; program pool skews to Indian companies; web pentest skills needed",
     "found_ts": 1790415083,
     "status": "new"
+  },
+  {
+    "platform": "Premise",
+    "url": "https://www.premise.com",
+    "how_to_earn": "Mobile app market-research tasks: local photos, price checks, surveys (mobile-only; install on tablet)",
+    "pay_range": "$0.20-$2 per task; active users report ~$5/day in dense areas; sparse in rural KY",
+    "friction": "Mobile-only; task density location-dependent; no minimum PayPal payout",
+    "found_ts": 1790415083,
+    "status": "new"
   }
 ]
