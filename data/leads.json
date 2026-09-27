@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790482692.6053305,
+  "generated_ts": 1790484500.529955,
   "leads": [
     {
       "domain": "hillelectric.com",
@@ -9,12 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.64,
+        "latency_s": 0.44,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 140
       },
       "score": 2,
-      "checked_ts": 1790482668.7763414,
+      "checked_ts": 1790484473.081235,
       "emails": []
     }
   ]
