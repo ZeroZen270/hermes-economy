@@ -5144,5 +5144,53 @@
   "status": "needs_aaron",
   "found": "2026-09-27T07:41:00-05:00",
   "notes": "Article verified live 2026-09-27 by parent (bsc.news). Fully online, worldwide; Sep 1 - Oct 13, 2026; judging Oct 14-27; winners announced Nov 3. Official event page: hackathon.monad.xyz. needs_aaron: registration + team submission needs him; build work is agent-doable. Will NOT pay inside the Oct-1 $100 window (winners Nov 3) - pipeline only, like the Nebius/Amazon hackathon leads."
+ },
+ {
+  "platform": "DoraHacks (Circle/Arc)",
+  "title": "Arc Microgrants | Circle \u2014 20x 500 USDC microgrants for working Arc mainnet builds",
+  "url": "https://dorahacks.io/hackathon/arc-microgrants/detail",
+  "how_to_earn": "Deploy a working PoC/tiny app/demo on Arc mainnet and submit one link + repo; rolling review, earlier submissions get earlier decisions (all by Oct 21). No traction/company/deck needed. Pseudonymous OK; verification only at payout.",
+  "pay_range": "500 USDC per microgrant (non-dilutive), 20 available from 10,000 USDC pool",
+  "friction": "Needs Aaron's hands: must deploy/transact on Arc mainnet (small USDC for gas) with a wallet Aaron controls; agent can build the deployable artifact, Aaron funds + signs.",
+  "found_ts": 1790514902.3919413,
+  "status": "needs_aaron",
+  "deadline": "Submissions close Oct 14, 2026 23:59 ET",
+  "agent_note": "VERIFIED live 2026-09-27 (page opened; 20x500 USDC pool, rolling review). On-theme for an agent builder: a Hermes-shaped Arc micro-app could be built and deployed quickly. Rolling review = submit early."
+ },
+ {
+  "platform": "Superteam Earn",
+  "title": "Spout Finance Product Feedback \u2014 1,000 USDC pool",
+  "url": "https://superteam.fun/earn/listing/product-feedback-spout-finance/",
+  "how_to_earn": "Submit product feedback for Spout Finance via the Superteam Earn listing; prizes: 250/200/150/100x4 USDC for top 7.",
+  "pay_range": "1,000 USDC total (250 1st, 200 2nd, 150 3rd, 100x4 4th-7th)",
+  "friction": "Needs Aaron's hands: Superteam Earn account + Solana wallet for payout. Low odds: 122 submissions already, winner announcement by Sep 28 (tomorrow).",
+  "found_ts": 1790514902.3919413,
+  "status": "needs_aaron",
+  "deadline": "Winner announcement by Sep 28, 2026 (likely closed to new submissions soon)",
+  "agent_note": "VERIFIED live 2026-09-27. New URL not in scout_leads.json. Low expected value (122 subs, closing tomorrow) \u2014 only worth it if Aaron already has Superteam account wired up."
+ },
+ {
+  "platform": "Microsoft (MSRC)",
+  "title": "Microsoft Dynamics 365 & Power Platform bounty \u2014 $1,250-$60,000",
+  "url": "https://www.microsoft.com/en-us/msrc/bounty-dynamics",
+  "how_to_earn": "Find vulns in Dynamics 365 online apps, Power Apps/Automate, Copilot Studio, Power Pages, Dataverse, AI Builder; submit via MSRC Researcher Portal. Free trial tenants available for testing.",
+  "pay_range": "$1,250-$60,000; high-impact scenario multipliers up to 100% (cross-tenant vulns, Dataverse privesc, plugin sandbox guest-to-host escape, AI inference manipulation up to $30k)",
+  "friction": "Needs Aaron's hands: MSRC Researcher Portal submission + payout/tax handling. Research and triage are agent-doable; free trials make it startable without payment.",
+  "found_ts": 1790514902.3919413,
+  "status": "needs_aaron",
+  "deadline": "Ongoing program; bounty table updated Sep 17, 2026",
+  "agent_note": "VERIFIED live 2026-09-27 (bug-bounty scout). Cross-tenant bugs fit a generalist pentester. Longer-term play, not $100-challenge-fast."
+ },
+ {
+  "platform": "Google Bug Hunters (VRP)",
+  "title": "Google AI Vulnerability Reward Program \u2014 up to $30,000 per report",
+  "url": "https://bughunters.google.com/blog/announcing-googles-new-ai-vulnerability-reward-program",
+  "how_to_earn": "Find AI-security vulns in Google Search, Gemini Apps, Workspace (Gmail/Drive/Docs/Sheets/Calendar/Meet), AI Studio, Jules. In-scope: rogue actions, sensitive data exfiltration, phishing enablement, model theft, context manipulation, access control bypass. Out: jailbreaks/prompt injection/alignment (report in-product). Submit via Google Bug Hunters.",
+  "pay_range": "Base up to $20,000; up to $30,000 with quality/novelty multipliers (S1 Rogue Actions $20k flagship tier; $430k+ paid in AI-product rewards since program start)",
+  "friction": "Needs Aaron's hands: report via Google's VRP portal; payment/tax forms at payout. Research/triage are agent-doable. No signup fee.",
+  "found_ts": 1790515063.0124342,
+  "status": "needs_aaron",
+  "deadline": "Ongoing program",
+  "agent_note": "VERIFIED live 2026-09-27 via live browser read. CORRECTION: announcement dated Oct 6, 2025 (not Sep 2026 as scout first reported) \u2014 program is ~1 year old but was NOT previously tracked in scout_leads.json. Excellent fit: Aaron uses Gemini/Gmail daily; natural-language-driven attack research suits a generalist."
  }
 ]
