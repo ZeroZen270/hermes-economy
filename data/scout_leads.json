@@ -5563,5 +5563,29 @@
   "status": "needs_aaron",
   "deadline": "No posted deadline (open listing, verified live 2026-09-27 14:30 CDT)",
   "agent_note": "Parent-verified live this run via direct page fetch (HTTP 200, title + activity counters match subagent report). Exact-URL deduped (not in file). Top chatbot+Python+API fit."
+ },
+ {
+  "platform": "Freelancer",
+  "title": "Azure VM Environment & Website Scrapper Expertise (Project 40727804) \u2014 Retail Scraper & Anti-Automation for Walmart/Target/Kroger, $750-1500",
+  "url": "https://www.freelancer.sg/projects/api/Azure-Environment-Website-Scrapper",
+  "how_to_earn": "Bid, then diagnose/repair production retail scrapers (Walmart, Target, Jewel-Osco, Mariano's/Kroger) on Azure multi-VM setup: Akamai Bot Manager / HUMAN(PerimeterX) defenses, Playwright + CDP, XHR/GraphQL endpoint discovery via DevTools/HAR, per-worker session/fingerprint isolation, proxy-leak diagnosis. Effort: ~5 days per top bids; avg bid $1,125.",
+  "pay_range": "$750-1500 USD fixed, paid on delivery",
+  "friction": "Needs Aaron's hands: bidding requires funded Freelancer account ($20 min balance gate, currently $0) and his approval; only 4 proposals so far (low competition); ends in ~6 days.",
+  "found_ts": 1790540117.7031572,
+  "status": "needs_aaron",
+  "deadline": "Bidding ends ~Oct 3, 2026 (posted minutes before 2026-09-27 15:30 CDT check)",
+  "agent_note": "Parent-verified live this run via direct page fetch: status 'Open for bidding', Project ID 40727804, $750-1500, 4 proposals, posted ~1 min before check. Exact-URL deduped (not in 506-lead file)."
+ },
+ {
+  "platform": "Freelancer",
+  "title": "Advanced Allegro.pl Scraper and Monitoring Developer (Project 40731881) \u2014 anti-bot marketplace scraper + daily monitoring, $250-750",
+  "url": "https://www.freelancer.sg/projects/web-scraping/Advanced-Allegro-Scraper-Monitoring",
+  "how_to_earn": "Bid, then build Allegro.pl (Poland's largest marketplace) scraper: fetch offers by category/phrase/EAN/product ID, full offer data + seller/price history, daily refresh of tens of thousands of products, 95% completeness SLA, change dashboard, CSV/XLSX/API export. Defeat anti-bot at scale; client open to paid pilot. Effort: 2-7 days per bids; avg bid $421.",
+  "pay_range": "$250-750 USD fixed, paid on delivery (open to paid pilot first)",
+  "friction": "Needs Aaron's hands: bidding requires funded Freelancer account ($20 min balance gate, currently $0); 36 proposals (competitive); ends in ~6 days.",
+  "found_ts": 1790540117.7031572,
+  "status": "needs_aaron",
+  "deadline": "Bidding ends ~Oct 3, 2026 (verified live 2026-09-27 15:32 CDT)",
+  "agent_note": "Parent-verified live this run via direct page fetch: status 'Open for bidding', Project ID 40731881, $250-750, 36 proposals. Seen in the 2026-09-25 sweep but never committed; still biddable. Exact-URL deduped (not in 506-lead file)."
  }
 ]
