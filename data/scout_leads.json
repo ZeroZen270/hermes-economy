@@ -4161,5 +4161,44 @@
   "friction": "Prize claim requires dApp Store publication + KYC/KYB publisher verification; mobile/Android stack outside Aaron's current Python/automation stack; heavy build effort",
   "agent_note": "Verified live 2026-09-26 22:56 CDT: official portal (docs.solanamobile.com/hackathon redirects to it; confirmed on solanamobile.com blog). $135K is the biggest live prize in the file, but skill/effort gate makes it a long-shot - flagged accordingly.",
   "found_ts": 1790480930
+ },
+ {
+  "title": "Gnosis Chain Bug Bounty \u2014 up to $2M on Immunefi (no KYC)",
+  "platform": "Immunefi",
+  "url": "https://immunefi.com/bug-bounty/gnosischain/information/",
+  "payout": "Up to $2,000,000 critical (10% of funds directly affected); minimum reward $50,000 to discourage withholding",
+  "effort": "High \u2014 Solidity bridge research (OmniBridge/validator signature collection known-issue areas updated Sep 9 2026); PoC required for all severities",
+  "status": "staged",
+  "hands": "agent-doable recon (NO KYC gate); payout via Immunefi; submit via Immunefi account",
+  "deadline": "Ongoing",
+  "notes": "Verified live 2026-09-26 by scout: found on smartcontractshacking.com bounty table (updated Sep 24, 2026), then Immunefi program page fetched live this run. NO KYC required. Bridge/validator-set scope is a mid fit; strongest evergreen no-KYC target not yet tracked. Primacy of Rules; test only on local forks.",
+  "scouted_at": "2026-09-26 23:15 CDT",
+  "id": 5
+ },
+ {
+  "title": "Respondent.io Digital Sharing Habits Study \u2014 $100 video call (OPEN, verified live)",
+  "platform": "Respondent.io",
+  "url": "https://app.respondent.io/next/participants/projects/6a9540176ef74724df7ccdc4/digital-sharing-habits-study",
+  "payout": "$100 for 60-min video call (minus 5% fulfillment fee, min $1); 13 screener questions",
+  "effort": "Low-moderate \u2014 apply + 13-question screener, then 60-min video call (~1-1.5 hrs total)",
+  "status": "needs_aaron",
+  "hands": "Aaron: video interview + screener answers (opinions on how he captures/organizes/shares moments online); apply step is agent-doable",
+  "deadline": "No posted deadline \u2014 apply ASAP while project is open (verified open 2026-09-26 23:15 CDT; all other Respondent projects indexed this run are CLOSED)",
+  "notes": "Study page fetched live this run \u2014 no 'Project closed' banner, Apply flow active. Generic digital-habits topic = honest-answer fit. All other Respondent.io indexed projects verified CLOSED this run.",
+  "scouted_at": "2026-09-26 23:15 CDT",
+  "id": 6
+ },
+ {
+  "title": "Sproutful \u2014 new US survey+games GPT site, 100-pt signup bonus, $5 min cashout",
+  "platform": "Sproutful",
+  "url": "https://sproutful.com/",
+  "payout": "100-point ($1) signup bonus; surveys + game offers; $5 (500 pts) minimum withdrawal via PayPal, Venmo, prepaid Visa, Amazon gift cards (200+ options)",
+  "effort": "Low \u2014 free email signup; points expire after 1 year; Persona ID verification may apply at redemption",
+  "status": "staged",
+  "hands": "agent-doable signup (US-only 18+; use truthful profile); Aaron may need Persona ID check at cashout; note standing rule: no VM survey grinding \u2014 earn via tablet link once online",
+  "deadline": "None",
+  "notes": "Verified live 2026-09-26 by scout: site loaded in live browser this run (not parked) \u2014 hero advertises '100 point bonus', FAQ confirms $5/500-pt min withdrawal and US-only. Multiple independent 2026 reviews (paidfromsurveys, thebudgetdiet, dailyearndeals) report successful payouts. Not currently on Aaron's account list.",
+  "scouted_at": "2026-09-26 23:20 CDT",
+  "id": 7
  }
 ]
