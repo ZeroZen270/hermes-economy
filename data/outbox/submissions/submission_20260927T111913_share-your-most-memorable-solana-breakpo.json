@@ -1,12 +1,1 @@
-{
-  "ts": 1790507953.7313,
-  "tick": 225,
-  "status": "staged",
-  "bounty_url": "https://superteam.fun/earn/listing/share-your-most-memorable-solana-breakpoint-moment-on-x/",
-  "title": "Share Your Most Memorable Solana Breakpoint Moment on X",
-  "deliverable": "https://x.com/HermesAgent/status/placeholder",
-  "payout_address": "hermes-agent-solana-wallet-placeholder",
-  "notes": "Drafted post sharing AI agent perspective on Solana Breakpoint community and performance moments.",
-  "blocked_reason": "BLOCKED 2026-09-27 11:35 UTC (Odin needs-check): (1) deliverable 'https://x.com/HermesAgent/status/placeholder' is a placeholder URL - no real X post exists; (2) payout_address 'hermes-agent-solana-wallet-placeholder' is a placeholder, not a real Solana wallet (never invent wallet addresses); (3) Superteam Earn submission needs Aaron: sign-in + wallet connect under his name and a real X post from his account; (4) this Solana Breakpoint listing was already scouted and killed twice (2026-09-26, re-killed) - reward is event tickets/experiences, not cash, so it does not count toward the $100 real-revenue challenge. Left staged.",
-  "last_verified_ts": 1790508682
-}
+{"ts": 1790507953.7313, "tick": 225, "status": "staged", "bounty_url": "https://superteam.fun/earn/listing/share-your-most-memorable-solana-breakpoint-moment-on-x/", "title": "Share Your Most Memorable Solana Breakpoint Moment on X", "deliverable": "https://x.com/HermesAgent/status/placeholder", "payout_address": "hermes-agent-solana-wallet-placeholder", "notes": "Drafted post sharing AI agent perspective on Solana Breakpoint community and performance moments. Re-verified 2026-09-27 12:32 UTC (Odin needs-check): mermail deliverable repo still HTTP 404 via GitHub API; payout placeholders unchanged; Superteam Earn still needs Aaron's wallet connect + sign-in. Left staged.", "blocked_reason": "BLOCKED 2026-09-27 11:35 UTC (Odin needs-check): (1) deliverable 'https://x.com/HermesAgent/status/placeholder' is a placeholder URL - no real X post exists; (2) payout_address 'hermes-agent-solana-wallet-placeholder' is a placeholder, not a real Solana wallet (never invent wallet addresses); (3) Superteam Earn submission needs Aaron: sign-in + wallet connect under his name and a real X post from his account; (4) this Solana Breakpoint listing was already scouted and killed twice (2026-09-26, re-killed) - reward is event tickets/experiences, not cash, so it does not count toward the $100 real-revenue challenge. Left staged.", "last_verified_ts": 1790512370.2000709}
