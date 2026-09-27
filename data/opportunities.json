@@ -1,20 +1,6 @@
 {
-  "generated_ts": 1790507863.621944,
-  "opportunities": [
-    {
-      "board": "superteam-content",
-      "id": "06c35dc5-10c3-47ca-8d5a-bedfc9053d98",
-      "title": "Share Your Most Memorable Solana Breakpoint Moment on X",
-      "reward_usd": 5500.0,
-      "url": "https://superteam.fun/earn/listing/share-your-most-memorable-solana-breakpoint-moment-on-x/",
-      "skills": [
-        "pays:USDC",
-        "access:HUMAN_ONLY",
-        "type:bounty"
-      ],
-      "posted_ts": 1790507863.6215856
-    }
-  ],
+  "generated_ts": 1790509662.9373443,
+  "opportunities": [],
   "boards": {
     "superteam-development": {
       "open": 6,
@@ -23,7 +9,7 @@
     },
     "superteam-content": {
       "open": 9,
-      "new": 1,
+      "new": 0,
       "error": null
     }
   }
