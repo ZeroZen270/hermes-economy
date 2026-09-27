@@ -5984,5 +5984,25 @@
   "found_ts": 1790545466,
   "status": "needs_aaron",
   "agent_note": "Parent-verified OPEN live 2026-09-27 ~16:45 CDT: project ID 40734293, posted 38 min before check, ends in 6 days. Direct Python+Playwright+Linux fit. Blocked on $20 bid-balance gate."
+ },
+ {
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/web-scraping/slot-availability-alert-automation",
+  "how_to_earn": "Bid and win project 40736933: build resilient Python slot-monitor service — curl_cffi/TLS-impersonation stealth HTTP vs strict WAF, zero/low-cost self-hosted Linux VPS IP rotation, instant Telegram push on state flips; deliverables: Python source, Bash/Ansible or README for proxy components, test script",
+  "pay_range": "$30-250 USD fixed, paid on delivery; only 1 proposal so far (bid $250, 3 days)",
+  "friction": "needs_aaron: bidding gated on unfunded $20 Freelancer bid balance; needs his Freelancer account/session; ends in ~6 days (Oct 3)",
+  "found_ts": 1790549110,
+  "status": "needs_aaron",
+  "agent_note": "Parent-verified OPEN live 2026-09-27 ~17:50 CDT: 'Posted 1 minute ago', 1 proposal, ends in 6 days. Direct Python+stealth-scraper+VPS+Telegram fit. Blocked on $20 bid-balance gate."
+ },
+ {
+  "platform": "focusgroups.org",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-auto-insurance-changes-30/1c1b1947-dcb4-4fde-8e42-3b089a1c7f7d/",
+  "how_to_earn": "Apply and qualify for a 45-minute online interview about experiences switching auto insurance policies; $30 if completed by October 11, 2026",
+  "pay_range": "$30 for 45-min online interview",
+  "friction": "needs_aaron: requires having switched auto insurance recently (eligibility unknown); focusgroups.org Google sign-in rejected — his login needed; needs his live interview time",
+  "found_ts": 1790549110,
+  "status": "needs_aaron",
+  "agent_note": "Parent-verified LIVE 2026-09-27 ~17:50 CDT. Weak fit (unknown eligibility, $30/45min below bar); spots limited. Committed for completeness."
  }
 ]
