@@ -5014,5 +5014,85 @@
   "status": "needs_aaron",
   "notes": "Project 40735359, OPEN live 2026-09-27 (posted 09/26, 201 proposals -- very competitive). Weekly Jira report showcasing developer work in PDF; Jira API + report pipeline, pure automation fit. BLOCKER: $20 bid-balance gate. Low win odds given 201 bids.",
   "found": "2026-09-27T06:11:00-05:00"
+ },
+ {
+  "title": "Comprehensive AI Real Estate Sales System",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/ai-chatbot/Comprehensive-Real-Estate-Sales-System.40732644.html",
+  "payout": "~$150-450 fixed (INR 12,500-37,500)",
+  "effort": "1-2 weeks",
+  "status": "needs_aaron",
+  "notes": "Project 40732644, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted ~52h, 69 proposals). MVP AI sales agent: LLM + WhatsApp Business API + property DB/CRM + broker dashboard. BEST gig fit this run (chatbot builds, APIs, automation). BLOCKER: $20 min-balance bid gate unfunded -- needs Aaron.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "Shopify Checkout, Scraper & API Assessment",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/shopify-site/Shopify-Checkout-Scraper-API-Assessment.40735551.html",
+  "payout": "~$27-337 fixed (GBP 20-250)",
+  "effort": "assessment + follow-on",
+  "status": "needs_aaron",
+  "notes": "Project 40735551, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted 2026-09-27 01:15 UTC, 159 proposals -- heavy competition). Read-only technical assessment of existing Python scraper + Shopify/Revolut checkout + internal AI system; first stage is a client conversation. Strong Python scraping/API fit. BLOCKER: $20 bid gate.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "PDF Forms to Excel Sheet",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/data-analysis/PDF-Forms-Excel-Sheet.40735990.html",
+  "payout": "$15-25/hr",
+  "effort": "a few hours",
+  "status": "needs_aaron",
+  "notes": "Project 40735990, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted 2026-09-27 08:34 UTC, 52 proposals). PDF form fields -> structured Excel, accuracy-critical; agent-doable Python pipeline (pdfplumber) + manual verification. Strong data-pipeline fit. BLOCKER: $20 bid gate.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "Crypto Strategy Optimization and API Integration",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/api-developmet/Crypto-Strategy-Optimization-API.40736020.html",
+  "payout": "~$16-32/hr (SGD 20-40)",
+  "effort": "days",
+  "status": "needs_aaron",
+  "notes": "Project 40736020, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted 2026-09-27 08:48 UTC, 40 proposals). Optimize 3 crypto strategies (execution speed/cost), integrate + build APIs. Medium fit: API work fits, asks crypto-trading advisory experience. BLOCKER: $20 bid gate.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "chatbot for WhatsApp business API",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/chatbot-development/chatbot-for-Whatsapp-business-Api.40735068.html",
+  "payout": "~$18-150 fixed (INR 1,500-12,500)",
+  "effort": "days",
+  "status": "needs_aaron",
+  "notes": "Project 40735068, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted 2026-09-26 ~16:48 UTC, 42 proposals). WhatsApp Business API chatbot for a new enterprise, ASAP. Strong chatbot/API fit; client brief is thin. BLOCKER: $20 bid gate.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "Social Media Service Automation",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/automation/Social-Media-Service-Automation.40734438.html",
+  "payout": "$15-25/hr",
+  "effort": "days",
+  "status": "needs_aaron",
+  "notes": "Project 40734438, verified ACTIVE via Freelancer API 2026-09-27 ~06:45 CDT (posted 2026-09-26 09:12 UTC, 45 proposals). Customer-service chatbot/autoresponder (ManyChat/Chatfuel-class) + sentiment feedback loop; legit customer-service use, not bulk spam. Strong chatbot/automation fit. BLOCKER: $20 bid gate.",
+  "found": "2026-09-27T06:45:00-05:00"
+ },
+ {
+  "title": "Arbitrum Open House Dubai: Online Buildathon",
+  "platform": "HackQuest",
+  "url": "https://www.hackquest.io/hackathons/Arbitrum-Open-House-Dubai-Online-Buildathon",
+  "payout": "$30,000 prizes (per listing page; parent could not confirm figure from text fetch -- verify on-page)",
+  "effort": "multi-week build",
+  "status": "needs_aaron",
+  "notes": "Distinct from tracked Singapore edition (different URL). Listing page live-verified 2026-09-27 ~06:50 CDT; registration showing ~3 days left per live listing (closes ~Sep 30). Fully online; build with Stylus/Solidity, deploy on Arbitrum One or own Orbit chain; existing product allowed. Hermes agent stack fits. needs_aaron for registration + wallet/KYC at payout; agent can do build prep. Caveat: pays after judging -- misses Oct 1 challenge window.",
+  "found": "2026-09-27T06:50:00-05:00"
+ },
+ {
+  "title": "Palm Beach Tan TCPA text-message settlement",
+  "platform": "hudsonclass.com (settlement administrator)",
+  "url": "https://www.hudsonclass.com",
+  "payout": "Up to $1,500 per qualifying post-stop text, from $2.5M fund",
+  "effort": "15-min claim form",
+  "status": "needs_aaron",
+  "notes": "Hudson v. Palm Beach Tan (1:23-cv-00486, M.D.N.C.). No proof required beyond the phone number; online form gated on Claim ID/PIN from mailed notice, otherwise print+mail. CONDITIONAL: only if Aaron sent a STOP-type text to Palm Beach Tan and received a marketing text after, between Jun 19 2019 and Jul 5 2026. Deadline Oct 4, 2026; final approval hearing Dec 29, 2026. needs_aaron (sworn attestation + his phone number). Verified via topclassactions/openclassactions/mondaq 2026-09-27.",
+  "found": "2026-09-27T06:55:00-05:00"
  }
 ]
