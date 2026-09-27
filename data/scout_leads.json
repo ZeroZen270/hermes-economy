@@ -635,12 +635,12 @@
  {
   "platform": "Bitget (recovery bounty)",
   "url": "https://www.hokanews.com/2026/09/bitget-launches-5-recovery-bounty-after.html",
-  "how_to_earn": "5% recovery bounty for funds frozen/recovered from the ~$387.5M Bitget hack (ZEC, TRX, other assets; hacked Sept 24-25): on-chain tracing, coordinating with exchanges/researchers on voluntary freezes",
-  "pay_range": "5% of amount recovered/frozen (~$19.4M on full amount)",
+  "how_to_earn": "Bitget Recovery Bounty (announced Sep 26, 2026; upgraded terms): 5% of affected funds for FREEZING attacker assets + additional 5% for RECOVERY (up to 10% total, ~$387.5M stolen across EVM/XRP/ZEC/TRON). On-chain tracing of published attacker addresses via Bitget's public dashboard/tip portal; coordinate with exchanges/security researchers on voluntary freezes. Retroactive freezes (pre-announcement) count; court/law-enforcement-ordered freezes do NOT.",
+  "pay_range": "5% freeze + 5% recovery = up to 10% of ~$387.5M (~$38.8M max theoretical)",
   "friction": "Needs Aaron: on-chain OSINT tracing; agent can assist tracing/research",
   "found_ts": 1790367363,
   "status": "needs_aaron",
-  "agent_note": "Found 2026-09-25 - breaking story. Bitget uses Bybit's LazarusBounty as a channel. High-effort, high-reward; fits Aaron's OSINT skills."
+  "agent_note": "Found 2026-09-25 (breaking); terms upgraded 2026-09-26 to 5%+5%. Fits Aaron's OSINT/on-chain skills; no Solidity needed. Needs Aaron: tip-portal submission (account/KYC terms unknown) + identity. Agent can do tracing/recon first."
  },
  {
   "platform": "Crypto.com (HackerOne)",
