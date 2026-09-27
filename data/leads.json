@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790489908.423781,
+  "generated_ts": 1790491700.4397209,
   "leads": [
     {
       "domain": "hillelectric.com",
@@ -9,28 +9,12 @@
       ],
       "notes": {
         "status": 200,
-        "latency_s": 0.27,
+        "latency_s": 0.33,
         "final_url": "https://hillelectric.com/",
         "cert_days_left": 140
       },
       "score": 2,
-      "checked_ts": 1790489877.873014,
-      "emails": []
-    },
-    {
-      "domain": "mcbeehvac.com",
-      "url": "https://mcbeehvac.com",
-      "issues": [
-        "no_meta_description"
-      ],
-      "notes": {
-        "status": 200,
-        "latency_s": 0.14,
-        "final_url": "https://mcbeehvac.com/",
-        "cert_days_left": 58
-      },
-      "score": 2,
-      "checked_ts": 1790489884.0218318,
+      "checked_ts": 1790491673.2290735,
       "emails": []
     }
   ]
