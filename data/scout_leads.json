@@ -3895,5 +3895,45 @@
   "friction": "needs_aaron",
   "agent_note": "Verified via live fetch 2026-09-26 ~19:43 CDT (settlement guide page; official site finwisedatasettlement.com per page links). $2.8M fund; cash amount depends on filing count. Eligibility gate: must have been affected by the May 31, 2024 FinWise/American First Finance breach -- only Aaron can truthfully attest. Do not file for him.",
   "found_ts": 1790469947
+ },
+ {
+  "platform": "focusgroups.org (Study: Financial Services Management)",
+  "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-financial-services-management-120/4d32bb54-e2d9-4dc7-b07f-d99b0a50328f/",
+  "how_to_earn": "45-min online UNMODERATED task about experiences with financial services across different countries; sign up, pass screening survey",
+  "pay_range": "$120 (must complete by Oct 26, 2026; posted 08/30/26)",
+  "friction": "Needs Aaron: screening survey + unmoderated task; FG Google sign-in still rejected so he may need to re-auth; no payment/KYC to start",
+  "found_ts": 1790473522,
+  "status": "needs_aaron",
+  "agent_note": "Unmoderated = priority per Aaron's FG sign-in status. No hard gate found. Verified live 2026-09-26 20:55 CDT."
+ },
+ {
+  "platform": "focusgroups.org (Study: AI-Moderated Tools)",
+  "url": "https://focusgroups.org/category/unmoderated-studies/research-study-on-ai-moderated-tools-38/70c1879b-4471-4bb3-9e70-73f1842202f7/",
+  "how_to_earn": "14-min online UNMODERATED task: react to messaging statements and product pages for an AI-moderated research tool; sign up, pass screener",
+  "pay_range": "$38 (must complete by Oct 3, 2026; posted 08/06/26)",
+  "friction": "Needs Aaron: screening survey + short unmoderated task; no payment/KYC to start",
+  "found_ts": 1790473522,
+  "status": "needs_aaron",
+  "agent_note": "Good skill fit (AI tools). Fast: 14 min. Verified live 2026-09-26 20:55 CDT."
+ },
+ {
+  "platform": "focusgroups.org (Study: Grantmaking Software)",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-grantmaking-software-150/42fe9ca4-b0df-4132-9f62-adb27f609fa4/",
+  "how_to_earn": "20-min online study about the grantmaking lifecycle and experiences with current solutions; sign up, pass screening survey",
+  "pay_range": "$150 (must complete by Oct 1, 2026; posted 09/01/26)",
+  "friction": "Needs Aaron: screening survey; soft gate = experience with grantmaking software (screener decides); no payment/KYC to start",
+  "found_ts": 1790473522,
+  "status": "needs_aaron",
+  "agent_note": "$150 for 20 min is strong, but deadline Oct 1 is urgent and the experience gate is uncertain. Verified live 2026-09-26 20:56 CDT."
+ },
+ {
+  "platform": "focusgroups.org (Study: Checklists in Jira)",
+  "url": "https://focusgroups.org/category/interview-studies/research-study-on-checklists-in-jira-50/798238c1-2ff1-4d8d-b3f8-bc2ef9341d2e/",
+  "how_to_earn": "30-min online 1-on-1 interview about how teams use checklists in Jira; sign up, pass screening survey",
+  "pay_range": "$50 (must complete by Oct 1, 2026; posted 09/05/26)",
+  "friction": "Needs Aaron: screening survey + live call; soft gate = Jira user; no payment/KYC to start",
+  "found_ts": 1790473522,
+  "status": "needs_aaron",
+  "agent_note": "Fits Aaron's dev background if he uses Jira. Urgent: Oct 1 deadline. Verified live 2026-09-26 20:56 CDT."
  }
 ]
