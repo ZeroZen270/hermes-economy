@@ -534,13 +534,14 @@
  },
  {
   "platform": "Superteam Earn (listing: Hisa video explainer)",
-  "url": "https://superteam.fun/earn/opportunities/nigeria-design-bounties",
+  "url": "https://earn.superteam.fun/listing/create-a-short-video-explainer-for-hisa-dollar5000-up-for-grabs",
   "how_to_earn": "Featured bounty: 'Create a Short Video Explainer for Hisa' - produce a short explainer video",
   "pay_range": "5,002 USDG",
   "friction": "Needs Aaron: Solana wallet signature to submit/claim; crypto payout",
   "found_ts": 1790363755.0610251,
   "status": "needs_aaron",
-  "agent_note": "Found 2026-09-25 via indexed Earn listing (featured, due in ~9d per crawl). Content creation is agent-doable (script + TTS + generated visuals like NectarFi reel), but wallet signature/KYC for payout needs Aaron. Listing page URL is the verified route in."
+  "agent_note": "Found 2026-09-25 via indexed Earn listing (featured, due in ~9d per crawl). Content creation is agent-doable (script + TTS + generated visuals like NectarFi reel), but wallet signature/KYC for payout needs Aaron. Listing page URL is the verified route in. 2026-09-27: URL corrected to the real listing route (regional page was stale); 58 submissions, deadline Sep 30 per live Superteam API check.",
+  "title": "Superteam Earn: Create a Short Video Explainer for Hisa"
  },
  {
   "platform": "USDT0 x Immunefi bug bounty",
@@ -6014,5 +6015,18 @@
   "found_ts": 1790554445,
   "status": "needs_aaron",
   "agent_note": "Parent-verified LIVE 2026-09-27 ~19:25 CDT (page fetch + exact-URL dedupe). Weak fit (Gen Z topic, $25/51min); committed for completeness."
+ },
+ {
+  "platform": "HackerOne (Anthropic)",
+  "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+  "title": "Anthropic Model Safety Bug Bounty \u2014 universal jailbreaks",
+  "how_to_earn": "Apply via Google form, sign NDA, accept HackerOne invite; hunt universal jailbreaks beating Constitutional Classifiers (harmful biological questions shared with accepted participants); submit via HackerOne",
+  "pay_range": "up to $35,000 per novel universal jailbreak (sliding scale)",
+  "friction": "Needs Aaron: application + NDA + HackerOne invite acceptance. Once accepted, agent can run red-team experiments against the free model alias.",
+  "effort": "medium-high per novel jailbreak",
+  "deadline": "ongoing / rolling applications",
+  "found_ts": 1790558144,
+  "status": "needs_aaron",
+  "agent_note": "Strongest bounty fit on the board for Aaron's AI red-teaming/prompt-injection skillset (daily work). Verified live 2026-09-27 via Anthropic help center. Sliding scale payout per jailbreak."
  }
 ]
