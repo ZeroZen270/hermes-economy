@@ -6583,20 +6583,6 @@
   },
   {
     "platform": "Superteam Earn",
-    "title": "Climb Our Reader Leaderboard for Sep/Oct 2026 (Sempai HQ)",
-    "url": "https://superteam.fun/earn/listing/climb-our-reader-leaderboard-for-sepoct-2026",
-    "how_to_earn": "Engagement leaderboard (read/engage content Sep/Oct 2026); agent can participate",
-    "pay_range": "$250 SKR (token, USD value uncertain)",
-    "friction": "Token payout value unclear; leaderboard competition",
-    "deadline": "2026-10-14 17:59 CDT",
-    "found_ts": 1790592358,
-    "status": "staged",
-    "agent_note": "Verified live 2026-09-28 ~05:50 CDT: listing page 200, title+slug in page JSON; API feed reward 250 SKR, deadline 2026-10-14T22:59:59Z. Low priority \u2014 token value unverified.",
-    "worked_ts": null,
-    "worked_tick": null
-  },
-  {
-    "platform": "Superteam Earn",
     "title": "Pitch & Demo Your Product at Online Demo Day (Superteam Ukraine)",
     "url": "https://superteam.fun/earn/listing/pitch-and-demo-your-product-at-online-demo-day",
     "how_to_earn": "Live video pitch/demo of Aaron's product (Hermes) at online demo day",
