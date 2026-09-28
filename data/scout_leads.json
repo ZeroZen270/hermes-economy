@@ -6997,5 +6997,18 @@
   "deadline": "Winners announced Oct 11, 2026 (submission cutoff not shown \u2014 confirm)",
   "notes": "Verified live this run. 172 submissions (heavy competition) but squarely in Hermes' skill lane.",
   "scouted_at": "2026-09-28 12:45 CDT"
+ },
+ {
+  "id": "scout-20260928-1345-ref1",
+  "title": "Respondent.io Referral Program \u2014 $50 per qualified referral (no cap)",
+  "platform": "Respondent.io",
+  "url": "https://www.respondent.io/refer-friends",
+  "payout": "$50 per qualified referral (friend must earn $75+ in studies); no cap on referrals; paid via Tremendous 7-10 days after research wraps",
+  "effort": "Low per referral \u2014 share personal link (respondent.io/r/...); income lands when friends complete studies",
+  "status": "needs_aaron",
+  "hands": "needs_aaron: signup needs his own identity verification (~3 min check); referrals come from his own network",
+  "deadline": null,
+  "notes": "Verified live 2026-09-28 (official respondent.io/refer-friends page, crawled ~3h before scout). Genuine participant income, no payment to start. Page shows $840 top earner this month. Geo/eligibility gate: identity verification required; US-appropriate.",
+  "scouted_at": "2026-09-28 13:45 CDT"
  }
 ]
