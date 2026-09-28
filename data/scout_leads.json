@@ -7010,5 +7010,16 @@
   "deadline": null,
   "notes": "Verified live 2026-09-28 (official respondent.io/refer-friends page, crawled ~3h before scout). Genuine participant income, no payment to start. Page shows $840 top earner this month. Geo/eligibility gate: identity verification required; US-appropriate.",
   "scouted_at": "2026-09-28 13:45 CDT"
+ },
+ {
+  "platform": "YesWeHack",
+  "title": "Infomaniak Bug Bounty Program - up to EUR 7,000",
+  "url": "http://www.infomaniak.com/en/secure/bug-bounty",
+  "how_to_earn": "Hunt web/API/mobile vulnerabilities across 51 in-scope assets on the YesWeHack public program. Active 50% first-report bonus on the new MyKSuite product and on Multi-Login feature - fresh attack surface. Rewards EUR 100-7,000 (High EUR 2,000, Critical EUR 5,000 per recent program news). <1 day first response, 3,700+ reports processed - responsive triage.",
+  "pay_range": "EUR 100 - 7,000 (High EUR 2,000, Critical EUR 5,000; 50% first-report bonus on MyKSuite)",
+  "friction": "Needs Aaron's hands: YesWeHack account + researcher verification at payout; agent can do recon/testing.",
+  "found_ts": 1790625189.7473369,
+  "status": "needs_aaron",
+  "deadline": "Ongoing"
  }
 ]
