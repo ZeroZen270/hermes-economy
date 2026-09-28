@@ -1,5 +1,5 @@
 {
-  "generated_ts": 1790619508.1772852,
+  "generated_ts": 1790621302.126485,
   "leads": [
     {
       "domain": "hillelectric.com",
@@ -14,7 +14,7 @@
         "cert_days_left": 139
       },
       "score": 2,
-      "checked_ts": 1790619477.1748862,
+      "checked_ts": 1790621274.2962263,
       "emails": []
     }
   ]
