@@ -620,3 +620,12 @@
 2026-09-28 11:51:54 tick #274: agent invoked (balance now 11350)
 2026-09-28 12:18:19 heartbeat online (once)
 2026-09-28 12:18:32 tick #275: agent invoked (balance now 11300)
+2026-09-28 12:48:30 heartbeat online (once)
+2026-09-28 12:50:27 tick #276: agent run failed: provider error 503 (gemini-flash-lite-latest, attempt 4, retrying): [{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+]
