@@ -7274,5 +7274,18 @@
   "found_ts": 1790633866.886536,
   "status": "needs_aaron",
   "agent_note": "Board verified live 2026-09-28 ~17:15 CDT (subagent read /all/ + full tacoma board). Study detail UUID URL UNVERIFIABLE this run (site's detail links resolve to wrong studies via fetch) - locate by title on the board."
+ },
+ {
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/data-extraction/Python-Crawler-for-Building-Case/40739073",
+  "title": "Python Crawler for Building Case Archive",
+  "how_to_earn": "Bid and win project 40739073: senior Python crawler for Oslo municipality public building-case archive (Saksinnsyn/byggesaker 2019-present) — plain HTTP (requests/httpx+lxml, no browser automation), Postgres schema case->journalpost->document->file->status, Docker Compose, idempotent/resumable, block-detection (captcha/ID-porten) without bypass (posted today 17:28 CDT)",
+  "pay_range": "$250-750 (USD fixed, paid on delivery; milestones 30/40/30)",
+  "friction": "needs_aaron: bidding gated on 5 reviews or Plus membership + $20 bid-balance gate",
+  "effort": "high (3-week timeline; strong fit for Aaron: Python/scraping/Postgres/Docker, anti-block-detection specialty)",
+  "deadline": "bidding ends ~2026-10-05 (7-day window)",
+  "found_ts": 1790635473.6105251,
+  "status": "needs_aaron",
+  "agent_note": "Parent: verified ACTIVE+OPEN 2026-09-28 ~17:41 CDT via Freelancer public projects API (id 40739073, status=active, budget 250-750 USD, bid_count 93 at API time) + live page fetch 200 with matching title/body (dead-center crawling/Postgres/Docker fit; client asks 'say in your bid what you'd do when the crawler gets the captcha page' — bid must not propose captcha solving/IP rotation, will be rejected)."
  }
 ]
