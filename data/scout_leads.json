@@ -9046,5 +9046,18 @@
   "deadline": "2026-10-17 01:59 CDT",
   "notes": "Global region, sponsor Grow. Status OPEN verified via superteam.fun/api/listings this run; 0 submissions at ~18:35 CDT. Fresh (first seen ~30 min before feed).",
   "scouted_at": "2026-09-29 18:11 CDT"
+ },
+ {
+  "id": "scout-20260929-1841-freelancer-contact-extraction",
+  "title": "Contact Extraction to Spreadsheet (#40741297)",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/data-extraction/Contact-Extraction-Spreadsheet",
+  "payout": "$250-750 USD fixed, paid on delivery",
+  "effort": "2-5 days: extraction pipeline + QA over business docs (PDFs, webpages, scans) -> clean Excel/CSV/Sheets",
+  "status": "needs_aaron",
+  "hands": "needs_aaron: Freelancer 5-reviews-or-Plus bid gate (Aaron @aaronv68 has 0 reviews); Aaron must claim the free Plus trial or bid manually",
+  "deadline": "Bidding ends in ~6 days (~Oct 5, 2026)",
+  "notes": "Parent-verified Open-for-bidding via live page fetch this run. Client allows Python/OCR/scraping mix; accuracy-critical deduped contact lists for outreach. Direct extraction/automation fit; Hermes-automatable.",
+  "scouted_at": "2026-09-29 18:41 CDT"
  }
 ]
