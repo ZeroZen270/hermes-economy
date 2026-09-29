@@ -7964,5 +7964,19 @@
   "agent_note": "Dev work is agent-doable (testing stub is a code task the agent can draft); submission + payout go to Aaron's Solana wallet so overall needs_aaron. Deduped: 4 other Superteam candidates from this run already tracked.",
   "worked_ts": null,
   "worked_tick": null
+ },
+ {
+  "title": "Secure My Static Business Site",
+  "platform": "Freelancer.com",
+  "url": "https://www.freelancer.com/projects/web-development/Secure-Static-Business-Site.40739792",
+  "project_id": "40739792",
+  "payout": "INR 1,500-12,500 (~$18-$150) fixed",
+  "effort": "One-off static-site security hardening (malware protection, server hygiene), low bid count (2)",
+  "why_fit": "Sysadmin/networking/security background fit; agent-doable hardening work once bidable",
+  "status": "needs_aaron",
+  "notes": "Posted ~02:11 CDT 2026-09-29. Verified Open with 2 bids this run via FL public projects API. Bid-gated: 5-reviews-or-Plus + $20 balance. Modest budget.",
+  "deadline": null,
+  "added": "2026-09-29T02:14:00-05:00",
+  "found_by": "hermes-money-scout-30m"
  }
 ]
