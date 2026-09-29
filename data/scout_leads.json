@@ -7523,5 +7523,31 @@
     "found_ts": 1790642703,
     "status": "needs_aaron",
     "agent_note": "Parent-verified OPEN live 2026-09-28. Scout recommendation: NOT recommended - 0-review profile unlikely to win against 111 proposals at \u00a32-5/hr. Recorded for completeness only."
+  },
+  {
+    "title": "AI Chatbot Developer \u2014 Triangulum Insights ($25-40/hr)",
+    "platform": "Upwork",
+    "url": "https://www.upwork.com/freelance-jobs/apply/Chatbot-Developer_~022098417308316544664/",
+    "payout": "$25-40/hr",
+    "status": "needs_aaron",
+    "deadline": null,
+    "effort": "Under 30 hrs/week, 3-6 month contract",
+    "hands": "needs_aaron \u2014 account has 0 Connects; proposal submission needs Aaron to fund/buy Connects",
+    "notes": "Verified live 2026-09-28 ~20:15 CDT by scout: RAG + LLM + vector DB chatbot build \u2014 core AI agent/automation skillset.",
+    "found_ts": 1790644706,
+    "scouted_at": "2026-09-28 20:15 CDT"
+  },
+  {
+    "title": "AI Developer to Build a Conversational Bargaining Chatbot for Shopify D2C Stores ($1,500 fixed)",
+    "platform": "Upwork",
+    "url": "https://www.upwork.com/freelance-jobs/apply/Developer-Build-Conversational-Bargaining-Chatbot-for-Shopify-D2C-Stores_~022092918236112642008/",
+    "payout": "$1,500 fixed-price",
+    "status": "needs_aaron",
+    "deadline": null,
+    "effort": "Fixed-price conversational AI build",
+    "hands": "needs_aaron \u2014 account has 0 Connects; proposal needs Aaron to fund/buy Connects",
+    "notes": "Verified live 2026-09-28 ~20:15 CDT by scout. Exact chatbot/automation niche; remote, no residency gate. Caveat: client last viewed ~4 weeks ago, listing may be stale.",
+    "found_ts": 1790644706,
+    "scouted_at": "2026-09-28 20:15 CDT"
   }
 ]
