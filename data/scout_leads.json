@@ -7665,5 +7665,44 @@
   "agent_note": "Hourly twin of fixed-price CSV->Excel lead (different client). Verified live this run via Freelancer single-project API (active/open). Bid gate: Freelancer 5-reviews-or-Plus + $20 balance - channel paused until Aaron claims Plus trial.",
   "worked_ts": null,
   "worked_tick": null
+ },
+ {
+  "platform": "FocusGroups.org",
+  "title": "Research Study on Architecture Tools - $100",
+  "url": "https://focusgroups.org/all/",
+  "pay_range": "$100; 1-on-1 Interview, Technology; posted 09/26/26; verified live on board this run",
+  "how_to_earn": "1-on-1 interview about architecture tooling (tech audience - Aaron's IT/systems background is a direct fit). Apply via FocusGroups (Google sign-in done 9/27, profile submitted 9/28).",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T00:30:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Detail UUID URL not resolvable via text-fetch (outlink mapping broken this run); locate by exact title on the /all/ board. Listed on nationwide city pages (Wichita/Columbus/Thornton/Fort Lauderdale/El Paso/Columbus-GA, all crawled within hours) -> remote-plausible, no geo gate visible.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "FocusGroups.org",
+  "title": "Research Study on AI Interactions - $42",
+  "url": "https://focusgroups.org/all/",
+  "pay_range": "$42; Unmoderated Study, Technology; posted 09/26/26; verified live on board this run",
+  "how_to_earn": "Online unmoderated task about AI interactions (definitely remote). Apply via FocusGroups; complete the task if accepted.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T00:30:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Detail UUID URL not resolvable via text-fetch; locate by exact title on the /all/ board. Unmoderated = online, lowest friction of the three. Small payout but tech-fit and fast.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "FocusGroups.org",
+  "title": "Research Study on Accounting Software - $100",
+  "url": "https://focusgroups.org/all/",
+  "pay_range": "$100; 1-on-1 Interview, Business; posted 09/26/26; verified live on board this run",
+  "how_to_earn": "1-on-1 interview about accounting software (business audience - Aaron runs Technology Squared LLC, plausible fit). Apply via FocusGroups.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T00:30:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Detail UUID URL not resolvable via text-fetch; locate by exact title on the /all/ board. Listed on nationwide city pages (Columbus/Thornton/Fort Lauderdale/El Paso/Columbus-GA, crawled within hours) -> remote-plausible.",
+  "worked_ts": null,
+  "worked_tick": null
  }
 ]
