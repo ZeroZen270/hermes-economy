@@ -7886,5 +7886,83 @@
   "agent_note": "Verified live this run via Respondent participant feed (sorted by publishedAt, Sep-28 batch). Account flagged not-eligible: needs verified work email; remote. Aaron's hands needed: screener + video interview time. 5%-or-$1-minimum fulfillment fee applies on payout.",
   "worked_ts": null,
   "worked_tick": null
+ },
+ {
+  "platform": "Freelancer.com",
+  "title": "Upload completed emails to brevo right now",
+  "url": "https://www.freelancer.com/projects/automation/Upload-completed-emails-brevo-right.40739676/",
+  "pay_range": "USD 20-30 fixed, 0 bids, posted ~01:08 CDT (verified live this run: active/open)",
+  "how_to_earn": "Upload completed emails to Brevo (email automation). Quick 15-30 min task.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Freshest FL lead of the night: 0 bids at sweep time. Low competition, quick win. needs_aaron: FL 5-reviews-or-Plus bid gate (channel paused pending Aaron's Plus-trial call).",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "Freelancer.com",
+  "title": "Penetration Testing Secure Code Review & Fixing",
+  "url": "https://www.freelancer.com/projects/penetration-testing/Penetration-Testing-Secure-Code-Review.40739657/",
+  "pay_range": "USD 30-250 fixed, 72 bids, posted ~01:04 CDT (verified live this run: active/open)",
+  "how_to_earn": "Security code review + fixing vulnerabilities for a client project. A few hours of work.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Adjacent to Aaron's security/OSINT background. Competitive (72 bids) but decent payout. needs_aaron: FL bid gate.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "Freelancer.com",
+  "title": "Shopify-Salesforce Real-Time Sync",
+  "url": "https://www.freelancer.com/projects/shopify-development/Shopify-Salesforce-Real-Time-Sync.40739591/",
+  "pay_range": "AUD 30-250 (~USD 20-165), 142 bids, posted ~00:21 CDT (verified live this run: active/open)",
+  "how_to_earn": "Build real-time Shopify<->Salesforce data sync (API integration, webhooks).",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "API-integration fit, but very competitive (142 bids) and modest payout. needs_aaron: FL bid gate.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "Freelancer.com",
+  "title": "BigCommerce to Shopify Migration",
+  "url": "https://www.freelancer.com/projects/api-integration/BigCommerce-Shopify-Migration.40739584/",
+  "pay_range": "USD 3000-5000 fixed, 175 bids, posted ~00:16 CDT (verified live this run: active/open)",
+  "how_to_earn": "Migrate a store from BigCommerce to Shopify (data/API migration). Multi-day effort.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "High-value API migration fit. Very competitive (175 bids). needs_aaron: FL bid gate.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "Freelancer.com",
+  "title": "Advance AI Direct Sales Platform Development (Dubai)",
+  "url": "https://www.freelancer.com/projects/ai-chatbot-development/Advance-Direct-Sales-Platform.40739602/",
+  "pay_range": "USD 3000-5000 fixed, 130 bids, posted ~00:26 CDT (verified live this run: active/open)",
+  "how_to_earn": "Build an AI chatbot direct-sales platform. Team-scale effort.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "High-value chatbot-platform fit but team-scale effort and 130 bids; only viable if bid-gated channel reopens. needs_aaron: FL bid gate.",
+  "worked_ts": null,
+  "worked_tick": null
+ },
+ {
+  "platform": "Superteam Earn",
+  "title": "Developer | Pyth Pull Oracle on Solana: Testing Stub",
+  "url": "https://superteam.fun/earn/listing/pyth-pull-oracle-on-solana-testing-stub/",
+  "pay_range": "1000 PYTH (~small USD value), 2 submissions (verified live this run via Superteam listing page)",
+  "how_to_earn": "Write a testing stub for Pyth pull oracle on Solana. Low-medium effort; only 2 submissions = low competition.",
+  "friction": "needs_aaron",
+  "found_ts": "2026-09-29T01:14:00-05:00",
+  "status": "needs_aaron",
+  "agent_note": "Dev work is agent-doable (testing stub is a code task the agent can draft); submission + payout go to Aaron's Solana wallet so overall needs_aaron. Deduped: 4 other Superteam candidates from this run already tracked.",
+  "worked_ts": null,
+  "worked_tick": null
  }
 ]
