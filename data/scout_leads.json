@@ -3542,7 +3542,7 @@
   "title": "Automation software Developer (auto-monitor + auto-book dates, 5 locations)",
   "how_to_earn": "Build booking automation software that monitors 5 locations on a website and auto-books dates per requirement. Verified OPEN live 2026-09-26 ~15:45 CDT (posted ~20 min prior, ends in ~6 days, 37 proposals).",
   "pay_range": "INR 75,000-150,000 (~$850-$1,700 USD), paid on delivery",
-  "friction": "Needs Aaron's hands: Freelancer.com channel is paused (new listings gate bidding behind a $20 minimum balance). Bidding requires Aaron to fund or unlock the account; bid submission itself could be agent-drafted once the gate is cleared.",
+  "friction": "Needs Aaron's hands: Freelancer.com @aaronv68 channel paused (2026-09-27: new listings gate bidding behind 5 reviews or a Plus membership, not the old $20 balance rule; 0/6 free bids). Bid submission could be agent-drafted once Aaron clears the gate. Re-verified still OPEN live 2026-09-30 09:45 CDT.",
   "found_ts": 1790455716,
   "status": "needs_aaron",
   "deadline": "Bidding ends ~Oct 2, 2026 (6 days)",
@@ -10103,19 +10103,5 @@
   "found_ts": 1790776057,
   "scouted_at": "2026-09-30 08:55 CDT",
   "notes": "Parent-verified live this run (page 200). Eligibility: experienced professionals dealing with a variety of software tools at work (privacy/consent management etc.) - good fit for Aaron's daily IT work. Nationwide 18+. Needs Aaron's live participation."
- },
- {
-  "id": "scout-20260930-0945-freelancer-40660141",
-  "title": "Freelancer #40660141: Automation software Developer (auto-monitor + auto-book 5 locations) — ₹75,000–150,000 INR (~$850–$1,700)",
-  "platform": "Freelancer.com",
-  "url": "https://www.freelancer.com.bd/projects/web-scraping/automation-software-developer",
-  "payout": "₹75,000–150,000 INR (~$850–$1,700 fixed)",
-  "effort": "3–12 days build (bids avg 4–7 days)",
-  "hands": "needs_aaron",
-  "status": "needs_aaron",
-  "deadline": "bidding ends in ~6 days",
-  "found_ts": 1790780700,
-  "scouted_at": "2026-09-30 09:45 CDT",
-  "notes": "Parent-verified live this run (page 200, Open, posted ~20 min before 09:45 CDT check, 37 proposals and climbing). Python/Playwright or Selenium auto-monitor + auto-book system across 5 locations on one website; explicit Cloudflare/bot-detection context in tags - direct Aaron Python + automation fit. Paid on delivery. Bid needs Aaron's @aaronv68 session (0/6 free bids, listing gates); competition is high but the posting is brand new. Client website/login/CAPTCHA details unknown until chat."
  }
 ]
