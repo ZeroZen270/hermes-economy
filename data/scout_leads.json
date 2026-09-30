@@ -4940,12 +4940,13 @@
  },
  {
   "platform": "HackQuest (platform)",
-  "url": "https://buidlbox.io",
+  "url": "https://www.hackquest.io/hackathons",
   "how_to_earn": "Web3 hackathons under HackQuest (Buidlbox — the former Gitcoin hackathon platform — acquired by HackQuest, announced Sept 2025; partners: Solana, Arbitrum, Mantle, 100+ ecosystems)",
   "pay_range": "Per-event pools, Buidlbox-era $10K-50K ranges",
   "friction": "Low signup; web3-focused, narrower than Devpost/DoraHacks",
   "found_ts": 1790501399,
-  "status": "new"
+  "status": "new",
+  "agent_note": "BuidlBox acquired by HackQuest (verified 2026-09-30: buidlbox.io 307-redirects to acquisition notice). Successor hackathon board live at this URL. Live options this run: Arbitrum Open House Singapore Online Buildathon ($115K, online), Arbitrum Open House Dubai ($30K) — both team-build hackathons, needs_aaron to register; nothing payable before Oct 1 02:30 CDT."
  },
  {
   "platform": "Superteam Earn",
