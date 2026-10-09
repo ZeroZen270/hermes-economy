@@ -14281,5 +14281,86 @@
   "friction": "Free signup; 18+, US work-eligible, smartphone required; some roles require background check; paid within days via direct deposit ($3 fee for instant pay); no guarantee of shift availability in rural Murray KY; worker complaints about pay adjustments for improper tracking",
   "found_ts": 1791581293,
   "status": "new"
+ },
+ {
+  "platform": "Temu (bug bounty)",
+  "url": "https://hackerone.com/temu",
+  "how_to_earn": "Submit web/app/API vulnerabilities via HackerOne managed program",
+  "pay_range": "$50 minimum (current directory); launch table $30-$5,000 by severity (Dec 2023, may have changed)",
+  "friction": "Free HackerOne account; HackerOne mandatory ID verification (Veriff) for bounty submissions; heavily farmed e-commerce surface, $0 publicly disclosed to date",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Marriott (bug bounty)",
+  "url": "https://hackerone.com/marriott",
+  "how_to_earn": "Submit web/API vulnerabilities via HackerOne managed program",
+  "pay_range": "$100 minimum verified; full severity table not publicly fetched (CVE patch-timing payment rules apply)",
+  "friction": "Free HackerOne account + ID verification; scope actively expanding (+assets Sep 2026); 0 publicly disclosed payouts",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "8x8 (bug bounty)",
+  "url": "https://hackerone.com/8x8-bounty",
+  "how_to_earn": "Submit web/API vulnerabilities (incl. Connect Automation Builder API) via HackerOne",
+  "pay_range": "Low $50 / Medium $100-$250 / High $250-$500 / Critical $500-$1,000 (averages higher: crit avg ~$2,000); $491,885 total paid, $26,774 in last 90 days",
+  "friction": "Free HackerOne account + ID verification; very active program (558 reports/90 days), scope expanded Sep 2026; strong API/automation skill fit",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Wealthsimple (bug bounty)",
+  "url": "https://hackerone.com/wealthsimple",
+  "how_to_earn": "Submit vulnerabilities in *.wealthsimple.com / SimpleTax / mobile apps via HackerOne",
+  "pay_range": "Critical $20,000 / High $5,000 / Medium $1,000 / Low $500 (via FireBounty mirror, crawl 2022 - verify currency and freshness on HackerOne before investing time)",
+  "friction": "Free HackerOne account + ID verification; test accounts must use HackerOne email alias; bounty paid ~15 business days from triage",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Monzo (bug bounty)",
+  "url": "https://app.intigriti.com/company/programs/monzobank/monzopublicbugbountyprogram/detail",
+  "how_to_earn": "Submit web/API/mobile vulnerabilities via Monzo's public Intigriti program",
+  "pay_range": "Numeric table unpublished; Intigriti states bounties set ~60% above industry average at launch",
+  "friction": "Free Intigriti account; EUR payout platform; finance-sector test-account setup",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Meridial (Invisible Technologies)",
+  "url": "https://www.meridial.ai/projects",
+  "how_to_earn": "Project-based AI-training contracting for frontier labs: RLHF/SFT, prompt writing/evaluation, response ranking, red-teaming, RL-environment work; Coding domain is a direct Python fit; per-project Statement of Work",
+  "pay_range": "No single published rate - each project posts its range up front; independent reviews cite ~$6-$65/hr overall, US Coding Specialist $8-$65/hr examples",
+  "friction": "Free profile + confirmation, apply per project, sign SOW; ID verification in onboarding reported; payments every two weeks; no guaranteed work; time-tracking on some projects",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "MetalBear Writers Program",
+  "url": "https://metalbear.com/writers-program/",
+  "how_to_earn": "Paid technical articles/guides on cloud-native dev, DevOps, developer experience, backend/platform engineering (mirrord/Kubernetes focus)",
+  "pay_range": "$150-$300 per published article (official page, corroborated in MetalBear site source repo)",
+  "friction": "Free application with original unpublished work; editorial feedback process; payout method/timing not published; topic fit adjacent to core Python/scraping stack",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Make Integration Experts Directory",
+  "url": "https://www.make.com/en/partners-directory",
+  "how_to_earn": "Get listed in Make's official partner directory (Platinum/Gold/Silver tiers) and be hired directly by clients for Make automation/integration consulting at own rates",
+  "pay_range": "Expert-set rates (market ~$50-$200+/hr per prior research); no platform cut - clients pay experts directly; no rates published on directory page",
+  "friction": "Free to join; certification/tier earned by consistently delivering Make client work; prior Make project evidence is the gate; short-term work also via Make Community 'Hire a pro'",
+  "found_ts": 1791581438,
+  "status": "new"
+ },
+ {
+  "platform": "Shophand Small Business Boost Grant",
+  "url": "https://www.shophand.com/small-business-boost-grant",
+  "how_to_earn": "Apply for a small-business grant as Technology Squared LLC - $2,500 no-strings cash plus $2,500 in Shophand services (AI tools/automation, tech, marketing, ops)",
+  "pay_range": "$2,500 cash + $2,500 services ($5,000 package); Round 2 deadline Nov 30, 2026, winner announced Dec 15",
+  "friction": "Free 10-15 min application; US for-profit, actively operating, <50 employees, <$5M revenue; solopreneurs welcome; must follow Shophand on Instagram/X/LinkedIn/Facebook; preference for paid-service users (not required)",
+  "found_ts": 1791581438,
+  "status": "new"
  }
 ]
