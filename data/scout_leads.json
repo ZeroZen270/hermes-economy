@@ -14452,5 +14452,86 @@
   "friction": "Free Bugcrowd account; USD payouts via Bugcrowd; standard ID/tax verification at payout; ML-infra target fits Aaron's AI tooling background",
   "found_ts": 1791667974,
   "status": "new"
+ },
+ {
+  "platform": "NIH NOURISH Autoimmunity Digital Health Challenge",
+  "url": "https://www.nih.gov/challenges/nourish-autoimmunity-digital-health-challenge",
+  "how_to_earn": "Build a digital-health app prototype that helps people with autoimmune diseases track how diet/nutrition affects their symptoms (diet/symptom tracking, AI-enabled insights). Phase 1 submission is a short narrative (max 6 pages) plus a 3-5 minute prototype demo video - a Python/app/API build squarely in Aaron's skill set",
+  "pay_range": "Up to $650,000 total purse: Phase 1 up to 10 prizes of $20,000; Phase 2 up to 5 x $30,000; Phase 3 up to 3 x $100,000 (official NIH prize section, parent-verified)",
+  "friction": "Free to enter; individuals must be US citizens or permanent residents (Aaron qualifies); prizes paid by electronic funds transfer, tax-reportable; free SAM.gov UEI recommended to speed payment; Phase 1 submission window Oct 1, 2026 - Jan 8, 2027; competitive federal challenge, no guaranteed payout",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "NIH NIMHD Smart Devices Grand Challenge (SCHARE)",
+  "url": "https://www.nimhd.nih.gov/resources/schare/grand-challenges/smart-devices-and-sensing-technologies",
+  "how_to_earn": "Phase I concept/prototype for interoperable, AI-ready whole-person health sensing - the official page explicitly includes software applications, dashboards, APIs and reusable workflows, not just hardware, so a data-pipeline/API entry is viable without building a device",
+  "pay_range": "$1,000,000 total: Phase I $100,000 per winner, up to 4 winners; Phase II 1st $325,000 / 2nd $275,000 (official NIMHD page, parent-verified)",
+  "friction": "Free; registration deadline Dec 18, 2026 and Phase I submissions end Feb 15, 2027; only Phase I winners advance; standard NIH COMPETES eligibility (US-based entrants); health-disparities framing required",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "Prolific Expert Network (AI Training)",
+  "url": "https://job-boards.greenhouse.io/prolificacademicltd/jobs/4854984101",
+  "how_to_earn": "Join Prolific's Expert Network as a Data Science & Analysis AI trainer (distinct from the low-value Prolific studies channel scouted in Sep 2026): pass a 10-15 minute skills test, then get invited to paid tasks evaluating LLM data/statistical responses, fact-checking technical claims, and executing Python/R scripts to validate model outputs",
+  "pay_range": "Up to $80/hr per the official Prolific Greenhouse posting (parent-verified); a parallel Advanced SQL track posts $40/hr; fact-checker track $20/hr plus completion bonuses",
+  "friction": "PayPal account required; degree gate (BS/MS/PhD in a quantitative field - Aaron's master's fits); expert-track invites are waitlist/screening based; self-employed, self-declare earnings; low cashout minimum on the platform",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "Ult App (HackenProof bug bounty)",
+  "url": "https://hackenproof.com/programs",
+  "how_to_earn": "Hunt vulnerabilities in the Ult App (Cronos Labs multi-asset trading app) and its supporting backend APIs on HackenProof - loss-of-funds, PII/payment-data breach, unauthorized modification of other users' data. Web/API scope, not smart-contract-only. Program launched Sep 28, 2026 and is still lightly farmed (85 submissions)",
+  "pay_range": "Up to $20,000 (program page, parent-verified): Critical $8,000-20,000 / High $3,000-8,000 / Medium $500-3,000 / Low up to $500 per HackenProof's launch post",
+  "friction": "Free HackenProof account (Aaron already works this platform); KYC at payout; caveat: this specific program has paid $0 so far, though HackenProof itself has paid $26M+ lifetime",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "LiveChat / Text Solution Partner Program",
+  "url": "https://partners.livechat.com/solution-program/?internal_campaign=partner-program-pricing",
+  "how_to_earn": "Join free, apply for the Solution track in the Partner App (freelance developers are explicitly eligible), then build and integrate LiveChat, ChatBot, and HelpDesk for clients using Text's APIs/SDKs, manage their licenses, and list on the partner Marketplace. Strong chatbot/API fit for Aaron",
+  "pay_range": "Solution commission on managed subscriptions: 20% Bronze / 22% Silver ($5,000 ARR) / 25% Gold ($20,000 ARR), plus self-set implementation fees; parallel Affiliate track pays 20% recurring for the life of a subscription (official page, parent-verified)",
+  "friction": "Free membership; application plus 1:1 onboarding; free demo accounts; affiliate payouts via PayPal eCheck with $50 minimum; Solution-track payout rail not stated on the program page - confirm inside the Partner App",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "Kolabtree",
+  "url": "https://www.kolabtree.com/find-an-expert/subject/data-science?page-index=1",
+  "how_to_earn": "Create a free expert profile and bid on posted projects; the data-science/data-analysis categories are the Python/data-pipeline slice (rest of the marketplace skews PhD/medical research). Clients pre-pay milestones into escrow and release on approval",
+  "pay_range": "Recent data-science projects listed at $500-$660 (data-analysis $450-$600); expert profile rates elsewhere on the site run $37.50-$80/hr (official category pages)",
+  "friction": "Free to join; platform commission described only as 'small' (percentage unpublished) and the expert payout rail was not published on the pages checked - confirm both at signup; Aaron's master's fits but many listings are PhD-led",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "PhantomBuster Affiliate Program",
+  "url": "https://affiliates.phantombuster.com",
+  "how_to_earn": "Refer users to PhantomBuster (LinkedIn/web-scraping and lead-generation automation) - a direct topical fit for Aaron's scraping work, best paired with a published scraping tutorial or tool content. Referral-only; there is no client-work path",
+  "pay_range": "20% recurring (Starter), 25% at 5 referred customers, 30% at 20 customers, for up to 12 months per subscription; 60-day cookie (official affiliate page)",
+  "friction": "Free application, approval in a few days; monthly PayPal payouts, $50 minimum, paid one month after generation; paid advertising of the link is prohibited; weak for Aaron until he has an audience/channel",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "Sharetribe Experts",
+  "url": "https://www.sharetribe.com/experts/become-an-expert/",
+  "how_to_earn": "Apply as a Sharetribe Expert Partner: intro call, free technical + sales training, then a listing in the Experts marketplace receiving build leads from marketplace founders; after the first completed client project, Verified Experts get direct customer introductions. Clients contract and pay the expert directly (official page, parent-verified)",
+  "pay_range": "No rates published by Sharetribe; partner-agency pricing guide puts freelancers at roughly $30-$80/hr and small features/MVPs at $2,000-$10,000",
+  "friction": "Free training but vetted - Sharetribe reviews real code before admission; stack caveat: Sharetribe templates are React/Node.js, not Python, so the fit is API/integration/transaction-logic work and requires learning the platform",
+  "found_ts": 1791668230,
+  "status": "new"
+ },
+ {
+  "platform": "Chi-Bench Healthcare AI Agents Challenge",
+  "url": "https://github.com/actava-ai/chi-bench/blob/HEAD/docs/kaggle-challenge-overview.md",
+  "how_to_earn": "Build an autonomous long-horizon AI agent (MCP/REST tools, Python) that completes simulated healthcare-admin workflows on Kaggle (IEEE Big Data Cup, Actava) - ranked on a private clinician-validated task set. Closest pure agent-building fit in this batch; TIME-CRITICAL: entry deadline Nov 7, 2026, final package Nov 15, 2026",
+  "pay_range": "USD $3,000 prize pool plus a Reliability Award (organizer doc) - small pool; portfolio/credibility value exceeds cash value",
+  "friction": "Free Kaggle entry, teams up to 5; requires gated handbook approval and your own model/API keys for local development (organizer covers API costs only during private evaluation), so a small out-of-pocket API spend is possible",
+  "found_ts": 1791668230,
+  "status": "new"
  }
 ]
