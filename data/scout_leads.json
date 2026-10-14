@@ -15010,5 +15010,50 @@
   "friction": "Existing HackerOne account; H1 mandatory Veriff ID verification; fit caveat: highest rewards skew smart-contract - web/API slice is the Python fit; no production impact testing",
   "found_ts": 1792014264,
   "status": "new"
+ },
+ {
+  "platform": "Aligned Labs (Aligned)",
+  "url": "https://www.alignedhq.ai/for-experts",
+  "how_to_earn": "Apply as an expert contributor (free, applications reviewed within 48 hours per official page), verify identity/credentials, set your own hourly rate, get matched to RLHF/evaluation/data projects for leading AI labs across 50+ domains; official page cites 20K+ contributors and named experts describing months-long paid projects since April 2025",
+  "pay_range": "Rate set by expert; third-party job-board syndication lists $50-$80/hr for engineering consultants scaling to $150+/hr for top performers (not stated on official site)",
+  "friction": "Free signup; domain + ID verification; payout rail NOT named on official site - confirm before investing time; gate risk: many listings want PhD or 5+ years experience, Aaron's master's fits some listings only",
+  "found_ts": 1792014517,
+  "status": "new"
+ },
+ {
+  "platform": "DataForSEO Affiliate Program",
+  "url": "https://dataforseo.com/affiliate-program",
+  "how_to_earn": "Refer new customers to DataForSEO SEO/SERP APIs via PartnerStack link - tutorials, n8n/Make workflows, integrations, or consulting clients who open their own accounts; direct fit with Aaron's scraping/lead-data work",
+  "pay_range": "25% of everything a referred customer pays in their first 365 days (top-ups, recurring, direct purchases), capped at $1,000 per customer, no overall earnings cap; 90-day cookie; monthly payouts via PartnerStack, no DataForSEO minimum (terms v1, effective Sep 15, 2026, verified on official page)",
+  "friction": "Free to join, no need to be a customer, 18+; application reviewed - requires a relevant channel (blog/YouTube/newsletter/community/integration/client base); no paid ads or brand-keyword bidding without written approval; no self-referrals; first qualifying payment must land within 180 days of registration",
+  "found_ts": 1792014517,
+  "status": "new"
+ },
+ {
+  "platform": "Coupler.io Affiliate Program",
+  "url": "https://www.coupler.io/affiliate-program",
+  "how_to_earn": "Refer customers to Coupler.io's no-code data-automation/reporting tool (60+ apps into Sheets/dashboards) - natural recommendation inside data-pipeline client work and content",
+  "pay_range": "25% lifetime recurring revenue share on paid plans and renewals (verified on official page); $100 minimum threshold; payouts at least quarterly via PayPal or wire transfer",
+  "friction": "Short application reviewed before referral link is issued; $100 threshold + quarterly cadence = slow payouts; Railsware product, official page claims 200K+ users",
+  "found_ts": 1792014517,
+  "status": "new"
+ },
+ {
+  "platform": "Stripe Managed Payments",
+  "url": "https://docs.stripe.com/payments/managed-payments",
+  "how_to_earn": "Sell your own fully-automated digital products (SaaS/API access, agent templates, digital downloads) via Stripe Checkout or Payment Links with Stripe (via Link) as merchant of record - Stripe handles sales tax/VAT/GST in 80+ countries plus fraud, disputes, and buyer support; launched 2026, distinct from plain Stripe processing and from Lemon Squeezy",
+  "pay_range": "Seller keeps sale price minus fees: Managed Payments adds 3.5% per successful transaction on top of standard Stripe processing (official pricing per lane read); no setup fees or monthly minimums",
+  "friction": "Requires a Stripe account in good standing (standard business/tax verification for Technology Squared LLC) and eligibility review; digital products only, fully automated - professional services/consulting do NOT qualify; direct sales only (no Connect/marketplaces); Checkout/Payment Links only",
+  "found_ts": 1792014517,
+  "status": "new"
+ },
+ {
+  "platform": "Files.com (bug bounty)",
+  "url": "https://hackerone.com/files",
+  "how_to_earn": "Find web/API/SDK/MCP vulnerabilities in the API-first Files.com platform via HackerOne; free trial testing sites (company name must contain [BUGBOUNTY], email = HackerOne alias); Sep 2026 expansion added SDKs + MCP scope and raised the ceiling; tracker data from H1 hacktivity shows 70 paid reports, median payout $500",
+  "pay_range": "$250-$50,000 USD per valid report, stated on the official program page (maximum raised from $15,000 on Sep 20, 2026); amounts at Files.com sole discretion",
+  "friction": "Existing HackerOne account; H1 mandatory Veriff ID verification; strict rules: never test customer sites, automated testing capped at 2 requests/second, unreviewed AI-generated reports are closed as Spam; long-running program (since 2016/2017) - this is a re-priced/expanded target, not a new launch",
+  "found_ts": 1792014517,
+  "status": "new"
  }
 ]
