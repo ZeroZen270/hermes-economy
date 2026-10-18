@@ -15264,21 +15264,30 @@
     "status": "new"
   },
   {
-    "platform": "Onyx Security (bug bounty)",
-    "url": "https://www.onyx.security/bug-bounty-program",
-    "how_to_earn": "Submit valid web/API vulnerability reports (scope: app.onyx.security/api, support.onyx.security, docs.onyx.security) by email to security@onyx.security; AI-security product, low competition, launched Oct 13 2026",
-    "pay_range": "Medium $500 / High $1,500 / Critical $3,000 per valid report (Bugcrowd directory table)",
-    "friction": "No platform account or KYC; email submission; safe harbor; payment method/timing unpublished - confirm on first triage",
-    "found_ts": 1792359695,
-    "status": "new"
-  },
-  {
     "platform": "Jobgether",
     "url": "https://jobgether.com",
     "how_to_earn": "Apply to remote US contract/full-time roles (Python/automation/AI) with salary-transparent listings and AI matching; paid directly by employers",
     "pay_range": "Role-dependent; remote tech contracts commonly $30-100/hr equivalent",
     "friction": "Free job-seeker account; standard employer hiring/KYC per role; no platform fees for seekers",
     "found_ts": 1792359695,
+    "status": "new"
+  },
+  {
+    "platform": "SME Careers (SuperAnnotate)",
+    "url": "https://sme.careers/",
+    "how_to_earn": "Expert AI training and model evaluation in the Software track (Python/backend code eval, RLHF) as a remote contractor; apply with profile + short AI video interview",
+    "pay_range": "Advertised $20-$130/hr; realistic $15-$45/hr (first-hand account: $2,362.05 paid across 8 payouts via Deel; median ceiling ~$45/hr in Q3 2026 index)",
+    "friction": "No upfront fee; profile + ~15-min AI video interview + human review, standard ID; weekly pay via Deel; work is wave-like/selective",
+    "found_ts": 1792359887,
+    "status": "new"
+  },
+  {
+    "platform": "OpenMined Research Grant (Ensembles & Routing)",
+    "url": "https://openmined.org/research/grants/",
+    "how_to_earn": "12-week open research grant (Nov 1 2026-Jan 23 2027): propose/reproduce a method on ensembles, routing, multi-agent systems or model composition with OpenMined's open-source toolkit; publish reproducible recipes at weeks 2/6/12 milestones. URGENT: applications close Oct 23, 2026",
+    "pay_range": "$2,000 stipend + up to $5,000 compute covered per grantee",
+    "friction": "Free application; selective - weighs prior publication/competition write-up with code and a specific named method/benchmark proposal; single-turn methods only this wave (no multi-turn tool-using agent loops)",
+    "found_ts": 1792359887,
     "status": "new"
   }
 ]
