@@ -17585,5 +17585,167 @@
   "friction": "Rolling applications, no deadline; full-time research role - long-shot for a freelancer profile but OSINT/data/agent work maps to benchmarking/evals; US-eligible, fully remote",
   "found_ts": 1794043966,
   "status": "new"
+ },
+ {
+  "platform": "Swappa",
+  "url": "https://swappa.com",
+  "how_to_earn": "Sell used phones, laptops, tablets, consoles, cameras on the low-fee tech marketplace; set own price, listings staff-verified; paid via PayPal at moment of sale before shipping",
+  "pay_range": "~$50-$600+ per device; seller keeps ~93% of ask (3% Swappa fee + PayPal 3.49%+$0.49)",
+  "friction": "Free listing, no membership; needs PayPal account; new sellers may face PayPal holds up to 21 days",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Gazelle",
+  "url": "https://www.gazelle.com",
+  "how_to_earn": "Instant-quote buyback for used phones/tablets/MacBooks; free prepaid shipping, no listing or buyer interaction",
+  "pay_range": "~$50-$300 per device, typically 30-40% below marketplace value",
+  "friction": "No fees; PayPal within 48h of accepting offer, check within 14 days, or Amazon code (+1.5% bonus); quotes can be revised down after inspection - photograph condition first",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Back Market (BuyBack trade-in)",
+  "url": "https://www.backmarket.com",
+  "how_to_earn": "Trade in phones, tablets, MacBooks, consoles, headphones to a refurbisher for an instant offer; free shipping; do NOT pursue the pro-seller marketplace account (10-15% commission + deposit + warranty, refurbishers only)",
+  "pay_range": "Roughly 60-80% of marketplace value per device",
+  "friction": "Free for individuals; direct bank transfer 7-10 days; full SSN/ITIN required once trade-ins exceed $500/calendar year; refurbishers often counter-offer below initial quote after inspection",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "StockX",
+  "url": "https://stockx.com",
+  "how_to_earn": "Sell deadstock (new/unworn) sneakers, streetwear, handbags, watches, graded cards on the bid/ask marketplace; only if he owns qualifying inventory",
+  "pay_range": "$100-$500+ per item; Level 1 sellers keep ~85.5% (9% transaction + 3% processing + $5 shipping)",
+  "friction": "Free to list; payout via Hyperwallet to bank/PayPal/Venmo 1-3 business days after authentication; $5 min fee; $15 penalty for failed/cancelled sales; used items only via waitlisted Listings Marketplace",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "GOAT",
+  "url": "https://goat.com",
+  "how_to_earn": "Sell new and used sneakers/streetwear via the Alias seller app; only if he owns resellable sneakers",
+  "pay_range": "$100-$400+ per pair; ~86% kept at rating 90+ (9.5% commission + $5 seller fee + 2.9% cash-out)",
+  "friction": "Free to list; approved seller account required; bank ACH or PayPal after authentication; earnings sit as GOAT Credit until cashed out; cancellations drop seller rating and raise commission to 15-25%",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Grailed",
+  "url": "https://grailed.com",
+  "how_to_earn": "Sell menswear/streetwear/designer/archive clothing; only if he owns designer pieces with resale demand",
+  "pay_range": "$25-$300+ per item; ~87% kept (9% commission on sales $120+, 6% min $1.99 under $120, + Stripe 3.49%+$0.49)",
+  "friction": "Free to list; payout via Stripe to bank ~3 days after delivery + 2-3 business days; must upload tracking within 7 days or sale auto-cancels; dispute complaints reported - keep tracking proof",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Reverb",
+  "url": "https://reverb.com",
+  "how_to_earn": "Sell guitars, amps, synths, pedals, pro audio and vintage music gear; only if he owns music gear",
+  "pay_range": "$50-$1,000+ per item; ~92% kept (5% selling fee min $0.50 capped $500 + 3.19%+$0.49 processing)",
+  "friction": "Free to list; bank payout via Reverb Payments - first sale 1-2 business days after delivery, later sales 1 business day after tracking shows movement, 1-4 business days to bank; items over $2,500 face extra 3-6 day security check; use Reverb shipping labels so tracking syncs",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Bitso (bug bounty)",
+  "url": "https://bugcrowd.com/engagements/bitso-mbb-og",
+  "how_to_earn": "Hunt API/auth/business-logic vulns on Bitso crypto exchange (bitso.com, nvio.mx/.ar, onchain.cc, mobile apps) via public Bugcrowd engagement; focus IDOR, 2FA bypass, financial-flow logic flaws, race conditions, KYC bypass",
+  "pay_range": "P1 $5,500-$7,500 / P2 $2,500-$3,500 / P3 $750-$1,500 / P4 $50-$500; 2x promos run repeatedly each October (P1 up to $15,000, last ran Oct 5-Nov 5 2026)",
+  "friction": "Public Bugcrowd engagement (Aaron already has Bugcrowd); test accounts self-provisioned with @bugcrowdninja.com email, no payment/KYC to test; safe harbor stated; payout via Bugcrowd bank/PayPal; accepted submissions Oct 14 & 27 2026 - actively paying",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "HTX (bug bounty)",
+  "url": "https://www.htx.com/bug-bounty",
+  "how_to_earn": "Report web/API vulns on HTX crypto exchange (*.htx.com, iOS/Android apps) by email to src@htx-inc.com; in-scope: business logic, IDOR/priv-esc, payment manipulation, SSRF, SQLi, RCE",
+  "pay_range": "$100-$100,000 (Extreme up to $100,000; Critical $5,000-$10,000; High $1,500-$5,000; Medium $500-$1,500; Low $100-$500); fixed prices for common vulns (stored XSS $500, subdomain takeover up to $3,000, fake-deposit $5,000-$8,000)",
+  "friction": "Self-hosted, no platform account needed; no KYC/ID requirement stated; payout currency/rail NOT stated on page (presumably USDT/crypto); US-researcher eligibility unstated - confirm by email before hunting (HTX does not serve US trading users)",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "KuCoin (bug bounty)",
+  "url": "https://bugcrowd.com/Kucoin",
+  "how_to_earn": "Hunt web/API vulns on KuCoin exchange via public Bugcrowd managed program (kucoin.com web platform; web modules, payment manipulation, RCE, sensitive-data leakage)",
+  "pay_range": "$50-$10,000 in USDT (Extreme $10,000; Critical $3,000-$5,000; High $1,000-$2,000; Medium $200-$400; Low $50-$100); one directory lists cap at $15,000 - unresolved",
+  "friction": "Public Bugcrowd program (Aaron already has Bugcrowd); USDT payout; live brief is login-gated on Bugcrowd (requires sign-in to read); US-researcher eligibility unstated (KuCoin does not operate in the US for trading); old HackenProof program is dead - use Bugcrowd link only",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Gate.io (bug bounty)",
+  "url": "https://hackenproof.com/programs?page=16",
+  "how_to_earn": "Hunt web/mobile/desktop vulns on Gate crypto exchange via HackenProof program (started Jul 2020, last updated Oct 30 2026, 531 submissions, $27,005 paid)",
+  "pay_range": "Up to $5,000",
+  "friction": "Requires HackenProof account (new platform for Aaron - he has HackerOne/Bugcrowd, not HackenProof); payouts typically stablecoins/crypto; no per-tier table verified",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Gartner Peer Insights",
+  "url": "https://www.gartner.com/en/connect-with-peers/peers-insights-reviews",
+  "how_to_earn": "Write verified reviews of enterprise software his organization purchased, implemented or upgraded in the last year; review must pass Gartner verification/moderation",
+  "pay_range": "$25 gift card per approved published review, max 10 gift cards per calendar year (up to $250/yr in gift cards)",
+  "friction": "Free account; gift cards only - no cash/PayPal; reviews must be genuine use of enterprise software; claim via Your Reviews profile section",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "GetApp / Software Advice",
+  "url": "https://review.getapp.com/Incentive-Program-FAQ",
+  "how_to_earn": "Write reviews of software he genuinely uses via incentivized campaign links on GetApp (Software Advice shares the Capterra review pool - same G2 network as already-fed Capterra, distinct signup path)",
+  "pay_range": "~$20-$25 gift card per published review (Capterra-network campaign typical; exact GetApp figure not stated on FAQ)",
+  "friction": "Invite-gated - no incentive without a campaign invite email; identity verification/QA can request proof of use; gift cards typically within 3 weeks of publication; max ~10 reviews per campaign/person; gift cards only, no cash",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Bluehost Affiliate Program",
+  "url": "https://www.bluehost.com/affiliates",
+  "how_to_earn": "Refer hosting sales via affiliate link (runs on Impact); only worth applying once he has a site/channel with real traffic - application can be declined for insufficient traffic",
+  "pay_range": "$65+ per qualified sale (higher tiers up to ~$130 reported for volume); 30-day cookie",
+  "friction": "Free to join via Impact; payout via PayPal or direct deposit 45-70 days after sale; minimum payout disputed ($100 first payment per Bluehost FAQ vs $10 Impact minimum) - treat as $100; audience gate is the real blocker (~$0 until he has distribution)",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Coursera Affiliate Program",
+  "url": "https://www.coursera.org/about/affiliates",
+  "how_to_earn": "Refer course/Specialization/Professional Certificate/Coursera Plus purchases via Impact links; only once he has a content channel",
+  "pay_range": "15-45% commission on eligible purchases; 30-day cookie; subscriptions pay commission on first month only; degrees/certificate purchases excluded",
+  "friction": "Free to join via Impact; payout rail/minimum not stated on official page (independent sources: $50 min, monthly via Impact PayPal/bank, Net 30-60); possible 1,000+ monthly visitors requirement unverified; audience gate applies",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Udemy Affiliate Program",
+  "url": "https://www.udemy.com/affiliate/",
+  "how_to_earn": "Refer paid course purchases via Impact links (universal cookie - any course bought within window counts); distinct from Udemy as a course platform (already on feed)",
+  "pay_range": "Baseline 10% of valid sales (up to ~15-20% for top performers); 7-day cookie; typical commission ~$1-$2 per sale (courses routinely $10-$15 on sale); subscriptions not commissionable; refunds claw back commission",
+  "friction": "Free via Impact; application reviewed in 3-4 business days; monthly payouts; minimum payout disputed ($10 Impact vs $50 Rakuten) - unresolved; possible 500 monthly visitors/followers requirement; US partners need approved tax docs; audience gate + tiny per-sale value - lowest priority affiliate",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Skillshare Affiliate Program",
+  "url": "https://www.skillshare.com/en/affiliates",
+  "how_to_earn": "Refer new paid Skillshare memberships via Impact links; distinct from Skillshare as a course platform (already on feed)",
+  "pay_range": "20% commission, up to $34 per new customer; 30-day cookie",
+  "friction": "Free to join; requires at least one demonstrated channel/audience aligned with Skillshare brand + free Skillshare account + Impact account; payouts monthly, 30 days after end of month commissions lock, via preferred method in Impact; audience gate applies",
+  "found_ts": 1794087046,
+  "status": "new"
+ },
+ {
+  "platform": "Recruit and Field",
+  "url": "https://www.recruitandfield.com/register-as-a-participant",
+  "how_to_earn": "Join the free participant panel (since 1977, 300,000+ respondents); get invited by email to online surveys, phone/webcam interviews, focus groups, in-home product tests; lean on IT/systems background for B2B studies",
+  "pay_range": "Focus groups/interviews typically $75-$150 per session (60-90 min), $100-$275 per study, B2B/professional sessions up to $300-$400; short surveys ~$5-$10",
+  "friction": "Free signup; US resident; pay mostly via PayPal, sometimes e-gift cards/check, usually within days to ~2 weeks; no payout threshold; invites infrequent and screener-dependent - opportunistic, not steady income",
+  "found_ts": 1794087046,
+  "status": "new"
  }
 ]
